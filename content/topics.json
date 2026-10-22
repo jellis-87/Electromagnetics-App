@@ -115,8 +115,12 @@
    "id": "plane-waves",
    "title": "Plane waves",
    "blurb": "Propagation in lossless and lossy media.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "planewave",
+    "skindepth",
+    "travel"
+   ],
+   "available": true
   },
   {
    "id": "polarization",
@@ -213,6 +217,14 @@
   "dispcur": {
    "title": "Conduction vs displacement",
    "topic": "time-varying"
+  },
+  "planewave": {
+   "title": "Plane wave in a medium",
+   "topic": "plane-waves"
+  },
+  "skindepth": {
+   "title": "Skin depth",
+   "topic": "plane-waves"
   }
  }
 }
