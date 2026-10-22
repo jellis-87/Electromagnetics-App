@@ -43,6 +43,10 @@ open ECE343.xcodeproj
 
 Pick an iPhone simulator and run. To run on a real phone, set your team under Signing & Capabilities. CI builds the app and runs the unit tests on a macOS runner for every pull request.
 
+### Trying it without a Mac
+
+Each CI run also uploads a simulator build, `ECE343-simulator-<commit>`, under the run's Artifacts (kept 30 days). Download it, unzip it once to get `ECE343-simulator.zip`, and upload that zip at [appetize.io](https://appetize.io) (platform iOS) to run the app in a browser simulator. To make a fresh build, open Actions → CI → Run workflow.
+
 ## Content format
 
 Text fields hold inline TeX in `$...$` and display TeX in `$$...$$`. Answer `label`/`value` and glossary `symbol`/`units` fields are TeX without delimiters. Pages render math with MathJax 3 (SVG output), loaded from the bundled copy when offline.

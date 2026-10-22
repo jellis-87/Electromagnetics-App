@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   web:
@@ -46,3 +47,23 @@ jobs:
             -destination "id=${{ steps.sim.outputs.udid }}" \
             CODE_SIGNING_ALLOWED=NO | tee build.log | grep -E "error:|warning:|Test Case|\*\* (BUILD|TEST)" || true
           grep -q "\*\* TEST SUCCEEDED \*\*" build.log || { tail -150 build.log; exit 1; }
+      # A Release build for the iOS Simulator, zipped for Appetize.io (browser simulator).
+      # Both architectures so it runs on Intel and Apple-silicon simulator hosts.
+      - name: Build for the simulator (Appetize)
+        working-directory: ios
+        run: |
+          set -o pipefail
+          xcodebuild build -project ECE343.xcodeproj -scheme ECE343 -configuration Release \
+            -sdk iphonesimulator -destination "generic/platform=iOS Simulator" \
+            -derivedDataPath build ARCHS="arm64 x86_64" ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY=- \
+            | tee sim.log | grep -E "error:|\*\* BUILD" || true
+          grep -q "\*\* BUILD SUCCEEDED \*\*" sim.log || { tail -150 sim.log; exit 1; }
+          app=build/Build/Products/Release-iphonesimulator/ECE343.app
+          lipo -info "$app/ECE343"
+          ditto -c -k --sequesterRsrc --keepParent "$app" ECE343-simulator.zip
+      - name: Upload the simulator build
+        uses: actions/upload-artifact@v4
+        with:
+          name: ECE343-simulator-${{ github.sha }}
+          path: ios/ECE343-simulator.zip
+          retention-days: 30
