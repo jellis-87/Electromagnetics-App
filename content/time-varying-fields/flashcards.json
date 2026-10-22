@@ -1,0 +1,159 @@
+{
+ "unit": "Time-varying fields",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-time-varying-01",
+   "front": "Faraday's law, integral form?",
+   "back": "$$V_{\\mathrm{emf}}=\\oint_C\\mathbf{E}\\cdot d\\mathbf{l}=-\\frac{d\\Phi}{dt}=-\\frac{d}{dt}\\int_S\\mathbf{B}\\cdot d\\mathbf{s}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-02",
+   "front": "Faraday's law, differential form?",
+   "back": "$$\\nabla\\times\\mathbf{E}=-\\frac{\\partial\\mathbf{B}}{\\partial t}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-03",
+   "front": "EMF of a coil with $N$ turns?",
+   "back": "$$V_{\\mathrm{emf}}=-N\\frac{d\\Phi}{dt}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-04",
+   "front": "What does Lenz's law say?",
+   "back": "The induced current flows so that its own magnetic field opposes the change in flux. That is the minus sign in Faraday's law.",
+   "kind": "concept",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-05",
+   "front": "Three ways to change the flux through a loop?",
+   "back": "Change $\\mathbf{B}$ in time (transformer EMF), move or deform the loop in a static $\\mathbf{B}$ (motional EMF), or both.",
+   "kind": "concept",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-06",
+   "front": "Motional EMF of a conductor moving through $\\mathbf{B}$?",
+   "back": "$$V_{\\mathrm{emf}}=\\oint(\\mathbf{u}\\times\\mathbf{B})\\cdot d\\mathbf{l}$$For a bar of length $\\ell$ moving at $u$ across $B$: $V=uB\\ell$.",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-07",
+   "front": "Peak EMF of a loop spinning at $\\omega$ in a uniform field?",
+   "back": "$$V_{\\mathrm{peak}}=NBA\\omega$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-08",
+   "front": "Ideal transformer voltage and current ratios?",
+   "back": "$$\\frac{V_1}{V_2}=\\frac{N_1}{N_2},\\qquad\\frac{I_1}{I_2}=\\frac{N_2}{N_1}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-09",
+   "front": "Displacement current density?",
+   "back": "$$\\mathbf{J}_d=\\frac{\\partial\\mathbf{D}}{\\partial t}\\ \\xrightarrow{\\text{phasor}}\\ j\\omega\\varepsilon\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-10",
+   "front": "Ampère's law with Maxwell's correction?",
+   "back": "$$\\nabla\\times\\mathbf{H}=\\mathbf{J}+\\frac{\\partial\\mathbf{D}}{\\partial t}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-11",
+   "front": "Why did Maxwell add displacement current?",
+   "back": "Without it, Ampère's law gives different answers for surfaces that pass between a capacitor's plates. It also makes Ampère's law agree with charge continuity, and it predicts EM waves.",
+   "kind": "concept",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-12",
+   "front": "Ratio of conduction to displacement current in a material?",
+   "back": "$$\\frac{|J_c|}{|J_d|}=\\frac{\\sigma}{\\omega\\varepsilon}$$Much greater than 1: good conductor. Much less than 1: good dielectric.",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-13",
+   "front": "Charge relaxation time?",
+   "back": "$$\\tau_r=\\frac{\\varepsilon}{\\sigma}$$Excess charge inside a conductor decays as $e^{-t/\\tau_r}$. Copper: about $10^{-19}$ s.",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-14",
+   "front": "Maxwell's equations in differential form?",
+   "back": "$$\\nabla\\cdot\\mathbf{D}=\\rho_v,\\quad\\nabla\\times\\mathbf{E}=-\\frac{\\partial\\mathbf{B}}{\\partial t},\\quad\\nabla\\cdot\\mathbf{B}=0,\\quad\\nabla\\times\\mathbf{H}=\\mathbf{J}+\\frac{\\partial\\mathbf{D}}{\\partial t}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-15",
+   "front": "Maxwell's curl equations in phasor form?",
+   "back": "$$\\nabla\\times\\tilde{\\mathbf{E}}=-j\\omega\\mu\\tilde{\\mathbf{H}},\\qquad\\nabla\\times\\tilde{\\mathbf{H}}=(\\sigma+j\\omega\\varepsilon)\\tilde{\\mathbf{E}}$$",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-16",
+   "front": "What do the static equations lose, compared with the dynamic ones?",
+   "back": "The coupling terms $\\partial\\mathbf{B}/\\partial t$ and $\\partial\\mathbf{D}/\\partial t$. With them, a changing $\\mathbf{E}$ makes $\\mathbf{H}$ and a changing $\\mathbf{H}$ makes $\\mathbf{E}$, which is what lets waves travel.",
+   "kind": "concept",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "card-time-varying-17",
+   "front": "Complex permittivity of a lossy material?",
+   "back": "$$\\varepsilon_c=\\varepsilon-j\\frac{\\sigma}{\\omega}$$It folds conduction into the displacement term.",
+   "kind": "equation",
+   "topics": [
+    "time-varying"
+   ]
+  }
+ ]
+}

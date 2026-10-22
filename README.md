@@ -28,10 +28,11 @@ Everything is labeled by topic, not by textbook chapter. Each card, problem and 
 | Electrostatics | Point charges, Gauss's law, Dielectric boundary, Capacitor builder |
 | Current and conductors | Conductor and resistance |
 | Magnetostatics | Biot–Savart builder, Ampère's law, Magnetic boundary |
+| Time-varying fields | Faraday and Lenz, Conduction vs displacement |
 
-Time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
+Plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
 
-Topics are listed in course order. Content so far: 161 flashcards, 116 glossary terms, 100 practice problems (16 from the course practice sets with worked keys, 84 new).
+Topics are listed in course order. Content so far: 178 flashcards, 128 glossary terms, 110 practice problems (16 from the course practice sets with worked keys, 94 new).
 
 ## The iPhone app
 
@@ -69,6 +70,7 @@ python3 tools/make_vectors.py
 python3 tools/make_electrostatics.py
 python3 tools/make_conductors.py
 python3 tools/make_magnetostatics.py
+python3 tools/make_timevarying.py
 python3 tools/build_web.py      # rebuilds web/widgets.html and web/www/
 python3 tools/vendor_web.py     # only when updating MathJax or the fonts (needs npm)
 ```

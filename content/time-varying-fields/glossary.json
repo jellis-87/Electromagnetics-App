@@ -1,0 +1,126 @@
+{
+ "unit": "Time-varying fields",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Faraday's law",
+   "symbol": "",
+   "units": "",
+   "definition": "A changing magnetic flux through a loop induces an EMF around it: $V_{\\mathrm{emf}}=-d\\Phi/dt$.",
+   "widget": "faraday",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Electromotive force",
+   "symbol": "V_{\\mathrm{emf}}",
+   "units": "\\mathrm{V}",
+   "definition": "The work per unit charge done around a closed loop, $\\oint\\mathbf{E}\\cdot d\\mathbf{l}$. Not conservative when fields change in time.",
+   "widget": "faraday",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Lenz's law",
+   "symbol": "",
+   "units": "",
+   "definition": "The induced current opposes the change in flux that caused it.",
+   "widget": "faraday",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Transformer EMF",
+   "symbol": "",
+   "units": "",
+   "definition": "EMF in a stationary loop from a time-varying $\\mathbf{B}$: $-\\int\\partial\\mathbf{B}/\\partial t\\cdot d\\mathbf{s}$.",
+   "widget": "faraday",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Motional EMF",
+   "symbol": "",
+   "units": "",
+   "definition": "EMF from a conductor moving through a magnetic field: $\\oint(\\mathbf{u}\\times\\mathbf{B})\\cdot d\\mathbf{l}$. The basis of generators.",
+   "widget": "faraday",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Displacement current",
+   "symbol": "\\mathbf{J}_d=\\partial\\mathbf{D}/\\partial t",
+   "units": "\\mathrm{A/m^2}",
+   "definition": "The term Maxwell added to Ampère's law. It carries current across a capacitor gap and lets a changing $\\mathbf{E}$ create $\\mathbf{H}$.",
+   "widget": "dispcur",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Relaxation time",
+   "symbol": "\\tau_r=\\varepsilon/\\sigma",
+   "units": "\\mathrm{s}",
+   "definition": "Time for excess charge inside a material to fall to $1/e$ of its starting value.",
+   "widget": "dispcur",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Good conductor",
+   "symbol": "",
+   "units": "",
+   "definition": "A material with $\\sigma/(\\omega\\varepsilon)\\gg1$ at the frequency of interest. Whether a material counts as one depends on frequency.",
+   "widget": "dispcur",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Low-loss dielectric",
+   "symbol": "",
+   "units": "",
+   "definition": "A material with $\\sigma/(\\omega\\varepsilon)\\ll1$, where displacement current dominates.",
+   "widget": "dispcur",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Loss tangent",
+   "symbol": "\\tan\\delta=\\sigma/(\\omega\\varepsilon)",
+   "units": "",
+   "definition": "The ratio of conduction to displacement current, used to grade dielectrics.",
+   "widget": "dispcur",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Maxwell's equations",
+   "symbol": "",
+   "units": "",
+   "definition": "Four equations for $\\mathbf{E}$, $\\mathbf{D}$, $\\mathbf{B}$, $\\mathbf{H}$ and their sources: Gauss's law, Faraday's law, no magnetic charge, and Ampère's law with displacement current.",
+   "widget": null,
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "term": "Quasi-static",
+   "symbol": "",
+   "units": "",
+   "definition": "When a structure is much smaller than a wavelength, the displacement-current and induction effects are small, so circuit theory works.",
+   "widget": null,
+   "topics": [
+    "time-varying"
+   ]
+  }
+ ]
+}

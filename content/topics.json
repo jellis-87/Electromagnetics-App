@@ -105,8 +105,11 @@
    "id": "time-varying",
    "title": "Time-varying fields",
    "blurb": "Faraday's law, displacement current and Maxwell's equations.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "faraday",
+    "dispcur"
+   ],
+   "available": true
   },
   {
    "id": "plane-waves",
@@ -202,6 +205,14 @@
   "mboundary": {
    "title": "Magnetic boundary",
    "topic": "magnetostatics"
+  },
+  "faraday": {
+   "title": "Faraday and Lenz",
+   "topic": "time-varying"
+  },
+  "dispcur": {
+   "title": "Conduction vs displacement",
+   "topic": "time-varying"
   }
  }
 }
