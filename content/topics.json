@@ -126,8 +126,10 @@
    "id": "polarization",
    "title": "Polarization",
    "blurb": "Linear, circular and elliptical polarization.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "polarization"
+   ],
+   "available": true
   },
   {
    "id": "boundaries",
@@ -225,6 +227,10 @@
   "skindepth": {
    "title": "Skin depth",
    "topic": "plane-waves"
+  },
+  "polarization": {
+   "title": "Polarization ellipse",
+   "topic": "polarization"
   }
  }
 }
