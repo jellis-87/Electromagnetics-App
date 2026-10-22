@@ -73,8 +73,13 @@
    "id": "electrostatics",
    "title": "Electrostatics",
    "blurb": "Charges, fields, potential and capacitance.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "charges",
+    "gauss",
+    "boundary",
+    "capacitor"
+   ],
+   "available": true
   },
   {
    "id": "conductors",
@@ -159,6 +164,22 @@
   "divcurl": {
    "title": "Divergence and curl",
    "topic": "vectors"
+  },
+  "charges": {
+   "title": "Point charges",
+   "topic": "electrostatics"
+  },
+  "gauss": {
+   "title": "Gauss's law",
+   "topic": "electrostatics"
+  },
+  "boundary": {
+   "title": "Dielectric boundary",
+   "topic": "electrostatics"
+  },
+  "capacitor": {
+   "title": "Capacitor builder",
+   "topic": "electrostatics"
   }
  }
 }

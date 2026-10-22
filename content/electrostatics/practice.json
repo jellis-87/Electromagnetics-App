@@ -1,0 +1,466 @@
+{
+ "unit": "Electrostatics",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "electrostatics-01",
+   "difficulty": 2,
+   "title": "Force between two point charges",
+   "prompt": "A $2\\ \\mathrm{nC}$ charge sits at $(1,2,0)$ and a $-5\\ \\mathrm{nC}$ charge at $(-1,0,2)$, in meters, in free space. Find the force on the $-5\\ \\mathrm{nC}$ charge.",
+   "hints": [
+    "$\\mathbf{R}_{12}$ points from $Q_1$ to $Q_2$.",
+    "$\\mathbf{F}_{12}=\\dfrac{Q_1Q_2}{4\\pi\\varepsilon_0}\\dfrac{\\mathbf{R}_{12}}{|\\mathbf{R}_{12}|^3}$."
+   ],
+   "steps": [
+    "$$\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1=-\\hat{\\mathbf{x}}\\,2-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,2,\\quad |\\mathbf{R}_{12}|=\\sqrt{12}=3.46\\ \\mathrm{m}$$",
+    "$$\\frac{Q_1Q_2}{4\\pi\\varepsilon_0|\\mathbf{R}_{12}|^3}=\\frac{(8.99\\times10^9)(2\\times10^{-9})(-5\\times10^{-9})}{41.6}=-2.16\\times10^{-9}\\ \\mathrm{N/m}$$",
+    "$$\\mathbf{F}_{12}=\\left(\\hat{\\mathbf{x}}\\,4.32+\\hat{\\mathbf{y}}\\,4.32-\\hat{\\mathbf{z}}\\,4.32\\right)\\ \\mathrm{nN}$$",
+    "The charges have opposite signs, so the force on $Q_2$ points back toward $Q_1$."
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{F}_{12}",
+     "value": "\\left(\\hat{\\mathbf{x}}\\,4.32+\\hat{\\mathbf{y}}\\,4.32-\\hat{\\mathbf{z}}\\,4.32\\right)\\ \\mathrm{nN}"
+    },
+    {
+     "label": "|\\mathbf{F}_{12}|",
+     "value": "7.49\\ \\mathrm{nN}"
+    }
+   ],
+   "widget": "charges",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-02",
+   "difficulty": 2,
+   "title": "Field and potential of a dipole pair",
+   "prompt": "Charges $+4\\ \\mathrm{nC}$ at $(-10,0,0)\\ \\mathrm{cm}$ and $-4\\ \\mathrm{nC}$ at $(10,0,0)\\ \\mathrm{cm}$ sit in free space. Find $\\mathbf{E}$ and $V$ at $(0,10,0)\\ \\mathrm{cm}$.",
+   "hints": [
+    "Add the two fields as vectors.",
+    "Potential is a scalar: just add the two potentials."
+   ],
+   "steps": [
+    "$$\\mathbf{R}-\\mathbf{R}_+=\\hat{\\mathbf{x}}\\,10+\\hat{\\mathbf{y}}\\,10\\ \\mathrm{cm},\\quad\\mathbf{R}-\\mathbf{R}_-=-\\hat{\\mathbf{x}}\\,10+\\hat{\\mathbf{y}}\\,10\\ \\mathrm{cm}$$",
+    "$$\\mathbf{E}_+=\\left(\\hat{\\mathbf{x}}\\,1.27+\\hat{\\mathbf{y}}\\,1.27\\right)\\ \\mathrm{kV/m}$$",
+    "$$\\mathbf{E}_-=\\left(\\hat{\\mathbf{x}}\\,1.27-\\hat{\\mathbf{y}}\\,1.27\\right)\\ \\mathrm{kV/m}$$",
+    "$$\\mathbf{E}=\\left(\\hat{\\mathbf{x}}\\,2.54\\right)\\ \\mathrm{kV/m}$$",
+    "$$V=\\frac{1}{4\\pi\\varepsilon_0}\\left(\\frac{4\\ \\mathrm{nC}}{0.141}-\\frac{4\\ \\mathrm{nC}}{0.141}\\right)=0$$",
+    "The point is the same distance from both charges, so $V=0$ there even though $\\mathbf{E}\\ne0$."
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{E}",
+     "value": "\\left(\\hat{\\mathbf{x}}\\,2.54\\right)\\ \\mathrm{kV/m}"
+    },
+    {
+     "label": "V",
+     "value": "0"
+    }
+   ],
+   "widget": "charges",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-03",
+   "difficulty": 2,
+   "title": "Ring of charge, on the axis",
+   "prompt": "A ring of radius $10\\ \\mathrm{cm}$ in the $xy$-plane carries $\\rho_l=5\\ \\mathrm{nC/m}$. Find $\\mathbf{E}$ on the axis at $z=20\\ \\mathrm{cm}$.",
+   "hints": [
+    "By symmetry only $E_z$ survives.",
+    "$$dE_z=\\frac{\\rho_l\\,a\\,d\\phi}{4\\pi\\varepsilon_0(a^2+z^2)}\\cdot\\frac{z}{\\sqrt{a^2+z^2}}$$"
+   ],
+   "steps": [
+    "$$E_z=\\int_0^{2\\pi}\\frac{\\rho_l\\,a\\,z\\,d\\phi}{4\\pi\\varepsilon_0(a^2+z^2)^{3/2}}=\\frac{\\rho_l\\,a\\,z}{2\\varepsilon_0(a^2+z^2)^{3/2}}$$",
+    "$$E_z=\\frac{(5\\times10^{-9})(0.1)(0.2)}{2\\varepsilon_0(0.05)^{3/2}}=505\\ \\mathrm{V/m}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{E}",
+     "value": "\\hat{\\mathbf{z}}\\,505\\ \\mathrm{V/m}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-04",
+   "difficulty": 3,
+   "title": "Charged disk, on the axis",
+   "prompt": "A disk of radius $20\\ \\mathrm{cm}$ carries $\\rho_s=1\\ \\mu\\mathrm{C/m^2}$. Find $E$ on its axis $10\\ \\mathrm{cm}$ above the center, and compare with an infinite sheet.",
+   "hints": [
+    "Build the disk from rings of radius $r$ and width $dr$, each with $\\rho_l=\\rho_s\\,dr$.",
+    "Use the ring result and integrate from $0$ to $a$."
+   ],
+   "steps": [
+    "$$E_z=\\int_0^a\\frac{\\rho_s\\,r\\,z\\,dr}{2\\varepsilon_0(r^2+z^2)^{3/2}}=\\frac{\\rho_s}{2\\varepsilon_0}\\left(1-\\frac{z}{\\sqrt{z^2+a^2}}\\right)$$",
+    "$$E_z=\\frac{10^{-6}}{2\\varepsilon_0}\\left(1-\\frac{0.1}{0.224}\\right)=31.2\\ \\mathrm{kV/m}$$",
+    "$$\\text{Infinite sheet: }\\frac{\\rho_s}{2\\varepsilon_0}=56.5\\ \\mathrm{kV/m}$$",
+    "The disk gives 55.3% of the sheet value at this height. Close in, $z\\ll a$, they agree."
+   ],
+   "answers": [
+    {
+     "label": "E_z",
+     "value": "31.2\\ \\mathrm{kV/m}"
+    },
+    {
+     "label": "E_{\\text{sheet}}",
+     "value": "56.5\\ \\mathrm{kV/m}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-05",
+   "difficulty": 1,
+   "title": "Gauss's law for a line charge",
+   "prompt": "Use Gauss's law to find $\\mathbf{E}$ a distance $r$ from an infinite line charge $\\rho_l$, then evaluate it for $\\rho_l=10\\ \\mathrm{nC/m}$ and $r=50\\ \\mathrm{cm}$ in air.",
+   "hints": [
+    "Use a cylinder of radius $r$ and length $\\ell$ around the line. No flux leaves the flat ends."
+   ],
+   "steps": [
+    "$$\\oint\\mathbf{D}\\cdot d\\mathbf{s}=D_r(2\\pi r\\ell)=\\rho_l\\ell$$",
+    "$$\\mathbf{E}=\\hat{\\mathbf{r}}\\,\\frac{\\rho_l}{2\\pi\\varepsilon_0r}$$",
+    "$$E=\\frac{10\\times10^{-9}}{2\\pi\\varepsilon_0(0.5)}=360\\ \\mathrm{V/m}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{E}",
+     "value": "\\hat{\\mathbf{r}}\\,\\frac{\\rho_l}{2\\pi\\varepsilon_0r}"
+    },
+    {
+     "label": "E",
+     "value": "360\\ \\mathrm{V/m}"
+    }
+   ],
+   "widget": "gauss",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-06",
+   "difficulty": 2,
+   "title": "Gauss's law for a charged sphere",
+   "prompt": "A sphere of radius $5\\ \\mathrm{cm}$ holds a uniform $\\rho_v=2\\ \\mu\\mathrm{C/m^3}$ in free space. Find $E$ at $R=2\\ \\mathrm{cm}$ and at $R=10\\ \\mathrm{cm}$.",
+   "hints": [
+    "Use a spherical Gaussian surface of radius $R$.",
+    "Inside, only the charge within radius $R$ counts."
+   ],
+   "steps": [
+    "$$\\text{Inside: }D_R(4\\pi R^2)=\\rho_v\\tfrac43\\pi R^3\\ \\Rightarrow\\ E=\\frac{\\rho_vR}{3\\varepsilon_0}$$",
+    "$$E(2\\ \\mathrm{cm})=1.51\\ \\mathrm{kV/m}$$",
+    "$$\\text{Outside: }D_R(4\\pi R^2)=\\rho_v\\tfrac43\\pi a^3\\ \\Rightarrow\\ E=\\frac{\\rho_va^3}{3\\varepsilon_0R^2}$$",
+    "$$E(10\\ \\mathrm{cm})=941\\ \\mathrm{V/m}$$",
+    "Total charge $1.05\\ \\mathrm{nC}$. Outside, the sphere looks like a point charge."
+   ],
+   "answers": [
+    {
+     "label": "E(2\\ \\mathrm{cm})",
+     "value": "1.51\\ \\mathrm{kV/m}"
+    },
+    {
+     "label": "E(10\\ \\mathrm{cm})",
+     "value": "941\\ \\mathrm{V/m}"
+    }
+   ],
+   "widget": "gauss",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-07",
+   "difficulty": 1,
+   "title": "Charge density from D",
+   "prompt": "In a region, $\\mathbf{D}=\\hat{\\mathbf{x}}\\,2xy+\\hat{\\mathbf{y}}\\,x^2+\\hat{\\mathbf{z}}\\,3z^2\\ \\mathrm{C/m^2}$. Find $\\rho_v$ at $(1,2,3)$.",
+   "hints": [
+    "$\\rho_v=\\nabla\\cdot\\mathbf{D}$."
+   ],
+   "steps": [
+    "$$\\rho_v=\\frac{\\partial(2xy)}{\\partial x}+\\frac{\\partial(x^2)}{\\partial y}+\\frac{\\partial(3z^2)}{\\partial z}=2y+6z$$",
+    "$$\\rho_v(1,2,3)=4+18=22\\ \\mathrm{C/m^3}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\rho_v",
+     "value": "22\\ \\mathrm{C/m^3}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-08",
+   "difficulty": 1,
+   "title": "Electric field from potential",
+   "prompt": "Given $V=10x^2y-5z\\ \\mathrm{V}$, find $\\mathbf{E}$ at $(1,2,3)\\ \\mathrm{m}$.",
+   "hints": [
+    "$\\mathbf{E}=-\\nabla V$."
+   ],
+   "steps": [
+    "$$\\nabla V=\\hat{\\mathbf{x}}\\,20xy+\\hat{\\mathbf{y}}\\,10x^2-\\hat{\\mathbf{z}}\\,5$$",
+    "$$\\mathbf{E}=-\\nabla V=-\\hat{\\mathbf{x}}\\,40-\\hat{\\mathbf{y}}\\,10+\\hat{\\mathbf{z}}\\,5\\ \\mathrm{V/m}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{E}",
+     "value": "-\\hat{\\mathbf{x}}\\,40-\\hat{\\mathbf{y}}\\,10+\\hat{\\mathbf{z}}\\,5\\ \\mathrm{V/m}"
+    }
+   ],
+   "widget": "charges",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-09",
+   "difficulty": 2,
+   "title": "Work to move a charge",
+   "prompt": "How much work does it take to move a $-2\\ \\mathrm{nC}$ charge from $20\\ \\mathrm{cm}$ to $5\\ \\mathrm{cm}$ away from a fixed $3\\ \\mathrm{nC}$ charge in air?",
+   "hints": [
+    "$W=q(V_B-V_A)$, with $V=\\dfrac{Q}{4\\pi\\varepsilon_0R}$."
+   ],
+   "steps": [
+    "$$V_A=\\frac{Q}{4\\pi\\varepsilon_0(0.2)}=135\\ \\mathrm{V},\\qquad V_B=\\frac{Q}{4\\pi\\varepsilon_0(0.05)}=539\\ \\mathrm{V}$$",
+    "$$W=q(V_B-V_A)=(-2\\times10^{-9})(404)=-809\\ \\mathrm{nJ}$$",
+    "The work is negative: the charges attract, so the field does the work as the charge moves in."
+   ],
+   "answers": [
+    {
+     "label": "W",
+     "value": "-809\\ \\mathrm{nJ}"
+    }
+   ],
+   "widget": "charges",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-10",
+   "difficulty": 2,
+   "title": "Field across a dielectric boundary",
+   "prompt": "The plane $z=0$ separates medium 1 ($z>0$, $\\varepsilon_{r1}=2$) from medium 2 ($z<0$, $\\varepsilon_{r2}=8$). There is no surface charge. If $\\mathbf{E}_1=\\hat{\\mathbf{x}}\\,2-\\hat{\\mathbf{y}}\\,3+\\hat{\\mathbf{z}}\\,5\\ \\mathrm{V/m}$, find $\\mathbf{E}_2$ and the angles both make with the normal.",
+   "hints": [
+    "Tangential components ($x$ and $y$) carry over unchanged.",
+    "Normal $\\mathbf{D}$ is continuous: $\\varepsilon_{r1}E_{1z}=\\varepsilon_{r2}E_{2z}$."
+   ],
+   "steps": [
+    "$$E_{2x}=2,\\qquad E_{2y}=-3$$",
+    "$$E_{2z}=\\frac{\\varepsilon_{r1}}{\\varepsilon_{r2}}E_{1z}=\\frac{2}{8}(5)=1.25$$",
+    "$$\\mathbf{E}_2=\\hat{\\mathbf{x}}\\,2-\\hat{\\mathbf{y}}\\,3+\\hat{\\mathbf{z}}\\,1.25\\ \\mathrm{V/m}$$",
+    "$$\\theta_1=\\tan^{-1}\\frac{\\sqrt{13}}{5}=35.8^\\circ,\\qquad\\theta_2=\\tan^{-1}\\frac{\\sqrt{13}}{1.25}=70.9^\\circ$$",
+    "The field bends away from the normal going into the higher-permittivity medium."
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{E}_2",
+     "value": "\\hat{\\mathbf{x}}\\,2-\\hat{\\mathbf{y}}\\,3+\\hat{\\mathbf{z}}\\,1.25\\ \\mathrm{V/m}"
+    },
+    {
+     "label": "\\theta_1",
+     "value": "35.8^\\circ"
+    },
+    {
+     "label": "\\theta_2",
+     "value": "70.9^\\circ"
+    }
+   ],
+   "widget": "boundary",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-11",
+   "difficulty": 1,
+   "title": "Surface charge on a conductor",
+   "prompt": "Just outside a charged conductor in air the field is $500\\ \\mathrm{V/m}$, pointing away from the surface. Find the surface charge density, and the field inside the conductor.",
+   "hints": [
+    "At a conductor surface $D_n=\\rho_s$, and $\\mathbf{E}=0$ inside."
+   ],
+   "steps": [
+    "$$\\rho_s=\\varepsilon_0E_n=(8.854\\times10^{-12})(500)=4.43\\ \\mathrm{nC/m^2}$$",
+    "Inside the conductor $\\mathbf{E}=0$."
+   ],
+   "answers": [
+    {
+     "label": "\\rho_s",
+     "value": "4.43\\ \\mathrm{nC/m^2}"
+    },
+    {
+     "label": "E_{\\text{inside}}",
+     "value": "0"
+    }
+   ],
+   "widget": "boundary",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-12",
+   "difficulty": 1,
+   "title": "Parallel-plate capacitor",
+   "prompt": "A capacitor has plates of area $4\\ \\mathrm{cm^2}$ spaced $0.5\\ \\mathrm{mm}$ apart, filled with a dielectric of $\\varepsilon_r=4$. With $10\\ \\mathrm{V}$ across it, find $C$, $Q$, $E$ and the stored energy.",
+   "hints": [
+    "$C=\\varepsilon A/d$, $Q=CV$, $E=V/d$, $W_e=\\tfrac12CV^2$."
+   ],
+   "steps": [
+    "$$C=\\frac{(4)(8.854\\times10^{-12})(4\\times10^{-4})}{5\\times10^{-4}}=28.3\\ \\mathrm{pF}$$",
+    "$$Q=CV=283\\ \\mathrm{pC}$$",
+    "$$E=\\frac{V}{d}=20.0\\ \\mathrm{kV/m}$$",
+    "$$W_e=\\tfrac12CV^2=1.42\\ \\mathrm{nJ}$$"
+   ],
+   "answers": [
+    {
+     "label": "C",
+     "value": "28.3\\ \\mathrm{pF}"
+    },
+    {
+     "label": "Q",
+     "value": "283\\ \\mathrm{pC}"
+    },
+    {
+     "label": "E",
+     "value": "20.0\\ \\mathrm{kV/m}"
+    },
+    {
+     "label": "W_e",
+     "value": "1.42\\ \\mathrm{nJ}"
+    }
+   ],
+   "widget": "capacitor",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-13",
+   "difficulty": 2,
+   "title": "Capacitance of a coax",
+   "prompt": "Find the capacitance per meter of a coax with inner radius $0.5\\ \\mathrm{mm}$, outer radius $2\\ \\mathrm{mm}$ and polyethylene ($\\varepsilon_r=2.25$) between.",
+   "hints": [
+    "Put $\\rho_l$ on the inner conductor and use Gauss's law: $E_r=\\dfrac{\\rho_l}{2\\pi\\varepsilon r}$.",
+    "Integrate $E_r$ from $a$ to $b$ for $V$, then $C'=\\rho_l/V$."
+   ],
+   "steps": [
+    "$$V=\\int_a^b\\frac{\\rho_l}{2\\pi\\varepsilon r}\\,dr=\\frac{\\rho_l}{2\\pi\\varepsilon}\\ln\\frac{b}{a}$$",
+    "$$C'=\\frac{\\rho_l}{V}=\\frac{2\\pi\\varepsilon}{\\ln(b/a)}$$",
+    "$$C'=\\frac{2\\pi(2.25)\\varepsilon_0}{\\ln4}=90.3\\ \\mathrm{pF/m}$$"
+   ],
+   "answers": [
+    {
+     "label": "C'",
+     "value": "90.3\\ \\mathrm{pF/m}"
+    }
+   ],
+   "widget": "capacitor",
+   "source": "original",
+   "topics": [
+    "electrostatics",
+    "tline"
+   ]
+  },
+  {
+   "id": "electrostatics-14",
+   "difficulty": 2,
+   "title": "Spherical capacitor",
+   "prompt": "Find the capacitance of two concentric conducting spheres of radii $5\\ \\mathrm{cm}$ and $10\\ \\mathrm{cm}$ with air between.",
+   "hints": [
+    "Put $+Q$ on the inner sphere; between the spheres $E_R=\\dfrac{Q}{4\\pi\\varepsilon_0R^2}$."
+   ],
+   "steps": [
+    "$$V=\\int_a^b\\frac{Q}{4\\pi\\varepsilon_0R^2}\\,dR=\\frac{Q}{4\\pi\\varepsilon_0}\\left(\\frac1a-\\frac1b\\right)$$",
+    "$$C=\\frac{Q}{V}=\\frac{4\\pi\\varepsilon_0ab}{b-a}$$",
+    "$$C=\\frac{4\\pi\\varepsilon_0(0.05)(0.1)}{0.05}=11.1\\ \\mathrm{pF}$$"
+   ],
+   "answers": [
+    {
+     "label": "C",
+     "value": "11.1\\ \\mathrm{pF}"
+    }
+   ],
+   "widget": "capacitor",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-15",
+   "difficulty": 2,
+   "title": "Laplace's equation between plates",
+   "prompt": "Two large plates sit at $z=0$ ($V=0$) and $z=2\\ \\mathrm{mm}$ ($V=12\\ \\mathrm{V}$), with no charge between. Solve Laplace's equation for $V(z)$ and find $\\mathbf{E}$.",
+   "hints": [
+    "With no $x$ or $y$ variation, $\\dfrac{d^2V}{dz^2}=0$, so $V=Az+B$."
+   ],
+   "steps": [
+    "$$\\frac{d^2V}{dz^2}=0\\ \\Rightarrow\\ V=Az+B$$",
+    "$$V(0)=0\\Rightarrow B=0,\\qquad V(d)=12\\Rightarrow A=\\frac{12}{0.002}=6000$$",
+    "$$V(z)=6000\\,z\\ \\mathrm{V},\\qquad \\mathbf{E}=-\\nabla V=-\\hat{\\mathbf{z}}\\,6.00\\ \\mathrm{kV/m}$$"
+   ],
+   "answers": [
+    {
+     "label": "V(z)",
+     "value": "6000\\,z\\ \\mathrm{V}"
+    },
+    {
+     "label": "\\mathbf{E}",
+     "value": "-\\hat{\\mathbf{z}}\\,6.00\\ \\mathrm{kV/m}"
+    }
+   ],
+   "widget": "capacitor",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "electrostatics-16",
+   "difficulty": 1,
+   "title": "Breakdown in an air gap",
+   "prompt": "Air breaks down at about $3\\ \\mathrm{MV/m}$. What is the smallest gap between two parallel plates that can hold off $1\\ \\mathrm{kV}$?",
+   "hints": [
+    "$E=V/d$ between parallel plates."
+   ],
+   "steps": [
+    "$$d=\\frac{V}{E_{ds}}=\\frac{1000}{3\\times10^6}=333\\ \\mathrm{\\mu m}$$"
+   ],
+   "answers": [
+    {
+     "label": "d_{\\min}",
+     "value": "333\\ \\mathrm{\\mu m}"
+    }
+   ],
+   "widget": "capacitor",
+   "source": "original",
+   "topics": [
+    "electrostatics"
+   ]
+  }
+ ]
+}
