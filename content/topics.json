@@ -94,8 +94,12 @@
    "id": "magnetostatics",
    "title": "Magnetostatics",
    "blurb": "Biot–Savart, Ampère's law and inductance.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "biot",
+    "ampere",
+    "mboundary"
+   ],
+   "available": true
   },
   {
    "id": "time-varying",
@@ -186,6 +190,18 @@
   "wire": {
    "title": "Conductor and resistance",
    "topic": "conductors"
+  },
+  "biot": {
+   "title": "Biot–Savart builder",
+   "topic": "magnetostatics"
+  },
+  "ampere": {
+   "title": "Ampère's law",
+   "topic": "magnetostatics"
+  },
+  "mboundary": {
+   "title": "Magnetic boundary",
+   "topic": "magnetostatics"
   }
  }
 }

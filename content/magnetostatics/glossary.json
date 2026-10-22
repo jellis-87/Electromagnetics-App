@@ -1,0 +1,166 @@
+{
+ "unit": "Magnetostatics",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Magnetic force",
+   "symbol": "",
+   "units": "",
+   "definition": "$\\mathbf{F}_m=q\\mathbf{u}\\times\\mathbf{B}$ on a moving charge, or $I\\,d\\mathbf{l}\\times\\mathbf{B}$ on a current element. Always perpendicular to the motion.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Lorentz force",
+   "symbol": "",
+   "units": "",
+   "definition": "The total electromagnetic force on a charge: $\\mathbf{F}=q(\\mathbf{E}+\\mathbf{u}\\times\\mathbf{B})$.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Biot–Savart law",
+   "symbol": "",
+   "units": "",
+   "definition": "Gives the magnetic field of a current element: $d\\mathbf{H}=\\dfrac{I\\,d\\mathbf{l}\\times\\hat{\\mathbf{R}}}{4\\pi R^2}$. Integrate over the current to get $\\mathbf{H}$.",
+   "widget": "biot",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Ampère's law",
+   "symbol": "",
+   "units": "",
+   "definition": "The circulation of $\\mathbf{H}$ around a closed loop equals the current through it: $\\oint\\mathbf{H}\\cdot d\\mathbf{l}=I_{\\mathrm{enc}}$.",
+   "widget": "ampere",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Amperian loop",
+   "symbol": "",
+   "units": "",
+   "definition": "A closed path chosen so that $\\mathbf{H}$ is constant and tangent along it, which turns Ampère's law into algebra.",
+   "widget": "ampere",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Right-hand rule",
+   "symbol": "",
+   "units": "",
+   "definition": "Point the thumb along the current; the fingers curl the way $\\mathbf{H}$ circles it. Also gives the direction of $\\mathbf{A}\\times\\mathbf{B}$.",
+   "widget": "biot",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Magnetic flux",
+   "symbol": "\\Phi",
+   "units": "\\mathrm{Wb}",
+   "definition": "$\\Phi=\\int_S\\mathbf{B}\\cdot d\\mathbf{s}$. Through any closed surface it is zero.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Magnetic dipole",
+   "symbol": "\\mathbf{m}=I\\mathbf{A}",
+   "units": "\\mathrm{A\\,m^2}",
+   "definition": "A small current loop. Far away its field looks like an electric dipole's field.",
+   "widget": "biot",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Solenoid",
+   "symbol": "",
+   "units": "",
+   "definition": "A helical coil. Inside a long one, $H=nI$ along the axis, where $n$ is turns per meter.",
+   "widget": "biot",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Toroid",
+   "symbol": "",
+   "units": "",
+   "definition": "A solenoid bent into a ring. $H=\\dfrac{NI}{2\\pi r}$ inside the windings and zero outside.",
+   "widget": "ampere",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Inductance",
+   "symbol": "L",
+   "units": "\\mathrm{H}",
+   "definition": "Flux linkage per unit current: $L=N\\Phi/I$. Depends only on geometry and $\\mu$.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Mutual inductance",
+   "symbol": "M_{12}",
+   "units": "\\mathrm{H}",
+   "definition": "Flux linking circuit 2 per unit current in circuit 1.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Magnetic energy",
+   "symbol": "W_m",
+   "units": "\\mathrm{J}",
+   "definition": "Energy stored in the field: $W_m=\\tfrac12\\int\\mu H^2\\,dV=\\tfrac12LI^2$.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Ferromagnetic material",
+   "symbol": "",
+   "units": "",
+   "definition": "A material such as iron with $\\mu_r$ in the hundreds or thousands, which concentrates magnetic flux. Its $B$–$H$ curve is nonlinear and shows hysteresis.",
+   "widget": "mboundary",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Magnetic boundary conditions",
+   "symbol": "",
+   "units": "",
+   "definition": "Normal $\\mathbf{B}$ is continuous. Tangential $\\mathbf{H}$ is continuous unless a surface current $\\mathbf{J}_s$ flows on the boundary.",
+   "widget": "mboundary",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "term": "Magnetic vector potential",
+   "symbol": "\\mathbf{A}",
+   "units": "\\mathrm{Wb/m}",
+   "definition": "A vector field with $\\mathbf{B}=\\nabla\\times\\mathbf{A}$.",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  }
+ ]
+}

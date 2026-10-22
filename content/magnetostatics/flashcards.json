@@ -1,0 +1,222 @@
+{
+ "unit": "Magnetostatics",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-magnetostatics-01",
+   "front": "Magnetic force on a moving charge?",
+   "back": "$$\\mathbf{F}_m=q\\,\\mathbf{u}\\times\\mathbf{B}$$It is perpendicular to the velocity, so it does no work.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-02",
+   "front": "Lorentz force?",
+   "back": "$$\\mathbf{F}=q\\mathbf{E}+q\\,\\mathbf{u}\\times\\mathbf{B}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-03",
+   "front": "Force on a straight wire of length $\\ell$ carrying $I$ in a uniform $\\mathbf{B}$?",
+   "back": "$$\\mathbf{F}=I\\,\\boldsymbol{\\ell}\\times\\mathbf{B}$$$\\boldsymbol{\\ell}$ points along the current.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-04",
+   "front": "Biot–Savart law?",
+   "back": "$$d\\mathbf{H}=\\frac{I}{4\\pi}\\,\\frac{d\\mathbf{l}\\times\\hat{\\mathbf{R}}}{R^2}$$$\\hat{\\mathbf{R}}$ points from the current element to the field point.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-05",
+   "front": "$\\mathbf{H}$ of an infinitely long straight wire?",
+   "back": "$$\\mathbf{H}=\\hat{\\boldsymbol{\\phi}}\\,\\frac{I}{2\\pi r}$$Circles the wire by the right-hand rule.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-06",
+   "front": "$\\mathbf{H}$ at the center of a circular loop of radius $a$?",
+   "back": "$$H=\\frac{I}{2a}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-07",
+   "front": "$\\mathbf{H}$ on the axis of a circular loop?",
+   "back": "$$\\mathbf{H}=\\hat{\\mathbf{z}}\\,\\frac{Ia^2}{2(a^2+z^2)^{3/2}}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-08",
+   "front": "$\\mathbf{H}$ of a finite straight segment, at distance $r$?",
+   "back": "$$H=\\frac{I}{4\\pi r}\\left(\\cos\\alpha_1-\\cos\\alpha_2\\right)$$$\\alpha_1$ and $\\alpha_2$ are the angles from the wire's direction to the lines joining its two ends to the point.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-09",
+   "front": "Gauss's law for magnetism?",
+   "back": "$$\\oint_S\\mathbf{B}\\cdot d\\mathbf{s}=0,\\qquad\\nabla\\cdot\\mathbf{B}=0$$There are no magnetic charges; field lines always close.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-10",
+   "front": "Ampère's law, integral form?",
+   "back": "$$\\oint_C\\mathbf{H}\\cdot d\\mathbf{l}=I_{\\mathrm{enc}}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-11",
+   "front": "Ampère's law, differential form (statics)?",
+   "back": "$$\\nabla\\times\\mathbf{H}=\\mathbf{J}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-12",
+   "front": "$\\mathbf{H}$ inside a long solenoid with $n$ turns per meter?",
+   "back": "$$\\mathbf{H}=\\hat{\\mathbf{z}}\\,nI$$Uniform inside and nearly zero outside.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-13",
+   "front": "$\\mathbf{H}$ inside a toroid with $N$ turns?",
+   "back": "$$H=\\frac{NI}{2\\pi r}$$Zero outside the windings.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-14",
+   "front": "$\\mathbf{H}$ inside a solid round wire carrying uniform current?",
+   "back": "$$H=\\frac{Ir}{2\\pi a^2}\\qquad(r\\le a)$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-15",
+   "front": "Force per unit length between two parallel wires?",
+   "back": "$$F'=\\frac{\\mu_0I_1I_2}{2\\pi d}$$Currents in the same direction attract; opposite currents repel.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-16",
+   "front": "Magnetic flux through a surface?",
+   "back": "$$\\Phi=\\int_S\\mathbf{B}\\cdot d\\mathbf{s}$$In webers (Wb).",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-17",
+   "front": "Definition of inductance?",
+   "back": "$$L=\\frac{\\Lambda}{I}=\\frac{N\\Phi}{I}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-18",
+   "front": "Inductance of a long solenoid?",
+   "back": "$$L=\\frac{\\mu N^2A}{\\ell}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-19",
+   "front": "Energy stored in an inductor, and the magnetic energy density?",
+   "back": "$$W_m=\\tfrac12LI^2,\\qquad w_m=\\tfrac12\\mu H^2$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-20",
+   "front": "Boundary condition on normal $\\mathbf{B}$?",
+   "back": "$$B_{1n}=B_{2n}$$",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-21",
+   "front": "Boundary condition on tangential $\\mathbf{H}$?",
+   "back": "$$\\hat{\\mathbf{n}}_2\\times(\\mathbf{H}_1-\\mathbf{H}_2)=\\mathbf{J}_s$$With no surface current, $H_{1t}=H_{2t}$.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-22",
+   "front": "What happens to $\\mathbf{B}$ leaving iron into air?",
+   "back": "It leaves almost exactly normal to the surface: tangential $H$ is continuous, so tangential $B$ drops by $\\mu_r$.",
+   "kind": "concept",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-23",
+   "front": "Diamagnetic, paramagnetic and ferromagnetic?",
+   "back": "Diamagnetic: $\\mu_r$ slightly below 1 (copper). Paramagnetic: slightly above 1 (aluminum). Ferromagnetic: $\\mu_r\\gg1$ and nonlinear (iron, nickel).",
+   "kind": "concept",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "card-magnetostatics-24",
+   "front": "Magnetic vector potential?",
+   "back": "$$\\mathbf{B}=\\nabla\\times\\mathbf{A}$$Possible because $\\nabla\\cdot\\mathbf{B}=0$.",
+   "kind": "equation",
+   "topics": [
+    "magnetostatics"
+   ]
+  }
+ ]
+}
