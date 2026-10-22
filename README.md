@@ -24,10 +24,11 @@ Everything is labeled by topic, not by textbook chapter. Each card, problem and 
 | Smith chart | Smith chart (Z, Y, ZY) |
 | Impedance matching | Stub matching, Smith chart |
 | Transients | Bounce diagram |
+| Vector calculus | Coordinate explorer, Divergence and curl |
 
-Vector calculus, electrostatics, current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
+Electrostatics, current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
 
-Topics are listed in course order. Content so far: 70 flashcards, 48 glossary terms, 47 practice problems (16 from the course practice sets with worked keys, 31 new).
+Topics are listed in course order. Content so far: 95 flashcards, 68 glossary terms, 61 practice problems (16 from the course practice sets with worked keys, 45 new).
 
 ## The iPhone app
 
@@ -61,6 +62,7 @@ pip install numpy
 python3 tools/make_tlines_practice.py
 python3 tools/make_tlines_cards.py
 python3 tools/make_phasors.py      # one make_<topic>.py per topic writes its cards, glossary and problems
+python3 tools/make_vectors.py
 python3 tools/build_web.py      # rebuilds web/widgets.html and web/www/
 python3 tools/vendor_web.py     # only when updating MathJax or the fonts (needs npm)
 ```

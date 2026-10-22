@@ -63,8 +63,11 @@
    "id": "vectors",
    "title": "Vector calculus",
    "blurb": "Gradient, divergence, curl and the coordinate systems.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "coords",
+    "divcurl"
+   ],
+   "available": true
   },
   {
    "id": "electrostatics",
@@ -148,6 +151,14 @@
   "travel": {
    "title": "Traveling wave",
    "topic": "phasors"
+  },
+  "coords": {
+   "title": "Coordinate explorer",
+   "topic": "vectors"
+  },
+  "divcurl": {
+   "title": "Divergence and curl",
+   "topic": "vectors"
   }
  }
 }

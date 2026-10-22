@@ -92,12 +92,15 @@
    "id": "vectors",
    "title": "Vector calculus",
    "blurb": "Gradient, divergence, curl and the coordinate systems.",
-   "widgets": [],
-   "available": false,
+   "widgets": [
+    "coords",
+    "divcurl"
+   ],
+   "available": true,
    "counts": {
-    "cards": 0,
-    "problems": 1,
-    "terms": 0
+    "cards": 25,
+    "problems": 15,
+    "terms": 20
    }
   },
   {
@@ -217,6 +220,14 @@
   "travel": {
    "title": "Traveling wave",
    "topic": "phasors"
+  },
+  "coords": {
+   "title": "Coordinate explorer",
+   "topic": "vectors"
+  },
+  "divcurl": {
+   "title": "Divergence and curl",
+   "topic": "vectors"
   }
  },
  "cards": [
@@ -848,6 +859,231 @@
    "kind": "concept",
    "topics": [
     "reflection"
+   ]
+  },
+  {
+   "id": "card-vectors-01",
+   "front": "Dot product of $\\mathbf{A}$ and $\\mathbf{B}$?",
+   "back": "$$\\mathbf{A}\\cdot\\mathbf{B}=|\\mathbf{A}||\\mathbf{B}|\\cos\\theta_{AB}=A_xB_x+A_yB_y+A_zB_z$$It is a scalar, and zero when the vectors are perpendicular.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-02",
+   "front": "Magnitude of the cross product, and its direction?",
+   "back": "$$|\\mathbf{A}\\times\\mathbf{B}|=|\\mathbf{A}||\\mathbf{B}|\\sin\\theta_{AB}$$Perpendicular to both, by the right-hand rule. Zero when the vectors are parallel.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-03",
+   "front": "Cross product in Cartesian components?",
+   "back": "$$\\mathbf{A}\\times\\mathbf{B}=\\begin{vmatrix}\\hat{\\mathbf{x}}&\\hat{\\mathbf{y}}&\\hat{\\mathbf{z}}\\\\A_x&A_y&A_z\\\\B_x&B_y&B_z\\end{vmatrix}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-04",
+   "front": "$\\hat{\\mathbf{x}}\\times\\hat{\\mathbf{y}}$, $\\hat{\\mathbf{r}}\\times\\hat{\\boldsymbol{\\phi}}$, $\\hat{\\mathbf{R}}\\times\\hat{\\boldsymbol{\\theta}}$?",
+   "back": "$\\hat{\\mathbf{z}}$, $\\hat{\\mathbf{z}}$, and $\\hat{\\boldsymbol{\\phi}}$. Each set is right-handed in the order $(x,y,z)$, $(r,\\phi,z)$, $(R,\\theta,\\phi)$.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-05",
+   "front": "Cartesian to cylindrical?",
+   "back": "$$r=\\sqrt{x^2+y^2},\\qquad \\phi=\\tan^{-1}\\frac{y}{x},\\qquad z=z$$Pick the quadrant of $\\phi$ from the signs of $x$ and $y$.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-06",
+   "front": "Spherical to Cartesian?",
+   "back": "$$x=R\\sin\\theta\\cos\\phi,\\quad y=R\\sin\\theta\\sin\\phi,\\quad z=R\\cos\\theta$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-07",
+   "front": "Ranges of $\\theta$ and $\\phi$ in spherical coordinates?",
+   "back": "$0\\le\\theta\\le\\pi$, measured down from the $+z$ axis. $0\\le\\phi<2\\pi$, measured from the $+x$ axis in the $xy$-plane.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-08",
+   "front": "Why can't you add $\\hat{\\mathbf{r}}$ components at two different points?",
+   "back": "$\\hat{\\mathbf{r}}$, $\\hat{\\boldsymbol{\\phi}}$, $\\hat{\\mathbf{R}}$ and $\\hat{\\boldsymbol{\\theta}}$ point in different directions at different points. Convert to Cartesian first.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-09",
+   "front": "Differential length in cylindrical coordinates?",
+   "back": "$$d\\mathbf{l}=\\hat{\\mathbf{r}}\\,dr+\\hat{\\boldsymbol{\\phi}}\\,r\\,d\\phi+\\hat{\\mathbf{z}}\\,dz$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-10",
+   "front": "Differential volume in cylindrical and spherical coordinates?",
+   "back": "$$dV=r\\,dr\\,d\\phi\\,dz,\\qquad dV=R^2\\sin\\theta\\,dR\\,d\\theta\\,d\\phi$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-11",
+   "front": "Differential area on a sphere of radius $R$?",
+   "back": "$$d\\mathbf{s}=\\hat{\\mathbf{R}}\\,R^2\\sin\\theta\\,d\\theta\\,d\\phi$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-12",
+   "front": "What does the gradient $\\nabla V$ tell you?",
+   "back": "The direction in which $V$ increases fastest, with magnitude equal to that rate. It is perpendicular to surfaces of constant $V$.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-13",
+   "front": "Gradient in Cartesian coordinates?",
+   "back": "$$\\nabla V=\\hat{\\mathbf{x}}\\frac{\\partial V}{\\partial x}+\\hat{\\mathbf{y}}\\frac{\\partial V}{\\partial y}+\\hat{\\mathbf{z}}\\frac{\\partial V}{\\partial z}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-14",
+   "front": "Directional derivative of $V$ along unit vector $\\hat{\\mathbf{a}}$?",
+   "back": "$$\\frac{dV}{dl}=\\nabla V\\cdot\\hat{\\mathbf{a}}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-15",
+   "front": "What does the divergence $\\nabla\\cdot\\mathbf{A}$ measure?",
+   "back": "Net outward flux per unit volume at a point. Positive at a source, negative at a sink, zero where flux in equals flux out.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-16",
+   "front": "Divergence in Cartesian coordinates?",
+   "back": "$$\\nabla\\cdot\\mathbf{A}=\\frac{\\partial A_x}{\\partial x}+\\frac{\\partial A_y}{\\partial y}+\\frac{\\partial A_z}{\\partial z}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-17",
+   "front": "Divergence in cylindrical coordinates?",
+   "back": "$$\\nabla\\cdot\\mathbf{A}=\\frac{1}{r}\\frac{\\partial(rA_r)}{\\partial r}+\\frac{1}{r}\\frac{\\partial A_\\phi}{\\partial\\phi}+\\frac{\\partial A_z}{\\partial z}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-18",
+   "front": "Divergence theorem?",
+   "back": "$$\\int_V\\nabla\\cdot\\mathbf{A}\\,dV=\\oint_S\\mathbf{A}\\cdot d\\mathbf{s}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-19",
+   "front": "What does the curl $\\nabla\\times\\mathbf{A}$ measure?",
+   "back": "Circulation per unit area: how much the field swirls around a point. A small paddle wheel in the field spins about the curl's direction.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-20",
+   "front": "Curl in Cartesian coordinates?",
+   "back": "$$\\nabla\\times\\mathbf{A}=\\begin{vmatrix}\\hat{\\mathbf{x}}&\\hat{\\mathbf{y}}&\\hat{\\mathbf{z}}\\\\\\partial_x&\\partial_y&\\partial_z\\\\A_x&A_y&A_z\\end{vmatrix}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-21",
+   "front": "Stokes's theorem?",
+   "back": "$$\\int_S(\\nabla\\times\\mathbf{A})\\cdot d\\mathbf{s}=\\oint_C\\mathbf{A}\\cdot d\\mathbf{l}$$$C$ bounds $S$; walk $C$ so the right-hand rule gives the direction of $d\\mathbf{s}$.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-22",
+   "front": "Two identities that are always zero?",
+   "back": "$$\\nabla\\times(\\nabla V)=0,\\qquad \\nabla\\cdot(\\nabla\\times\\mathbf{A})=0$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-23",
+   "front": "Solenoidal versus conservative field?",
+   "back": "Solenoidal: $\\nabla\\cdot\\mathbf{A}=0$, so $\\mathbf{A}=\\nabla\\times\\mathbf{B}$ for some $\\mathbf{B}$. Conservative (irrotational): $\\nabla\\times\\mathbf{A}=0$, so $\\mathbf{A}=\\nabla V$ and line integrals depend only on the endpoints.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-24",
+   "front": "Laplacian of a scalar in Cartesian coordinates?",
+   "back": "$$\\nabla^2V=\\nabla\\cdot\\nabla V=\\frac{\\partial^2V}{\\partial x^2}+\\frac{\\partial^2V}{\\partial y^2}+\\frac{\\partial^2V}{\\partial z^2}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-25",
+   "front": "Distance vector from point $P_1$ to point $P_2$?",
+   "back": "$$\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1=\\hat{\\mathbf{x}}(x_2-x_1)+\\hat{\\mathbf{y}}(y_2-y_1)+\\hat{\\mathbf{z}}(z_2-z_1)$$Always from the first point to the second.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
    ]
   }
  ],
@@ -2433,6 +2669,440 @@
     "transients"
    ],
    "titleText": "Open-circuited line"
+  },
+  {
+   "id": "vectors-01",
+   "difficulty": 1,
+   "title": "Dot and cross products",
+   "prompt": "For $\\mathbf{A}=\\hat{\\mathbf{x}}\\,2-\\hat{\\mathbf{y}}\\,3+\\hat{\\mathbf{z}}\\,1$ and $\\mathbf{B}=-\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,5$, find $\\mathbf{A}\\cdot\\mathbf{B}$, $\\mathbf{A}\\times\\mathbf{B}$, and the angle between them.",
+   "hints": [
+    "$\\mathbf{A}\\cdot\\mathbf{B}=A_xB_x+A_yB_y+A_zB_z$.",
+    "Use the determinant for the cross product.",
+    "$\\cos\\theta=\\dfrac{\\mathbf{A}\\cdot\\mathbf{B}}{|\\mathbf{A}||\\mathbf{B}|}$."
+   ],
+   "steps": [
+    "$$\\mathbf{A}\\cdot\\mathbf{B}=(2)(-4)+(-3)(-2)+(1)(5)=3$$",
+    "$$\\mathbf{A}\\times\\mathbf{B}=\\hat{\\mathbf{x}}[(-3)(5)-(1)(-2)]-\\hat{\\mathbf{y}}[(2)(5)-(1)(-4)]+\\hat{\\mathbf{z}}[(2)(-2)-(-3)(-4)]$$",
+    "$$=-\\hat{\\mathbf{x}}\\,13-\\hat{\\mathbf{y}}\\,14-\\hat{\\mathbf{z}}\\,16$$",
+    "$$|\\mathbf{A}|=\\sqrt{14}=3.74,\\quad |\\mathbf{B}|=\\sqrt{45}=6.71$$",
+    "$$\\theta=\\cos^{-1}\\frac{3}{3.74\\cdot6.71}=83.1^\\circ$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{A}\\cdot\\mathbf{B}",
+     "value": "3"
+    },
+    {
+     "label": "\\mathbf{A}\\times\\mathbf{B}",
+     "value": "-\\hat{\\mathbf{x}}\\,13-\\hat{\\mathbf{y}}\\,14-\\hat{\\mathbf{z}}\\,16"
+    },
+    {
+     "label": "\\theta",
+     "value": "83.1^\\circ"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Dot and cross products"
+  },
+  {
+   "id": "vectors-02",
+   "difficulty": 1,
+   "title": "Distance vector between two points",
+   "prompt": "Find the distance vector from $P_1=(1,2,3)$ to $P_2=(4,-2,3)$, its length, and the unit vector pointing from $P_1$ to $P_2$.",
+   "hints": [
+    "$\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1$: second point minus first."
+   ],
+   "steps": [
+    "$$\\mathbf{R}_{12}=(4-1)\\hat{\\mathbf{x}}+(-2-2)\\hat{\\mathbf{y}}+(3-3)\\hat{\\mathbf{z}}=\\hat{\\mathbf{x}}\\,3-\\hat{\\mathbf{y}}\\,4$$",
+    "$$|\\mathbf{R}_{12}|=\\sqrt{9+16}=5$$",
+    "$$\\hat{\\mathbf{R}}_{12}=\\hat{\\mathbf{x}}\\,0.600-\\hat{\\mathbf{y}}\\,0.800$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{R}_{12}",
+     "value": "\\hat{\\mathbf{x}}\\,3-\\hat{\\mathbf{y}}\\,4"
+    },
+    {
+     "label": "|\\mathbf{R}_{12}|",
+     "value": "5"
+    },
+    {
+     "label": "\\hat{\\mathbf{R}}_{12}",
+     "value": "\\hat{\\mathbf{x}}\\,0.600-\\hat{\\mathbf{y}}\\,0.800"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Distance vector between two points"
+  },
+  {
+   "id": "vectors-03",
+   "difficulty": 1,
+   "title": "One point in three coordinate systems",
+   "prompt": "Express the point $P=(3,4,5)$ in cylindrical and spherical coordinates.",
+   "hints": [
+    "$r=\\sqrt{x^2+y^2}$, $\\phi=\\tan^{-1}(y/x)$.",
+    "$R=\\sqrt{x^2+y^2+z^2}$, $\\theta=\\cos^{-1}(z/R)$."
+   ],
+   "steps": [
+    "$$r=\\sqrt{9+16}=5,\\qquad \\phi=\\tan^{-1}\\frac{4}{3}=53.1^\\circ$$",
+    "Cylindrical: $(5,\\ 53.1^\\circ,\\ 5)$.",
+    "$$R=\\sqrt{9+16+25}=7.07,\\qquad \\theta=\\cos^{-1}\\frac{5}{7.07}=45.0^\\circ$$",
+    "Spherical: $(7.07,\\ 45.0^\\circ,\\ 53.1^\\circ)$."
+   ],
+   "answers": [
+    {
+     "label": "(r,\\phi,z)",
+     "value": "(5,\\ 53.1^\\circ,\\ 5)"
+    },
+    {
+     "label": "(R,\\theta,\\phi)",
+     "value": "(7.07,\\ 45.0^\\circ,\\ 53.1^\\circ)"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "One point in three coordinate systems"
+  },
+  {
+   "id": "vectors-04",
+   "difficulty": 1,
+   "title": "Spherical to Cartesian",
+   "prompt": "A point sits at $R=4$, $\\theta=60^\\circ$, $\\phi=150^\\circ$. Find its Cartesian coordinates and its cylindrical radius $r$.",
+   "hints": [
+    "$x=R\\sin\\theta\\cos\\phi$, $y=R\\sin\\theta\\sin\\phi$, $z=R\\cos\\theta$.",
+    "$r=R\\sin\\theta$."
+   ],
+   "steps": [
+    "$$x=4\\sin60^\\circ\\cos150^\\circ=-3.00$$",
+    "$$y=4\\sin60^\\circ\\sin150^\\circ=1.73$$",
+    "$$z=4\\cos60^\\circ=2.00$$",
+    "$$r=R\\sin\\theta=3.46$$"
+   ],
+   "answers": [
+    {
+     "label": "(x,y,z)",
+     "value": "(-3.00,\\ 1.73,\\ 2.00)"
+    },
+    {
+     "label": "r",
+     "value": "3.46"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Spherical to Cartesian"
+  },
+  {
+   "id": "vectors-05",
+   "difficulty": 2,
+   "title": "Vector components in cylindrical coordinates",
+   "prompt": "Express $\\mathbf{A}=\\hat{\\mathbf{x}}\\,3-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,4$ in cylindrical components at the point $(1,1,2)$.",
+   "hints": [
+    "At this point $\\phi=45^\\circ$.",
+    "$A_r=A_x\\cos\\phi+A_y\\sin\\phi$ and $A_\\phi=-A_x\\sin\\phi+A_y\\cos\\phi$; $A_z$ is unchanged."
+   ],
+   "steps": [
+    "$$\\phi=\\tan^{-1}\\frac{1}{1}=45^\\circ$$",
+    "$$A_r=3\\cos45^\\circ-2\\sin45^\\circ=0.707$$",
+    "$$A_\\phi=-3\\sin45^\\circ-2\\cos45^\\circ=-3.54$$",
+    "$$\\mathbf{A}=\\hat{\\mathbf{r}}\\,0.707-\\hat{\\boldsymbol{\\phi}}\\,3.54+\\hat{\\mathbf{z}}\\,4$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{A}",
+     "value": "\\hat{\\mathbf{r}}\\,0.707-\\hat{\\boldsymbol{\\phi}}\\,3.54+\\hat{\\mathbf{z}}\\,4"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Vector components in cylindrical coordinates"
+  },
+  {
+   "id": "vectors-06",
+   "difficulty": 2,
+   "title": "Gradient and directional derivative",
+   "prompt": "For $V=x^2y+3yz$, find $\\nabla V$ at $(1,2,-1)$, its magnitude, and the rate of change of $V$ in the direction of $\\hat{\\mathbf{x}}2-\\hat{\\mathbf{y}}+\\hat{\\mathbf{z}}2$.",
+   "hints": [
+    "$\\nabla V=\\hat{\\mathbf{x}}\\,2xy+\\hat{\\mathbf{y}}(x^2+3z)+\\hat{\\mathbf{z}}\\,3y$.",
+    "Normalize the direction vector before dotting it with $\\nabla V$."
+   ],
+   "steps": [
+    "$$\\nabla V=\\hat{\\mathbf{x}}\\,2xy+\\hat{\\mathbf{y}}(x^2+3z)+\\hat{\\mathbf{z}}\\,3y$$",
+    "$$\\nabla V(1,2,-1)=\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,6$$",
+    "$$|\\nabla V|=\\sqrt{16+4+36}=7.48$$",
+    "$$\\hat{\\mathbf{a}}=\\frac{\\hat{\\mathbf{x}}2-\\hat{\\mathbf{y}}+\\hat{\\mathbf{z}}2}{3}$$",
+    "$$\\frac{dV}{dl}=\\nabla V\\cdot\\hat{\\mathbf{a}}=\\frac{8+2+12}{3}=7.33$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla V",
+     "value": "\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,6"
+    },
+    {
+     "label": "|\\nabla V|",
+     "value": "7.48"
+    },
+    {
+     "label": "dV/dl",
+     "value": "7.33"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Gradient and directional derivative"
+  },
+  {
+   "id": "vectors-07",
+   "difficulty": 1,
+   "title": "Divergence in Cartesian coordinates",
+   "prompt": "Find $\\nabla\\cdot\\mathbf{E}$ for $\\mathbf{E}=\\hat{\\mathbf{x}}\\,x^2y+\\hat{\\mathbf{y}}\\,yz+\\hat{\\mathbf{z}}\\,xz^2$ and evaluate it at $(1,1,1)$.",
+   "hints": [
+    "Differentiate each component with respect to its own coordinate only."
+   ],
+   "steps": [
+    "$$\\nabla\\cdot\\mathbf{E}=\\frac{\\partial(x^2y)}{\\partial x}+\\frac{\\partial(yz)}{\\partial y}+\\frac{\\partial(xz^2)}{\\partial z}$$",
+    "$$=2xy+z+2xz$$",
+    "$$\\nabla\\cdot\\mathbf{E}(1,1,1)=5$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla\\cdot\\mathbf{E}",
+     "value": "2xy+z+2xz"
+    },
+    {
+     "label": "\\nabla\\cdot\\mathbf{E}(1,1,1)",
+     "value": "5"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Divergence in Cartesian coordinates"
+  },
+  {
+   "id": "vectors-08",
+   "difficulty": 2,
+   "title": "Divergence in cylindrical coordinates",
+   "prompt": "Find $\\nabla\\cdot\\mathbf{A}$ for $\\mathbf{A}=\\hat{\\mathbf{r}}\\,r^2+\\hat{\\mathbf{z}}\\,2z$ and evaluate it at $r=2$.",
+   "hints": [
+    "$\\nabla\\cdot\\mathbf{A}=\\dfrac{1}{r}\\dfrac{\\partial(rA_r)}{\\partial r}+\\dfrac{1}{r}\\dfrac{\\partial A_\\phi}{\\partial\\phi}+\\dfrac{\\partial A_z}{\\partial z}$."
+   ],
+   "steps": [
+    "$$\\frac{1}{r}\\frac{\\partial(r\\cdot r^2)}{\\partial r}=\\frac{3r^2}{r}=3r$$",
+    "$$\\frac{\\partial(2z)}{\\partial z}=2$$",
+    "$$\\nabla\\cdot\\mathbf{A}=3r+2\\ \\Rightarrow\\ 8\\text{ at }r=2$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla\\cdot\\mathbf{A}",
+     "value": "3r+2"
+    },
+    {
+     "label": "\\nabla\\cdot\\mathbf{A}\\,(r=2)",
+     "value": "8"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Divergence in cylindrical coordinates"
+  },
+  {
+   "id": "vectors-09",
+   "difficulty": 2,
+   "title": "Curl in Cartesian coordinates",
+   "prompt": "Find $\\nabla\\times\\mathbf{A}$ for $\\mathbf{A}=\\hat{\\mathbf{x}}\\,y^2-\\hat{\\mathbf{y}}\\,xz+\\hat{\\mathbf{z}}\\,3x$ and evaluate it at $(1,2,3)$.",
+   "hints": [
+    "$(\\nabla\\times\\mathbf{A})_x=\\dfrac{\\partial A_z}{\\partial y}-\\dfrac{\\partial A_y}{\\partial z}$, and cycle $x\\to y\\to z$ for the others."
+   ],
+   "steps": [
+    "$$(\\nabla\\times\\mathbf{A})_x=\\frac{\\partial(3x)}{\\partial y}-\\frac{\\partial(-xz)}{\\partial z}=x$$",
+    "$$(\\nabla\\times\\mathbf{A})_y=\\frac{\\partial(y^2)}{\\partial z}-\\frac{\\partial(3x)}{\\partial x}=-3$$",
+    "$$(\\nabla\\times\\mathbf{A})_z=\\frac{\\partial(-xz)}{\\partial x}-\\frac{\\partial(y^2)}{\\partial y}=-z-2y$$",
+    "$$\\nabla\\times\\mathbf{A}(1,2,3)=\\hat{\\mathbf{x}}\\,1-\\hat{\\mathbf{y}}\\,3-\\hat{\\mathbf{z}}\\,7$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla\\times\\mathbf{A}",
+     "value": "\\hat{\\mathbf{x}}\\,x-\\hat{\\mathbf{y}}\\,3-\\hat{\\mathbf{z}}(z+2y)"
+    },
+    {
+     "label": "\\nabla\\times\\mathbf{A}(1,2,3)",
+     "value": "\\hat{\\mathbf{x}}\\,1-\\hat{\\mathbf{y}}\\,3-\\hat{\\mathbf{z}}\\,7"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Curl in Cartesian coordinates"
+  },
+  {
+   "id": "vectors-10",
+   "difficulty": 1,
+   "title": "Laplacian of a scalar",
+   "prompt": "Find $\\nabla^2V$ for $V=x^2y+z^3$ and evaluate it at $(1,2,1)$.",
+   "hints": [
+    "Add the second partial derivatives in $x$, $y$ and $z$."
+   ],
+   "steps": [
+    "$$\\frac{\\partial^2V}{\\partial x^2}=2y,\\quad\\frac{\\partial^2V}{\\partial y^2}=0,\\quad\\frac{\\partial^2V}{\\partial z^2}=6z$$",
+    "$$\\nabla^2V=2y+6z=10\\ \\text{at}\\ (1,2,1)$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla^2V",
+     "value": "2y+6z"
+    },
+    {
+     "label": "\\nabla^2V(1,2,1)",
+     "value": "10"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Laplacian of a scalar"
+  },
+  {
+   "id": "vectors-11",
+   "difficulty": 2,
+   "title": "Check the divergence theorem on a cylinder",
+   "prompt": "For $\\mathbf{A}=\\hat{\\mathbf{r}}\\,r$, verify the divergence theorem over the cylinder $r\\le2$, $0\\le z\\le3$.",
+   "hints": [
+    "$\\nabla\\cdot\\mathbf{A}=\\dfrac{1}{r}\\dfrac{\\partial(r^2)}{\\partial r}=2$.",
+    "On the curved side $d\\mathbf{s}=\\hat{\\mathbf{r}}\\,r\\,d\\phi\\,dz$. On the flat ends $\\mathbf{A}\\cdot\\hat{\\mathbf{z}}=0$."
+   ],
+   "steps": [
+    "$$\\int_V\\nabla\\cdot\\mathbf{A}\\,dV=2\\cdot\\pi(2)^2(3)=24\\pi$$",
+    "$$\\oint_S\\mathbf{A}\\cdot d\\mathbf{s}=\\int_0^3\\!\\!\\int_0^{2\\pi}(2)(2)\\,d\\phi\\,dz=24\\pi$$",
+    "Both sides are $24\\pi=75.4$. The ends add nothing because $\\mathbf{A}$ has no $z$ component."
+   ],
+   "answers": [
+    {
+     "label": "\\text{Both sides}",
+     "value": "24\\pi=75.4"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Check the divergence theorem on a cylinder"
+  },
+  {
+   "id": "vectors-12",
+   "difficulty": 2,
+   "title": "Check Stokes's theorem on a disk",
+   "prompt": "For $\\mathbf{A}=\\hat{\\boldsymbol{\\phi}}\\,r$, verify Stokes's theorem on the disk $r\\le3$ in the $xy$-plane, with $d\\mathbf{s}$ along $+\\hat{\\mathbf{z}}$.",
+   "hints": [
+    "On the circle $r=3$, $d\\mathbf{l}=\\hat{\\boldsymbol{\\phi}}\\,r\\,d\\phi$.",
+    "$(\\nabla\\times\\mathbf{A})_z=\\dfrac{1}{r}\\dfrac{\\partial(rA_\\phi)}{\\partial r}$."
+   ],
+   "steps": [
+    "$$\\oint_C\\mathbf{A}\\cdot d\\mathbf{l}=\\int_0^{2\\pi}(3)(3)\\,d\\phi=18\\pi$$",
+    "$$\\nabla\\times\\mathbf{A}=\\hat{\\mathbf{z}}\\,\\frac{1}{r}\\frac{\\partial(r^2)}{\\partial r}=\\hat{\\mathbf{z}}\\,2$$",
+    "$$\\int_S(\\nabla\\times\\mathbf{A})\\cdot d\\mathbf{s}=2\\cdot\\pi(3)^2=18\\pi$$",
+    "Both sides are $18\\pi=56.5$."
+   ],
+   "answers": [
+    {
+     "label": "\\text{Both sides}",
+     "value": "18\\pi=56.5"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Check Stokes's theorem on a disk"
+  },
+  {
+   "id": "vectors-13",
+   "difficulty": 2,
+   "title": "Work along a path in a conservative field",
+   "prompt": "Find $\\int\\mathbf{F}\\cdot d\\mathbf{l}$ for $\\mathbf{F}=\\hat{\\mathbf{x}}\\,y+\\hat{\\mathbf{y}}\\,x$ from $(0,0,0)$ to $(1,2,0)$ along (a) the straight line $y=2x$ and (b) the parabola $y=2x^2$.",
+   "hints": [
+    "Check the curl first. If it is zero, the answer does not depend on the path.",
+    "$\\mathbf{F}=\\nabla(xy)$."
+   ],
+   "steps": [
+    "$$\\nabla\\times\\mathbf{F}=\\hat{\\mathbf{z}}\\left(\\frac{\\partial x}{\\partial x}-\\frac{\\partial y}{\\partial y}\\right)=0$$",
+    "So $\\mathbf{F}=\\nabla V$ with $V=xy$, and$$\\int\\mathbf{F}\\cdot d\\mathbf{l}=V(1,2)-V(0,0)=2$$",
+    "Check (a) directly: $y=2x$, $dy=2dx$:$$\\int_0^1(2x+2x)\\,dx=2$$",
+    "Check (b): $y=2x^2$, $dy=4x\\,dx$:$$\\int_0^1(2x^2+4x^2)\\,dx=2$$"
+   ],
+   "answers": [
+    {
+     "label": "\\text{(a)}",
+     "value": "2"
+    },
+    {
+     "label": "\\text{(b)}",
+     "value": "2"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Work along a path in a conservative field"
+  },
+  {
+   "id": "vectors-14",
+   "difficulty": 2,
+   "title": "Area of a spherical cap",
+   "prompt": "Find the area of the part of a sphere of radius $2\\ \\mathrm{m}$ with $0\\le\\theta\\le60^\\circ$.",
+   "hints": [
+    "$ds=R^2\\sin\\theta\\,d\\theta\\,d\\phi$."
+   ],
+   "steps": [
+    "$$A=\\int_0^{2\\pi}\\!\\!\\int_0^{\\pi/3}(2)^2\\sin\\theta\\,d\\theta\\,d\\phi$$",
+    "$$=4(2\\pi)\\left[-\\cos\\theta\\right]_0^{\\pi/3}=8\\pi\\left(1-\\tfrac12\\right)=4\\pi$$",
+    "$A=4\\pi=12.6\\ \\mathrm{m^2}$, a quarter of the full sphere."
+   ],
+   "answers": [
+    {
+     "label": "A",
+     "value": "4\\pi=12.6\\ \\mathrm{m^2}"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ],
+   "titleText": "Area of a spherical cap"
   }
  ],
  "terms": [
@@ -2915,6 +3585,206 @@
    "widget": null,
    "topics": [
     "reflection"
+   ]
+  },
+  {
+   "term": "Unit vector",
+   "symbol": "\\hat{\\mathbf{a}}",
+   "units": "",
+   "definition": "A vector of length one that only gives a direction: $\\hat{\\mathbf{a}}=\\mathbf{A}/|\\mathbf{A}|$.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Position vector",
+   "symbol": "\\mathbf{R}",
+   "units": "\\mathrm{m}",
+   "definition": "The vector from the origin to a point: $\\mathbf{R}=\\hat{\\mathbf{x}}x+\\hat{\\mathbf{y}}y+\\hat{\\mathbf{z}}z$.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Distance vector",
+   "symbol": "\\mathbf{R}_{12}",
+   "units": "\\mathrm{m}",
+   "definition": "The vector from point 1 to point 2: $\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1$. Used constantly in Coulomb's law and Biot–Savart.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Dot product",
+   "symbol": "\\mathbf{A}\\cdot\\mathbf{B}",
+   "units": "",
+   "definition": "$|\\mathbf{A}||\\mathbf{B}|\\cos\\theta$, a scalar. It picks out the component of one vector along another.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Cross product",
+   "symbol": "\\mathbf{A}\\times\\mathbf{B}",
+   "units": "",
+   "definition": "A vector perpendicular to both, of length $|\\mathbf{A}||\\mathbf{B}|\\sin\\theta$, direction by the right-hand rule. Note $\\mathbf{B}\\times\\mathbf{A}=-\\mathbf{A}\\times\\mathbf{B}$.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Cartesian coordinates",
+   "symbol": "(x,y,z)",
+   "units": "",
+   "definition": "Three perpendicular axes with unit vectors $\\hat{\\mathbf{x}},\\hat{\\mathbf{y}},\\hat{\\mathbf{z}}$ that point the same way everywhere.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Cylindrical coordinates",
+   "symbol": "(r,\\phi,z)",
+   "units": "",
+   "definition": "Radial distance $r$ from the $z$-axis, azimuth $\\phi$ from the $+x$ axis, and height $z$. Natural for wires, coax and solenoids.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Spherical coordinates",
+   "symbol": "(R,\\theta,\\phi)",
+   "units": "",
+   "definition": "Distance $R$ from the origin, polar angle $\\theta$ down from $+z$, and azimuth $\\phi$. Natural for point charges and spheres.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Differential length",
+   "symbol": "d\\mathbf{l}",
+   "units": "\\mathrm{m}",
+   "definition": "A tiny step along a path. Its components carry the scale factors: $r\\,d\\phi$ in cylindrical, $R\\,d\\theta$ and $R\\sin\\theta\\,d\\phi$ in spherical.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Differential surface",
+   "symbol": "d\\mathbf{s}",
+   "units": "\\mathrm{m^2}",
+   "definition": "A tiny patch of surface, pointing along its normal. On a closed surface the normal points outward.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Line integral",
+   "symbol": "\\int_C\\mathbf{A}\\cdot d\\mathbf{l}",
+   "units": "",
+   "definition": "Adds up the component of $\\mathbf{A}$ along a path. For a force it is the work done; around a closed loop it is the circulation.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Flux",
+   "symbol": "\\int_S\\mathbf{A}\\cdot d\\mathbf{s}",
+   "units": "",
+   "definition": "How much of a vector field passes through a surface.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Gradient",
+   "symbol": "\\nabla V",
+   "units": "",
+   "definition": "A vector pointing toward the fastest increase of a scalar field, with magnitude equal to that rate of increase.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Divergence",
+   "symbol": "\\nabla\\cdot\\mathbf{A}",
+   "units": "",
+   "definition": "Net outward flux per unit volume at a point: positive at sources, negative at sinks.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Curl",
+   "symbol": "\\nabla\\times\\mathbf{A}",
+   "units": "",
+   "definition": "Circulation per unit area at a point, pointing along the axis a tiny paddle wheel would spin around.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Divergence theorem",
+   "symbol": "",
+   "units": "",
+   "definition": "Turns a volume integral of divergence into a flux through the closed surface: $\\int_V\\nabla\\cdot\\mathbf{A}\\,dV=\\oint_S\\mathbf{A}\\cdot d\\mathbf{s}$.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Stokes's theorem",
+   "symbol": "",
+   "units": "",
+   "definition": "Turns a surface integral of curl into a line integral around the boundary: $\\int_S(\\nabla\\times\\mathbf{A})\\cdot d\\mathbf{s}=\\oint_C\\mathbf{A}\\cdot d\\mathbf{l}$.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Laplacian",
+   "symbol": "\\nabla^2",
+   "units": "",
+   "definition": "The divergence of the gradient. $\\nabla^2V=0$ (Laplace's equation) holds wherever there is no charge.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Solenoidal field",
+   "symbol": "",
+   "units": "",
+   "definition": "A field with zero divergence everywhere, so its field lines have no beginning or end. $\\mathbf{B}$ is always solenoidal.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Conservative field",
+   "symbol": "",
+   "units": "",
+   "definition": "A field with zero curl, so it is the gradient of a scalar and its line integrals do not depend on the path. Static $\\mathbf{E}$ is conservative.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
    ]
   }
  ]
