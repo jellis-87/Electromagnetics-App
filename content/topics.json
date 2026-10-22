@@ -1,0 +1,142 @@
+{
+ "format": "Topics organize every card, problem, term and widget. Content items list one or more topic ids in their topics field; the first is the primary topic.",
+ "topics": [
+  {
+   "id": "phasors",
+   "title": "Fields and phasors",
+   "blurb": "Scalar and vector fields, phasors and Euler's identity.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "vectors",
+   "title": "Vector calculus",
+   "blurb": "Gradient, divergence, curl and the coordinate systems.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "electrostatics",
+   "title": "Electrostatics",
+   "blurb": "Charges, fields, potential and capacitance.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "conductors",
+   "title": "Current and conductors",
+   "blurb": "Current density, conductivity and boundary conditions.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "magnetostatics",
+   "title": "Magnetostatics",
+   "blurb": "Biot–Savart, Ampère's law and inductance.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "time-varying",
+   "title": "Time-varying fields",
+   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "tline",
+   "title": "Transmission lines",
+   "blurb": "Line parameters, traveling waves and input impedance.",
+   "widgets": [
+    "calc",
+    "params"
+   ],
+   "available": true
+  },
+  {
+   "id": "reflection",
+   "title": "Reflection and standing waves",
+   "blurb": "Reflection coefficient, VSWR and the standing-wave pattern.",
+   "widgets": [
+    "waves",
+    "calc"
+   ],
+   "available": true
+  },
+  {
+   "id": "smith",
+   "title": "Smith chart",
+   "blurb": "Reading impedance, admittance and line rotation on the chart.",
+   "widgets": [
+    "smith"
+   ],
+   "available": true
+  },
+  {
+   "id": "matching",
+   "title": "Impedance matching",
+   "blurb": "Quarter-wave transformers, stubs and lumped elements.",
+   "widgets": [
+    "stub",
+    "smith"
+   ],
+   "available": true
+  },
+  {
+   "id": "transients",
+   "title": "Transients",
+   "blurb": "Step response, bounce diagrams and steady state.",
+   "widgets": [
+    "bounce"
+   ],
+   "available": true
+  },
+  {
+   "id": "plane-waves",
+   "title": "Plane waves",
+   "blurb": "Propagation in lossless and lossy media.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "polarization",
+   "title": "Polarization",
+   "blurb": "Linear, circular and elliptical polarization.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "boundaries",
+   "title": "Reflection at boundaries",
+   "blurb": "Normal and oblique incidence on interfaces.",
+   "widgets": [],
+   "available": false
+  }
+ ],
+ "widgets": {
+  "waves": {
+   "title": "Standing waves",
+   "topic": "reflection"
+  },
+  "calc": {
+   "title": "Line calculator",
+   "topic": "tline"
+  },
+  "smith": {
+   "title": "Smith chart",
+   "topic": "smith"
+  },
+  "stub": {
+   "title": "Stub matching",
+   "topic": "matching"
+  },
+  "bounce": {
+   "title": "Bounce diagram",
+   "topic": "transients"
+  },
+  "params": {
+   "title": "Line parameters",
+   "topic": "tline"
+  }
+ }
+}
