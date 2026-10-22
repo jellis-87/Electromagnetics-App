@@ -26,7 +26,7 @@
    "available": true,
    "counts": {
     "cards": 17,
-    "problems": 17,
+    "problems": 18,
     "terms": 14
    }
   },
@@ -124,12 +124,14 @@
    "id": "conductors",
    "title": "Current and conductors",
    "blurb": "Current density, conductivity and boundary conditions.",
-   "widgets": [],
-   "available": false,
+   "widgets": [
+    "wire"
+   ],
+   "available": true,
    "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
+    "cards": 14,
+    "problems": 9,
+    "terms": 11
    }
   },
   {
@@ -249,9 +251,139 @@
   "capacitor": {
    "title": "Capacitor builder",
    "topic": "electrostatics"
+  },
+  "wire": {
+   "title": "Conductor and resistance",
+   "topic": "conductors"
   }
  },
  "cards": [
+  {
+   "id": "card-conductors-01",
+   "front": "Current through a surface from the current density?",
+   "back": "$$I=\\int_S\\mathbf{J}\\cdot d\\mathbf{s}$$$\\mathbf{J}$ is in A/m².",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-02",
+   "front": "Point form of Ohm's law?",
+   "back": "$$\\mathbf{J}=\\sigma\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-03",
+   "front": "Current density from moving charge?",
+   "back": "$$\\mathbf{J}=\\rho_v\\mathbf{u}$$$\\rho_v$ is the moving charge density and $\\mathbf{u}$ its velocity.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-04",
+   "front": "Conduction versus convection current?",
+   "back": "Conduction current flows in a conductor and obeys $\\mathbf{J}=\\sigma\\mathbf{E}$. Convection current is charge carried through space, such as an electron beam, and does not.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-05",
+   "front": "Conductivity from carrier densities and mobilities?",
+   "back": "$$\\sigma=-\\rho_{ve}\\mu_e+\\rho_{vh}\\mu_h=q(N_e\\mu_e+N_h\\mu_h)$$In a metal only electrons matter.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-06",
+   "front": "Drift velocity of electrons in a field $\\mathbf{E}$?",
+   "back": "$$\\mathbf{u}_e=-\\mu_e\\mathbf{E}$$Opposite to $\\mathbf{E}$, and very slow: millimeters per second or less in a metal wire.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-07",
+   "front": "Resistance of a uniform conductor?",
+   "back": "$$R=\\frac{\\ell}{\\sigma A}$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-08",
+   "front": "Resistance of any shape from fields?",
+   "back": "$$R=\\frac{V}{I}=\\frac{-\\int_l\\mathbf{E}\\cdot d\\mathbf{l}}{\\int_S\\sigma\\mathbf{E}\\cdot d\\mathbf{s}}$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-09",
+   "front": "Power dissipated in a conductor (Joule's law)?",
+   "back": "$$P=\\int_V\\mathbf{E}\\cdot\\mathbf{J}\\,dV=I^2R$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-10",
+   "front": "Charge continuity equation?",
+   "back": "$$\\nabla\\cdot\\mathbf{J}=-\\frac{\\partial\\rho_v}{\\partial t}$$Current leaving a point drains its charge. In steady state $\\nabla\\cdot\\mathbf{J}=0$, which is Kirchhoff's current law.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-11",
+   "front": "Conductivity of copper, and how it compares to seawater and glass?",
+   "back": "Copper: about $5.8\\times10^7$ S/m. Seawater: about 4 S/m. Glass: about $10^{-12}$ S/m.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-12",
+   "front": "What is a perfect conductor?",
+   "back": "$\\sigma\\to\\infty$. The field inside is zero, so it is an equipotential, and current flows only on its surface.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-13",
+   "front": "Boundary condition on $\\mathbf{J}$ between two conductors?",
+   "back": "Normal $\\mathbf{J}$ is continuous (steady state): $J_{1n}=J_{2n}$. Tangential $\\mathbf{E}$ is continuous, so $\\dfrac{J_{1t}}{\\sigma_1}=\\dfrac{J_{2t}}{\\sigma_2}$.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-14",
+   "front": "Why doesn't a static field exist inside a conductor?",
+   "back": "Free charges move until their own field cancels the applied field. In a good conductor this takes far less than a nanosecond.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
   {
    "id": "card-electrostatics-01",
    "front": "Coulomb's law: force on $Q_2$ due to $Q_1$?",
@@ -1361,6 +1493,261 @@
   }
  ],
  "problems": [
+  {
+   "id": "conductors-01",
+   "difficulty": 1,
+   "title": "Resistance of a copper wire",
+   "prompt": "Find the resistance of $100\\ \\mathrm{m}$ of copper wire ($\\sigma=5.8\\times10^7\\ \\mathrm{S/m}$) with a diameter of $1\\ \\mathrm{mm}$.",
+   "hints": [
+    "$R=\\dfrac{\\ell}{\\sigma A}$ with $A=\\pi r^2$."
+   ],
+   "steps": [
+    "$$A=\\pi(0.5\\times10^{-3})^2=7.85\\times10^{-7}\\ \\mathrm{m^2}$$",
+    "$$R=\\frac{100}{(5.8\\times10^7)(7.85\\times10^{-7})}=2.20\\ \\mathrm{\\Omega}$$"
+   ],
+   "answers": [
+    {
+     "label": "R",
+     "value": "2.20\\ \\mathrm{\\Omega}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Resistance of a copper wire"
+  },
+  {
+   "id": "conductors-02",
+   "difficulty": 1,
+   "title": "Current density and field in a wire",
+   "prompt": "An aluminum wire ($\\sigma=3.5\\times10^7\\ \\mathrm{S/m}$, diameter $2\\ \\mathrm{mm}$) carries $2\\ \\mathrm{A}$. Find $J$, the field $E$ inside it, and the voltage drop along $1\\ \\mathrm{km}$.",
+   "hints": [
+    "$J=I/A$, then $E=J/\\sigma$, then $V=E\\ell$."
+   ],
+   "steps": [
+    "$$J=\\frac{2}{\\pi(10^{-3})^2}=637\\ \\mathrm{kA/m^2}$$",
+    "$$E=\\frac{J}{\\sigma}=18.2\\ \\mathrm{mV/m}$$",
+    "$$V=E\\ell=(1.82\\times10^{-2})(1000)=18.2\\ \\mathrm{V}$$"
+   ],
+   "answers": [
+    {
+     "label": "J",
+     "value": "637\\ \\mathrm{kA/m^2}"
+    },
+    {
+     "label": "E",
+     "value": "18.2\\ \\mathrm{mV/m}"
+    },
+    {
+     "label": "V",
+     "value": "18.2\\ \\mathrm{V}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Current density and field in a wire"
+  },
+  {
+   "id": "conductors-03",
+   "difficulty": 2,
+   "title": "How fast do the electrons move?",
+   "prompt": "A copper wire with a $1\\ \\mathrm{mm^2}$ cross-section carries $1\\ \\mathrm{A}$. Copper has about $8.5\\times10^{28}$ free electrons per cubic meter. Find the drift speed.",
+   "hints": [
+    "$J=\\rho_vu=Nqu$."
+   ],
+   "steps": [
+    "$$J=\\frac{I}{A}=\\frac{1}{10^{-6}}=10^6\\ \\mathrm{A/m^2}$$",
+    "$$u=\\frac{J}{Nq}=\\frac{10^6}{(8.5\\times10^{28})(1.602\\times10^{-19})}=73.4\\ \\mathrm{\\mu m/s}$$",
+    "That is about $264\\ \\mathrm{mm}$ per hour. The signal travels near the speed of light, but the electrons themselves crawl."
+   ],
+   "answers": [
+    {
+     "label": "u",
+     "value": "73.4\\ \\mathrm{\\mu m/s}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "How fast do the electrons move?"
+  },
+  {
+   "id": "conductors-04",
+   "difficulty": 2,
+   "title": "Current from a nonuniform current density",
+   "prompt": "In a wire of radius $a=1\\ \\mathrm{mm}$, $\\mathbf{J}=\\hat{\\mathbf{z}}\\,J_0\\left(1-\\dfrac{r}{a}\\right)$ with $J_0=2\\times10^6\\ \\mathrm{A/m^2}$. Find the total current.",
+   "hints": [
+    "$d\\mathbf{s}=\\hat{\\mathbf{z}}\\,r\\,dr\\,d\\phi$ on the cross-section."
+   ],
+   "steps": [
+    "$$I=\\int_0^{2\\pi}\\!\\!\\int_0^aJ_0\\left(1-\\frac{r}{a}\\right)r\\,dr\\,d\\phi=2\\pi J_0\\left(\\frac{a^2}{2}-\\frac{a^2}{3}\\right)=\\frac{\\pi J_0a^2}{3}$$",
+    "$$I=\\frac{\\pi(2\\times10^6)(10^{-3})^2}{3}=2.09\\ \\mathrm{A}$$"
+   ],
+   "answers": [
+    {
+     "label": "I",
+     "value": "2.09\\ \\mathrm{A}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Current from a nonuniform current density"
+  },
+  {
+   "id": "conductors-05",
+   "difficulty": 2,
+   "title": "Conductivity of intrinsic silicon",
+   "prompt": "Pure silicon at room temperature has $N_e=N_h=1.5\\times10^{16}\\ \\mathrm{m^{-3}}$, $\\mu_e=0.135$ and $\\mu_h=0.048\\ \\mathrm{m^2/(V\\,s)}$. Find its conductivity and the resistance of a $1\\ \\mathrm{cm}$ cube.",
+   "hints": [
+    "$\\sigma=q(N_e\\mu_e+N_h\\mu_h)$.",
+    "For a cube of side $\\ell$, $R=\\dfrac{\\ell}{\\sigma\\ell^2}=\\dfrac{1}{\\sigma\\ell}$."
+   ],
+   "steps": [
+    "$$\\sigma=(1.602\\times10^{-19})(1.5\\times10^{16})(0.135+0.048)=4.40\\times10^{-4}\\ \\mathrm{S/m}$$",
+    "$$R=\\frac{1}{\\sigma(0.01)}=227\\ \\mathrm{k\\Omega}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\sigma",
+     "value": "4.40\\times10^{-4}\\ \\mathrm{S/m}"
+    },
+    {
+     "label": "R",
+     "value": "227\\ \\mathrm{k\\Omega}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Conductivity of intrinsic silicon"
+  },
+  {
+   "id": "conductors-06",
+   "difficulty": 3,
+   "title": "Leakage through a coax dielectric",
+   "prompt": "A coax has $a=1\\ \\mathrm{mm}$, $b=4\\ \\mathrm{mm}$, and a slightly lossy filling with $\\sigma=10^{-4}\\ \\mathrm{S/m}$. Find the leakage conductance per meter and the leakage resistance of a $1\\ \\mathrm{m}$ length.",
+   "hints": [
+    "A leakage current $I$ per meter spreads out radially: $J_r=\\dfrac{I}{2\\pi r}$.",
+    "Find $E_r=J_r/\\sigma$, integrate from $a$ to $b$ for $V$, then $G'=I/V$."
+   ],
+   "steps": [
+    "$$V=\\int_a^b\\frac{I}{2\\pi\\sigma r}\\,dr=\\frac{I}{2\\pi\\sigma}\\ln\\frac{b}{a}$$",
+    "$$G'=\\frac{I}{V}=\\frac{2\\pi\\sigma}{\\ln(b/a)}$$",
+    "$$G'=\\frac{2\\pi(10^{-4})}{\\ln4}=453\\ \\mathrm{\\mu S/m}$$",
+    "$$R=\\frac{1}{G'\\ell}=2.21\\ \\mathrm{k\\Omega}$$"
+   ],
+   "answers": [
+    {
+     "label": "G'",
+     "value": "453\\ \\mathrm{\\mu S/m}"
+    },
+    {
+     "label": "R",
+     "value": "2.21\\ \\mathrm{k\\Omega}"
+    }
+   ],
+   "widget": "params",
+   "source": "original",
+   "topics": [
+    "conductors",
+    "tline"
+   ],
+   "titleText": "Leakage through a coax dielectric"
+  },
+  {
+   "id": "conductors-07",
+   "difficulty": 1,
+   "title": "Charge build-up from the continuity equation",
+   "prompt": "In a region, $\\mathbf{J}=\\hat{\\mathbf{x}}\\,3x^2\\ \\mathrm{A/m^2}$. How fast is the charge density changing at $x=2\\ \\mathrm{m}$?",
+   "hints": [
+    "$\\dfrac{\\partial\\rho_v}{\\partial t}=-\\nabla\\cdot\\mathbf{J}$."
+   ],
+   "steps": [
+    "$$\\nabla\\cdot\\mathbf{J}=\\frac{\\partial(3x^2)}{\\partial x}=6x$$",
+    "$$\\frac{\\partial\\rho_v}{\\partial t}=-6x=-12\\ \\mathrm{C/(m^3\\,s)}$$",
+    "More current leaves than arrives, so the charge density there is falling."
+   ],
+   "answers": [
+    {
+     "label": "\\partial\\rho_v/\\partial t",
+     "value": "-12\\ \\mathrm{C/(m^3\\,s)}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Charge build-up from the continuity equation"
+  },
+  {
+   "id": "conductors-08",
+   "difficulty": 1,
+   "title": "Copper versus seawater",
+   "prompt": "Compare the resistance of a $1\\ \\mathrm{m}$ long, $1\\ \\mathrm{cm^2}$ column of copper ($5.8\\times10^7\\ \\mathrm{S/m}$) and of seawater ($4\\ \\mathrm{S/m}$).",
+   "hints": [
+    "$R=\\dfrac{\\ell}{\\sigma A}$ with $A=10^{-4}\\ \\mathrm{m^2}$."
+   ],
+   "steps": [
+    "$$R_{\\text{Cu}}=\\frac{1}{(5.8\\times10^7)(10^{-4})}=172\\ \\mathrm{\\mu \\Omega}$$",
+    "$$R_{\\text{sea}}=\\frac{1}{(4)(10^{-4})}=2.50\\ \\mathrm{k\\Omega}$$",
+    "Seawater is about $1.45\\times10^{7}$ times more resistive. It still conducts well enough to block most radio waves."
+   ],
+   "answers": [
+    {
+     "label": "R_{\\text{Cu}}",
+     "value": "172\\ \\mathrm{\\mu \\Omega}"
+    },
+    {
+     "label": "R_{\\text{sea}}",
+     "value": "2.50\\ \\mathrm{k\\Omega}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Copper versus seawater"
+  },
+  {
+   "id": "conductors-09",
+   "difficulty": 1,
+   "title": "Heat in a resistor from fields",
+   "prompt": "A $0.5\\ \\Omega$ bar carries $10\\ \\mathrm{A}$. Use Joule's law to find the power it dissipates, and say where the energy comes from.",
+   "hints": [
+    "For a uniform bar $\\int\\mathbf{E}\\cdot\\mathbf{J}\\,dV=(E\\ell)(JA)=VI$."
+   ],
+   "steps": [
+    "$$P=\\int_V\\mathbf{E}\\cdot\\mathbf{J}\\,dV=(E\\ell)(JA)=VI=I^2R$$",
+    "$$P=(10)^2(0.5)=50.0\\ \\mathrm{W}$$",
+    "The field does work on the drifting charges, and collisions turn that work into heat."
+   ],
+   "answers": [
+    {
+     "label": "P",
+     "value": "50.0\\ \\mathrm{W}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ],
+   "titleText": "Heat in a resistor from fields"
+  },
   {
    "id": "electrostatics-01",
    "difficulty": 2,
@@ -3855,6 +4242,116 @@
   }
  ],
  "terms": [
+  {
+   "term": "Current density",
+   "symbol": "\\mathbf{J}",
+   "units": "\\mathrm{A/m^2}",
+   "definition": "Current per unit area, pointing in the direction positive charge flows. $I=\\int\\mathbf{J}\\cdot d\\mathbf{s}$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Conductivity",
+   "symbol": "\\sigma",
+   "units": "\\mathrm{S/m}",
+   "definition": "How readily a material conducts: $\\mathbf{J}=\\sigma\\mathbf{E}$. Its reciprocal is resistivity.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Resistivity",
+   "symbol": "\\rho=1/\\sigma",
+   "units": "\\Omega\\,\\mathrm{m}",
+   "definition": "Resistance of a 1 m cube of the material. Copper: $1.72\\times10^{-8}\\ \\Omega\\,\\mathrm{m}$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Mobility",
+   "symbol": "\\mu_e,\\ \\mu_h",
+   "units": "\\mathrm{m^2/(V\\,s)}",
+   "definition": "Drift speed per unit field for electrons or holes.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Drift velocity",
+   "symbol": "\\mathbf{u}",
+   "units": "\\mathrm{m/s}",
+   "definition": "The average velocity of charge carriers in a field, on top of their fast random thermal motion.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Conduction current",
+   "symbol": "",
+   "units": "",
+   "definition": "Current due to charges drifting through a conductor under an applied field, $\\mathbf{J}=\\sigma\\mathbf{E}$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Convection current",
+   "symbol": "",
+   "units": "",
+   "definition": "Current due to charge moving through a region without a conductor, such as an electron beam: $\\mathbf{J}=\\rho_v\\mathbf{u}$.",
+   "widget": null,
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Resistance",
+   "symbol": "R",
+   "units": "\\Omega",
+   "definition": "Voltage across a conductor divided by current through it. For a uniform bar, $R=\\ell/(\\sigma A)$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Joule's law",
+   "symbol": "",
+   "units": "",
+   "definition": "Power turned into heat in a conductor: $P=\\int\\mathbf{E}\\cdot\\mathbf{J}\\,dV$, which is $I^2R$ for a resistor.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Continuity equation",
+   "symbol": "",
+   "units": "",
+   "definition": "Conservation of charge in point form: $\\nabla\\cdot\\mathbf{J}=-\\partial\\rho_v/\\partial t$.",
+   "widget": null,
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Semiconductor",
+   "symbol": "",
+   "units": "",
+   "definition": "A material with conductivity between conductors and insulators, set by electron and hole densities that doping and temperature control.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
   {
    "term": "Coulomb's law",
    "symbol": "",

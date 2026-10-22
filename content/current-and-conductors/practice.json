@@ -1,0 +1,252 @@
+{
+ "unit": "Current and conductors",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "conductors-01",
+   "difficulty": 1,
+   "title": "Resistance of a copper wire",
+   "prompt": "Find the resistance of $100\\ \\mathrm{m}$ of copper wire ($\\sigma=5.8\\times10^7\\ \\mathrm{S/m}$) with a diameter of $1\\ \\mathrm{mm}$.",
+   "hints": [
+    "$R=\\dfrac{\\ell}{\\sigma A}$ with $A=\\pi r^2$."
+   ],
+   "steps": [
+    "$$A=\\pi(0.5\\times10^{-3})^2=7.85\\times10^{-7}\\ \\mathrm{m^2}$$",
+    "$$R=\\frac{100}{(5.8\\times10^7)(7.85\\times10^{-7})}=2.20\\ \\mathrm{\\Omega}$$"
+   ],
+   "answers": [
+    {
+     "label": "R",
+     "value": "2.20\\ \\mathrm{\\Omega}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-02",
+   "difficulty": 1,
+   "title": "Current density and field in a wire",
+   "prompt": "An aluminum wire ($\\sigma=3.5\\times10^7\\ \\mathrm{S/m}$, diameter $2\\ \\mathrm{mm}$) carries $2\\ \\mathrm{A}$. Find $J$, the field $E$ inside it, and the voltage drop along $1\\ \\mathrm{km}$.",
+   "hints": [
+    "$J=I/A$, then $E=J/\\sigma$, then $V=E\\ell$."
+   ],
+   "steps": [
+    "$$J=\\frac{2}{\\pi(10^{-3})^2}=637\\ \\mathrm{kA/m^2}$$",
+    "$$E=\\frac{J}{\\sigma}=18.2\\ \\mathrm{mV/m}$$",
+    "$$V=E\\ell=(1.82\\times10^{-2})(1000)=18.2\\ \\mathrm{V}$$"
+   ],
+   "answers": [
+    {
+     "label": "J",
+     "value": "637\\ \\mathrm{kA/m^2}"
+    },
+    {
+     "label": "E",
+     "value": "18.2\\ \\mathrm{mV/m}"
+    },
+    {
+     "label": "V",
+     "value": "18.2\\ \\mathrm{V}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-03",
+   "difficulty": 2,
+   "title": "How fast do the electrons move?",
+   "prompt": "A copper wire with a $1\\ \\mathrm{mm^2}$ cross-section carries $1\\ \\mathrm{A}$. Copper has about $8.5\\times10^{28}$ free electrons per cubic meter. Find the drift speed.",
+   "hints": [
+    "$J=\\rho_vu=Nqu$."
+   ],
+   "steps": [
+    "$$J=\\frac{I}{A}=\\frac{1}{10^{-6}}=10^6\\ \\mathrm{A/m^2}$$",
+    "$$u=\\frac{J}{Nq}=\\frac{10^6}{(8.5\\times10^{28})(1.602\\times10^{-19})}=73.4\\ \\mathrm{\\mu m/s}$$",
+    "That is about $264\\ \\mathrm{mm}$ per hour. The signal travels near the speed of light, but the electrons themselves crawl."
+   ],
+   "answers": [
+    {
+     "label": "u",
+     "value": "73.4\\ \\mathrm{\\mu m/s}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-04",
+   "difficulty": 2,
+   "title": "Current from a nonuniform current density",
+   "prompt": "In a wire of radius $a=1\\ \\mathrm{mm}$, $\\mathbf{J}=\\hat{\\mathbf{z}}\\,J_0\\left(1-\\dfrac{r}{a}\\right)$ with $J_0=2\\times10^6\\ \\mathrm{A/m^2}$. Find the total current.",
+   "hints": [
+    "$d\\mathbf{s}=\\hat{\\mathbf{z}}\\,r\\,dr\\,d\\phi$ on the cross-section."
+   ],
+   "steps": [
+    "$$I=\\int_0^{2\\pi}\\!\\!\\int_0^aJ_0\\left(1-\\frac{r}{a}\\right)r\\,dr\\,d\\phi=2\\pi J_0\\left(\\frac{a^2}{2}-\\frac{a^2}{3}\\right)=\\frac{\\pi J_0a^2}{3}$$",
+    "$$I=\\frac{\\pi(2\\times10^6)(10^{-3})^2}{3}=2.09\\ \\mathrm{A}$$"
+   ],
+   "answers": [
+    {
+     "label": "I",
+     "value": "2.09\\ \\mathrm{A}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-05",
+   "difficulty": 2,
+   "title": "Conductivity of intrinsic silicon",
+   "prompt": "Pure silicon at room temperature has $N_e=N_h=1.5\\times10^{16}\\ \\mathrm{m^{-3}}$, $\\mu_e=0.135$ and $\\mu_h=0.048\\ \\mathrm{m^2/(V\\,s)}$. Find its conductivity and the resistance of a $1\\ \\mathrm{cm}$ cube.",
+   "hints": [
+    "$\\sigma=q(N_e\\mu_e+N_h\\mu_h)$.",
+    "For a cube of side $\\ell$, $R=\\dfrac{\\ell}{\\sigma\\ell^2}=\\dfrac{1}{\\sigma\\ell}$."
+   ],
+   "steps": [
+    "$$\\sigma=(1.602\\times10^{-19})(1.5\\times10^{16})(0.135+0.048)=4.40\\times10^{-4}\\ \\mathrm{S/m}$$",
+    "$$R=\\frac{1}{\\sigma(0.01)}=227\\ \\mathrm{k\\Omega}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\sigma",
+     "value": "4.40\\times10^{-4}\\ \\mathrm{S/m}"
+    },
+    {
+     "label": "R",
+     "value": "227\\ \\mathrm{k\\Omega}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-06",
+   "difficulty": 3,
+   "title": "Leakage through a coax dielectric",
+   "prompt": "A coax has $a=1\\ \\mathrm{mm}$, $b=4\\ \\mathrm{mm}$, and a slightly lossy filling with $\\sigma=10^{-4}\\ \\mathrm{S/m}$. Find the leakage conductance per meter and the leakage resistance of a $1\\ \\mathrm{m}$ length.",
+   "hints": [
+    "A leakage current $I$ per meter spreads out radially: $J_r=\\dfrac{I}{2\\pi r}$.",
+    "Find $E_r=J_r/\\sigma$, integrate from $a$ to $b$ for $V$, then $G'=I/V$."
+   ],
+   "steps": [
+    "$$V=\\int_a^b\\frac{I}{2\\pi\\sigma r}\\,dr=\\frac{I}{2\\pi\\sigma}\\ln\\frac{b}{a}$$",
+    "$$G'=\\frac{I}{V}=\\frac{2\\pi\\sigma}{\\ln(b/a)}$$",
+    "$$G'=\\frac{2\\pi(10^{-4})}{\\ln4}=453\\ \\mathrm{\\mu S/m}$$",
+    "$$R=\\frac{1}{G'\\ell}=2.21\\ \\mathrm{k\\Omega}$$"
+   ],
+   "answers": [
+    {
+     "label": "G'",
+     "value": "453\\ \\mathrm{\\mu S/m}"
+    },
+    {
+     "label": "R",
+     "value": "2.21\\ \\mathrm{k\\Omega}"
+    }
+   ],
+   "widget": "params",
+   "source": "original",
+   "topics": [
+    "conductors",
+    "tline"
+   ]
+  },
+  {
+   "id": "conductors-07",
+   "difficulty": 1,
+   "title": "Charge build-up from the continuity equation",
+   "prompt": "In a region, $\\mathbf{J}=\\hat{\\mathbf{x}}\\,3x^2\\ \\mathrm{A/m^2}$. How fast is the charge density changing at $x=2\\ \\mathrm{m}$?",
+   "hints": [
+    "$\\dfrac{\\partial\\rho_v}{\\partial t}=-\\nabla\\cdot\\mathbf{J}$."
+   ],
+   "steps": [
+    "$$\\nabla\\cdot\\mathbf{J}=\\frac{\\partial(3x^2)}{\\partial x}=6x$$",
+    "$$\\frac{\\partial\\rho_v}{\\partial t}=-6x=-12\\ \\mathrm{C/(m^3\\,s)}$$",
+    "More current leaves than arrives, so the charge density there is falling."
+   ],
+   "answers": [
+    {
+     "label": "\\partial\\rho_v/\\partial t",
+     "value": "-12\\ \\mathrm{C/(m^3\\,s)}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-08",
+   "difficulty": 1,
+   "title": "Copper versus seawater",
+   "prompt": "Compare the resistance of a $1\\ \\mathrm{m}$ long, $1\\ \\mathrm{cm^2}$ column of copper ($5.8\\times10^7\\ \\mathrm{S/m}$) and of seawater ($4\\ \\mathrm{S/m}$).",
+   "hints": [
+    "$R=\\dfrac{\\ell}{\\sigma A}$ with $A=10^{-4}\\ \\mathrm{m^2}$."
+   ],
+   "steps": [
+    "$$R_{\\text{Cu}}=\\frac{1}{(5.8\\times10^7)(10^{-4})}=172\\ \\mathrm{\\mu \\Omega}$$",
+    "$$R_{\\text{sea}}=\\frac{1}{(4)(10^{-4})}=2.50\\ \\mathrm{k\\Omega}$$",
+    "Seawater is about $1.45\\times10^{7}$ times more resistive. It still conducts well enough to block most radio waves."
+   ],
+   "answers": [
+    {
+     "label": "R_{\\text{Cu}}",
+     "value": "172\\ \\mathrm{\\mu \\Omega}"
+    },
+    {
+     "label": "R_{\\text{sea}}",
+     "value": "2.50\\ \\mathrm{k\\Omega}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "conductors-09",
+   "difficulty": 1,
+   "title": "Heat in a resistor from fields",
+   "prompt": "A $0.5\\ \\Omega$ bar carries $10\\ \\mathrm{A}$. Use Joule's law to find the power it dissipates, and say where the energy comes from.",
+   "hints": [
+    "For a uniform bar $\\int\\mathbf{E}\\cdot\\mathbf{J}\\,dV=(E\\ell)(JA)=VI$."
+   ],
+   "steps": [
+    "$$P=\\int_V\\mathbf{E}\\cdot\\mathbf{J}\\,dV=(E\\ell)(JA)=VI=I^2R$$",
+    "$$P=(10)^2(0.5)=50.0\\ \\mathrm{W}$$",
+    "The field does work on the drifting charges, and collisions turn that work into heat."
+   ],
+   "answers": [
+    {
+     "label": "P",
+     "value": "50.0\\ \\mathrm{W}"
+    }
+   ],
+   "widget": "wire",
+   "source": "original",
+   "topics": [
+    "conductors"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "unit": "Current and conductors",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-conductors-01",
+   "front": "Current through a surface from the current density?",
+   "back": "$$I=\\int_S\\mathbf{J}\\cdot d\\mathbf{s}$$$\\mathbf{J}$ is in A/m².",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-02",
+   "front": "Point form of Ohm's law?",
+   "back": "$$\\mathbf{J}=\\sigma\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-03",
+   "front": "Current density from moving charge?",
+   "back": "$$\\mathbf{J}=\\rho_v\\mathbf{u}$$$\\rho_v$ is the moving charge density and $\\mathbf{u}$ its velocity.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-04",
+   "front": "Conduction versus convection current?",
+   "back": "Conduction current flows in a conductor and obeys $\\mathbf{J}=\\sigma\\mathbf{E}$. Convection current is charge carried through space, such as an electron beam, and does not.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-05",
+   "front": "Conductivity from carrier densities and mobilities?",
+   "back": "$$\\sigma=-\\rho_{ve}\\mu_e+\\rho_{vh}\\mu_h=q(N_e\\mu_e+N_h\\mu_h)$$In a metal only electrons matter.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-06",
+   "front": "Drift velocity of electrons in a field $\\mathbf{E}$?",
+   "back": "$$\\mathbf{u}_e=-\\mu_e\\mathbf{E}$$Opposite to $\\mathbf{E}$, and very slow: millimeters per second or less in a metal wire.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-07",
+   "front": "Resistance of a uniform conductor?",
+   "back": "$$R=\\frac{\\ell}{\\sigma A}$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-08",
+   "front": "Resistance of any shape from fields?",
+   "back": "$$R=\\frac{V}{I}=\\frac{-\\int_l\\mathbf{E}\\cdot d\\mathbf{l}}{\\int_S\\sigma\\mathbf{E}\\cdot d\\mathbf{s}}$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-09",
+   "front": "Power dissipated in a conductor (Joule's law)?",
+   "back": "$$P=\\int_V\\mathbf{E}\\cdot\\mathbf{J}\\,dV=I^2R$$",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-10",
+   "front": "Charge continuity equation?",
+   "back": "$$\\nabla\\cdot\\mathbf{J}=-\\frac{\\partial\\rho_v}{\\partial t}$$Current leaving a point drains its charge. In steady state $\\nabla\\cdot\\mathbf{J}=0$, which is Kirchhoff's current law.",
+   "kind": "equation",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-11",
+   "front": "Conductivity of copper, and how it compares to seawater and glass?",
+   "back": "Copper: about $5.8\\times10^7$ S/m. Seawater: about 4 S/m. Glass: about $10^{-12}$ S/m.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-12",
+   "front": "What is a perfect conductor?",
+   "back": "$\\sigma\\to\\infty$. The field inside is zero, so it is an equipotential, and current flows only on its surface.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-13",
+   "front": "Boundary condition on $\\mathbf{J}$ between two conductors?",
+   "back": "Normal $\\mathbf{J}$ is continuous (steady state): $J_{1n}=J_{2n}$. Tangential $\\mathbf{E}$ is continuous, so $\\dfrac{J_{1t}}{\\sigma_1}=\\dfrac{J_{2t}}{\\sigma_2}$.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "card-conductors-14",
+   "front": "Why doesn't a static field exist inside a conductor?",
+   "back": "Free charges move until their own field cancels the applied field. In a good conductor this takes far less than a nanosecond.",
+   "kind": "concept",
+   "topics": [
+    "conductors"
+   ]
+  }
+ ]
+}

@@ -26,10 +26,11 @@ Everything is labeled by topic, not by textbook chapter. Each card, problem and 
 | Transients | Bounce diagram |
 | Vector calculus | Coordinate explorer, Divergence and curl |
 | Electrostatics | Point charges, Gauss's law, Dielectric boundary, Capacitor builder |
+| Current and conductors | Conductor and resistance |
 
-Current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
+Magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
 
-Topics are listed in course order. Content so far: 123 flashcards, 89 glossary terms, 77 practice problems (16 from the course practice sets with worked keys, 61 new).
+Topics are listed in course order. Content so far: 137 flashcards, 100 glossary terms, 86 practice problems (16 from the course practice sets with worked keys, 70 new).
 
 ## The iPhone app
 
@@ -65,6 +66,7 @@ python3 tools/make_tlines_cards.py
 python3 tools/make_phasors.py      # one make_<topic>.py per topic writes its cards, glossary and problems
 python3 tools/make_vectors.py
 python3 tools/make_electrostatics.py
+python3 tools/make_conductors.py
 python3 tools/build_web.py      # rebuilds web/widgets.html and web/www/
 python3 tools/vendor_web.py     # only when updating MathJax or the fonts (needs npm)
 ```

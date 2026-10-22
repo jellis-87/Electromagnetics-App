@@ -1,0 +1,116 @@
+{
+ "unit": "Current and conductors",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Current density",
+   "symbol": "\\mathbf{J}",
+   "units": "\\mathrm{A/m^2}",
+   "definition": "Current per unit area, pointing in the direction positive charge flows. $I=\\int\\mathbf{J}\\cdot d\\mathbf{s}$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Conductivity",
+   "symbol": "\\sigma",
+   "units": "\\mathrm{S/m}",
+   "definition": "How readily a material conducts: $\\mathbf{J}=\\sigma\\mathbf{E}$. Its reciprocal is resistivity.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Resistivity",
+   "symbol": "\\rho=1/\\sigma",
+   "units": "\\Omega\\,\\mathrm{m}",
+   "definition": "Resistance of a 1 m cube of the material. Copper: $1.72\\times10^{-8}\\ \\Omega\\,\\mathrm{m}$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Mobility",
+   "symbol": "\\mu_e,\\ \\mu_h",
+   "units": "\\mathrm{m^2/(V\\,s)}",
+   "definition": "Drift speed per unit field for electrons or holes.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Drift velocity",
+   "symbol": "\\mathbf{u}",
+   "units": "\\mathrm{m/s}",
+   "definition": "The average velocity of charge carriers in a field, on top of their fast random thermal motion.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Conduction current",
+   "symbol": "",
+   "units": "",
+   "definition": "Current due to charges drifting through a conductor under an applied field, $\\mathbf{J}=\\sigma\\mathbf{E}$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Convection current",
+   "symbol": "",
+   "units": "",
+   "definition": "Current due to charge moving through a region without a conductor, such as an electron beam: $\\mathbf{J}=\\rho_v\\mathbf{u}$.",
+   "widget": null,
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Resistance",
+   "symbol": "R",
+   "units": "\\Omega",
+   "definition": "Voltage across a conductor divided by current through it. For a uniform bar, $R=\\ell/(\\sigma A)$.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Joule's law",
+   "symbol": "",
+   "units": "",
+   "definition": "Power turned into heat in a conductor: $P=\\int\\mathbf{E}\\cdot\\mathbf{J}\\,dV$, which is $I^2R$ for a resistor.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Continuity equation",
+   "symbol": "",
+   "units": "",
+   "definition": "Conservation of charge in point form: $\\nabla\\cdot\\mathbf{J}=-\\partial\\rho_v/\\partial t$.",
+   "widget": null,
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "term": "Semiconductor",
+   "symbol": "",
+   "units": "",
+   "definition": "A material with conductivity between conductors and insulators, set by electron and hole densities that doping and temperature control.",
+   "widget": "wire",
+   "topics": [
+    "conductors"
+   ]
+  }
+ ]
+}
