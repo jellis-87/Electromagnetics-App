@@ -24,6 +24,7 @@
   --accent:#3cc4b1; --accent-ink:#06201c;
   --tr-y:#f2c94c; --tr-b:#5aa2ff; --tr-m:#e05ac2; --tr-g:#4fd27a; --warn:#ff8a5c; color-scheme:dark}
 html,body{background:var(--bg);color:var(--fg)}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{font-family:var(--f-body);font-size:16px;line-height:1.45}
 .wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
 header h1{font-family:var(--f-display);font-weight:800;font-size:1.6rem;letter-spacing:-.01em;margin:0;text-wrap:balance}
@@ -348,7 +349,8 @@ function ctext(c,str,x,y,align){const base=c.font;const m=/(\d+(?:\.\d+)?)px/.ex
 const out=(id,rows)=>{$(id).innerHTML=rows.map(([k,v,cls])=>`<div><dt>${hk(k)}</dt><dd${cls?` class="${cls}"`:""}>${v}</dd></div>`).join("")};
 
 /* canvas helper */
-function prep(cv){const dpr=window.devicePixelRatio||1;const w=cv.clientWidth,h=+cv.getAttribute("height");cv.style.height=h+"px";if(cv.width!==Math.round(w*dpr)){cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr)}const c=cv.getContext("2d");c.setTransform(dpr,0,0,dpr,0,0);c.clearRect(0,0,w,h);return {c,w,h}}
+function prep(cv){const dpr=window.devicePixelRatio||1;if(!cv.dataset.h)cv.dataset.h=cv.getAttribute("height");// CSS height comes from the markup; the backing store is resized to match, which rewrites the height attribute
+const w=cv.clientWidth,h=+cv.dataset.h;cv.style.height=h+"px";const bw=Math.round(w*dpr),bh=Math.round(h*dpr);if(cv.width!==bw||cv.height!==bh){cv.width=bw;cv.height=bh}const c=cv.getContext("2d");c.setTransform(dpr,0,0,dpr,0,0);c.clearRect(0,0,w,h);return {c,w,h}}
 function axes(c,box,xr,yr,xt,yt,xl,yl){ // box={l,t,r,b}
   const X=x=>box.l+(x-xr[0])/(xr[1]-xr[0])*(box.r-box.l), Y=y=>box.b-(y-yr[0])/(yr[1]-yr[0])*(box.b-box.t);
   c.strokeStyle=css("--grid");c.lineWidth=1;c.fillStyle=css("--muted");c.font="11px 'IBM Plex Mono',monospace";
