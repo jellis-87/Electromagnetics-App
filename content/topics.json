@@ -135,8 +135,11 @@
    "id": "boundaries",
    "title": "Reflection at boundaries",
    "blurb": "Normal and oblique incidence on interfaces.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "normalinc",
+    "oblique"
+   ],
+   "available": true
   }
  ],
  "widgets": {
@@ -231,6 +234,14 @@
   "polarization": {
    "title": "Polarization ellipse",
    "topic": "polarization"
+  },
+  "normalinc": {
+   "title": "Normal incidence",
+   "topic": "boundaries"
+  },
+  "oblique": {
+   "title": "Oblique incidence",
+   "topic": "boundaries"
   }
  }
 }

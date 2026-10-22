@@ -1,0 +1,186 @@
+{
+ "unit": "Reflection at boundaries",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-boundaries-01",
+   "front": "Reflection coefficient at normal incidence?",
+   "back": "$$\\Gamma=\\frac{E^r_0}{E^i_0}=\\frac{\\eta_2-\\eta_1}{\\eta_2+\\eta_1}$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-02",
+   "front": "Transmission coefficient at normal incidence?",
+   "back": "$$\\tau=\\frac{E^t_0}{E^i_0}=\\frac{2\\eta_2}{\\eta_2+\\eta_1}=1+\\Gamma$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-03",
+   "front": "$\\Gamma$ for nonmagnetic media in terms of refractive index?",
+   "back": "$$\\Gamma=\\frac{n_1-n_2}{n_1+n_2},\\qquad n=\\sqrt{\\varepsilon_r}$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-04",
+   "front": "How does the normal-incidence problem map onto a transmission line?",
+   "back": "Medium 1 is a line with $Z_0=\\eta_1$; medium 2 is its load $Z_L=\\eta_2$. $\\Gamma$, the standing-wave ratio and the positions of maxima and minima all follow the same formulas.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-05",
+   "front": "Reflected and transmitted power fractions at normal incidence?",
+   "back": "$$R=|\\Gamma|^2,\\qquad T=|\\tau|^2\\frac{\\eta_1}{\\eta_2}=1-R$$For lossless media.",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-06",
+   "front": "Field in medium 1 in front of a perfect conductor?",
+   "back": "$$\\tilde E_1=E^i_0\\left(e^{-jk_1z}-e^{jk_1z}\\right)=-2jE^i_0\\sin k_1z$$A pure standing wave with nulls every $\\lambda_1/2$, starting at the conductor.",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-07",
+   "front": "Standing-wave ratio in medium 1?",
+   "back": "$$S=\\frac{|\\tilde E_1|_{\\max}}{|\\tilde E_1|_{\\min}}=\\frac{1+|\\Gamma|}{1-|\\Gamma|}$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-08",
+   "front": "How does a quarter-wave antireflection coating work?",
+   "back": "A layer $\\lambda/4$ thick with $\\eta_2=\\sqrt{\\eta_1\\eta_3}$ makes the two reflections cancel, exactly like a quarter-wave transformer on a line. For nonmagnetic media, $n_2=\\sqrt{n_1n_3}$.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-09",
+   "front": "Snell's law of reflection and refraction?",
+   "back": "$$\\theta_r=\\theta_i,\\qquad n_1\\sin\\theta_i=n_2\\sin\\theta_t$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-10",
+   "front": "Critical angle?",
+   "back": "$$\\theta_c=\\sin^{-1}\\frac{n_2}{n_1}$$Exists only going from a denser to a less dense medium ($n_1>n_2$). Beyond it, all power reflects.",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-11",
+   "front": "What happens beyond the critical angle?",
+   "back": "Total internal reflection: $|\\Gamma|=1$ for both polarizations. A field still exists in medium 2, but it decays away from the boundary and carries no average power across it.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-12",
+   "front": "Numerical aperture and acceptance angle of an optical fibre?",
+   "back": "$$\\sin\\theta_a=\\frac{1}{n_0}\\sqrt{n_f^2-n_c^2}$$$n_f$: core, $n_c$: cladding.",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-13",
+   "front": "Plane of incidence?",
+   "back": "The plane containing the normal to the boundary and the direction of the incident wave.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-14",
+   "front": "Perpendicular (TE) and parallel (TM) polarization?",
+   "back": "Perpendicular, or TE: $\\mathbf{E}$ is normal to the plane of incidence. Parallel, or TM: $\\mathbf{E}$ lies in the plane of incidence. Any wave is a sum of the two.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-15",
+   "front": "Reflection coefficient, perpendicular polarization?",
+   "back": "$$\\Gamma_\\perp=\\frac{\\eta_2\\cos\\theta_i-\\eta_1\\cos\\theta_t}{\\eta_2\\cos\\theta_i+\\eta_1\\cos\\theta_t},\\qquad\\tau_\\perp=1+\\Gamma_\\perp$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-16",
+   "front": "Reflection coefficient, parallel polarization?",
+   "back": "$$\\Gamma_\\parallel=\\frac{\\eta_2\\cos\\theta_t-\\eta_1\\cos\\theta_i}{\\eta_2\\cos\\theta_t+\\eta_1\\cos\\theta_i}$$$$\\tau_\\parallel=(1+\\Gamma_\\parallel)\\frac{\\cos\\theta_i}{\\cos\\theta_t}$$",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-17",
+   "front": "Brewster angle for nonmagnetic media?",
+   "back": "$$\\theta_B=\\tan^{-1}\\frac{n_2}{n_1}=\\tan^{-1}\\sqrt{\\frac{\\varepsilon_2}{\\varepsilon_1}}$$$\\Gamma_\\parallel=0$ there. Nonmagnetic media have no Brewster angle for perpendicular polarization.",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-18",
+   "front": "What is special about $\\theta_B+\\theta_t$?",
+   "back": "At the Brewster angle, $\\theta_B+\\theta_t=90^\\circ$: the reflected and transmitted rays are perpendicular.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-19",
+   "front": "Why is light reflected at the Brewster angle polarized?",
+   "back": "Only the perpendicular component reflects, since $\\Gamma_\\parallel=0$. That is why polarized sunglasses cut glare off water and roads.",
+   "kind": "concept",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "card-boundaries-20",
+   "front": "Reflectivity and transmissivity at oblique incidence?",
+   "back": "$$R=|\\Gamma|^2,\\qquad T=|\\tau|^2\\frac{\\eta_1\\cos\\theta_t}{\\eta_2\\cos\\theta_i},\\qquad R+T=1$$The cosines account for the change in beam cross-section.",
+   "kind": "equation",
+   "topics": [
+    "boundaries"
+   ]
+  }
+ ]
+}

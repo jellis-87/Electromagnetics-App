@@ -31,10 +31,11 @@ Everything is labeled by topic, not by textbook chapter. Each card, problem and 
 | Time-varying fields | Faraday and Lenz, Conduction vs displacement |
 | Plane waves | Plane wave in a medium, Skin depth, Traveling wave |
 | Polarization | Polarization ellipse |
+| Reflection at boundaries | Normal incidence, Oblique incidence |
 
-Reflection at boundaries is listed in `topics.json` as coming later.
+Every topic in the course now has content.
 
-Topics are listed in course order. Content so far: 215 flashcards, 153 glossary terms, 130 practice problems (16 from the course practice sets with worked keys, 114 new).
+Topics are listed in course order. Content so far: 235 flashcards, 167 glossary terms, 141 practice problems (16 from the course practice sets with worked keys, 125 new).
 
 ## The iPhone app
 
@@ -75,6 +76,7 @@ python3 tools/make_magnetostatics.py
 python3 tools/make_timevarying.py
 python3 tools/make_planewaves.py
 python3 tools/make_polarization.py
+python3 tools/make_boundaries.py
 python3 tools/build_web.py      # rebuilds web/widgets.html and web/www/
 python3 tools/vendor_web.py     # only when updating MathJax or the fonts (needs npm)
 ```
