@@ -5,43 +5,11 @@
    "id": "phasors",
    "title": "Fields and phasors",
    "blurb": "Scalar and vector fields, phasors and Euler's identity.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "vectors",
-   "title": "Vector calculus",
-   "blurb": "Gradient, divergence, curl and the coordinate systems.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "electrostatics",
-   "title": "Electrostatics",
-   "blurb": "Charges, fields, potential and capacitance.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "conductors",
-   "title": "Current and conductors",
-   "blurb": "Current density, conductivity and boundary conditions.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "magnetostatics",
-   "title": "Magnetostatics",
-   "blurb": "Biot–Savart, Ampère's law and inductance.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "time-varying",
-   "title": "Time-varying fields",
-   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "phasor",
+    "travel"
+   ],
+   "available": true
   },
   {
    "id": "tline",
@@ -92,25 +60,86 @@
    "available": true
   },
   {
+   "id": "vectors",
+   "title": "Vector calculus",
+   "blurb": "Gradient, divergence, curl and the coordinate systems.",
+   "widgets": [
+    "coords",
+    "divcurl"
+   ],
+   "available": true
+  },
+  {
+   "id": "electrostatics",
+   "title": "Electrostatics",
+   "blurb": "Charges, fields, potential and capacitance.",
+   "widgets": [
+    "charges",
+    "gauss",
+    "boundary",
+    "capacitor"
+   ],
+   "available": true
+  },
+  {
+   "id": "conductors",
+   "title": "Current and conductors",
+   "blurb": "Current density, conductivity and boundary conditions.",
+   "widgets": [
+    "wire"
+   ],
+   "available": true
+  },
+  {
+   "id": "magnetostatics",
+   "title": "Magnetostatics",
+   "blurb": "Biot–Savart, Ampère's law and inductance.",
+   "widgets": [
+    "biot",
+    "ampere",
+    "mboundary"
+   ],
+   "available": true
+  },
+  {
+   "id": "time-varying",
+   "title": "Time-varying fields",
+   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
+   "widgets": [
+    "faraday",
+    "dispcur"
+   ],
+   "available": true
+  },
+  {
    "id": "plane-waves",
    "title": "Plane waves",
    "blurb": "Propagation in lossless and lossy media.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "planewave",
+    "skindepth",
+    "travel"
+   ],
+   "available": true
   },
   {
    "id": "polarization",
    "title": "Polarization",
    "blurb": "Linear, circular and elliptical polarization.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "polarization"
+   ],
+   "available": true
   },
   {
    "id": "boundaries",
    "title": "Reflection at boundaries",
    "blurb": "Normal and oblique incidence on interfaces.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "normalinc",
+    "oblique"
+   ],
+   "available": true
   }
  ],
  "widgets": {
@@ -137,6 +166,82 @@
   "params": {
    "title": "Line parameters",
    "topic": "tline"
+  },
+  "phasor": {
+   "title": "Phasor rotator",
+   "topic": "phasors"
+  },
+  "travel": {
+   "title": "Traveling wave",
+   "topic": "phasors"
+  },
+  "coords": {
+   "title": "Coordinate explorer",
+   "topic": "vectors"
+  },
+  "divcurl": {
+   "title": "Divergence and curl",
+   "topic": "vectors"
+  },
+  "charges": {
+   "title": "Point charges",
+   "topic": "electrostatics"
+  },
+  "gauss": {
+   "title": "Gauss's law",
+   "topic": "electrostatics"
+  },
+  "boundary": {
+   "title": "Dielectric boundary",
+   "topic": "electrostatics"
+  },
+  "capacitor": {
+   "title": "Capacitor builder",
+   "topic": "electrostatics"
+  },
+  "wire": {
+   "title": "Conductor and resistance",
+   "topic": "conductors"
+  },
+  "biot": {
+   "title": "Biot–Savart builder",
+   "topic": "magnetostatics"
+  },
+  "ampere": {
+   "title": "Ampère's law",
+   "topic": "magnetostatics"
+  },
+  "mboundary": {
+   "title": "Magnetic boundary",
+   "topic": "magnetostatics"
+  },
+  "faraday": {
+   "title": "Faraday and Lenz",
+   "topic": "time-varying"
+  },
+  "dispcur": {
+   "title": "Conduction vs displacement",
+   "topic": "time-varying"
+  },
+  "planewave": {
+   "title": "Plane wave in a medium",
+   "topic": "plane-waves"
+  },
+  "skindepth": {
+   "title": "Skin depth",
+   "topic": "plane-waves"
+  },
+  "polarization": {
+   "title": "Polarization ellipse",
+   "topic": "polarization"
+  },
+  "normalinc": {
+   "title": "Normal incidence",
+   "topic": "boundaries"
+  },
+  "oblique": {
+   "title": "Oblique incidence",
+   "topic": "boundaries"
   }
  }
 }

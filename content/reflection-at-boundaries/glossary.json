@@ -1,0 +1,146 @@
+{
+ "unit": "Reflection at boundaries",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Reflection coefficient",
+   "symbol": "\\Gamma",
+   "units": "",
+   "definition": "Ratio of reflected to incident electric field at a boundary.",
+   "widget": "normalinc",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Transmission coefficient",
+   "symbol": "\\tau",
+   "units": "",
+   "definition": "Ratio of transmitted to incident electric field at a boundary.",
+   "widget": "normalinc",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Reflectivity",
+   "symbol": "R=|\\Gamma|^2",
+   "units": "",
+   "definition": "Fraction of incident power that reflects.",
+   "widget": "normalinc",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Transmissivity",
+   "symbol": "T",
+   "units": "",
+   "definition": "Fraction of incident power that crosses the boundary. $R+T=1$ for lossless media.",
+   "widget": "normalinc",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Refractive index",
+   "symbol": "n=\\sqrt{\\mu_r\\varepsilon_r}",
+   "units": "",
+   "definition": "Ratio of the speed of light in vacuum to the phase velocity in the medium.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Antireflection coating",
+   "symbol": "",
+   "units": "",
+   "definition": "A quarter-wave layer whose impedance is the geometric mean of the media on either side, so reflections cancel.",
+   "widget": "normalinc",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Snell's law",
+   "symbol": "",
+   "units": "",
+   "definition": "$n_1\\sin\\theta_i=n_2\\sin\\theta_t$, with $\\theta_r=\\theta_i$.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Plane of incidence",
+   "symbol": "",
+   "units": "",
+   "definition": "The plane containing the incident direction and the normal to the boundary.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Perpendicular polarization",
+   "symbol": "\\perp",
+   "units": "",
+   "definition": "$\\mathbf{E}$ normal to the plane of incidence. Also called TE or s-polarization.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Parallel polarization",
+   "symbol": "\\parallel",
+   "units": "",
+   "definition": "$\\mathbf{E}$ in the plane of incidence. Also called TM or p-polarization.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Critical angle",
+   "symbol": "\\theta_c",
+   "units": "^\\circ",
+   "definition": "Incidence angle beyond which a wave going into a less dense medium is totally reflected.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Total internal reflection",
+   "symbol": "",
+   "units": "",
+   "definition": "Complete reflection beyond the critical angle. It guides light along optical fibres.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Brewster angle",
+   "symbol": "\\theta_B",
+   "units": "^\\circ",
+   "definition": "Incidence angle at which the parallel component is fully transmitted.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "term": "Optical fibre",
+   "symbol": "",
+   "units": "",
+   "definition": "A glass core inside a cladding of slightly lower index, which guides light by total internal reflection.",
+   "widget": "oblique",
+   "topics": [
+    "boundaries"
+   ]
+  }
+ ]
+}

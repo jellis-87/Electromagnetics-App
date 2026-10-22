@@ -1,0 +1,403 @@
+{
+ "unit": "Magnetostatics",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "magnetostatics-01",
+   "difficulty": 1,
+   "title": "Force on a moving charge",
+   "prompt": "A $2\\ \\mu\\mathrm{C}$ charge moves with $\\mathbf{u}=\\hat{\\mathbf{x}}\\,3\\times10^5\\ \\mathrm{m/s}$ through $\\mathbf{B}=\\hat{\\mathbf{z}}\\,0.5\\ \\mathrm{T}$. Find the force on it.",
+   "hints": [
+    "$\\mathbf{F}=q\\,\\mathbf{u}\\times\\mathbf{B}$ and $\\hat{\\mathbf{x}}\\times\\hat{\\mathbf{z}}=-\\hat{\\mathbf{y}}$."
+   ],
+   "steps": [
+    "$$\\mathbf{F}=(2\\times10^{-6})(3\\times10^5)(0.5)\\,(\\hat{\\mathbf{x}}\\times\\hat{\\mathbf{z}})$$",
+    "$$\\mathbf{F}=-\\hat{\\mathbf{y}}\\,0.300\\ \\mathrm{N}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{F}",
+     "value": "-\\hat{\\mathbf{y}}\\,0.300\\ \\mathrm{N}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-02",
+   "difficulty": 1,
+   "title": "Force on a current-carrying wire",
+   "prompt": "A $2\\ \\mathrm{m}$ straight wire along $+\\hat{\\mathbf{z}}$ carries $5\\ \\mathrm{A}$ in a uniform field $\\mathbf{B}=\\hat{\\mathbf{x}}\\,0.2\\ \\mathrm{T}$. Find the force on the wire.",
+   "hints": [
+    "$\\mathbf{F}=I\\boldsymbol{\\ell}\\times\\mathbf{B}$ and $\\hat{\\mathbf{z}}\\times\\hat{\\mathbf{x}}=\\hat{\\mathbf{y}}$."
+   ],
+   "steps": [
+    "$$\\mathbf{F}=(5)(2)(0.2)\\,(\\hat{\\mathbf{z}}\\times\\hat{\\mathbf{x}})$$",
+    "$$\\mathbf{F}=\\hat{\\mathbf{y}}\\,2.00\\ \\mathrm{N}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{F}",
+     "value": "\\hat{\\mathbf{y}}\\,2.00\\ \\mathrm{N}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-03",
+   "difficulty": 1,
+   "title": "Field of a long wire",
+   "prompt": "A long straight wire carries $10\\ \\mathrm{A}$. Find $H$ and $B$ in air $5\\ \\mathrm{cm}$ from it, and compare $B$ with Earth's field of about $50\\ \\mu\\mathrm{T}$.",
+   "hints": [
+    "$H=\\dfrac{I}{2\\pi r}$ and $B=\\mu_0H$."
+   ],
+   "steps": [
+    "$$H=\\frac{10}{2\\pi(0.05)}=31.8\\ \\mathrm{A/m}$$",
+    "$$B=\\mu_0H=40.0\\ \\mathrm{\\mu T}$$",
+    "That is 80.0% of Earth's field, enough to deflect a compass."
+   ],
+   "answers": [
+    {
+     "label": "H",
+     "value": "31.8\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "B",
+     "value": "40.0\\ \\mathrm{\\mu T}"
+    }
+   ],
+   "widget": "ampere",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-04",
+   "difficulty": 2,
+   "title": "Finite wire segment",
+   "prompt": "A straight wire $1\\ \\mathrm{m}$ long carries $2\\ \\mathrm{A}$. Find $H$ at a point $20\\ \\mathrm{cm}$ from its midpoint, on the perpendicular bisector. How much does treating it as infinitely long overestimate the field?",
+   "hints": [
+    "$H=\\dfrac{I}{4\\pi r}(\\cos\\alpha_1-\\cos\\alpha_2)$.",
+    "By symmetry $\\cos\\alpha_1=-\\cos\\alpha_2=\\dfrac{0.5}{\\sqrt{0.5^2+0.2^2}}$."
+   ],
+   "steps": [
+    "$$\\cos\\alpha_1=\\frac{0.5}{\\sqrt{0.29}}=0.928$$",
+    "$$H=\\frac{2}{4\\pi(0.2)}(2)(0.928)=1.48\\ \\mathrm{A/m}$$",
+    "$$H_\\infty=\\frac{2}{2\\pi(0.2)}=1.59\\ \\mathrm{A/m}$$",
+    "The infinite-wire formula is 7.70% too high here."
+   ],
+   "answers": [
+    {
+     "label": "H",
+     "value": "1.48\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H_\\infty",
+     "value": "1.59\\ \\mathrm{A/m}"
+    }
+   ],
+   "widget": "biot",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-05",
+   "difficulty": 2,
+   "title": "Circular loop: center and axis",
+   "prompt": "A loop of radius $10\\ \\mathrm{cm}$ carries $3\\ \\mathrm{A}$. Find $H$ at its center and on its axis $10\\ \\mathrm{cm}$ away.",
+   "hints": [
+    "On the axis the radial parts of $d\\mathbf{H}$ cancel; only $H_z$ remains.",
+    "$$H_z=\\frac{Ia^2}{2(a^2+z^2)^{3/2}}$$"
+   ],
+   "steps": [
+    "$$H(0)=\\frac{I}{2a}=\\frac{3}{0.2}=15.0\\ \\mathrm{A/m}$$",
+    "$$H(0.1)=\\frac{3(0.1)^2}{2(0.02)^{3/2}}=5.30\\ \\mathrm{A/m}$$",
+    "At $z=a$ the field is $1/2^{3/2}=0.354$ of its value at the center."
+   ],
+   "answers": [
+    {
+     "label": "H(0)",
+     "value": "15.0\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H(10\\ \\mathrm{cm})",
+     "value": "5.30\\ \\mathrm{A/m}"
+    }
+   ],
+   "widget": "biot",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-06",
+   "difficulty": 3,
+   "title": "Square loop at its center",
+   "prompt": "A square loop $20\\ \\mathrm{cm}$ on a side carries $1\\ \\mathrm{A}$. Find $H$ at its center, and compare with a circular loop of the same perimeter.",
+   "hints": [
+    "Add four finite segments. Each is $d=10\\ \\mathrm{cm}$ from the center and runs from $-d$ to $d$ along its length.",
+    "Same perimeter: $2\\pi a=0.8\\ \\mathrm{m}$."
+   ],
+   "steps": [
+    "$$H_{\\text{side}}=\\frac{I}{4\\pi d}\\cdot2\\cdot\\frac{d}{\\sqrt{2}\\,d}=\\frac{I}{2\\sqrt2\\,\\pi d}$$",
+    "$$H=4H_{\\text{side}}=\\frac{\\sqrt2\\,I}{\\pi d}=4.50\\ \\mathrm{A/m}$$",
+    "$$a=\\frac{0.8}{2\\pi}=127\\ \\mathrm{mm},\\qquad H_{\\text{circle}}=\\frac{I}{2a}=3.93\\ \\mathrm{A/m}$$"
+   ],
+   "answers": [
+    {
+     "label": "H_{\\text{square}}",
+     "value": "4.50\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H_{\\text{circle}}",
+     "value": "3.93\\ \\mathrm{A/m}"
+    }
+   ],
+   "widget": "biot",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-07",
+   "difficulty": 1,
+   "title": "Long solenoid",
+   "prompt": "A $25\\ \\mathrm{cm}$ solenoid has $500$ turns and carries $2\\ \\mathrm{A}$. Find $H$ and $B$ inside with an air core, and $B$ with an iron core of $\\mu_r=200$.",
+   "hints": [
+    "$H=nI$ with $n=N/\\ell$."
+   ],
+   "steps": [
+    "$$n=\\frac{500}{0.25}=2000\\ \\mathrm{turns/m},\\qquad H=nI=4.00\\ \\mathrm{kA/m}$$",
+    "$$B_{\\text{air}}=\\mu_0H=5.03\\ \\mathrm{mT}$$",
+    "$$B_{\\text{iron}}=200\\,\\mu_0H=1.01\\ \\mathrm{T}$$"
+   ],
+   "answers": [
+    {
+     "label": "H",
+     "value": "4.00\\ \\mathrm{kA/m}"
+    },
+    {
+     "label": "B_{\\text{air}}",
+     "value": "5.03\\ \\mathrm{mT}"
+    },
+    {
+     "label": "B_{\\text{iron}}",
+     "value": "1.01\\ \\mathrm{T}"
+    }
+   ],
+   "widget": "biot",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-08",
+   "difficulty": 2,
+   "title": "Ampère's law in a coax",
+   "prompt": "A coax has a solid inner conductor of radius $1\\ \\mathrm{mm}$ carrying $5\\ \\mathrm{A}$ (spread uniformly) and a thin outer conductor at $4\\ \\mathrm{mm}$ carrying the $5\\ \\mathrm{A}$ return. Find $H$ at $r=0.5\\ \\mathrm{mm}$, $3\\ \\mathrm{mm}$ and $6\\ \\mathrm{mm}$.",
+   "hints": [
+    "Use circles of radius $r$: $H(2\\pi r)=I_{\\mathrm{enc}}$.",
+    "Inside the inner conductor $I_{\\mathrm{enc}}=I\\,r^2/a^2$. Outside everything, the currents cancel."
+   ],
+   "steps": [
+    "$$r=0.5\\ \\mathrm{mm}:\\ H=\\frac{Ir}{2\\pi a^2}=398\\ \\mathrm{A/m}$$",
+    "$$r=3\\ \\mathrm{mm}:\\ H=\\frac{I}{2\\pi r}=265\\ \\mathrm{A/m}$$",
+    "$$r=6\\ \\mathrm{mm}:\\ I_{\\mathrm{enc}}=5-5=0\\ \\Rightarrow\\ H=0$$",
+    "A coax keeps its magnetic field inside, which is why it doesn't radiate or pick up interference."
+   ],
+   "answers": [
+    {
+     "label": "H(0.5\\ \\mathrm{mm})",
+     "value": "398\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H(3\\ \\mathrm{mm})",
+     "value": "265\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H(6\\ \\mathrm{mm})",
+     "value": "0"
+    }
+   ],
+   "widget": "ampere",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-09",
+   "difficulty": 1,
+   "title": "Toroid",
+   "prompt": "A toroid has $200$ turns carrying $1\\ \\mathrm{A}$. Find $H$ inside the core at a mean radius of $5\\ \\mathrm{cm}$, and outside it.",
+   "hints": [
+    "A circle inside the core links the current $NI$; one outside links zero net current."
+   ],
+   "steps": [
+    "$$H(2\\pi r)=NI\\ \\Rightarrow\\ H=\\frac{(200)(1)}{2\\pi(0.05)}=637\\ \\mathrm{A/m}$$",
+    "Outside, a loop links each turn twice (going up and coming down), so $I_{\\mathrm{enc}}=0$ and $H=0$."
+   ],
+   "answers": [
+    {
+     "label": "H_{\\text{inside}}",
+     "value": "637\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H_{\\text{outside}}",
+     "value": "0"
+    }
+   ],
+   "widget": "ampere",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-10",
+   "difficulty": 1,
+   "title": "Force between parallel wires",
+   "prompt": "Two long parallel wires $5\\ \\mathrm{cm}$ apart carry $10\\ \\mathrm{A}$ and $20\\ \\mathrm{A}$ in the same direction. Find the force per meter and whether it attracts or repels.",
+   "hints": [
+    "Wire 1 makes $B_1=\\mu_0I_1/(2\\pi d)$ at wire 2; the force per meter is $I_2B_1$."
+   ],
+   "steps": [
+    "$$F'=\\frac{\\mu_0I_1I_2}{2\\pi d}=\\frac{(4\\pi\\times10^{-7})(10)(20)}{2\\pi(0.05)}=800\\ \\mathrm{\\mu N/m}$$",
+    "Currents in the same direction attract."
+   ],
+   "answers": [
+    {
+     "label": "F'",
+     "value": "800\\ \\mathrm{\\mu N/m}\\ \\text{(attract)}"
+    }
+   ],
+   "widget": "ampere",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-11",
+   "difficulty": 2,
+   "title": "Inductance and energy of a solenoid",
+   "prompt": "A $25\\ \\mathrm{cm}$ air-core solenoid has $500$ turns and a radius of $1\\ \\mathrm{cm}$. Find its inductance and the energy stored at $2\\ \\mathrm{A}$.",
+   "hints": [
+    "$\\Phi=BA=\\mu_0nIA$ through each turn, and $L=N\\Phi/I$."
+   ],
+   "steps": [
+    "$$L=\\frac{N\\Phi}{I}=\\frac{\\mu_0N^2A}{\\ell}$$",
+    "$$L=\\frac{(4\\pi\\times10^{-7})(500)^2\\pi(0.01)^2}{0.25}=395\\ \\mathrm{\\mu H}$$",
+    "$$W_m=\\tfrac12LI^2=790\\ \\mathrm{\\mu J}$$"
+   ],
+   "answers": [
+    {
+     "label": "L",
+     "value": "395\\ \\mathrm{\\mu H}"
+    },
+    {
+     "label": "W_m",
+     "value": "790\\ \\mathrm{\\mu J}"
+    }
+   ],
+   "widget": "biot",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-12",
+   "difficulty": 2,
+   "title": "Flux leaving an iron surface",
+   "prompt": "Iron ($\\mu_r=1000$) fills $z<0$ and air fills $z>0$, with no surface current. In the iron, $\\mathbf{B}=\\hat{\\mathbf{x}}\\,1.2+\\hat{\\mathbf{z}}\\,0.4\\ \\mathrm{T}$. Find $\\mathbf{B}$ in the air just above the surface and the angles from the normal.",
+   "hints": [
+    "Normal $B$ is continuous: $B_z$ carries over.",
+    "Tangential $H$ is continuous: $B_x/\\mu$ carries over."
+   ],
+   "steps": [
+    "$$B_{z,\\text{air}}=0.4\\ \\mathrm{T}$$",
+    "$$B_{x,\\text{air}}=\\mu_0\\frac{1.2}{1000\\mu_0}=1.20\\ \\mathrm{mT}$$",
+    "$$\\mathbf{B}_{\\text{air}}=\\hat{\\mathbf{x}}\\,1.20\\ \\mathrm{mT}+\\hat{\\mathbf{z}}\\,0.4\\ \\mathrm{T}$$",
+    "$$\\theta_{\\text{iron}}=71.6^\\circ,\\qquad\\theta_{\\text{air}}=0.172^\\circ$$",
+    "The flux leaves the iron almost exactly normal to its surface."
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{B}_{\\text{air}}",
+     "value": "\\hat{\\mathbf{x}}\\,1.20\\ \\mathrm{mT}+\\hat{\\mathbf{z}}\\,0.4\\ \\mathrm{T}"
+    },
+    {
+     "label": "\\theta_{\\text{air}}",
+     "value": "0.172^\\circ"
+    }
+   ],
+   "widget": "mboundary",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-13",
+   "difficulty": 1,
+   "title": "Can this be a magnetic field?",
+   "prompt": "For what value of $k$ is $\\mathbf{B}=\\hat{\\mathbf{x}}\\,2x-\\hat{\\mathbf{y}}\\,y+\\hat{\\mathbf{z}}\\,kz$ a possible magnetic field?",
+   "hints": [
+    "Every magnetic field has $\\nabla\\cdot\\mathbf{B}=0$."
+   ],
+   "steps": [
+    "$$\\nabla\\cdot\\mathbf{B}=2-1+k=0$$",
+    "$$k=-1$$"
+   ],
+   "answers": [
+    {
+     "label": "k",
+     "value": "-1"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "magnetostatics-14",
+   "difficulty": 1,
+   "title": "Flux through a tilted loop",
+   "prompt": "A circular loop of radius $5\\ \\mathrm{cm}$ sits in a uniform $\\mathbf{B}=\\hat{\\mathbf{z}}\\,0.2\\ \\mathrm{T}$, with its normal tilted $30^\\circ$ from $\\hat{\\mathbf{z}}$. Find the flux through it.",
+   "hints": [
+    "For a flat loop in a uniform field, $\\Phi=BA\\cos\\theta$."
+   ],
+   "steps": [
+    "$$\\Phi=(0.2)\\,\\pi(0.05)^2\\cos30^\\circ=1.36\\ \\mathrm{mWb}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\Phi",
+     "value": "1.36\\ \\mathrm{mWb}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "magnetostatics",
+    "time-varying"
+   ]
+  }
+ ]
+}

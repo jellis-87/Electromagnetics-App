@@ -1,0 +1,222 @@
+{
+ "unit": "Fields and phasors",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-phasors-01",
+   "front": "What is the difference between a scalar field and a vector field?",
+   "back": "A scalar field gives a number at each point (temperature, potential $V$). A vector field gives a magnitude and a direction at each point ($\\mathbf{E}$, $\\mathbf{H}$).",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-02",
+   "front": "What are the four field quantities, and their units?",
+   "back": "$\\mathbf{E}$ (V/m), $\\mathbf{D}$ (C/m²), $\\mathbf{H}$ (A/m), $\\mathbf{B}$ (T = Wb/m²).",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-03",
+   "front": "Force on a charge $q$ in an electric field?",
+   "back": "$$\\mathbf{F}=q\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-04",
+   "front": "How are $\\mathbf{D}$ and $\\mathbf{E}$ related in a simple medium?",
+   "back": "$$\\mathbf{D}=\\varepsilon\\mathbf{E}=\\varepsilon_r\\varepsilon_0\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-05",
+   "front": "How are $\\mathbf{B}$ and $\\mathbf{H}$ related in a simple medium?",
+   "back": "$$\\mathbf{B}=\\mu\\mathbf{H}=\\mu_r\\mu_0\\mathbf{H}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-06",
+   "front": "Values of $\\varepsilon_0$ and $\\mu_0$?",
+   "back": "$$\\varepsilon_0\\approx 8.854\\times10^{-12}\\ \\mathrm{F/m},\\qquad \\mu_0=4\\pi\\times10^{-7}\\ \\mathrm{H/m}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-07",
+   "front": "Speed of light from $\\mu_0$ and $\\varepsilon_0$?",
+   "back": "$$c=\\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}}\\approx 3\\times10^{8}\\ \\mathrm{m/s}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-08",
+   "front": "What does conductivity $\\sigma$ describe, and in what units?",
+   "back": "How easily charge flows through a material, in S/m. A perfect conductor has $\\sigma\\to\\infty$; a perfect insulator has $\\sigma=0$.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-09",
+   "front": "Relations among $f$, $\\omega$ and the period $T$?",
+   "back": "$$\\omega=2\\pi f,\\qquad T=\\frac{1}{f}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-10",
+   "front": "Relations among $\\lambda$, $\\beta$, $f$ and $u_p$?",
+   "back": "$$\\lambda=\\frac{u_p}{f},\\qquad \\beta=\\frac{2\\pi}{\\lambda},\\qquad u_p=\\frac{\\omega}{\\beta}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-11",
+   "front": "Which way does $\\cos(\\omega t-\\beta z)$ travel? And $\\cos(\\omega t+\\beta z)$?",
+   "back": "$\\omega t-\\beta z$: toward $+z$. $\\omega t+\\beta z$: toward $-z$. Follow a crest: $\\omega t\\mp\\beta z=$ const.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-12",
+   "front": "Phase velocity in a medium with $\\varepsilon_r$ and $\\mu_r$?",
+   "back": "$$u_p=\\frac{1}{\\sqrt{\\mu\\varepsilon}}=\\frac{c}{\\sqrt{\\mu_r\\varepsilon_r}}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-13",
+   "front": "Wavelength in a non-magnetic dielectric compared with free space?",
+   "back": "$$\\lambda=\\frac{\\lambda_0}{\\sqrt{\\varepsilon_r}}$$The wave slows down, so it gets shorter.",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-14",
+   "front": "Euler's identity?",
+   "back": "$$e^{j\\theta}=\\cos\\theta+j\\sin\\theta$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-15",
+   "front": "What is a phasor?",
+   "back": "A complex number that holds a sinusoid's amplitude and phase. The time function comes back with$$v(t)=\\mathrm{Re}\\left\\{\\tilde V e^{j\\omega t}\\right\\}$$",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-16",
+   "front": "Phasor of $A\\cos(\\omega t+\\phi)$?",
+   "back": "$$\\tilde V=Ae^{j\\phi}=A\\angle\\phi$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-17",
+   "front": "Phasor of $A\\sin(\\omega t+\\phi)$?",
+   "back": "Write it as a cosine first: $\\sin x=\\cos(x-90^\\circ)$.$$\\tilde V=A\\angle(\\phi-90^\\circ)=-jAe^{j\\phi}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-18",
+   "front": "What do $\\dfrac{d}{dt}$ and $\\displaystyle\\int dt$ become for phasors?",
+   "back": "$$\\frac{d}{dt}\\to j\\omega,\\qquad \\int dt\\to\\frac{1}{j\\omega}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-19",
+   "front": "Why use phasors, and when do they work?",
+   "back": "They turn differential equations in time into algebra. They work for linear systems driven at a single frequency, in sinusoidal steady state.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-20",
+   "front": "Convert $a+jb$ to polar form.",
+   "back": "$$|z|=\\sqrt{a^2+b^2},\\qquad \\theta=\\operatorname{atan2}(b,a)$$Check the quadrant: $-3-j4$ is at $-126.9^\\circ$, not $53.1^\\circ$.",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-21",
+   "front": "How do you multiply and divide complex numbers in polar form?",
+   "back": "Multiply: magnitudes multiply, angles add. Divide: magnitudes divide, angles subtract.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-22",
+   "front": "Can you add the phasors of a 1 kHz and a 2 kHz signal?",
+   "back": "No. A phasor assumes one frequency $\\omega$. Signals at different frequencies must be added in the time domain.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-23",
+   "front": "What is $j$ as a phasor, and what does multiplying by $j$ do?",
+   "back": "$j=e^{j90^\\circ}$. Multiplying by $j$ advances the phase by $90^\\circ$; multiplying by $-j$ delays it by $90^\\circ$.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-24",
+   "front": "Guided versus unguided waves?",
+   "back": "Guided waves follow a structure such as a transmission line or waveguide. Unguided waves spread through space from an antenna, like radio and light.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  }
+ ]
+}

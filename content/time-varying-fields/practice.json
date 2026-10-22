@@ -1,0 +1,305 @@
+{
+ "unit": "Time-varying fields",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "time-varying-01",
+   "difficulty": 1,
+   "title": "EMF in a stationary coil",
+   "prompt": "A 10-turn coil of area $0.05\\ \\mathrm{m^2}$ sits in $\\mathbf{B}=\\hat{\\mathbf{z}}\\,0.1\\cos(120\\pi t)\\ \\mathrm{T}$, with its normal along $\\hat{\\mathbf{z}}$. Find the induced EMF.",
+   "hints": [
+    "$\\Phi=BA$ through each turn, and $V_{\\mathrm{emf}}=-N\\,d\\Phi/dt$."
+   ],
+   "steps": [
+    "$$\\Phi=(0.1)(0.05)\\cos(120\\pi t)=0.005\\cos(120\\pi t)\\ \\mathrm{Wb}$$",
+    "$$V_{\\mathrm{emf}}=-10\\frac{d\\Phi}{dt}=(10)(0.005)(120\\pi)\\sin(120\\pi t)=18.8\\sin(120\\pi t)\\ \\mathrm{V}$$"
+   ],
+   "answers": [
+    {
+     "label": "V_{\\mathrm{emf}}",
+     "value": "18.8\\sin(120\\pi t)\\ \\mathrm{V}"
+    }
+   ],
+   "widget": "faraday",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-02",
+   "difficulty": 2,
+   "title": "Sliding bar on rails",
+   "prompt": "A metal bar $0.5\\ \\mathrm{m}$ long slides at $4\\ \\mathrm{m/s}$ along rails in a uniform $0.3\\ \\mathrm{T}$ field normal to the rails. The circuit resistance is $2\\ \\Omega$. Find the EMF, the current, the force needed to keep the bar moving, and the power.",
+   "hints": [
+    "$V=uB\\ell$.",
+    "The current in the bar feels $F=I\\ell B$, opposing the motion (Lenz)."
+   ],
+   "steps": [
+    "$$V=uB\\ell=(4)(0.3)(0.5)=0.600\\ \\mathrm{V}$$",
+    "$$I=\\frac{V}{R}=0.300\\ \\mathrm{A}$$",
+    "$$F=I\\ell B=45.0\\ \\mathrm{mN}$$",
+    "$$P=Fu=I^2R=180\\ \\mathrm{mW}$$",
+    "The mechanical power you supply equals the electrical power dissipated in the resistor."
+   ],
+   "answers": [
+    {
+     "label": "V",
+     "value": "0.600\\ \\mathrm{V}"
+    },
+    {
+     "label": "I",
+     "value": "0.300\\ \\mathrm{A}"
+    },
+    {
+     "label": "F",
+     "value": "45.0\\ \\mathrm{mN}"
+    },
+    {
+     "label": "P",
+     "value": "180\\ \\mathrm{mW}"
+    }
+   ],
+   "widget": "faraday",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-03",
+   "difficulty": 1,
+   "title": "A simple generator",
+   "prompt": "A 100-turn coil of area $100\\ \\mathrm{cm^2}$ spins at $60$ revolutions per second in a uniform $0.5\\ \\mathrm{T}$ field. Find the peak and RMS EMF.",
+   "hints": [
+    "$\\Phi=NBA\\cos\\omega t$, so $V=NBA\\omega\\sin\\omega t$."
+   ],
+   "steps": [
+    "$$\\omega=2\\pi(60)=377\\ \\mathrm{rad/s}$$",
+    "$$V_{\\mathrm{peak}}=NBA\\omega=(100)(0.5)(0.01)(377)=188\\ \\mathrm{V}$$",
+    "$$V_{\\mathrm{rms}}=\\frac{V_{\\mathrm{peak}}}{\\sqrt2}=133\\ \\mathrm{V}$$"
+   ],
+   "answers": [
+    {
+     "label": "V_{\\mathrm{peak}}",
+     "value": "188\\ \\mathrm{V}"
+    },
+    {
+     "label": "V_{\\mathrm{rms}}",
+     "value": "133\\ \\mathrm{V}"
+    }
+   ],
+   "widget": "faraday",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-04",
+   "difficulty": 1,
+   "title": "Which way does the current flow?",
+   "prompt": "A horizontal wire loop sits in a vertical magnetic field pointing up, and the field is getting stronger. Looking down from above, which way does the induced current flow? What if the field is getting weaker?",
+   "hints": [
+    "The induced current makes a field that opposes the change.",
+    "Use the right-hand rule: counterclockwise current (seen from above) makes a field pointing up."
+   ],
+   "steps": [
+    "The upward flux is increasing, so the induced field must point down inside the loop.",
+    "A downward field inside the loop needs clockwise current, seen from above.",
+    "If the field is weakening, the induced field points up to prop up the flux: counterclockwise."
+   ],
+   "answers": [
+    {
+     "label": "\\text{Increasing}",
+     "value": "\\text{clockwise}"
+    },
+    {
+     "label": "\\text{Decreasing}",
+     "value": "\\text{counterclockwise}"
+    }
+   ],
+   "widget": "faraday",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-05",
+   "difficulty": 1,
+   "title": "Ideal transformer",
+   "prompt": "An ideal transformer has $100$ primary turns and $500$ secondary turns. With $10\\ \\mathrm{V}$ RMS on the primary and a $250\\ \\Omega$ load, find the secondary voltage and both currents.",
+   "hints": [
+    "The same flux links both coils, so the voltage per turn is the same."
+   ],
+   "steps": [
+    "$$V_2=V_1\\frac{N_2}{N_1}=10\\cdot5=50\\ \\mathrm{V}$$",
+    "$$I_2=\\frac{50}{250}=0.2\\ \\mathrm{A},\\qquad I_1=I_2\\frac{N_2}{N_1}=1\\ \\mathrm{A}$$",
+    "Power in, $10\\times1=10$ W, equals power out, $50\\times0.2=10$ W."
+   ],
+   "answers": [
+    {
+     "label": "V_2",
+     "value": "50\\ \\mathrm{V}"
+    },
+    {
+     "label": "I_2",
+     "value": "0.2\\ \\mathrm{A}"
+    },
+    {
+     "label": "I_1",
+     "value": "1\\ \\mathrm{A}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-06",
+   "difficulty": 1,
+   "title": "Displacement current density",
+   "prompt": "In a lossless dielectric with $\\varepsilon_r=4$, $\\mathbf{E}=\\hat{\\mathbf{x}}\\,100\\cos(10^9t)\\ \\mathrm{V/m}$. Find $\\mathbf{J}_d$.",
+   "hints": [
+    "$\\mathbf{J}_d=\\varepsilon\\,\\partial\\mathbf{E}/\\partial t$."
+   ],
+   "steps": [
+    "$$\\mathbf{J}_d=\\varepsilon_r\\varepsilon_0\\frac{\\partial\\mathbf{E}}{\\partial t}=-\\hat{\\mathbf{x}}\\,(4)(8.854\\times10^{-12})(100)(10^9)\\sin(10^9t)$$",
+    "$$\\mathbf{J}_d=-\\hat{\\mathbf{x}}\\,3.54\\sin(10^9t)\\ \\mathrm{A/m^2}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{J}_d",
+     "value": "-\\hat{\\mathbf{x}}\\,3.54\\sin(10^9t)\\ \\mathrm{A/m^2}"
+    }
+   ],
+   "widget": "dispcur",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-07",
+   "difficulty": 2,
+   "title": "Is seawater a conductor?",
+   "prompt": "Seawater has $\\sigma=4\\ \\mathrm{S/m}$ and $\\varepsilon_r=81$. Find $\\sigma/(\\omega\\varepsilon)$ at $1\\ \\mathrm{MHz}$ and at $10\\ \\mathrm{GHz}$, and the frequency where conduction and displacement currents are equal.",
+   "hints": [
+    "Compare $\\sigma$ with $\\omega\\varepsilon=2\\pi f\\varepsilon_r\\varepsilon_0$."
+   ],
+   "steps": [
+    "$$1\\ \\mathrm{MHz}:\\ \\frac{\\sigma}{\\omega\\varepsilon}=\\frac{4}{2\\pi(10^6)(81)\\varepsilon_0}=888$$",
+    "$$10\\ \\mathrm{GHz}:\\ \\frac{\\sigma}{\\omega\\varepsilon}=0.0888$$",
+    "$$f_c=\\frac{\\sigma}{2\\pi\\varepsilon}=888\\ \\mathrm{MHz}$$",
+    "Seawater is a good conductor at 1 MHz but behaves like a lossy dielectric at 10 GHz."
+   ],
+   "answers": [
+    {
+     "label": "\\sigma/\\omega\\varepsilon\\ (1\\ \\mathrm{MHz})",
+     "value": "888"
+    },
+    {
+     "label": "\\sigma/\\omega\\varepsilon\\ (10\\ \\mathrm{GHz})",
+     "value": "0.0888"
+    },
+    {
+     "label": "f_c",
+     "value": "888\\ \\mathrm{MHz}"
+    }
+   ],
+   "widget": "dispcur",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-08",
+   "difficulty": 2,
+   "title": "Displacement current in a capacitor",
+   "prompt": "An air-filled parallel-plate capacitor ($A=1\\ \\mathrm{cm^2}$, $d=1\\ \\mathrm{mm}$) has $v(t)=10\\sin(2\\pi\\times10^6t)\\ \\mathrm{V}$ across it. Find the displacement current between the plates and compare it with the current in the leads.",
+   "hints": [
+    "$E=v/d$ and $J_d=\\varepsilon_0\\,\\partial E/\\partial t$; multiply by $A$.",
+    "The lead current is $C\\,dv/dt$."
+   ],
+   "steps": [
+    "$$I_d=AJ_d=A\\varepsilon_0\\frac{1}{d}\\frac{dv}{dt}=C\\frac{dv}{dt}$$",
+    "$$C=\\frac{\\varepsilon_0A}{d}=8.854e-13\\ \\mathrm{F}$$",
+    "$$I_d=CV_0\\omega\\cos\\omega t=55.6\\ \\mathrm{\\mu A}\\,\\cos(2\\pi\\times10^6t)$$",
+    "It equals the conduction current in the leads exactly, so current is continuous around the circuit."
+   ],
+   "answers": [
+    {
+     "label": "I_d",
+     "value": "55.6\\ \\mathrm{\\mu A}\\,\\cos(2\\pi\\times10^6t)"
+    }
+   ],
+   "widget": "dispcur",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-09",
+   "difficulty": 1,
+   "title": "Relaxation times",
+   "prompt": "Find the charge relaxation time of copper ($\\sigma=5.8\\times10^7\\ \\mathrm{S/m}$, $\\varepsilon_r=1$) and of mica ($\\sigma=10^{-15}\\ \\mathrm{S/m}$, $\\varepsilon_r=6$).",
+   "hints": [
+    "$\\tau_r=\\varepsilon/\\sigma$."
+   ],
+   "steps": [
+    "$$\\tau_{\\text{Cu}}=\\frac{8.854\\times10^{-12}}{5.8\\times10^7}=1.53\\times10^{-19}\\ \\mathrm{s}$$",
+    "$$\\tau_{\\text{mica}}=\\frac{6(8.854\\times10^{-12})}{10^{-15}}=5.31\\times10^{4}\\ \\mathrm{s}=14.8\\ \\mathrm{h}$$",
+    "Charge put inside copper vanishes to the surface essentially instantly; charge on mica stays for hours."
+   ],
+   "answers": [
+    {
+     "label": "\\tau_{\\text{Cu}}",
+     "value": "1.53\\times10^{-19}\\ \\mathrm{s}"
+    },
+    {
+     "label": "\\tau_{\\text{mica}}",
+     "value": "5.31\\times10^{4}\\ \\mathrm{s}=14.8\\ \\mathrm{h}"
+    }
+   ],
+   "widget": "dispcur",
+   "source": "original",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "time-varying-10",
+   "difficulty": 3,
+   "title": "H from E with Faraday's law",
+   "prompt": "In free space, $\\mathbf{E}=\\hat{\\mathbf{x}}\\,10\\cos(\\omega t-\\beta z)\\ \\mathrm{V/m}$ at $f=100\\ \\mathrm{MHz}$. Use Faraday's law to find $\\mathbf{H}$, then check that it satisfies Ampère's law with $\\mathbf{J}=0$.",
+   "hints": [
+    "In phasor form, $\\nabla\\times\\tilde{\\mathbf{E}}=-j\\omega\\mu_0\\tilde{\\mathbf{H}}$.",
+    "Only $\\partial\\tilde E_x/\\partial z$ survives in the curl: it points along $\\hat{\\mathbf{y}}$."
+   ],
+   "steps": [
+    "$$\\tilde{\\mathbf{E}}=\\hat{\\mathbf{x}}\\,10e^{-j\\beta z},\\qquad\\nabla\\times\\tilde{\\mathbf{E}}=\\hat{\\mathbf{y}}\\,\\frac{\\partial\\tilde E_x}{\\partial z}=-\\hat{\\mathbf{y}}\\,j\\beta\\,10e^{-j\\beta z}$$",
+    "$$\\tilde{\\mathbf{H}}=\\frac{\\nabla\\times\\tilde{\\mathbf{E}}}{-j\\omega\\mu_0}=\\hat{\\mathbf{y}}\\,\\frac{10\\beta}{\\omega\\mu_0}e^{-j\\beta z}=\\hat{\\mathbf{y}}\\,\\frac{10}{\\eta_0}e^{-j\\beta z}$$",
+    "$$\\beta=\\frac{\\omega}{c}=2.10\\ \\mathrm{rad/m},\\qquad\\eta_0=377\\ \\Omega$$",
+    "$$\\mathbf{H}=\\hat{\\mathbf{y}}\\,26.5\\ \\mathrm{mA/m}\\cos(\\omega t-2.10z)$$",
+    "Check: $\\nabla\\times\\tilde{\\mathbf{H}}=-\\hat{\\mathbf{x}}\\,\\dfrac{\\partial\\tilde H_y}{\\partial z}=\\hat{\\mathbf{x}}\\,\\dfrac{j\\beta\\,10}{\\eta_0}e^{-j\\beta z}$, and $j\\omega\\varepsilon_0\\tilde{\\mathbf{E}}=\\hat{\\mathbf{x}}\\,j\\omega\\varepsilon_0\\,10e^{-j\\beta z}$. They match because $\\beta/\\eta_0=\\omega\\varepsilon_0$."
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{H}",
+     "value": "\\hat{\\mathbf{y}}\\,26.5\\ \\mathrm{mA/m}\\cos(\\omega t-2.10z)"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "time-varying",
+    "plane-waves"
+   ]
+  }
+ ]
+}

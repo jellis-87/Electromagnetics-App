@@ -1,0 +1,176 @@
+{
+ "unit": "Fields and phasors",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Scalar field",
+   "symbol": "",
+   "units": "",
+   "definition": "A quantity with only a magnitude at each point in space, such as temperature or electric potential $V(x,y,z)$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Vector field",
+   "symbol": "",
+   "units": "",
+   "definition": "A quantity with a magnitude and a direction at each point in space, such as $\\mathbf{E}(x,y,z)$. Drawn as arrows or field lines.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Electric field intensity",
+   "symbol": "\\mathbf{E}",
+   "units": "\\mathrm{V/m}",
+   "definition": "Force per unit charge on a small test charge: $\\mathbf{F}=q\\mathbf{E}$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Electric flux density",
+   "symbol": "\\mathbf{D}",
+   "units": "\\mathrm{C/m^2}",
+   "definition": "Also called electric displacement. In a simple medium $\\mathbf{D}=\\varepsilon\\mathbf{E}$. Its flux through a closed surface equals the enclosed free charge.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Magnetic flux density",
+   "symbol": "\\mathbf{B}",
+   "units": "\\mathrm{T}",
+   "definition": "Sets the force on a moving charge: $\\mathbf{F}=q\\mathbf{u}\\times\\mathbf{B}$. One tesla is one Wb/m².",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Magnetic field intensity",
+   "symbol": "\\mathbf{H}",
+   "units": "\\mathrm{A/m}",
+   "definition": "The magnetic field set up by currents. In a simple medium $\\mathbf{B}=\\mu\\mathbf{H}$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Permittivity",
+   "symbol": "\\varepsilon=\\varepsilon_r\\varepsilon_0",
+   "units": "\\mathrm{F/m}",
+   "definition": "How a material responds to an electric field. $\\varepsilon_0\\approx8.854\\times10^{-12}$ F/m; $\\varepsilon_r$ is the dielectric constant.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Permeability",
+   "symbol": "\\mu=\\mu_r\\mu_0",
+   "units": "\\mathrm{H/m}",
+   "definition": "How a material responds to a magnetic field. $\\mu_0=4\\pi\\times10^{-7}$ H/m. Most materials have $\\mu_r\\approx1$; iron and ferrites are much larger.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Conductivity",
+   "symbol": "\\sigma",
+   "units": "\\mathrm{S/m}",
+   "definition": "How easily current flows in a material: $\\mathbf{J}=\\sigma\\mathbf{E}$. Copper is about $5.8\\times10^7$ S/m.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Constitutive relations",
+   "symbol": "",
+   "units": "",
+   "definition": "The material equations that tie the fields together: $\\mathbf{D}=\\varepsilon\\mathbf{E}$, $\\mathbf{B}=\\mu\\mathbf{H}$, $\\mathbf{J}=\\sigma\\mathbf{E}$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Angular frequency",
+   "symbol": "\\omega",
+   "units": "\\mathrm{rad/s}",
+   "definition": "$\\omega=2\\pi f$. The rate at which a sinusoid's phase advances in time.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Wavelength",
+   "symbol": "\\lambda",
+   "units": "\\mathrm{m}",
+   "definition": "Distance between crests of a wave at one instant: $\\lambda=\\dfrac{u_p}{f}=\\dfrac{2\\pi}{\\beta}$.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Traveling wave",
+   "symbol": "",
+   "units": "",
+   "definition": "A disturbance that moves without changing shape, like $A\\cos(\\omega t-\\beta z)$ moving toward $+z$ at $u_p=\\omega/\\beta$.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Euler's identity",
+   "symbol": "",
+   "units": "",
+   "definition": "$e^{j\\theta}=\\cos\\theta+j\\sin\\theta$. It links a rotating complex number to a sinusoid, which is the basis of phasors.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Polar form",
+   "symbol": "A\\angle\\theta",
+   "units": "",
+   "definition": "A complex number written as a magnitude and an angle: $A\\angle\\theta=Ae^{j\\theta}=A\\cos\\theta+jA\\sin\\theta$.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Sinusoidal steady state",
+   "symbol": "",
+   "units": "",
+   "definition": "The state of a linear system long after a sinusoidal source turns on, when every voltage and current is a sinusoid at the source frequency. Phasors describe it.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Electromagnetic spectrum",
+   "symbol": "",
+   "units": "",
+   "definition": "The range of EM wave frequencies: radio, microwave (about 300 MHz to 300 GHz), infrared, visible light, ultraviolet, X-rays and gamma rays. All travel at $c$ in vacuum.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  }
+ ]
+}

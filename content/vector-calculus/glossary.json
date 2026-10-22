@@ -1,0 +1,206 @@
+{
+ "unit": "Vector calculus",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Unit vector",
+   "symbol": "\\hat{\\mathbf{a}}",
+   "units": "",
+   "definition": "A vector of length one that only gives a direction: $\\hat{\\mathbf{a}}=\\mathbf{A}/|\\mathbf{A}|$.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Position vector",
+   "symbol": "\\mathbf{R}",
+   "units": "\\mathrm{m}",
+   "definition": "The vector from the origin to a point: $\\mathbf{R}=\\hat{\\mathbf{x}}x+\\hat{\\mathbf{y}}y+\\hat{\\mathbf{z}}z$.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Distance vector",
+   "symbol": "\\mathbf{R}_{12}",
+   "units": "\\mathrm{m}",
+   "definition": "The vector from point 1 to point 2: $\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1$. Used constantly in Coulomb's law and Biot–Savart.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Dot product",
+   "symbol": "\\mathbf{A}\\cdot\\mathbf{B}",
+   "units": "",
+   "definition": "$|\\mathbf{A}||\\mathbf{B}|\\cos\\theta$, a scalar. It picks out the component of one vector along another.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Cross product",
+   "symbol": "\\mathbf{A}\\times\\mathbf{B}",
+   "units": "",
+   "definition": "A vector perpendicular to both, of length $|\\mathbf{A}||\\mathbf{B}|\\sin\\theta$, direction by the right-hand rule. Note $\\mathbf{B}\\times\\mathbf{A}=-\\mathbf{A}\\times\\mathbf{B}$.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Cartesian coordinates",
+   "symbol": "(x,y,z)",
+   "units": "",
+   "definition": "Three perpendicular axes with unit vectors $\\hat{\\mathbf{x}},\\hat{\\mathbf{y}},\\hat{\\mathbf{z}}$ that point the same way everywhere.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Cylindrical coordinates",
+   "symbol": "(r,\\phi,z)",
+   "units": "",
+   "definition": "Radial distance $r$ from the $z$-axis, azimuth $\\phi$ from the $+x$ axis, and height $z$. Natural for wires, coax and solenoids.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Spherical coordinates",
+   "symbol": "(R,\\theta,\\phi)",
+   "units": "",
+   "definition": "Distance $R$ from the origin, polar angle $\\theta$ down from $+z$, and azimuth $\\phi$. Natural for point charges and spheres.",
+   "widget": "coords",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Differential length",
+   "symbol": "d\\mathbf{l}",
+   "units": "\\mathrm{m}",
+   "definition": "A tiny step along a path. Its components carry the scale factors: $r\\,d\\phi$ in cylindrical, $R\\,d\\theta$ and $R\\sin\\theta\\,d\\phi$ in spherical.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Differential surface",
+   "symbol": "d\\mathbf{s}",
+   "units": "\\mathrm{m^2}",
+   "definition": "A tiny patch of surface, pointing along its normal. On a closed surface the normal points outward.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Line integral",
+   "symbol": "\\int_C\\mathbf{A}\\cdot d\\mathbf{l}",
+   "units": "",
+   "definition": "Adds up the component of $\\mathbf{A}$ along a path. For a force it is the work done; around a closed loop it is the circulation.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Flux",
+   "symbol": "\\int_S\\mathbf{A}\\cdot d\\mathbf{s}",
+   "units": "",
+   "definition": "How much of a vector field passes through a surface.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Gradient",
+   "symbol": "\\nabla V",
+   "units": "",
+   "definition": "A vector pointing toward the fastest increase of a scalar field, with magnitude equal to that rate of increase.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Divergence",
+   "symbol": "\\nabla\\cdot\\mathbf{A}",
+   "units": "",
+   "definition": "Net outward flux per unit volume at a point: positive at sources, negative at sinks.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Curl",
+   "symbol": "\\nabla\\times\\mathbf{A}",
+   "units": "",
+   "definition": "Circulation per unit area at a point, pointing along the axis a tiny paddle wheel would spin around.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Divergence theorem",
+   "symbol": "",
+   "units": "",
+   "definition": "Turns a volume integral of divergence into a flux through the closed surface: $\\int_V\\nabla\\cdot\\mathbf{A}\\,dV=\\oint_S\\mathbf{A}\\cdot d\\mathbf{s}$.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Stokes's theorem",
+   "symbol": "",
+   "units": "",
+   "definition": "Turns a surface integral of curl into a line integral around the boundary: $\\int_S(\\nabla\\times\\mathbf{A})\\cdot d\\mathbf{s}=\\oint_C\\mathbf{A}\\cdot d\\mathbf{l}$.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Laplacian",
+   "symbol": "\\nabla^2",
+   "units": "",
+   "definition": "The divergence of the gradient. $\\nabla^2V=0$ (Laplace's equation) holds wherever there is no charge.",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Solenoidal field",
+   "symbol": "",
+   "units": "",
+   "definition": "A field with zero divergence everywhere, so its field lines have no beginning or end. $\\mathbf{B}$ is always solenoidal.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "term": "Conservative field",
+   "symbol": "",
+   "units": "",
+   "definition": "A field with zero curl, so it is the gradient of a scalar and its line integrals do not depend on the path. Static $\\mathbf{E}$ is conservative.",
+   "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  }
+ ]
+}

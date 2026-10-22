@@ -1,0 +1,216 @@
+{
+ "unit": "Electrostatics",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Coulomb's law",
+   "symbol": "",
+   "units": "",
+   "definition": "The force between two point charges: proportional to the product of the charges and inversely proportional to the square of their separation.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Point charge",
+   "symbol": "Q",
+   "units": "\\mathrm{C}",
+   "definition": "A charge whose size is negligible compared with the distances of interest.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Line charge density",
+   "symbol": "\\rho_l",
+   "units": "\\mathrm{C/m}",
+   "definition": "Charge per unit length along a wire or edge.",
+   "widget": "gauss",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Surface charge density",
+   "symbol": "\\rho_s",
+   "units": "\\mathrm{C/m^2}",
+   "definition": "Charge per unit area on a sheet or conductor surface.",
+   "widget": "gauss",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Volume charge density",
+   "symbol": "\\rho_v",
+   "units": "\\mathrm{C/m^3}",
+   "definition": "Charge per unit volume in a region.",
+   "widget": "gauss",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Superposition",
+   "symbol": "",
+   "units": "",
+   "definition": "In linear media the total field is the vector sum of the fields of each charge acting alone.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Gauss's law",
+   "symbol": "",
+   "units": "",
+   "definition": "The outward flux of $\\mathbf{D}$ through any closed surface equals the free charge enclosed: $\\oint\\mathbf{D}\\cdot d\\mathbf{s}=Q_{\\mathrm{enc}}$.",
+   "widget": "gauss",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Gaussian surface",
+   "symbol": "",
+   "units": "",
+   "definition": "An imaginary closed surface chosen so that $\\mathbf{D}$ is constant and normal on it, which turns Gauss's law into simple algebra.",
+   "widget": "gauss",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Electric potential",
+   "symbol": "V",
+   "units": "\\mathrm{V}",
+   "definition": "Work per unit charge to bring a test charge from the reference point (usually infinity) to a point: $V=-\\int_\\infty^P\\mathbf{E}\\cdot d\\mathbf{l}$.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Equipotential surface",
+   "symbol": "",
+   "units": "",
+   "definition": "A surface on which $V$ is constant. Field lines cross it at right angles.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Electric field line",
+   "symbol": "",
+   "units": "",
+   "definition": "A curve that follows the direction of $\\mathbf{E}$. Lines start on positive charge and end on negative charge.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Electric dipole",
+   "symbol": "\\mathbf{p}=Q\\mathbf{d}",
+   "units": "\\mathrm{C\\,m}",
+   "definition": "Equal and opposite charges a small distance apart. Far away its potential falls as $1/R^2$ and its field as $1/R^3$.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Poisson's equation",
+   "symbol": "",
+   "units": "",
+   "definition": "$\\nabla^2V=-\\rho_v/\\varepsilon$. Reduces to Laplace's equation, $\\nabla^2V=0$, where there is no charge.",
+   "widget": null,
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Conductor",
+   "symbol": "",
+   "units": "",
+   "definition": "A material with free charges. In electrostatics its interior field is zero, its surface is an equipotential, and any net charge sits on the surface.",
+   "widget": null,
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Dielectric",
+   "symbol": "",
+   "units": "",
+   "definition": "An insulator whose molecules polarize in an applied field, which reduces the field for a given free charge. Described by $\\varepsilon_r>1$.",
+   "widget": "boundary",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Polarization",
+   "symbol": "\\mathbf{P}",
+   "units": "\\mathrm{C/m^2}",
+   "definition": "Dipole moment per unit volume in a dielectric: $\\mathbf{D}=\\varepsilon_0\\mathbf{E}+\\mathbf{P}$.",
+   "widget": "boundary",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Dielectric strength",
+   "symbol": "E_{ds}",
+   "units": "\\mathrm{V/m}",
+   "definition": "The largest field a material can take before it breaks down. Air: about $3\\ \\mathrm{MV/m}$.",
+   "widget": "capacitor",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Electrostatic boundary conditions",
+   "symbol": "",
+   "units": "",
+   "definition": "Tangential $\\mathbf{E}$ is continuous; normal $\\mathbf{D}$ jumps by the surface charge $\\rho_s$. At a conductor, $E_t=0$ and $D_n=\\rho_s$.",
+   "widget": "boundary",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Capacitance",
+   "symbol": "C",
+   "units": "\\mathrm{F}",
+   "definition": "Charge stored per volt between two conductors: $C=Q/V$.",
+   "widget": "capacitor",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Electrostatic energy",
+   "symbol": "W_e",
+   "units": "\\mathrm{J}",
+   "definition": "Energy stored in the field: $W_e=\\tfrac12\\int_V\\varepsilon E^2\\,dV=\\tfrac12CV^2$.",
+   "widget": "capacitor",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "term": "Image method",
+   "symbol": "",
+   "units": "",
+   "definition": "Replaces a grounded conducting plane with a mirror-image charge of opposite sign, which gives the same field above the plane.",
+   "widget": "charges",
+   "topics": [
+    "electrostatics"
+   ]
+  }
+ ]
+}

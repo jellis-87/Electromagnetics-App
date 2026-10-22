@@ -78,3 +78,33 @@ def roman(o):
     if isinstance(o,list): return [roman(x) for x in o]
     if isinstance(o,dict): return {k:roman(v) for k,v in o.items()}
     return o
+
+# ---- writing one content unit (used by the make_<topic>.py generators) ----
+FMT_CARDS="Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters."
+FMT_PROBLEMS="Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters."
+def write_unit(folder,unit,cards,terms,problems):
+    """cards: (front, back, kind, topics); terms: (term, symbol, units, definition, widget, topics);
+    problems: dicts with a topics list. Ids are numbered per primary topic."""
+    import json,os
+    out=os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","content",folder)
+    os.makedirs(out,exist_ok=True)
+    n={}
+    def nid(prefix,t):
+        n[(prefix,t)]=n.get((prefix,t),0)+1; return f"{prefix}{t}-{n[(prefix,t)]:02d}"
+    C=[{"id":nid("card-",t[0]),"front":f,"back":b,"kind":k,"topics":t} for f,b,k,t in cards]
+    T=[{"term":a,"symbol":s,"units":u,"definition":d,"widget":w,"topics":t} for a,s,u,d,w,t in terms]
+    P=[]
+    for p in problems:
+        p=dict(p); p.setdefault("widget",None); t=p.pop("topics"); p["id"]=nid("",t[0]); p["topics"]=t
+        P.append({"id":p.pop("id"),**p})
+    for p in P:
+        for k in ("source","difficulty","title","prompt","hints","steps","answers"): assert k in p,(p["id"],k)
+    for name,key,fmt,items in (("flashcards","cards",FMT_CARDS,C),("glossary","terms",FMT_CARDS,T),("practice","problems",FMT_PROBLEMS,P)):
+        json.dump(roman({"unit":unit,"format":fmt,key:items}),open(os.path.join(out,name+".json"),"w"),ensure_ascii=False,indent=1)
+    print(unit,len(C),"cards,",len(T),"terms,",len(P),"problems")
+def tsci(v,u="",n=3):
+    """Scientific notation in TeX: 2.51\\times10^{8}\\ \\mathrm{m/s}"""
+    e=int(math.floor(math.log10(abs(v)))); m=v/10**e
+    if abs(float(tr(m,n)))>=10: m/=10; e+=1
+    s=f"{tr(m,n)}\\times10^{{{e}}}" if e else tr(v,n)
+    return s+(f"\\ \\mathrm{{{u}}}" if u else "")

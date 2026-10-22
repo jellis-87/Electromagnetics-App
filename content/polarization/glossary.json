@@ -1,0 +1,116 @@
+{
+ "unit": "Polarization",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Polarization",
+   "symbol": "",
+   "units": "",
+   "definition": "The shape traced by the tip of $\\mathbf{E}$ in time at a fixed point: a line, a circle or an ellipse.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Linear polarization",
+   "symbol": "",
+   "units": "",
+   "definition": "$\\mathbf{E}$ oscillates along one fixed line. $\\delta=0$ or $180^\\circ$.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Circular polarization",
+   "symbol": "",
+   "units": "",
+   "definition": "$\\mathbf{E}$ keeps a constant magnitude and turns at $\\omega$. $a_x=a_y$, $\\delta=\\pm90^\\circ$.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Elliptical polarization",
+   "symbol": "",
+   "units": "",
+   "definition": "The general case: the tip of $\\mathbf{E}$ traces an ellipse.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Left-hand circular (LHC)",
+   "symbol": "",
+   "units": "",
+   "definition": "Circular polarization that turns the way the fingers of the left hand curl when its thumb points along the direction of travel. $\\delta=+90^\\circ$ for a wave toward $+z$.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Right-hand circular (RHC)",
+   "symbol": "",
+   "units": "",
+   "definition": "Circular polarization that turns with the right-hand rule about the direction of travel. $\\delta=-90^\\circ$ for a wave toward $+z$.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Phase difference",
+   "symbol": "\\delta",
+   "units": "^\\circ",
+   "definition": "Phase of the $y$ component of $\\tilde{\\mathbf{E}}$ relative to the $x$ component.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Auxiliary angle",
+   "symbol": "\\psi_0",
+   "units": "^\\circ",
+   "definition": "$\\tan^{-1}(a_y/a_x)$: sets the relative size of the two components.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Rotation angle",
+   "symbol": "\\gamma",
+   "units": "^\\circ",
+   "definition": "Angle between the major axis of the polarization ellipse and the $x$ axis.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Ellipticity angle",
+   "symbol": "\\chi",
+   "units": "^\\circ",
+   "definition": "Sets the shape and handedness of the ellipse: $0$ for linear, $\\pm45^\\circ$ for circular.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "term": "Axial ratio",
+   "symbol": "R",
+   "units": "",
+   "definition": "Major axis over minor axis of the polarization ellipse. 1 for circular, infinite for linear.",
+   "widget": "polarization",
+   "topics": [
+    "polarization"
+   ]
+  }
+ ]
+}

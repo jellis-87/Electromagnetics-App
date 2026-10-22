@@ -1,0 +1,146 @@
+{
+ "unit": "Plane waves",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Uniform plane wave",
+   "symbol": "",
+   "units": "",
+   "definition": "A wave with uniform magnitude and phase over every plane normal to its direction of travel.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "TEM wave",
+   "symbol": "",
+   "units": "",
+   "definition": "Transverse electromagnetic: $\\mathbf{E}$ and $\\mathbf{H}$ both perpendicular to the direction of travel.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Wavenumber",
+   "symbol": "k=\\omega\\sqrt{\\mu\\varepsilon}",
+   "units": "\\mathrm{rad/m}",
+   "definition": "Phase change per unit length in a lossless medium. Equal to $\\beta$ there.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Intrinsic impedance",
+   "symbol": "\\eta",
+   "units": "\\Omega",
+   "definition": "Ratio of $E$ to $H$ in a plane wave. $\\sqrt{\\mu/\\varepsilon}$ for a lossless medium, complex for a lossy one.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Propagation constant",
+   "symbol": "\\gamma=\\alpha+j\\beta",
+   "units": "\\mathrm{m^{-1}}",
+   "definition": "Sets how a wave decays and shifts phase with distance: $e^{-\\gamma z}$.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Attenuation constant",
+   "symbol": "\\alpha",
+   "units": "\\mathrm{Np/m}",
+   "definition": "Rate at which the field amplitude decays, $e^{-\\alpha z}$.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Phase constant",
+   "symbol": "\\beta",
+   "units": "\\mathrm{rad/m}",
+   "definition": "Phase change per unit length. $\\lambda=2\\pi/\\beta$, $u_p=\\omega/\\beta$.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Skin depth",
+   "symbol": "\\delta_s",
+   "units": "\\mathrm{m}",
+   "definition": "Depth at which a wave in a conductor falls to $1/e$ of its surface value: $1/\\alpha$.",
+   "widget": "skindepth",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Surface resistance",
+   "symbol": "R_s=1/(\\sigma\\delta_s)",
+   "units": "\\Omega",
+   "definition": "Resistance of a square of conductor surface at high frequency, where current flows within about a skin depth.",
+   "widget": "skindepth",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Poynting vector",
+   "symbol": "\\mathbf{S}=\\mathbf{E}\\times\\mathbf{H}",
+   "units": "\\mathrm{W/m^2}",
+   "definition": "Power flow per unit area. Its direction is the direction energy travels.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Neper",
+   "symbol": "\\mathrm{Np}",
+   "units": "",
+   "definition": "Natural-log unit for field ratios: a field that falls by $e^{-1}$ has lost 1 Np, or 8.686 dB.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Dispersion",
+   "symbol": "",
+   "units": "",
+   "definition": "Phase velocity that changes with frequency, which spreads pulses out.",
+   "widget": null,
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Good conductor (waves)",
+   "symbol": "",
+   "units": "",
+   "definition": "A medium with $\\sigma/(\\omega\\varepsilon)>100$ or so, where $\\alpha\\approx\\beta\\approx\\sqrt{\\pi f\\mu\\sigma}$.",
+   "widget": "skindepth",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "term": "Low-loss dielectric (waves)",
+   "symbol": "",
+   "units": "",
+   "definition": "A medium with $\\sigma/(\\omega\\varepsilon)<0.01$ or so, where $\\beta$ and $\\eta$ are nearly the lossless values.",
+   "widget": "planewave",
+   "topics": [
+    "plane-waves"
+   ]
+  }
+ ]
+}

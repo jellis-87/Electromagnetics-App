@@ -1,0 +1,446 @@
+{
+ "unit": "Plane waves",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "plane-waves-01",
+   "difficulty": 1,
+   "title": "Reading a plane wave",
+   "prompt": "In a nonmagnetic lossless medium, $\\mathbf{E}=\\hat{\\mathbf{y}}\\,20\\cos(6\\pi\\times10^8t-4\\pi z)\\ \\mathrm{V/m}$. Find $f$, $\\lambda$, $u_p$, $\\varepsilon_r$, $\\eta$ and $\\mathbf{H}$.",
+   "hints": [
+    "Read $\\omega$ and $\\beta$ off the argument of the cosine.",
+    "$\\tilde{\\mathbf{H}}=\\frac{1}{\\eta}\\hat{\\mathbf{k}}\\times\\tilde{\\mathbf{E}}$ with $\\hat{\\mathbf{k}}=\\hat{\\mathbf{z}}$."
+   ],
+   "steps": [
+    "$$f=\\frac{\\omega}{2\\pi}=300\\ \\mathrm{MHz},\\qquad\\lambda=\\frac{2\\pi}{\\beta}=500\\ \\mathrm{mm}$$",
+    "$$u_p=\\frac{\\omega}{\\beta}=1.50\\times10^{8}\\ \\mathrm{m/s}$$",
+    "$$\\varepsilon_r=\\left(\\frac{3\\times10^8}{u_p}\\right)^2=4.00,\\qquad\\eta=\\frac{\\eta_0}{\\sqrt{\\varepsilon_r}}=188\\ \\Omega$$",
+    "$$\\hat{\\mathbf{z}}\\times\\hat{\\mathbf{y}}=-\\hat{\\mathbf{x}}$$",
+    "$$\\mathbf{H}=-\\hat{\\mathbf{x}}\\,106\\ \\mathrm{mA/m}\\cos(6\\pi\\times10^8t-4\\pi z)$$"
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "300\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "500\\ \\mathrm{mm}"
+    },
+    {
+     "label": "u_p",
+     "value": "1.50\\times10^{8}\\ \\mathrm{m/s}"
+    },
+    {
+     "label": "\\varepsilon_r",
+     "value": "4.00"
+    },
+    {
+     "label": "\\eta",
+     "value": "188\\ \\Omega"
+    },
+    {
+     "label": "\\mathbf{H}",
+     "value": "-\\hat{\\mathbf{x}}\\,106\\ \\mathrm{mA/m}\\cos(6\\pi\\times10^8t-4\\pi z)"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-02",
+   "difficulty": 1,
+   "title": "Wave in polyethylene",
+   "prompt": "A 1 GHz plane wave travels in polyethylene ($\\varepsilon_r=2.25$, $\\mu_r=1$, lossless). Find $\\beta$, $u_p$, $\\lambda$ and $\\eta$, and compare $\\lambda$ with its free-space value.",
+   "hints": [
+    "$u_p=c/\\sqrt{\\varepsilon_r}$ and $\\eta=\\eta_0/\\sqrt{\\varepsilon_r}$."
+   ],
+   "steps": [
+    "$$u_p=\\frac{c}{\\sqrt{2.25}}=2.00\\times10^{8}\\ \\mathrm{m/s}$$",
+    "$$\\beta=\\frac{\\omega}{u_p}=31.4\\ \\mathrm{rad/m},\\qquad\\lambda=\\frac{u_p}{f}=200\\ \\mathrm{mm}$$",
+    "$$\\eta=\\frac{377}{1.5}=251\\ \\Omega$$",
+    "In free space $\\lambda_0=300\\ \\mathrm{mm}$, so the wave is $1.5$ times shorter in polyethylene."
+   ],
+   "answers": [
+    {
+     "label": "\\beta",
+     "value": "31.4\\ \\mathrm{rad/m}"
+    },
+    {
+     "label": "u_p",
+     "value": "2.00\\times10^{8}\\ \\mathrm{m/s}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "200\\ \\mathrm{mm}"
+    },
+    {
+     "label": "\\eta",
+     "value": "251\\ \\Omega"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-03",
+   "difficulty": 2,
+   "title": "E from H for a wave going the other way",
+   "prompt": "In free space, $\\mathbf{H}=\\hat{\\mathbf{z}}\\,0.1\\cos(\\omega t+\\beta y)\\ \\mathrm{A/m}$. Which way does the wave travel? Find $\\mathbf{E}$.",
+   "hints": [
+    "$\\omega t+\\beta y$ means the wave moves toward $-y$.",
+    "$\\tilde{\\mathbf{E}}=-\\eta_0\\,\\hat{\\mathbf{k}}\\times\\tilde{\\mathbf{H}}$."
+   ],
+   "steps": [
+    "The phase is constant when $\\omega t+\\beta y$ is constant, so $y$ decreases as $t$ grows: $\\hat{\\mathbf{k}}=-\\hat{\\mathbf{y}}$.",
+    "$$\\tilde{\\mathbf{E}}=-\\eta_0(-\\hat{\\mathbf{y}})\\times\\hat{\\mathbf{z}}\\,0.1e^{j\\beta y}=\\eta_0\\,(0.1)\\,\\hat{\\mathbf{x}}\\,e^{j\\beta y}$$",
+    "$$\\mathbf{E}=\\hat{\\mathbf{x}}\\,37.7\\cos(\\omega t+\\beta y)\\ \\mathrm{V/m}$$",
+    "Check: $\\hat{\\mathbf{x}}\\times\\hat{\\mathbf{z}}=-\\hat{\\mathbf{y}}$, the direction of travel."
+   ],
+   "answers": [
+    {
+     "label": "\\hat{\\mathbf{k}}",
+     "value": "-\\hat{\\mathbf{y}}"
+    },
+    {
+     "label": "\\mathbf{E}",
+     "value": "\\hat{\\mathbf{x}}\\,37.7\\cos(\\omega t+\\beta y)\\ \\mathrm{V/m}"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-04",
+   "difficulty": 1,
+   "title": "Power density in free space",
+   "prompt": "A plane wave in air has a peak electric field of $50\\ \\mathrm{V/m}$. Find the average power density and the power collected by a $0.5\\ \\mathrm{m^2}$ aperture facing the wave.",
+   "hints": [
+    "$S_{\\mathrm{av}}=|E_0|^2/(2\\eta_0)$."
+   ],
+   "steps": [
+    "$$S_{\\mathrm{av}}=\\frac{50^2}{2(377)}=3.32\\ \\mathrm{W/m^2}$$",
+    "$$P=S_{\\mathrm{av}}A=1.66\\ \\mathrm{W}$$"
+   ],
+   "answers": [
+    {
+     "label": "S_{\\mathrm{av}}",
+     "value": "3.32\\ \\mathrm{W/m^2}"
+    },
+    {
+     "label": "P",
+     "value": "1.66\\ \\mathrm{W}"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-05",
+   "difficulty": 2,
+   "title": "Dry soil as a low-loss dielectric",
+   "prompt": "Dry soil has $\\varepsilon_r=3$, $\\mu_r=1$ and $\\sigma=10^{-4}\\ \\mathrm{S/m}$. At $10\\ \\mathrm{MHz}$, check that it is a low-loss dielectric, then find $\\alpha$, $\\beta$, $\\eta_c$ and the distance over which the field falls by half.",
+   "hints": [
+    "Compute $\\sigma/(\\omega\\varepsilon)$ first.",
+    "Low-loss: $\\alpha\\approx\\frac{\\sigma}{2}\\eta$, $\\beta\\approx\\omega\\sqrt{\\mu\\varepsilon}$.",
+    "The field halves when $e^{-\\alpha z}=0.5$."
+   ],
+   "steps": [
+    "$$\\frac{\\sigma}{\\omega\\varepsilon}=\\frac{10^{-4}}{2\\pi(10^7)(3)\\varepsilon_0}=0.0599$$",
+    "That is well below 1, so the low-loss formulas apply.",
+    "$$\\alpha\\approx\\frac{\\sigma}{2}\\frac{\\eta_0}{\\sqrt{3}}=1.09\\times10^{-2}\\ \\mathrm{Np/m}$$",
+    "$$\\beta\\approx\\frac{\\omega\\sqrt{3}}{c}=0.363\\ \\mathrm{rad/m},\\qquad\\eta_c\\approx\\frac{\\eta_0}{\\sqrt3}=217\\ \\Omega$$",
+    "$$z_{1/2}=\\frac{\\ln2}{\\alpha}=63.7\\ \\mathrm{m}$$",
+    "The exact formulas give $\\alpha=1.09\\times10^{-2}\\ \\mathrm{Np/m}$ and $\\eta_c=217\\angle 1.71^\\circ\\ \\Omega$: the approximations are good to well under 1%."
+   ],
+   "answers": [
+    {
+     "label": "\\sigma/\\omega\\varepsilon",
+     "value": "0.0599"
+    },
+    {
+     "label": "\\alpha",
+     "value": "1.09\\times10^{-2}\\ \\mathrm{Np/m}"
+    },
+    {
+     "label": "\\beta",
+     "value": "0.363\\ \\mathrm{rad/m}"
+    },
+    {
+     "label": "\\eta_c",
+     "value": "217\\ \\Omega"
+    },
+    {
+     "label": "z_{1/2}",
+     "value": "63.7\\ \\mathrm{m}"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-06",
+   "difficulty": 3,
+   "title": "A medium that is neither",
+   "prompt": "Wet clay has $\\varepsilon_r=10$, $\\mu_r=1$ and $\\sigma=0.05\\ \\mathrm{S/m}$. At $100\\ \\mathrm{MHz}$ find $\\sigma/(\\omega\\varepsilon)$, then use the exact formulas for $\\alpha$, $\\beta$ and $\\eta_c$. Find the skin depth and the wavelength.",
+   "hints": [
+    "When $\\sigma/(\\omega\\varepsilon)$ is near 1, neither approximation works.",
+    "$\\eta_c=\\sqrt{j\\omega\\mu/(\\sigma+j\\omega\\varepsilon)}$."
+   ],
+   "steps": [
+    "$$\\frac{\\sigma}{\\omega\\varepsilon}=0.899$$",
+    "$$\\alpha=\\omega\\sqrt{\\frac{\\mu\\varepsilon}{2}\\left[\\sqrt{1+(0.899)^2}-1\\right]}=2.75\\ \\mathrm{Np/m}$$",
+    "$$\\beta=\\omega\\sqrt{\\frac{\\mu\\varepsilon}{2}\\left[\\sqrt{1+(0.899)^2}+1\\right]}=7.18\\ \\mathrm{rad/m}$$",
+    "$$\\eta_c=\\sqrt{\\frac{j\\omega\\mu_0}{\\sigma+j\\omega\\varepsilon}}=103\\angle 21.0^\\circ\\ \\Omega$$",
+    "$$\\delta_s=\\frac{1}{\\alpha}=364\\ \\mathrm{mm},\\qquad\\lambda=\\frac{2\\pi}{\\beta}=876\\ \\mathrm{mm}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\sigma/\\omega\\varepsilon",
+     "value": "0.899"
+    },
+    {
+     "label": "\\alpha",
+     "value": "2.75\\ \\mathrm{Np/m}"
+    },
+    {
+     "label": "\\beta",
+     "value": "7.18\\ \\mathrm{rad/m}"
+    },
+    {
+     "label": "\\eta_c",
+     "value": "103\\angle 21.0^\\circ\\ \\Omega"
+    },
+    {
+     "label": "\\delta_s",
+     "value": "364\\ \\mathrm{mm}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "876\\ \\mathrm{mm}"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-07",
+   "difficulty": 2,
+   "title": "Power lost in wet clay",
+   "prompt": "In the wet clay of the previous problem ($100\\ \\mathrm{MHz}$), the field just inside the surface is $E_0=10\\ \\mathrm{V/m}$. Find the average power density there and $1\\ \\mathrm{m}$ deeper, and the loss in dB.",
+   "hints": [
+    "Use $\\alpha=2.75\\ \\mathrm{Np/m}$ and $\\eta_c=103\\angle 21.0^\\circ\\ \\Omega$.",
+    "$S_{\\mathrm{av}}=\\frac{|E_0|^2}{2|\\eta_c|}e^{-2\\alpha z}\\cos\\theta_\\eta$."
+   ],
+   "steps": [
+    "$$S_{\\mathrm{av}}(0)=\\frac{10^2}{2(103)}\\cos(21.0^\\circ)=454\\ \\mathrm{mW/m^2}$$",
+    "$$S_{\\mathrm{av}}(1)=S_{\\mathrm{av}}(0)\\,e^{-2(2.75)}=1.85\\ \\mathrm{mW/m^2}$$",
+    "$$A=8.686\\,\\alpha z=23.9\\ \\mathrm{dB}$$"
+   ],
+   "answers": [
+    {
+     "label": "S_{\\mathrm{av}}(0)",
+     "value": "454\\ \\mathrm{mW/m^2}"
+    },
+    {
+     "label": "S_{\\mathrm{av}}(1\\ \\mathrm{m})",
+     "value": "1.85\\ \\mathrm{mW/m^2}"
+    },
+    {
+     "label": "A",
+     "value": "23.9\\ \\mathrm{dB}"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-08",
+   "difficulty": 2,
+   "title": "Copper at radio frequencies",
+   "prompt": "For copper ($\\sigma=5.8\\times10^7\\ \\mathrm{S/m}$, $\\mu_r=1$), find the skin depth at $1\\ \\mathrm{MHz}$ and $1\\ \\mathrm{GHz}$. At $1\\ \\mathrm{GHz}$ also find the surface resistance, $\\eta_c$ and the phase velocity.",
+   "hints": [
+    "$\\delta_s=1/\\sqrt{\\pi f\\mu\\sigma}$.",
+    "$R_s=1/(\\sigma\\delta_s)$ and $\\eta_c=(1+j)R_s$.",
+    "$u_p=\\omega/\\beta=\\omega\\delta_s$."
+   ],
+   "steps": [
+    "$$\\delta_s(1\\ \\mathrm{MHz})=\\frac{1}{\\sqrt{\\pi(10^6)(4\\pi\\times10^{-7})(5.8\\times10^7)}}=66.1\\ \\mathrm{\\mu m}$$",
+    "$$\\delta_s(1\\ \\mathrm{GHz})=2.09\\ \\mathrm{\\mu m}$$",
+    "$$R_s=\\frac{1}{\\sigma\\delta_s}=8.25\\ \\mathrm{m\\Omega},\\qquad\\eta_c=(1+j)R_s=(1+j)\\,8.25\\ \\mathrm{m\\Omega}$$",
+    "$$u_p=\\omega\\delta_s=13.1\\ \\mathrm{km/s}$$",
+    "Barely a millionth of the speed of light, and the field is gone within a few micrometres."
+   ],
+   "answers": [
+    {
+     "label": "\\delta_s(1\\ \\mathrm{MHz})",
+     "value": "66.1\\ \\mathrm{\\mu m}"
+    },
+    {
+     "label": "\\delta_s(1\\ \\mathrm{GHz})",
+     "value": "2.09\\ \\mathrm{\\mu m}"
+    },
+    {
+     "label": "R_s",
+     "value": "8.25\\ \\mathrm{m\\Omega}"
+    },
+    {
+     "label": "\\eta_c",
+     "value": "(1+j)\\,8.25\\ \\mathrm{m\\Omega}"
+    },
+    {
+     "label": "u_p",
+     "value": "13.1\\ \\mathrm{km/s}"
+    }
+   ],
+   "widget": "skindepth",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-09",
+   "difficulty": 2,
+   "title": "Talking to a submarine",
+   "prompt": "A $1\\ \\mathrm{kHz}$ signal enters seawater ($\\sigma=4\\ \\mathrm{S/m}$, $\\varepsilon_r=81$). Show that seawater is a good conductor here, then find the skin depth and the depth at which the field is $60\\ \\mathrm{dB}$ below its value at the surface.",
+   "hints": [
+    "Good conductor: $\\alpha\\approx\\sqrt{\\pi f\\mu\\sigma}$.",
+    "$60\\ \\mathrm{dB}=8.686\\,\\alpha z$."
+   ],
+   "steps": [
+    "$$\\frac{\\sigma}{\\omega\\varepsilon}=8.88\\times10^{5}\\gg1$$",
+    "$$\\alpha=\\sqrt{\\pi(10^3)(4\\pi\\times10^{-7})(4)}=0.126\\ \\mathrm{Np/m},\\qquad\\delta_s=7.96\\ \\mathrm{m}$$",
+    "$$z=\\frac{60}{8.686\\,\\alpha}=55.0\\ \\mathrm{m}$$",
+    "That is why submarines use very low frequencies, and still have to stay near the surface."
+   ],
+   "answers": [
+    {
+     "label": "\\delta_s",
+     "value": "7.96\\ \\mathrm{m}"
+    },
+    {
+     "label": "z",
+     "value": "55.0\\ \\mathrm{m}"
+    }
+   ],
+   "widget": "skindepth",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-10",
+   "difficulty": 1,
+   "title": "From decibels to nepers",
+   "prompt": "A wave loses $30\\ \\mathrm{dB}$ over $5\\ \\mathrm{m}$ in a lossy medium. Find $\\alpha$, and the fractions of the field amplitude and of the power that remain.",
+   "hints": [
+    "$A(\\mathrm{dB})=8.686\\,\\alpha z$.",
+    "Field ratio is $10^{-A/20}$; power ratio is $10^{-A/10}$."
+   ],
+   "steps": [
+    "$$\\alpha=\\frac{30}{8.686(5)}=0.691\\ \\mathrm{Np/m}$$",
+    "$$\\frac{E}{E_0}=10^{-30/20}=0.0316,\\qquad\\frac{S}{S_0}=10^{-30/10}=10^{-3}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\alpha",
+     "value": "0.691\\ \\mathrm{Np/m}"
+    },
+    {
+     "label": "E/E_0",
+     "value": "0.0316"
+    },
+    {
+     "label": "S/S_0",
+     "value": "10^{-3}"
+    }
+   ],
+   "widget": "planewave",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-11",
+   "difficulty": 2,
+   "title": "Aluminium shield thickness",
+   "prompt": "An aluminium shield ($\\sigma=3.5\\times10^7\\ \\mathrm{S/m}$) must attenuate a $1\\ \\mathrm{MHz}$ field by $100\\ \\mathrm{dB}$ as it passes through the metal. Ignoring reflection at the surfaces, how thick must it be?",
+   "hints": [
+    "Find $\\delta_s$, then $100\\ \\mathrm{dB}=8.686\\,t/\\delta_s$."
+   ],
+   "steps": [
+    "$$\\delta_s=\\frac{1}{\\sqrt{\\pi f\\mu_0\\sigma}}=85.1\\ \\mathrm{\\mu m}$$",
+    "$$t=\\frac{100}{8.686}\\delta_s=11.5\\,\\delta_s=979\\ \\mathrm{\\mu m}$$",
+    "In practice, reflection at the front surface adds a lot more shielding on top of this."
+   ],
+   "answers": [
+    {
+     "label": "\\delta_s",
+     "value": "85.1\\ \\mathrm{\\mu m}"
+    },
+    {
+     "label": "t",
+     "value": "979\\ \\mathrm{\\mu m}"
+    }
+   ],
+   "widget": "skindepth",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "plane-waves-12",
+   "difficulty": 2,
+   "title": "Why transformer cores are laminated",
+   "prompt": "Compare the skin depth at $60\\ \\mathrm{Hz}$ in iron ($\\sigma=10^7\\ \\mathrm{S/m}$, $\\mu_r=1000$) and in copper ($\\sigma=5.8\\times10^7\\ \\mathrm{S/m}$, $\\mu_r=1$).",
+   "hints": [
+    "$\\delta_s=1/\\sqrt{\\pi f\\mu\\sigma}$: a large $\\mu_r$ shrinks it."
+   ],
+   "steps": [
+    "$$\\delta_{\\text{Fe}}=\\frac{1}{\\sqrt{\\pi(60)(1000)(4\\pi\\times10^{-7})(10^7)}}=650\\ \\mathrm{\\mu m}$$",
+    "$$\\delta_{\\text{Cu}}=8.53\\ \\mathrm{mm}$$",
+    "A solid iron core thicker than a millimetre would carry flux only near its surface and waste power in eddy currents, so cores are built from thin insulated sheets."
+   ],
+   "answers": [
+    {
+     "label": "\\delta_{\\text{Fe}}",
+     "value": "650\\ \\mathrm{\\mu m}"
+    },
+    {
+     "label": "\\delta_{\\text{Cu}}",
+     "value": "8.53\\ \\mathrm{mm}"
+    }
+   ],
+   "widget": "skindepth",
+   "source": "original",
+   "topics": [
+    "plane-waves"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "unit": "Fields and phasors",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "phasors-01",
+   "difficulty": 1,
+   "title": "Phasor of a sine",
+   "prompt": "Find the phasor of $v(t)=12\\sin(\\omega t+30^\\circ)\\ \\mathrm{V}$ in polar and rectangular form.",
+   "hints": [
+    "Phasors are defined from cosines. Use $\\sin x=\\cos(x-90^\\circ)$."
+   ],
+   "steps": [
+    "$$v(t)=12\\cos(\\omega t+30^\\circ-90^\\circ)=12\\cos(\\omega t-60^\\circ)\\ \\mathrm{V}$$",
+    "$$\\tilde V=12\\angle -60.0^\\circ\\ \\mathrm{V}=12\\cos(-60^\\circ)+j12\\sin(-60^\\circ)=6.00 - j10.4\\ \\mathrm{V}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\tilde V",
+     "value": "12\\angle -60.0^\\circ\\ \\mathrm{V}=6.00 - j10.4\\ \\mathrm{V}"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-02",
+   "difficulty": 1,
+   "title": "Back to the time domain",
+   "prompt": "A 60 Hz current has phasor $\\tilde I=3-j4\\ \\mathrm{A}$. Write $i(t)$.",
+   "hints": [
+    "Convert to polar form first.",
+    "$i(t)=\\mathrm{Re}\\{\\tilde Ie^{j\\omega t}\\}=|\\tilde I|\\cos(\\omega t+\\theta)$ with $\\omega=2\\pi(60)$."
+   ],
+   "steps": [
+    "$$|\\tilde I|=\\sqrt{3^2+4^2}=5.00\\ \\mathrm{A},\\qquad \\theta=\\tan^{-1}\\frac{-4}{3}=-53.1^\\circ$$",
+    "$$\\omega=2\\pi(60)=377\\ \\mathrm{rad/s}$$",
+    "$$i(t)=5\\cos(120\\pi t-53.1^\\circ)\\ \\mathrm{A}$$"
+   ],
+   "answers": [
+    {
+     "label": "i(t)",
+     "value": "5\\cos(120\\pi t-53.1^\\circ)\\ \\mathrm{A}"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-03",
+   "difficulty": 2,
+   "title": "Add two sinusoids with phasors",
+   "prompt": "Write $v(t)=5\\cos(\\omega t+30^\\circ)+8\\cos(\\omega t-45^\\circ)$ as a single cosine.",
+   "hints": [
+    "Both terms have the same $\\omega$, so add their phasors.",
+    "Add in rectangular form, then convert back to polar."
+   ],
+   "steps": [
+    "$$5\\angle 30^\\circ=4.33 + j2.50,\\qquad 8\\angle -45.0^\\circ=5.66 - j5.66$$",
+    "$$\\tilde V=9.99 - j3.16=10.5\\angle -17.5^\\circ$$",
+    "$$v(t)=10.5\\cos(\\omega t-17.5^\\circ)$$"
+   ],
+   "answers": [
+    {
+     "label": "v(t)",
+     "value": "10.5\\cos(\\omega t-17.5^\\circ)"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-04",
+   "difficulty": 1,
+   "title": "Complex arithmetic in polar form",
+   "prompt": "Evaluate $\\dfrac{(3+j4)(2-j)}{1+j}$ in polar and rectangular form.",
+   "hints": [
+    "Convert each factor to polar. Magnitudes multiply and divide; angles add and subtract."
+   ],
+   "steps": [
+    "Each factor in polar form:$$3+j4=5.00\\angle 53.1^\\circ$$$$2-j=2.24\\angle -26.6^\\circ$$$$1+j=1.41\\angle 45.0^\\circ$$",
+    "$$\\text{magnitude}=\\frac{5\\cdot2.24}{1.41}=7.91$$",
+    "$$\\text{angle}=53.1^\\circ-26.6^\\circ-45^\\circ=-18.4^\\circ$$",
+    "$$7.91\\angle -18.4^\\circ=7.50 - j2.50$$"
+   ],
+   "answers": [
+    {
+     "label": "\\text{Result}",
+     "value": "7.91\\angle -18.4^\\circ=7.50 - j2.50"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-05",
+   "difficulty": 2,
+   "title": "RL circuit with phasors",
+   "prompt": "A source $v(t)=10\\cos(1000t)\\ \\mathrm{V}$ drives a $3\\ \\Omega$ resistor in series with a $4\\ \\mathrm{mH}$ inductor. Find $i(t)$ by writing the circuit equation in phasor form.",
+   "hints": [
+    "KVL in time: $v=Ri+L\\dfrac{di}{dt}$.",
+    "Replace $\\dfrac{d}{dt}$ with $j\\omega$."
+   ],
+   "steps": [
+    "KVL in phasor form:$$\\tilde V=(R+j\\omega L)\\tilde I$$",
+    "$$R+j\\omega L=3+j(1000)(0.004)=3+j4\\ \\Omega=5\\angle 53.13^\\circ\\ \\Omega$$",
+    "$$\\tilde I=\\frac{10\\angle 0^\\circ}{5\\angle 53.13^\\circ}=2.00\\angle -53.1^\\circ\\ \\mathrm{A}$$",
+    "$$i(t)=2.00\\cos(1000t-53.1^\\circ)\\ \\mathrm{A}$$"
+   ],
+   "answers": [
+    {
+     "label": "i(t)",
+     "value": "2.00\\cos(1000t-53.1^\\circ)\\ \\mathrm{A}"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-06",
+   "difficulty": 2,
+   "title": "Solve a differential equation with phasors",
+   "prompt": "Find the steady-state solution of$$\\frac{dv}{dt}+500\\,v=10\\cos(500t)$$",
+   "hints": [
+    "Let $v(t)=\\mathrm{Re}\\{\\tilde Ve^{j500t}\\}$, so $\\dfrac{dv}{dt}\\to j500\\,\\tilde V$."
+   ],
+   "steps": [
+    "$$j500\\,\\tilde V+500\\,\\tilde V=10$$",
+    "$$\\tilde V=\\frac{10}{500+j500}=\\frac{10}{707\\angle 45.0^\\circ}=0.0141\\angle -45.0^\\circ$$",
+    "$$v(t)=14.1\\ \\mathrm{mV}\\,\\cos(500t-45.0^\\circ)$$"
+   ],
+   "answers": [
+    {
+     "label": "v(t)",
+     "value": "14.1\\ \\mathrm{mV}\\,\\cos(500t-45.0^\\circ)"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-07",
+   "difficulty": 2,
+   "title": "Read a traveling wave",
+   "prompt": "In a non-magnetic material,$$E(z,t)=10\\cos\\left(2\\pi\\times10^{8}\\,t-2.5z\\right)\\ \\mathrm{V/m}$$Find $f$, $\\lambda$, $u_p$, the direction of travel, and $\\varepsilon_r$.",
+   "hints": [
+    "Match the form $A\\cos(\\omega t-\\beta z)$.",
+    "$u_p=\\omega/\\beta$ and $u_p=c/\\sqrt{\\varepsilon_r}$."
+   ],
+   "steps": [
+    "$$\\omega=2\\pi\\times10^8\\ \\mathrm{rad/s}\\ \\Rightarrow\\ f=100\\ \\mathrm{MHz}$$",
+    "$$\\lambda=\\frac{2\\pi}{\\beta}=\\frac{2\\pi}{2.5}=2.51\\ \\mathrm{m}$$",
+    "$$u_p=\\frac{\\omega}{\\beta}=2.51\\times10^{8}\\ \\mathrm{m/s}$$",
+    "The sign of $\\beta z$ is negative, so the wave travels toward $+z$.",
+    "$$\\varepsilon_r=\\left(\\frac{c}{u_p}\\right)^2=1.42$$"
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "100\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "2.51\\ \\mathrm{m}"
+    },
+    {
+     "label": "u_p",
+     "value": "2.51\\times10^{8}\\ \\mathrm{m/s}"
+    },
+    {
+     "label": "\\text{Direction}",
+     "value": "+z"
+    },
+    {
+     "label": "\\varepsilon_r",
+     "value": "1.42"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-08",
+   "difficulty": 1,
+   "title": "Which way is it going?",
+   "prompt": "A wave is $y(z,t)=3\\cos(4\\pi\\times10^{6}\\,t+0.05z)$. Find its frequency, wavelength, speed and direction.",
+   "hints": [
+    "A plus sign between $\\omega t$ and $\\beta z$ means travel toward $-z$."
+   ],
+   "steps": [
+    "$$f=\\frac{\\omega}{2\\pi}=\\frac{4\\pi\\times10^6}{2\\pi}=2\\ \\mathrm{MHz}$$",
+    "$$\\lambda=\\frac{2\\pi}{0.05}=126\\ \\mathrm{m}$$",
+    "$$u_p=\\frac{\\omega}{\\beta}=2.51\\times10^{8}\\ \\mathrm{m/s}$$",
+    "Follow a crest: $\\omega t+0.05z=$ const, so $z$ decreases as $t$ grows. It travels toward $-z$."
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "2\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "126\\ \\mathrm{m}"
+    },
+    {
+     "label": "u_p",
+     "value": "2.51\\times10^{8}\\ \\mathrm{m/s}"
+    },
+    {
+     "label": "\\text{Direction}",
+     "value": "-z"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-09",
+   "difficulty": 1,
+   "title": "Wi-Fi wavelength in a dielectric",
+   "prompt": "Find the wavelength of a $2.4\\ \\mathrm{GHz}$ signal in free space and in a non-magnetic dielectric with $\\varepsilon_r=4$. How fast does it travel in the dielectric?",
+   "hints": [
+    "$\\lambda_0=c/f$ and $\\lambda=\\lambda_0/\\sqrt{\\varepsilon_r}$."
+   ],
+   "steps": [
+    "$$\\lambda_0=\\frac{3\\times10^8}{2.4\\times10^9}=125\\ \\mathrm{mm}$$",
+    "$$u_p=\\frac{c}{\\sqrt{4}}=1.50\\times10^{8}\\ \\mathrm{m/s}$$",
+    "$$\\lambda=\\frac{\\lambda_0}{2}=62.5\\ \\mathrm{mm}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\lambda_0",
+     "value": "125\\ \\mathrm{mm}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "62.5\\ \\mathrm{mm}"
+    },
+    {
+     "label": "u_p",
+     "value": "1.50\\times10^{8}\\ \\mathrm{m/s}"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-10",
+   "difficulty": 1,
+   "title": "Flux density in a dielectric",
+   "prompt": "A uniform field $\\mathbf{E}=\\hat{\\mathbf{x}}\\,5\\ \\mathrm{kV/m}$ exists in a material with $\\varepsilon_r=2.5$. Find $\\mathbf{D}$.",
+   "hints": [
+    "$\\mathbf{D}=\\varepsilon_r\\varepsilon_0\\mathbf{E}$."
+   ],
+   "steps": [
+    "$$\\mathbf{D}=\\hat{\\mathbf{x}}\\,(2.5)(8.854\\times10^{-12})(5000)=\\hat{\\mathbf{x}}\\,111\\ \\mathrm{nC/m^2}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{D}",
+     "value": "\\hat{\\mathbf{x}}\\,111\\ \\mathrm{nC/m^2}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-11",
+   "difficulty": 1,
+   "title": "H from B in iron and in air",
+   "prompt": "A magnetic flux density of $50\\ \\mathrm{mT}$ exists in a soft-iron core with $\\mu_r=1000$. Find $H$ in the core, and the $H$ that would give the same $B$ in air.",
+   "hints": [
+    "$H=\\dfrac{B}{\\mu_r\\mu_0}$."
+   ],
+   "steps": [
+    "$$H_{\\text{iron}}=\\frac{0.05}{1000\\cdot4\\pi\\times10^{-7}}=39.8\\ \\mathrm{A/m}$$",
+    "$$H_{\\text{air}}=\\frac{0.05}{4\\pi\\times10^{-7}}=39.8\\ \\mathrm{kA/m}$$",
+    "The iron needs 1000 times less $H$ (so 1000 times less current) for the same $B$."
+   ],
+   "answers": [
+    {
+     "label": "H_{\\text{iron}}",
+     "value": "39.8\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H_{\\text{air}}",
+     "value": "39.8\\ \\mathrm{kA/m}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "phasors-12",
+   "difficulty": 1,
+   "title": "A vector field at a point",
+   "prompt": "Evaluate $\\mathbf{E}=\\hat{\\mathbf{x}}\\,2xy-\\hat{\\mathbf{y}}\\,z^2+\\hat{\\mathbf{z}}\\,3\\ \\mathrm{V/m}$ at $(1,2,-1)$. Give its magnitude and unit vector there.",
+   "hints": [
+    "Substitute the coordinates into each component.",
+    "$\\hat{\\mathbf{a}}=\\mathbf{E}/|\\mathbf{E}|$."
+   ],
+   "steps": [
+    "$$\\mathbf{E}(1,2,-1)=\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,1+\\hat{\\mathbf{z}}\\,3\\ \\mathrm{V/m}$$",
+    "$$|\\mathbf{E}|=\\sqrt{16+1+9}=\\sqrt{26}=5.10\\ \\mathrm{V/m}$$",
+    "$$\\hat{\\mathbf{a}}=\\hat{\\mathbf{x}}\\,0.784-\\hat{\\mathbf{y}}\\,0.196+\\hat{\\mathbf{z}}\\,0.588$$"
+   ],
+   "answers": [
+    {
+     "label": "|\\mathbf{E}|",
+     "value": "5.10\\ \\mathrm{V/m}"
+    },
+    {
+     "label": "\\hat{\\mathbf{a}}",
+     "value": "\\hat{\\mathbf{x}}\\,0.784-\\hat{\\mathbf{y}}\\,0.196+\\hat{\\mathbf{z}}\\,0.588"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "phasors",
+    "vectors"
+   ]
+  },
+  {
+   "id": "phasors-13",
+   "difficulty": 2,
+   "title": "A phasor field in the time domain",
+   "prompt": "In free space, $\\tilde{\\mathbf{E}}(z)=\\hat{\\mathbf{x}}\\,(6-j8)\\,e^{-j2z}\\ \\mathrm{V/m}$. Find the frequency, the direction of travel, and $\\mathbf{E}(z,t)$.",
+   "hints": [
+    "In free space $\\beta=\\omega/c$.",
+    "Put $6-j8$ in polar form, then use $\\mathbf{E}(z,t)=\\mathrm{Re}\\{\\tilde{\\mathbf{E}}e^{j\\omega t}\\}$."
+   ],
+   "steps": [
+    "$$\\omega=\\beta c=6.00\\times10^{8}\\ \\mathrm{rad/s}$$$$f=\\frac{\\omega}{2\\pi}=95.5\\ \\mathrm{MHz}$$",
+    "$$6-j8=10.0\\angle -53.1^\\circ$$",
+    "$$\\mathbf{E}=\\hat{\\mathbf{x}}\\,10\\cos\\left(\\omega t-2z-53.1^\\circ\\right)\\ \\mathrm{V/m}$$",
+    "The phase is $\\omega t-2z$, so it travels toward $+z$."
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "95.5\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\text{Direction}",
+     "value": "+z"
+    },
+    {
+     "label": "\\mathbf{E}(z,t)",
+     "value": "\\hat{\\mathbf{x}}\\,10\\cos(\\omega t-2z-53.1^\\circ)\\ \\mathrm{V/m}"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ]
+  }
+ ]
+}

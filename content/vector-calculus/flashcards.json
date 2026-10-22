@@ -1,0 +1,231 @@
+{
+ "unit": "Vector calculus",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-vectors-01",
+   "front": "Dot product of $\\mathbf{A}$ and $\\mathbf{B}$?",
+   "back": "$$\\mathbf{A}\\cdot\\mathbf{B}=|\\mathbf{A}||\\mathbf{B}|\\cos\\theta_{AB}=A_xB_x+A_yB_y+A_zB_z$$It is a scalar, and zero when the vectors are perpendicular.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-02",
+   "front": "Magnitude of the cross product, and its direction?",
+   "back": "$$|\\mathbf{A}\\times\\mathbf{B}|=|\\mathbf{A}||\\mathbf{B}|\\sin\\theta_{AB}$$Perpendicular to both, by the right-hand rule. Zero when the vectors are parallel.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-03",
+   "front": "Cross product in Cartesian components?",
+   "back": "$$\\mathbf{A}\\times\\mathbf{B}=\\begin{vmatrix}\\hat{\\mathbf{x}}&\\hat{\\mathbf{y}}&\\hat{\\mathbf{z}}\\\\A_x&A_y&A_z\\\\B_x&B_y&B_z\\end{vmatrix}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-04",
+   "front": "$\\hat{\\mathbf{x}}\\times\\hat{\\mathbf{y}}$, $\\hat{\\mathbf{r}}\\times\\hat{\\boldsymbol{\\phi}}$, $\\hat{\\mathbf{R}}\\times\\hat{\\boldsymbol{\\theta}}$?",
+   "back": "$\\hat{\\mathbf{z}}$, $\\hat{\\mathbf{z}}$, and $\\hat{\\boldsymbol{\\phi}}$. Each set is right-handed in the order $(x,y,z)$, $(r,\\phi,z)$, $(R,\\theta,\\phi)$.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-05",
+   "front": "Cartesian to cylindrical?",
+   "back": "$$r=\\sqrt{x^2+y^2},\\qquad \\phi=\\tan^{-1}\\frac{y}{x},\\qquad z=z$$Pick the quadrant of $\\phi$ from the signs of $x$ and $y$.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-06",
+   "front": "Spherical to Cartesian?",
+   "back": "$$x=R\\sin\\theta\\cos\\phi,\\quad y=R\\sin\\theta\\sin\\phi,\\quad z=R\\cos\\theta$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-07",
+   "front": "Ranges of $\\theta$ and $\\phi$ in spherical coordinates?",
+   "back": "$0\\le\\theta\\le\\pi$, measured down from the $+z$ axis. $0\\le\\phi<2\\pi$, measured from the $+x$ axis in the $xy$-plane.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-08",
+   "front": "Why can't you add $\\hat{\\mathbf{r}}$ components at two different points?",
+   "back": "$\\hat{\\mathbf{r}}$, $\\hat{\\boldsymbol{\\phi}}$, $\\hat{\\mathbf{R}}$ and $\\hat{\\boldsymbol{\\theta}}$ point in different directions at different points. Convert to Cartesian first.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-09",
+   "front": "Differential length in cylindrical coordinates?",
+   "back": "$$d\\mathbf{l}=\\hat{\\mathbf{r}}\\,dr+\\hat{\\boldsymbol{\\phi}}\\,r\\,d\\phi+\\hat{\\mathbf{z}}\\,dz$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-10",
+   "front": "Differential volume in cylindrical and spherical coordinates?",
+   "back": "$$dV=r\\,dr\\,d\\phi\\,dz,\\qquad dV=R^2\\sin\\theta\\,dR\\,d\\theta\\,d\\phi$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-11",
+   "front": "Differential area on a sphere of radius $R$?",
+   "back": "$$d\\mathbf{s}=\\hat{\\mathbf{R}}\\,R^2\\sin\\theta\\,d\\theta\\,d\\phi$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-12",
+   "front": "What does the gradient $\\nabla V$ tell you?",
+   "back": "The direction in which $V$ increases fastest, with magnitude equal to that rate. It is perpendicular to surfaces of constant $V$.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-13",
+   "front": "Gradient in Cartesian coordinates?",
+   "back": "$$\\nabla V=\\hat{\\mathbf{x}}\\frac{\\partial V}{\\partial x}+\\hat{\\mathbf{y}}\\frac{\\partial V}{\\partial y}+\\hat{\\mathbf{z}}\\frac{\\partial V}{\\partial z}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-14",
+   "front": "Directional derivative of $V$ along unit vector $\\hat{\\mathbf{a}}$?",
+   "back": "$$\\frac{dV}{dl}=\\nabla V\\cdot\\hat{\\mathbf{a}}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-15",
+   "front": "What does the divergence $\\nabla\\cdot\\mathbf{A}$ measure?",
+   "back": "Net outward flux per unit volume at a point. Positive at a source, negative at a sink, zero where flux in equals flux out.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-16",
+   "front": "Divergence in Cartesian coordinates?",
+   "back": "$$\\nabla\\cdot\\mathbf{A}=\\frac{\\partial A_x}{\\partial x}+\\frac{\\partial A_y}{\\partial y}+\\frac{\\partial A_z}{\\partial z}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-17",
+   "front": "Divergence in cylindrical coordinates?",
+   "back": "$$\\nabla\\cdot\\mathbf{A}=\\frac{1}{r}\\frac{\\partial(rA_r)}{\\partial r}+\\frac{1}{r}\\frac{\\partial A_\\phi}{\\partial\\phi}+\\frac{\\partial A_z}{\\partial z}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-18",
+   "front": "Divergence theorem?",
+   "back": "$$\\int_V\\nabla\\cdot\\mathbf{A}\\,dV=\\oint_S\\mathbf{A}\\cdot d\\mathbf{s}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-19",
+   "front": "What does the curl $\\nabla\\times\\mathbf{A}$ measure?",
+   "back": "Circulation per unit area: how much the field swirls around a point. A small paddle wheel in the field spins about the curl's direction.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-20",
+   "front": "Curl in Cartesian coordinates?",
+   "back": "$$\\nabla\\times\\mathbf{A}=\\begin{vmatrix}\\hat{\\mathbf{x}}&\\hat{\\mathbf{y}}&\\hat{\\mathbf{z}}\\\\\\partial_x&\\partial_y&\\partial_z\\\\A_x&A_y&A_z\\end{vmatrix}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-21",
+   "front": "Stokes's theorem?",
+   "back": "$$\\int_S(\\nabla\\times\\mathbf{A})\\cdot d\\mathbf{s}=\\oint_C\\mathbf{A}\\cdot d\\mathbf{l}$$$C$ bounds $S$; walk $C$ so the right-hand rule gives the direction of $d\\mathbf{s}$.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-22",
+   "front": "Two identities that are always zero?",
+   "back": "$$\\nabla\\times(\\nabla V)=0,\\qquad \\nabla\\cdot(\\nabla\\times\\mathbf{A})=0$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-23",
+   "front": "Solenoidal versus conservative field?",
+   "back": "Solenoidal: $\\nabla\\cdot\\mathbf{A}=0$, so $\\mathbf{A}=\\nabla\\times\\mathbf{B}$ for some $\\mathbf{B}$. Conservative (irrotational): $\\nabla\\times\\mathbf{A}=0$, so $\\mathbf{A}=\\nabla V$ and line integrals depend only on the endpoints.",
+   "kind": "concept",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-24",
+   "front": "Laplacian of a scalar in Cartesian coordinates?",
+   "back": "$$\\nabla^2V=\\nabla\\cdot\\nabla V=\\frac{\\partial^2V}{\\partial x^2}+\\frac{\\partial^2V}{\\partial y^2}+\\frac{\\partial^2V}{\\partial z^2}$$",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "card-vectors-25",
+   "front": "Distance vector from point $P_1$ to point $P_2$?",
+   "back": "$$\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1=\\hat{\\mathbf{x}}(x_2-x_1)+\\hat{\\mathbf{y}}(y_2-y_1)+\\hat{\\mathbf{z}}(z_2-z_1)$$Always from the first point to the second.",
+   "kind": "equation",
+   "topics": [
+    "vectors"
+   ]
+  }
+ ]
+}

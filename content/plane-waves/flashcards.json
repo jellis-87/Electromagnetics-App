@@ -1,0 +1,204 @@
+{
+ "unit": "Plane waves",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-plane-waves-01",
+   "front": "Helmholtz equation for $\\tilde{\\mathbf{E}}$ in a source-free lossless medium?",
+   "back": "$$\\nabla^2\\tilde{\\mathbf{E}}+k^2\\tilde{\\mathbf{E}}=0,\\qquad k=\\omega\\sqrt{\\mu\\varepsilon}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-02",
+   "front": "What is a uniform plane wave?",
+   "back": "A wave whose $\\mathbf{E}$ and $\\mathbf{H}$ have the same magnitude and phase over every plane normal to the direction of travel. A good model of any wave far from its source.",
+   "kind": "concept",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-03",
+   "front": "How are $\\mathbf{E}$, $\\mathbf{H}$ and the direction of travel $\\hat{\\mathbf{k}}$ arranged?",
+   "back": "All three are mutually perpendicular, with $\\mathbf{E}\\times\\mathbf{H}$ pointing along $\\hat{\\mathbf{k}}$. The wave is TEM: no field component along the direction of travel.",
+   "kind": "concept",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-04",
+   "front": "$\\tilde{\\mathbf{H}}$ from $\\tilde{\\mathbf{E}}$ for a plane wave?",
+   "back": "$$\\tilde{\\mathbf{H}}=\\frac{1}{\\eta}\\,\\hat{\\mathbf{k}}\\times\\tilde{\\mathbf{E}},\\qquad\\tilde{\\mathbf{E}}=-\\eta\\,\\hat{\\mathbf{k}}\\times\\tilde{\\mathbf{H}}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-05",
+   "front": "Phase constant, phase velocity and wavelength in a lossless medium?",
+   "back": "$$\\beta=\\omega\\sqrt{\\mu\\varepsilon},\\quad u_p=\\frac{1}{\\sqrt{\\mu\\varepsilon}}=\\frac{c}{\\sqrt{\\mu_r\\varepsilon_r}},\\quad\\lambda=\\frac{2\\pi}{\\beta}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-06",
+   "front": "Intrinsic impedance of a lossless medium?",
+   "back": "$$\\eta=\\sqrt{\\frac{\\mu}{\\varepsilon}}=\\eta_0\\sqrt{\\frac{\\mu_r}{\\varepsilon_r}}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-07",
+   "front": "Intrinsic impedance of free space?",
+   "back": "$$\\eta_0=\\sqrt{\\frac{\\mu_0}{\\varepsilon_0}}\\approx120\\pi\\approx377\\ \\Omega$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-08",
+   "front": "Propagation constant of a lossy medium?",
+   "back": "$$\\gamma=\\alpha+j\\beta=j\\omega\\sqrt{\\mu\\varepsilon_c},\\qquad\\varepsilon_c=\\varepsilon-j\\frac{\\sigma}{\\omega}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-09",
+   "front": "Exact $\\alpha$ and $\\beta$ in a lossy medium?",
+   "back": "$$\\alpha=\\omega\\sqrt{\\frac{\\mu\\varepsilon}{2}\\left[\\sqrt{1+\\left(\\frac{\\sigma}{\\omega\\varepsilon}\\right)^2}-1\\right]}$$$$\\beta=\\omega\\sqrt{\\frac{\\mu\\varepsilon}{2}\\left[\\sqrt{1+\\left(\\frac{\\sigma}{\\omega\\varepsilon}\\right)^2}+1\\right]}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-10",
+   "front": "Intrinsic impedance of a lossy medium?",
+   "back": "$$\\eta_c=\\sqrt{\\frac{j\\omega\\mu}{\\sigma+j\\omega\\varepsilon}}=|\\eta_c|e^{j\\theta_\\eta}$$$\\mathbf{H}$ lags $\\mathbf{E}$ by $\\theta_\\eta$.",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-11",
+   "front": "Low-loss dielectric approximations ($\\sigma/\\omega\\varepsilon\\ll1$)?",
+   "back": "$$\\alpha\\approx\\frac{\\sigma}{2}\\sqrt{\\frac{\\mu}{\\varepsilon}},\\quad\\beta\\approx\\omega\\sqrt{\\mu\\varepsilon},\\quad\\eta_c\\approx\\sqrt{\\frac{\\mu}{\\varepsilon}}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-12",
+   "front": "Good-conductor approximations ($\\sigma/\\omega\\varepsilon\\gg1$)?",
+   "back": "$$\\alpha=\\beta\\approx\\sqrt{\\pi f\\mu\\sigma},\\qquad\\eta_c\\approx(1+j)\\frac{\\alpha}{\\sigma}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-13",
+   "front": "Skin depth?",
+   "back": "$$\\delta_s=\\frac{1}{\\alpha}\\ \\xrightarrow{\\text{good conductor}}\\ \\frac{1}{\\sqrt{\\pi f\\mu\\sigma}}$$The depth where the field falls to $1/e$ (about 37%) of its surface value.",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-14",
+   "front": "Skin depth of copper at 60 Hz, 1 MHz and 10 GHz?",
+   "back": "About 8.53 mm, 66.1 µm and 0.661 µm. It scales as $1/\\sqrt{f}$.",
+   "kind": "concept",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-15",
+   "front": "Phase angle of $\\eta_c$ in a good conductor?",
+   "back": "$45^\\circ$: $\\mathbf{H}$ lags $\\mathbf{E}$ by an eighth of a cycle. In a lossless medium the angle is $0$.",
+   "kind": "concept",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-16",
+   "front": "Poynting vector?",
+   "back": "$$\\mathbf{S}=\\mathbf{E}\\times\\mathbf{H}\\ \\ (\\mathrm{W/m^2}),\\qquad\\mathbf{S}_{\\mathrm{av}}=\\tfrac12\\mathrm{Re}\\{\\tilde{\\mathbf{E}}\\times\\tilde{\\mathbf{H}}^*\\}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-17",
+   "front": "Average power density of a plane wave in a lossless medium?",
+   "back": "$$S_{\\mathrm{av}}=\\frac{|E_0|^2}{2\\eta}$$",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-18",
+   "front": "Average power density in a lossy medium?",
+   "back": "$$S_{\\mathrm{av}}(z)=\\frac{|E_0|^2}{2|\\eta_c|}e^{-2\\alpha z}\\cos\\theta_\\eta$$Power decays twice as fast (in nepers) as the field.",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-19",
+   "front": "Attenuation in decibels?",
+   "back": "$$A=20\\log_{10}e^{\\alpha z}=8.686\\,\\alpha z\\ \\ \\mathrm{dB}$$So 1 Np = 8.686 dB.",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-20",
+   "front": "Why does a good conductor make a poor medium for waves?",
+   "back": "$\\alpha=\\beta$, so the field falls by $e^{-2\\pi}$, about 0.2%, in one wavelength. The wave dies within a few skin depths.",
+   "kind": "concept",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-21",
+   "front": "Surface resistance of a good conductor?",
+   "back": "$$R_s=\\frac{1}{\\sigma\\delta_s}=\\sqrt{\\frac{\\pi f\\mu}{\\sigma}}\\ \\ \\Omega$$It equals the real part of $\\eta_c$, and it is the AC resistance of a skin-depth-thick sheet.",
+   "kind": "equation",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "card-plane-waves-22",
+   "front": "What is dispersion?",
+   "back": "When the phase velocity depends on frequency, so a pulse made of many frequencies spreads out. Lossy media are dispersive: in a good conductor $u_p=\\sqrt{4\\pi f/\\mu\\sigma}$.",
+   "kind": "concept",
+   "topics": [
+    "plane-waves"
+   ]
+  }
+ ]
+}

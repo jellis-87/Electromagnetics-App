@@ -1,0 +1,426 @@
+{
+ "unit": "Vector calculus",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "vectors-01",
+   "difficulty": 1,
+   "title": "Dot and cross products",
+   "prompt": "For $\\mathbf{A}=\\hat{\\mathbf{x}}\\,2-\\hat{\\mathbf{y}}\\,3+\\hat{\\mathbf{z}}\\,1$ and $\\mathbf{B}=-\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,5$, find $\\mathbf{A}\\cdot\\mathbf{B}$, $\\mathbf{A}\\times\\mathbf{B}$, and the angle between them.",
+   "hints": [
+    "$\\mathbf{A}\\cdot\\mathbf{B}=A_xB_x+A_yB_y+A_zB_z$.",
+    "Use the determinant for the cross product.",
+    "$\\cos\\theta=\\dfrac{\\mathbf{A}\\cdot\\mathbf{B}}{|\\mathbf{A}||\\mathbf{B}|}$."
+   ],
+   "steps": [
+    "$$\\mathbf{A}\\cdot\\mathbf{B}=(2)(-4)+(-3)(-2)+(1)(5)=3$$",
+    "$$\\mathbf{A}\\times\\mathbf{B}=\\hat{\\mathbf{x}}[(-3)(5)-(1)(-2)]-\\hat{\\mathbf{y}}[(2)(5)-(1)(-4)]+\\hat{\\mathbf{z}}[(2)(-2)-(-3)(-4)]$$",
+    "$$=-\\hat{\\mathbf{x}}\\,13-\\hat{\\mathbf{y}}\\,14-\\hat{\\mathbf{z}}\\,16$$",
+    "$$|\\mathbf{A}|=\\sqrt{14}=3.74,\\quad |\\mathbf{B}|=\\sqrt{45}=6.71$$",
+    "$$\\theta=\\cos^{-1}\\frac{3}{3.74\\cdot6.71}=83.1^\\circ$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{A}\\cdot\\mathbf{B}",
+     "value": "3"
+    },
+    {
+     "label": "\\mathbf{A}\\times\\mathbf{B}",
+     "value": "-\\hat{\\mathbf{x}}\\,13-\\hat{\\mathbf{y}}\\,14-\\hat{\\mathbf{z}}\\,16"
+    },
+    {
+     "label": "\\theta",
+     "value": "83.1^\\circ"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-02",
+   "difficulty": 1,
+   "title": "Distance vector between two points",
+   "prompt": "Find the distance vector from $P_1=(1,2,3)$ to $P_2=(4,-2,3)$, its length, and the unit vector pointing from $P_1$ to $P_2$.",
+   "hints": [
+    "$\\mathbf{R}_{12}=\\mathbf{R}_2-\\mathbf{R}_1$: second point minus first."
+   ],
+   "steps": [
+    "$$\\mathbf{R}_{12}=(4-1)\\hat{\\mathbf{x}}+(-2-2)\\hat{\\mathbf{y}}+(3-3)\\hat{\\mathbf{z}}=\\hat{\\mathbf{x}}\\,3-\\hat{\\mathbf{y}}\\,4$$",
+    "$$|\\mathbf{R}_{12}|=\\sqrt{9+16}=5$$",
+    "$$\\hat{\\mathbf{R}}_{12}=\\hat{\\mathbf{x}}\\,0.600-\\hat{\\mathbf{y}}\\,0.800$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{R}_{12}",
+     "value": "\\hat{\\mathbf{x}}\\,3-\\hat{\\mathbf{y}}\\,4"
+    },
+    {
+     "label": "|\\mathbf{R}_{12}|",
+     "value": "5"
+    },
+    {
+     "label": "\\hat{\\mathbf{R}}_{12}",
+     "value": "\\hat{\\mathbf{x}}\\,0.600-\\hat{\\mathbf{y}}\\,0.800"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-03",
+   "difficulty": 1,
+   "title": "One point in three coordinate systems",
+   "prompt": "Express the point $P=(3,4,5)$ in cylindrical and spherical coordinates.",
+   "hints": [
+    "$r=\\sqrt{x^2+y^2}$, $\\phi=\\tan^{-1}(y/x)$.",
+    "$R=\\sqrt{x^2+y^2+z^2}$, $\\theta=\\cos^{-1}(z/R)$."
+   ],
+   "steps": [
+    "$$r=\\sqrt{9+16}=5,\\qquad \\phi=\\tan^{-1}\\frac{4}{3}=53.1^\\circ$$",
+    "Cylindrical: $(5,\\ 53.1^\\circ,\\ 5)$.",
+    "$$R=\\sqrt{9+16+25}=7.07,\\qquad \\theta=\\cos^{-1}\\frac{5}{7.07}=45.0^\\circ$$",
+    "Spherical: $(7.07,\\ 45.0^\\circ,\\ 53.1^\\circ)$."
+   ],
+   "answers": [
+    {
+     "label": "(r,\\phi,z)",
+     "value": "(5,\\ 53.1^\\circ,\\ 5)"
+    },
+    {
+     "label": "(R,\\theta,\\phi)",
+     "value": "(7.07,\\ 45.0^\\circ,\\ 53.1^\\circ)"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-04",
+   "difficulty": 1,
+   "title": "Spherical to Cartesian",
+   "prompt": "A point sits at $R=4$, $\\theta=60^\\circ$, $\\phi=150^\\circ$. Find its Cartesian coordinates and its cylindrical radius $r$.",
+   "hints": [
+    "$x=R\\sin\\theta\\cos\\phi$, $y=R\\sin\\theta\\sin\\phi$, $z=R\\cos\\theta$.",
+    "$r=R\\sin\\theta$."
+   ],
+   "steps": [
+    "$$x=4\\sin60^\\circ\\cos150^\\circ=-3.00$$",
+    "$$y=4\\sin60^\\circ\\sin150^\\circ=1.73$$",
+    "$$z=4\\cos60^\\circ=2.00$$",
+    "$$r=R\\sin\\theta=3.46$$"
+   ],
+   "answers": [
+    {
+     "label": "(x,y,z)",
+     "value": "(-3.00,\\ 1.73,\\ 2.00)"
+    },
+    {
+     "label": "r",
+     "value": "3.46"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-05",
+   "difficulty": 2,
+   "title": "Vector components in cylindrical coordinates",
+   "prompt": "Express $\\mathbf{A}=\\hat{\\mathbf{x}}\\,3-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,4$ in cylindrical components at the point $(1,1,2)$.",
+   "hints": [
+    "At this point $\\phi=45^\\circ$.",
+    "$A_r=A_x\\cos\\phi+A_y\\sin\\phi$ and $A_\\phi=-A_x\\sin\\phi+A_y\\cos\\phi$; $A_z$ is unchanged."
+   ],
+   "steps": [
+    "$$\\phi=\\tan^{-1}\\frac{1}{1}=45^\\circ$$",
+    "$$A_r=3\\cos45^\\circ-2\\sin45^\\circ=0.707$$",
+    "$$A_\\phi=-3\\sin45^\\circ-2\\cos45^\\circ=-3.54$$",
+    "$$\\mathbf{A}=\\hat{\\mathbf{r}}\\,0.707-\\hat{\\boldsymbol{\\phi}}\\,3.54+\\hat{\\mathbf{z}}\\,4$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{A}",
+     "value": "\\hat{\\mathbf{r}}\\,0.707-\\hat{\\boldsymbol{\\phi}}\\,3.54+\\hat{\\mathbf{z}}\\,4"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-06",
+   "difficulty": 2,
+   "title": "Gradient and directional derivative",
+   "prompt": "For $V=x^2y+3yz$, find $\\nabla V$ at $(1,2,-1)$, its magnitude, and the rate of change of $V$ in the direction of $\\hat{\\mathbf{x}}2-\\hat{\\mathbf{y}}+\\hat{\\mathbf{z}}2$.",
+   "hints": [
+    "$\\nabla V=\\hat{\\mathbf{x}}\\,2xy+\\hat{\\mathbf{y}}(x^2+3z)+\\hat{\\mathbf{z}}\\,3y$.",
+    "Normalize the direction vector before dotting it with $\\nabla V$."
+   ],
+   "steps": [
+    "$$\\nabla V=\\hat{\\mathbf{x}}\\,2xy+\\hat{\\mathbf{y}}(x^2+3z)+\\hat{\\mathbf{z}}\\,3y$$",
+    "$$\\nabla V(1,2,-1)=\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,6$$",
+    "$$|\\nabla V|=\\sqrt{16+4+36}=7.48$$",
+    "$$\\hat{\\mathbf{a}}=\\frac{\\hat{\\mathbf{x}}2-\\hat{\\mathbf{y}}+\\hat{\\mathbf{z}}2}{3}$$",
+    "$$\\frac{dV}{dl}=\\nabla V\\cdot\\hat{\\mathbf{a}}=\\frac{8+2+12}{3}=7.33$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla V",
+     "value": "\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,2+\\hat{\\mathbf{z}}\\,6"
+    },
+    {
+     "label": "|\\nabla V|",
+     "value": "7.48"
+    },
+    {
+     "label": "dV/dl",
+     "value": "7.33"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-07",
+   "difficulty": 1,
+   "title": "Divergence in Cartesian coordinates",
+   "prompt": "Find $\\nabla\\cdot\\mathbf{E}$ for $\\mathbf{E}=\\hat{\\mathbf{x}}\\,x^2y+\\hat{\\mathbf{y}}\\,yz+\\hat{\\mathbf{z}}\\,xz^2$ and evaluate it at $(1,1,1)$.",
+   "hints": [
+    "Differentiate each component with respect to its own coordinate only."
+   ],
+   "steps": [
+    "$$\\nabla\\cdot\\mathbf{E}=\\frac{\\partial(x^2y)}{\\partial x}+\\frac{\\partial(yz)}{\\partial y}+\\frac{\\partial(xz^2)}{\\partial z}$$",
+    "$$=2xy+z+2xz$$",
+    "$$\\nabla\\cdot\\mathbf{E}(1,1,1)=5$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla\\cdot\\mathbf{E}",
+     "value": "2xy+z+2xz"
+    },
+    {
+     "label": "\\nabla\\cdot\\mathbf{E}(1,1,1)",
+     "value": "5"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-08",
+   "difficulty": 2,
+   "title": "Divergence in cylindrical coordinates",
+   "prompt": "Find $\\nabla\\cdot\\mathbf{A}$ for $\\mathbf{A}=\\hat{\\mathbf{r}}\\,r^2+\\hat{\\mathbf{z}}\\,2z$ and evaluate it at $r=2$.",
+   "hints": [
+    "$\\nabla\\cdot\\mathbf{A}=\\dfrac{1}{r}\\dfrac{\\partial(rA_r)}{\\partial r}+\\dfrac{1}{r}\\dfrac{\\partial A_\\phi}{\\partial\\phi}+\\dfrac{\\partial A_z}{\\partial z}$."
+   ],
+   "steps": [
+    "$$\\frac{1}{r}\\frac{\\partial(r\\cdot r^2)}{\\partial r}=\\frac{3r^2}{r}=3r$$",
+    "$$\\frac{\\partial(2z)}{\\partial z}=2$$",
+    "$$\\nabla\\cdot\\mathbf{A}=3r+2\\ \\Rightarrow\\ 8\\text{ at }r=2$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla\\cdot\\mathbf{A}",
+     "value": "3r+2"
+    },
+    {
+     "label": "\\nabla\\cdot\\mathbf{A}\\,(r=2)",
+     "value": "8"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-09",
+   "difficulty": 2,
+   "title": "Curl in Cartesian coordinates",
+   "prompt": "Find $\\nabla\\times\\mathbf{A}$ for $\\mathbf{A}=\\hat{\\mathbf{x}}\\,y^2-\\hat{\\mathbf{y}}\\,xz+\\hat{\\mathbf{z}}\\,3x$ and evaluate it at $(1,2,3)$.",
+   "hints": [
+    "$(\\nabla\\times\\mathbf{A})_x=\\dfrac{\\partial A_z}{\\partial y}-\\dfrac{\\partial A_y}{\\partial z}$, and cycle $x\\to y\\to z$ for the others."
+   ],
+   "steps": [
+    "$$(\\nabla\\times\\mathbf{A})_x=\\frac{\\partial(3x)}{\\partial y}-\\frac{\\partial(-xz)}{\\partial z}=x$$",
+    "$$(\\nabla\\times\\mathbf{A})_y=\\frac{\\partial(y^2)}{\\partial z}-\\frac{\\partial(3x)}{\\partial x}=-3$$",
+    "$$(\\nabla\\times\\mathbf{A})_z=\\frac{\\partial(-xz)}{\\partial x}-\\frac{\\partial(y^2)}{\\partial y}=-z-2y$$",
+    "$$\\nabla\\times\\mathbf{A}(1,2,3)=\\hat{\\mathbf{x}}\\,1-\\hat{\\mathbf{y}}\\,3-\\hat{\\mathbf{z}}\\,7$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla\\times\\mathbf{A}",
+     "value": "\\hat{\\mathbf{x}}\\,x-\\hat{\\mathbf{y}}\\,3-\\hat{\\mathbf{z}}(z+2y)"
+    },
+    {
+     "label": "\\nabla\\times\\mathbf{A}(1,2,3)",
+     "value": "\\hat{\\mathbf{x}}\\,1-\\hat{\\mathbf{y}}\\,3-\\hat{\\mathbf{z}}\\,7"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-10",
+   "difficulty": 1,
+   "title": "Laplacian of a scalar",
+   "prompt": "Find $\\nabla^2V$ for $V=x^2y+z^3$ and evaluate it at $(1,2,1)$.",
+   "hints": [
+    "Add the second partial derivatives in $x$, $y$ and $z$."
+   ],
+   "steps": [
+    "$$\\frac{\\partial^2V}{\\partial x^2}=2y,\\quad\\frac{\\partial^2V}{\\partial y^2}=0,\\quad\\frac{\\partial^2V}{\\partial z^2}=6z$$",
+    "$$\\nabla^2V=2y+6z=10\\ \\text{at}\\ (1,2,1)$$"
+   ],
+   "answers": [
+    {
+     "label": "\\nabla^2V",
+     "value": "2y+6z"
+    },
+    {
+     "label": "\\nabla^2V(1,2,1)",
+     "value": "10"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-11",
+   "difficulty": 2,
+   "title": "Check the divergence theorem on a cylinder",
+   "prompt": "For $\\mathbf{A}=\\hat{\\mathbf{r}}\\,r$, verify the divergence theorem over the cylinder $r\\le2$, $0\\le z\\le3$.",
+   "hints": [
+    "$\\nabla\\cdot\\mathbf{A}=\\dfrac{1}{r}\\dfrac{\\partial(r^2)}{\\partial r}=2$.",
+    "On the curved side $d\\mathbf{s}=\\hat{\\mathbf{r}}\\,r\\,d\\phi\\,dz$. On the flat ends $\\mathbf{A}\\cdot\\hat{\\mathbf{z}}=0$."
+   ],
+   "steps": [
+    "$$\\int_V\\nabla\\cdot\\mathbf{A}\\,dV=2\\cdot\\pi(2)^2(3)=24\\pi$$",
+    "$$\\oint_S\\mathbf{A}\\cdot d\\mathbf{s}=\\int_0^3\\!\\!\\int_0^{2\\pi}(2)(2)\\,d\\phi\\,dz=24\\pi$$",
+    "Both sides are $24\\pi=75.4$. The ends add nothing because $\\mathbf{A}$ has no $z$ component."
+   ],
+   "answers": [
+    {
+     "label": "\\text{Both sides}",
+     "value": "24\\pi=75.4"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-12",
+   "difficulty": 2,
+   "title": "Check Stokes's theorem on a disk",
+   "prompt": "For $\\mathbf{A}=\\hat{\\boldsymbol{\\phi}}\\,r$, verify Stokes's theorem on the disk $r\\le3$ in the $xy$-plane, with $d\\mathbf{s}$ along $+\\hat{\\mathbf{z}}$.",
+   "hints": [
+    "On the circle $r=3$, $d\\mathbf{l}=\\hat{\\boldsymbol{\\phi}}\\,r\\,d\\phi$.",
+    "$(\\nabla\\times\\mathbf{A})_z=\\dfrac{1}{r}\\dfrac{\\partial(rA_\\phi)}{\\partial r}$."
+   ],
+   "steps": [
+    "$$\\oint_C\\mathbf{A}\\cdot d\\mathbf{l}=\\int_0^{2\\pi}(3)(3)\\,d\\phi=18\\pi$$",
+    "$$\\nabla\\times\\mathbf{A}=\\hat{\\mathbf{z}}\\,\\frac{1}{r}\\frac{\\partial(r^2)}{\\partial r}=\\hat{\\mathbf{z}}\\,2$$",
+    "$$\\int_S(\\nabla\\times\\mathbf{A})\\cdot d\\mathbf{s}=2\\cdot\\pi(3)^2=18\\pi$$",
+    "Both sides are $18\\pi=56.5$."
+   ],
+   "answers": [
+    {
+     "label": "\\text{Both sides}",
+     "value": "18\\pi=56.5"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-13",
+   "difficulty": 2,
+   "title": "Work along a path in a conservative field",
+   "prompt": "Find $\\int\\mathbf{F}\\cdot d\\mathbf{l}$ for $\\mathbf{F}=\\hat{\\mathbf{x}}\\,y+\\hat{\\mathbf{y}}\\,x$ from $(0,0,0)$ to $(1,2,0)$ along (a) the straight line $y=2x$ and (b) the parabola $y=2x^2$.",
+   "hints": [
+    "Check the curl first. If it is zero, the answer does not depend on the path.",
+    "$\\mathbf{F}=\\nabla(xy)$."
+   ],
+   "steps": [
+    "$$\\nabla\\times\\mathbf{F}=\\hat{\\mathbf{z}}\\left(\\frac{\\partial x}{\\partial x}-\\frac{\\partial y}{\\partial y}\\right)=0$$",
+    "So $\\mathbf{F}=\\nabla V$ with $V=xy$, and$$\\int\\mathbf{F}\\cdot d\\mathbf{l}=V(1,2)-V(0,0)=2$$",
+    "Check (a) directly: $y=2x$, $dy=2dx$:$$\\int_0^1(2x+2x)\\,dx=2$$",
+    "Check (b): $y=2x^2$, $dy=4x\\,dx$:$$\\int_0^1(2x^2+4x^2)\\,dx=2$$"
+   ],
+   "answers": [
+    {
+     "label": "\\text{(a)}",
+     "value": "2"
+    },
+    {
+     "label": "\\text{(b)}",
+     "value": "2"
+    }
+   ],
+   "widget": "divcurl",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "vectors-14",
+   "difficulty": 2,
+   "title": "Area of a spherical cap",
+   "prompt": "Find the area of the part of a sphere of radius $2\\ \\mathrm{m}$ with $0\\le\\theta\\le60^\\circ$.",
+   "hints": [
+    "$ds=R^2\\sin\\theta\\,d\\theta\\,d\\phi$."
+   ],
+   "steps": [
+    "$$A=\\int_0^{2\\pi}\\!\\!\\int_0^{\\pi/3}(2)^2\\sin\\theta\\,d\\theta\\,d\\phi$$",
+    "$$=4(2\\pi)\\left[-\\cos\\theta\\right]_0^{\\pi/3}=8\\pi\\left(1-\\tfrac12\\right)=4\\pi$$",
+    "$A=4\\pi=12.6\\ \\mathrm{m^2}$, a quarter of the full sphere."
+   ],
+   "answers": [
+    {
+     "label": "A",
+     "value": "4\\pi=12.6\\ \\mathrm{m^2}"
+    }
+   ],
+   "widget": "coords",
+   "source": "original",
+   "topics": [
+    "vectors"
+   ]
+  }
+ ]
+}

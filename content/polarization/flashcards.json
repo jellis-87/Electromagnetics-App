@@ -1,0 +1,141 @@
+{
+ "unit": "Polarization",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-polarization-01",
+   "front": "What does the polarization of a wave describe?",
+   "back": "The path traced by the tip of $\\mathbf{E}$ over time at a fixed point in space, seen with the wave travelling away from or toward you.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-02",
+   "front": "General phasor for a wave toward $+z$ with both transverse components?",
+   "back": "$$\\tilde{\\mathbf{E}}=(\\hat{\\mathbf{x}}a_x+\\hat{\\mathbf{y}}a_ye^{j\\delta})e^{-jkz}$$$a_x,a_y\\ge0$; $\\delta$ is the phase of the $y$ component relative to $x$.",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-03",
+   "front": "When is a wave linearly polarized?",
+   "back": "When $\\delta=0$ or $\\delta=\\pm180^\\circ$, or when one component is zero. $\\mathbf{E}$ then swings back and forth along a fixed line.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-04",
+   "front": "Angle of a linearly polarized field from the $x$ axis?",
+   "back": "$$\\psi_0=\\tan^{-1}\\frac{a_y}{a_x}$$For $\\delta=180^\\circ$ the line has angle $-\\psi_0$.",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-05",
+   "front": "When is a wave circularly polarized?",
+   "back": "When $a_x=a_y$ and $\\delta=\\pm90^\\circ$. The magnitude of $\\mathbf{E}$ stays constant while its direction turns once per period.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-06",
+   "front": "Left- or right-handed: how to tell (wave toward $+z$)?",
+   "back": "$0<\\delta<180^\\circ$: left-handed. $-180^\\circ<\\delta<0$: right-handed. Point the thumb along the direction of travel; the fingers of that hand curl the way $\\mathbf{E}$ turns.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-07",
+   "front": "What is the auxiliary angle $\\psi_0$?",
+   "back": "$$\\tan\\psi_0=\\frac{a_y}{a_x},\\qquad0\\le\\psi_0\\le90^\\circ$$",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-08",
+   "front": "Rotation angle $\\gamma$ of the polarization ellipse?",
+   "back": "$$\\tan2\\gamma=\\tan2\\psi_0\\cos\\delta$$$\\gamma>0$ when $\\cos\\delta>0$, $\\gamma<0$ when $\\cos\\delta<0$.",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-09",
+   "front": "Ellipticity angle $\\chi$?",
+   "back": "$$\\sin2\\chi=\\sin2\\psi_0\\sin\\delta,\\qquad-45^\\circ\\le\\chi\\le45^\\circ$$$\\chi>0$ is left-handed, $\\chi<0$ right-handed.",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-10",
+   "front": "Axial ratio of the polarization ellipse?",
+   "back": "$$R=\\frac{a_\\xi}{a_\\eta}=\\frac{1}{|\\tan\\chi|}$$$R=1$ for circular, $R=\\infty$ for linear.",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-11",
+   "front": "Time-domain fields for LHC and RHC waves toward $+z$ with amplitude $a$?",
+   "back": "$$\\text{LHC: }\\hat{\\mathbf{x}}a\\cos(\\omega t-kz)-\\hat{\\mathbf{y}}a\\sin(\\omega t-kz)$$$$\\text{RHC: }\\hat{\\mathbf{x}}a\\cos(\\omega t-kz)+\\hat{\\mathbf{y}}a\\sin(\\omega t-kz)$$",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-12",
+   "front": "Phasor forms of LHC and RHC waves toward $+z$?",
+   "back": "$$\\text{LHC: }a(\\hat{\\mathbf{x}}+j\\hat{\\mathbf{y}})e^{-jkz},\\qquad\\text{RHC: }a(\\hat{\\mathbf{x}}-j\\hat{\\mathbf{y}})e^{-jkz}$$",
+   "kind": "equation",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-13",
+   "front": "What do you get by adding equal LHC and RHC waves?",
+   "back": "A linearly polarized wave. The rotating parts cancel along one axis and add along the other.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-14",
+   "front": "Does the handedness change if the wave travels toward $-z$?",
+   "back": "The time behaviour at a point is the same, but the direction of travel is reversed, so the same $\\delta$ gives the opposite handedness. Always check against the direction of travel.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "card-polarization-15",
+   "front": "Why does polarization matter for antennas?",
+   "back": "A receiving antenna only picks up the component of the wave that matches its own polarization. A vertical dipole receives nothing from a horizontally polarized wave, and half the power from a circular one.",
+   "kind": "concept",
+   "topics": [
+    "polarization"
+   ]
+  }
+ ]
+}

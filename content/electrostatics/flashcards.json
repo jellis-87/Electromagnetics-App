@@ -1,0 +1,258 @@
+{
+ "unit": "Electrostatics",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "card-electrostatics-01",
+   "front": "Coulomb's law: force on $Q_2$ due to $Q_1$?",
+   "back": "$$\\mathbf{F}_{12}=\\frac{Q_1Q_2}{4\\pi\\varepsilon R_{12}^2}\\,\\hat{\\mathbf{R}}_{12}$$$\\hat{\\mathbf{R}}_{12}$ points from $Q_1$ to $Q_2$. Like charges repel.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-02",
+   "front": "Electric field of a point charge $Q$ at the origin?",
+   "back": "$$\\mathbf{E}=\\hat{\\mathbf{R}}\\,\\frac{Q}{4\\pi\\varepsilon R^2}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-03",
+   "front": "Field of several point charges?",
+   "back": "Superposition: add the vector fields of each charge.$$\\mathbf{E}(\\mathbf{R})=\\frac{1}{4\\pi\\varepsilon}\\sum_i\\frac{Q_i(\\mathbf{R}-\\mathbf{R}_i)}{|\\mathbf{R}-\\mathbf{R}_i|^3}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-04",
+   "front": "Line, surface and volume charge densities, and their units?",
+   "back": "$\\rho_l$ (C/m), $\\rho_s$ (C/m²), $\\rho_v$ (C/m³). Total charge: $Q=\\int\\rho_l\\,dl$, $\\int\\rho_s\\,ds$ or $\\int\\rho_v\\,dV$.",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-05",
+   "front": "Field of an infinite line charge $\\rho_l$?",
+   "back": "$$\\mathbf{E}=\\hat{\\mathbf{r}}\\,\\frac{\\rho_l}{2\\pi\\varepsilon r}$$It falls off as $1/r$, not $1/r^2$.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-06",
+   "front": "Field of an infinite sheet of charge $\\rho_s$?",
+   "back": "$$\\mathbf{E}=\\hat{\\mathbf{n}}\\,\\frac{\\rho_s}{2\\varepsilon}$$Uniform, pointing away from the sheet on both sides.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-07",
+   "front": "Field on the axis of a ring of charge (radius $a$, height $z$)?",
+   "back": "$$\\mathbf{E}=\\hat{\\mathbf{z}}\\,\\frac{\\rho_l\\,a\\,z}{2\\varepsilon\\,(a^2+z^2)^{3/2}}$$The radial parts cancel by symmetry.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-08",
+   "front": "Gauss's law, integral form?",
+   "back": "$$\\oint_S\\mathbf{D}\\cdot d\\mathbf{s}=Q_{\\mathrm{enc}}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-09",
+   "front": "Gauss's law, differential form?",
+   "back": "$$\\nabla\\cdot\\mathbf{D}=\\rho_v$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-10",
+   "front": "When is Gauss's law useful for finding $\\mathbf{E}$?",
+   "back": "When symmetry makes $|\\mathbf{D}|$ constant and normal on a closed surface: spheres for point and spherical charges, cylinders for line charges, pillboxes for sheets.",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-11",
+   "front": "Field inside a charged conducting shell or sphere?",
+   "back": "Zero. Charge on a conductor sits on its surface, and the static field inside the conductor is zero.",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-12",
+   "front": "Electric potential difference from $A$ to $B$?",
+   "back": "$$V_{BA}=V_B-V_A=-\\int_A^B\\mathbf{E}\\cdot d\\mathbf{l}$$It does not depend on the path.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-13",
+   "front": "How do you get $\\mathbf{E}$ from $V$?",
+   "back": "$$\\mathbf{E}=-\\nabla V$$$\\mathbf{E}$ points downhill in potential.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-14",
+   "front": "Potential of a point charge (zero at infinity)?",
+   "back": "$$V=\\frac{Q}{4\\pi\\varepsilon R}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-15",
+   "front": "Why is the static electric field conservative?",
+   "back": "$$\\oint_C\\mathbf{E}\\cdot d\\mathbf{l}=0,\\qquad\\nabla\\times\\mathbf{E}=0$$The work around any closed loop is zero.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-16",
+   "front": "Poisson's and Laplace's equations?",
+   "back": "$$\\nabla^2V=-\\frac{\\rho_v}{\\varepsilon}\\qquad\\nabla^2V=0\\ \\text{(no charge)}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-17",
+   "front": "How are equipotential surfaces related to field lines?",
+   "back": "They are perpendicular everywhere. Moving along an equipotential takes no work.",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-18",
+   "front": "Work to move charge $q$ from $A$ to $B$?",
+   "back": "$$W=q\\,(V_B-V_A)$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-19",
+   "front": "Boundary condition on tangential $\\mathbf{E}$?",
+   "back": "$$E_{1t}=E_{2t}$$Tangential $\\mathbf{E}$ is continuous across any boundary.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-20",
+   "front": "Boundary condition on normal $\\mathbf{D}$?",
+   "back": "$$\\hat{\\mathbf{n}}_2\\cdot(\\mathbf{D}_1-\\mathbf{D}_2)=\\rho_s$$$\\hat{\\mathbf{n}}_2$ points from medium 2 into medium 1. With no surface charge, $\\varepsilon_1E_{1n}=\\varepsilon_2E_{2n}$.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-21",
+   "front": "Fields at the surface of a conductor?",
+   "back": "Tangential $\\mathbf{E}$ is zero, and $\\mathbf{E}$ just outside is normal:$$D_n=\\varepsilon E_n=\\rho_s$$",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-22",
+   "front": "Refraction of $\\mathbf{E}$ at a charge-free dielectric boundary?",
+   "back": "$$\\frac{\\tan\\theta_1}{\\tan\\theta_2}=\\frac{\\varepsilon_1}{\\varepsilon_2}$$Angles are measured from the normal.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-23",
+   "front": "Definition of capacitance?",
+   "back": "$$C=\\frac{Q}{V}$$It depends only on geometry and material, not on $Q$ or $V$.",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-24",
+   "front": "Parallel-plate capacitor?",
+   "back": "$$C=\\frac{\\varepsilon A}{d}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-25",
+   "front": "Coaxial capacitance per unit length?",
+   "back": "$$C'=\\frac{2\\pi\\varepsilon}{\\ln(b/a)}$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-26",
+   "front": "Energy stored in a capacitor, and the energy density of the field?",
+   "back": "$$W_e=\\tfrac12CV^2,\\qquad w_e=\\tfrac12\\varepsilon E^2$$",
+   "kind": "equation",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-27",
+   "front": "What happens when $E$ exceeds the dielectric strength?",
+   "back": "The material breaks down and conducts (an arc or spark). For air it is about $3\\ \\mathrm{MV/m}$.",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "card-electrostatics-28",
+   "front": "Recipe for capacitance from fields?",
+   "back": "Assume $\\pm Q$ on the conductors, find $\\mathbf{E}$ (Gauss's law), integrate to get $V$, then $C=Q/V$.",
+   "kind": "concept",
+   "topics": [
+    "electrostatics"
+   ]
+  }
+ ]
+}

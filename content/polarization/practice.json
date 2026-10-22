@@ -1,0 +1,285 @@
+{
+ "unit": "Polarization",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Answer label and value fields are TeX without delimiters.",
+ "problems": [
+  {
+   "id": "polarization-01",
+   "difficulty": 1,
+   "title": "A linearly polarized wave",
+   "prompt": "Describe the polarization of $\\mathbf{E}=\\hat{\\mathbf{x}}\\,3\\cos(\\omega t-kz)+\\hat{\\mathbf{y}}\\,4\\cos(\\omega t-kz)\\ \\mathrm{V/m}$, and find its amplitude and the angle of $\\mathbf{E}$ from the $x$ axis.",
+   "hints": [
+    "Both components have the same phase, so $\\delta=0$."
+   ],
+   "steps": [
+    "$\\delta=0$, so the wave is linearly polarized.",
+    "$$|\\mathbf{E}|_{\\max}=\\sqrt{3^2+4^2}=5.00\\ \\mathrm{V/m}$$",
+    "$$\\psi_0=\\tan^{-1}\\frac{4}{3}=53.1^\\circ$$"
+   ],
+   "answers": [
+    {
+     "label": "\\text{type}",
+     "value": "\\text{linear}"
+    },
+    {
+     "label": "|\\mathbf{E}|_{\\max}",
+     "value": "5.00\\ \\mathrm{V/m}"
+    },
+    {
+     "label": "\\psi_0",
+     "value": "53.1^\\circ"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-02",
+   "difficulty": 1,
+   "title": "Which way does it turn?",
+   "prompt": "Find the polarization state of $\\mathbf{E}=\\hat{\\mathbf{x}}\\,5\\cos(\\omega t-kz)-\\hat{\\mathbf{y}}\\,5\\sin(\\omega t-kz)\\ \\mathrm{V/m}$.",
+   "hints": [
+    "Write $-\\sin\\theta$ as a cosine with a phase shift.",
+    "Then read off $\\delta$ and use the sign rule."
+   ],
+   "steps": [
+    "$$-\\sin\\theta=\\cos(\\theta+90^\\circ)\\ \\Rightarrow\\ \\delta=+90^\\circ$$",
+    "$a_x=a_y=5$ and $\\delta=+90^\\circ$, so the wave is left-hand circularly polarized.",
+    "Check at $z=0$: $\\omega t=0$ gives $\\mathbf{E}=5\\hat{\\mathbf{x}}$; $\\omega t=90^\\circ$ gives $\\mathbf{E}=-5\\hat{\\mathbf{y}}$. Looking at the wave coming toward you, $\\mathbf{E}$ turns clockwise, which is the left-hand rule about $+\\hat{\\mathbf{z}}$."
+   ],
+   "answers": [
+    {
+     "label": "\\delta",
+     "value": "+90^\\circ"
+    },
+    {
+     "label": "\\text{type}",
+     "value": "\\text{left-hand circular}"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-03",
+   "difficulty": 1,
+   "title": "From a phasor to the time domain",
+   "prompt": "A wave in air has $\\tilde{\\mathbf{E}}=10(\\hat{\\mathbf{x}}-j\\hat{\\mathbf{y}})e^{-jkz}\\ \\mathrm{V/m}$. Write $\\mathbf{E}(z,t)$ and name its polarization.",
+   "hints": [
+    "$-j=e^{-j90^\\circ}$."
+   ],
+   "steps": [
+    "$$\\tilde{\\mathbf{E}}=10\\left(\\hat{\\mathbf{x}}+\\hat{\\mathbf{y}}e^{-j90^\\circ}\\right)e^{-jkz}$$",
+    "$$\\mathbf{E}(z,t)=\\hat{\\mathbf{x}}\\,10\\cos(\\omega t-kz)+\\hat{\\mathbf{y}}\\,10\\cos(\\omega t-kz-90^\\circ)$$",
+    "$$=\\hat{\\mathbf{x}}\\,10\\cos(\\omega t-kz)+\\hat{\\mathbf{y}}\\,10\\sin(\\omega t-kz)$$",
+    "$a_x=a_y$ and $\\delta=-90^\\circ$: right-hand circular."
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{E}(z,t)",
+     "value": "\\hat{\\mathbf{x}}\\,10\\cos(\\omega t-kz)+\\hat{\\mathbf{y}}\\,10\\sin(\\omega t-kz)\\ \\mathrm{V/m}"
+    },
+    {
+     "label": "\\text{type}",
+     "value": "\\text{right-hand circular}"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-04",
+   "difficulty": 2,
+   "title": "Characterizing an ellipse",
+   "prompt": "Find $\\psi_0$, the rotation angle $\\gamma$, the ellipticity angle $\\chi$, the axial ratio and the handedness of $\\tilde{\\mathbf{E}}=(\\hat{\\mathbf{x}}\\,3+\\hat{\\mathbf{y}}\\,4e^{j45^\\circ})e^{-jkz}$.",
+   "hints": [
+    "$\\tan\\psi_0=a_y/a_x$.",
+    "$\\tan2\\gamma=\\tan2\\psi_0\\cos\\delta$, $\\sin2\\chi=\\sin2\\psi_0\\sin\\delta$.",
+    "$\\tan2\\psi_0$ is negative here, but $\\cos\\delta>0$ means $\\gamma>0$: take the angle in the right quadrant."
+   ],
+   "steps": [
+    "$$\\psi_0=\\tan^{-1}\\frac{4}{3}=53.1^\\circ$$",
+    "$$\\tan2\\gamma=\\tan(106^\\circ)\\cos45^\\circ=-2.42$$",
+    "Since $\\cos\\delta>0$, $\\gamma>0$, so $2\\gamma=112^\\circ$ and $\\gamma=56.2^\\circ$.",
+    "$$\\sin2\\chi=\\sin(106^\\circ)\\sin45^\\circ=0.679\\ \\Rightarrow\\ \\chi=21.4^\\circ$$",
+    "$$R=\\frac{1}{\\tan21.4^\\circ}=2.55$$",
+    "$\\chi>0$, so the wave is left-hand elliptically polarized."
+   ],
+   "answers": [
+    {
+     "label": "\\psi_0",
+     "value": "53.1^\\circ"
+    },
+    {
+     "label": "\\gamma",
+     "value": "56.2^\\circ"
+    },
+    {
+     "label": "\\chi",
+     "value": "21.4^\\circ"
+    },
+    {
+     "label": "R",
+     "value": "2.55"
+    },
+    {
+     "label": "\\text{type}",
+     "value": "\\text{left-hand elliptical}"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-05",
+   "difficulty": 2,
+   "title": "Equal amplitudes, not circular",
+   "prompt": "Characterize $\\tilde{\\mathbf{E}}=2(\\hat{\\mathbf{x}}+\\hat{\\mathbf{y}}e^{-j60^\\circ})e^{-jkz}$: find $\\gamma$, $\\chi$, the axial ratio and the handedness.",
+   "hints": [
+    "$\\psi_0=45^\\circ$, so $\\tan2\\psi_0$ is infinite and $\\sin2\\psi_0=1$."
+   ],
+   "steps": [
+    "$\\psi_0=45^\\circ$ and $\\cos\\delta>0$, so the major axis lies at $\\gamma=45^\\circ$.",
+    "$$\\sin2\\chi=\\sin(-60^\\circ)\\ \\Rightarrow\\ \\chi=-30.0^\\circ$$",
+    "$$R=\\frac{1}{|\\tan-30.0^\\circ|}=1.73$$",
+    "$\\chi<0$: right-hand elliptical. Equal amplitudes give a circle only when $\\delta=\\pm90^\\circ$."
+   ],
+   "answers": [
+    {
+     "label": "\\gamma",
+     "value": "45.0^\\circ"
+    },
+    {
+     "label": "\\chi",
+     "value": "-30.0^\\circ"
+    },
+    {
+     "label": "R",
+     "value": "1.73"
+    },
+    {
+     "label": "\\text{type}",
+     "value": "\\text{right-hand elliptical}"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-06",
+   "difficulty": 2,
+   "title": "Two circular waves make a line",
+   "prompt": "An LHC wave $\\tilde{\\mathbf{E}}_1=a(\\hat{\\mathbf{x}}+j\\hat{\\mathbf{y}})e^{-jkz}$ and an RHC wave $\\tilde{\\mathbf{E}}_2=a(\\hat{\\mathbf{x}}-j\\hat{\\mathbf{y}})e^{-jkz}$ travel together. Find the polarization of their sum. What if the RHC wave is $a(\\hat{\\mathbf{x}}-j\\hat{\\mathbf{y}})e^{j60^\\circ}e^{-jkz}$ instead?",
+   "hints": [
+    "Add the phasors component by component.",
+    "With the extra phase, factor out $e^{j30^\\circ}$ and look at what is left."
+   ],
+   "steps": [
+    "$$\\tilde{\\mathbf{E}}_1+\\tilde{\\mathbf{E}}_2=2a\\,\\hat{\\mathbf{x}}\\,e^{-jkz}$$",
+    "Linear along $x$.",
+    "$$\\hat{\\mathbf{x}}a(1+e^{j60^\\circ})+\\hat{\\mathbf{y}}ja(1-e^{j60^\\circ})=2ae^{j30^\\circ}\\left(\\hat{\\mathbf{x}}\\cos30^\\circ+\\hat{\\mathbf{y}}\\sin30^\\circ\\right)$$",
+    "Still linear, but tilted to $30^\\circ$: shifting the phase of one circular wave by $\\phi$ rotates the line by $\\phi/2$."
+   ],
+   "answers": [
+    {
+     "label": "\\text{sum}",
+     "value": "2a\\,\\hat{\\mathbf{x}}\\,e^{-jkz}\\ (\\text{linear})"
+    },
+    {
+     "label": "\\text{shifted}",
+     "value": "\\text{linear at }30^\\circ"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-07",
+   "difficulty": 3,
+   "title": "Working backward from the ellipse",
+   "prompt": "A right-hand elliptically polarized wave toward $+z$ has axial ratio 3 and its major axis at $\\gamma=30^\\circ$ from the $x$ axis. Find $\\psi_0$ and $\\delta$.",
+   "hints": [
+    "$\\tan\\chi=-1/R$ for right-handed.",
+    "$\\cos2\\psi_0=\\cos2\\gamma\\cos2\\chi$ and $\\tan\\delta=\\tan2\\chi/\\sin2\\gamma$."
+   ],
+   "steps": [
+    "$$\\chi=-\\tan^{-1}\\frac{1}{3}=-18.4^\\circ$$",
+    "$$\\cos2\\psi_0=\\cos60^\\circ\\cos(-36.9^\\circ)=0.400\\ \\Rightarrow\\ \\psi_0=33.2^\\circ$$",
+    "$$\\tan\\delta=\\frac{\\tan(-36.9^\\circ)}{\\sin60^\\circ}=-0.866\\ \\Rightarrow\\ \\delta=-40.9^\\circ$$",
+    "Check: $\\delta$ is negative (right-handed) and $\\cos\\delta>0$ (so $\\gamma>0$), as required."
+   ],
+   "answers": [
+    {
+     "label": "\\psi_0",
+     "value": "33.2^\\circ"
+    },
+    {
+     "label": "\\delta",
+     "value": "-40.9^\\circ"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "polarization-08",
+   "difficulty": 2,
+   "title": "A phase over 90 degrees",
+   "prompt": "Characterize $\\mathbf{E}=\\hat{\\mathbf{x}}\\cos(\\omega t-kz)+\\hat{\\mathbf{y}}\\,2\\cos(\\omega t-kz+135^\\circ)$: find $\\gamma$, $\\chi$, the axial ratio and the handedness.",
+   "hints": [
+    "Here $\\cos\\delta<0$, so $\\gamma$ is negative."
+   ],
+   "steps": [
+    "$$\\psi_0=\\tan^{-1}2=63.4^\\circ$$",
+    "$$\\tan2\\gamma=\\tan(127^\\circ)\\cos135^\\circ=0.943$$",
+    "With $\\cos\\delta<0$, $\\gamma<0$: $2\\gamma=-137^\\circ$, so $\\gamma=-68.3^\\circ$.",
+    "$$\\sin2\\chi=\\sin(127^\\circ)\\sin135^\\circ=0.566\\ \\Rightarrow\\ \\chi=17.2^\\circ$$",
+    "$$R=3.23$$",
+    "$\\chi>0$: left-hand elliptical."
+   ],
+   "answers": [
+    {
+     "label": "\\gamma",
+     "value": "-68.3^\\circ"
+    },
+    {
+     "label": "\\chi",
+     "value": "17.2^\\circ"
+    },
+    {
+     "label": "R",
+     "value": "3.23"
+    },
+    {
+     "label": "\\text{type}",
+     "value": "\\text{left-hand elliptical}"
+    }
+   ],
+   "widget": "polarization",
+   "source": "original",
+   "topics": [
+    "polarization"
+   ]
+  }
+ ]
+}
