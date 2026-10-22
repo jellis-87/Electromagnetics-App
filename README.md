@@ -24,7 +24,7 @@ Everything is labeled by topic, not by textbook chapter. Each card, problem and 
 | Impedance matching | Stub matching, Smith chart |
 | Transients | Bounce diagram |
 
-Vector calculus, electrostatics, current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
+Fields and phasors, vector calculus, electrostatics, current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
 
 Content so far: 46 flashcards, 31 glossary terms, 34 practice problems (16 from the course practice sets with worked keys, 18 new).
 

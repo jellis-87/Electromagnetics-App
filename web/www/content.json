@@ -1,6 +1,18 @@
 {
  "topics": [
   {
+   "id": "phasors",
+   "title": "Fields and phasors",
+   "blurb": "Scalar and vector fields, phasors and Euler's identity.",
+   "widgets": [],
+   "available": false,
+   "counts": {
+    "cards": 0,
+    "problems": 0,
+    "terms": 0
+   }
+  },
+  {
    "id": "vectors",
    "title": "Vector calculus",
    "blurb": "Gradient, divergence, curl and the coordinate systems.",

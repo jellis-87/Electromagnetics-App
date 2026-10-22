@@ -2,6 +2,13 @@
  "format": "Topics organize every card, problem, term and widget. Content items list one or more topic ids in their topics field; the first is the primary topic.",
  "topics": [
   {
+   "id": "phasors",
+   "title": "Fields and phasors",
+   "blurb": "Scalar and vector fields, phasors and Euler's identity.",
+   "widgets": [],
+   "available": false
+  },
+  {
    "id": "vectors",
    "title": "Vector calculus",
    "blurb": "Gradient, divergence, curl and the coordinate systems.",
