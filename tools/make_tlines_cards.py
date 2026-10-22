@@ -35,7 +35,17 @@ G=[
 ("Source reflection coefficient","\\Gamma_s","","Applied to each wave that returns to the source:"+D(r"\Gamma_s=\frac{R_s-Z_0}{R_s+Z_0}"),"bounce"),
 ("Vector network analyzer","VNA","","An instrument that measures reflection ($S_{11}$) and transmission ($S_{21}$) versus frequency, shown as magnitude, phase, or on a Smith chart.",None),
 ]
-glossary=[{"term":t,"symbol":s,"units":u,"definition":d,"widget":w} for t,s,u,d,w in G]
+def tags(spec,n):
+    """Expand {"tline":"1-9,19"} into a 1-based index -> topic list."""
+    out={}
+    for t,r in spec.items():
+        for part in r.split(","):
+            a,_,b=part.partition("-")
+            for i in range(int(a),int(b or a)+1): out.setdefault(i,[]).append(t)
+    assert sorted(out)==list(range(1,n+1)), sorted(set(range(1,n+1))-set(out))
+    return out
+GT=tags({"tline":"1-10,16-17,19-20","reflection":"11-15,31","matching":"18,21,26","smith":"22-25","transients":"27-30"},len(G))
+glossary=[{"term":t,"symbol":s,"units":u,"definition":d,"widget":w,"topics":GT[i+1]} for i,(t,s,u,d,w) in enumerate(G)]
 C=[
 ("When must you treat a connection as a transmission line instead of a simple wire?","When its length is a significant fraction of a wavelength, roughly $\\ell>\\lambda/10$. Then voltage and current change along the line.","concept"),
 ("What four per-unit-length parameters describe a line?","$R'$ (Ω/m), $L'$ (H/m), $G'$ (S/m), and $C'$ (F/m)","concept"),
@@ -84,8 +94,13 @@ C=[
 ("What does a VNA's $S_{11}$ measure?","The reflection coefficient at port 1 versus frequency. $|S_{11}|$ in dB is the negative of the return loss.","concept"),
 ("Why calibrate a VNA with open, short, and load standards?","To remove the effect of the cables and connectors so the measured $\\Gamma$ is that of the device alone.","concept"),
 ]
-cards=[{"id":f"c3-{i+1:02d}","front":f,"back":b,"kind":k} for i,(f,b,k) in enumerate(C)]
+CT=tags({"tline":"1-9,19,21-25,28-29","reflection":"10-18,20,45-46","matching":"26-27,35-38","smith":"30-34","transients":"39-44"},len(C))
+n={}
+cards=[]
+for i,(f,b,k) in enumerate(C):
+    t=CT[i+1]; n[t[0]]=n.get(t[0],0)+1
+    cards.append({"id":f"card-{t[0]}-{n[t[0]]:02d}","front":f,"back":b,"kind":k,"topics":t})
 fmt="Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters."
-json.dump(roman({"chapter":3,"title":"Transmission lines","format":fmt,"cards":cards}),open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","content","ch03-flashcards.json"),"w"),ensure_ascii=False,indent=1)
-json.dump(roman({"chapter":3,"title":"Transmission lines","format":fmt,"terms":glossary}),open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","content","ch03-glossary.json"),"w"),ensure_ascii=False,indent=1)
+json.dump(roman({"unit":"Transmission lines","format":fmt,"cards":cards}),open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","content","transmission-lines","flashcards.json"),"w"),ensure_ascii=False,indent=1)
+json.dump(roman({"unit":"Transmission lines","format":fmt,"terms":glossary}),open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","content","transmission-lines","glossary.json"),"w"),ensure_ascii=False,indent=1)
 print(len(cards),len(glossary))
