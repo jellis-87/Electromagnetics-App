@@ -1,0 +1,283 @@
+{
+ "chapter": 3,
+ "title": "Transmission lines",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "cards": [
+  {
+   "id": "c3-01",
+   "front": "When must you treat a connection as a transmission line instead of a simple wire?",
+   "back": "When its length is a significant fraction of a wavelength, roughly $\\ell>\\lambda/10$. Then voltage and current change along the line.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-02",
+   "front": "What four per-unit-length parameters describe a line?",
+   "back": "$R'$ (Ω/m), $L'$ (H/m), $G'$ (S/m), and $C'$ (F/m)",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-03",
+   "front": "Write $\\gamma$ in terms of $R',L',G',C'$.",
+   "back": "$$\\gamma=\\alpha+j\\beta=\\sqrt{(R'+j\\omega L')(G'+j\\omega C')}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-04",
+   "front": "Write $Z_0$ in terms of $R',L',G',C'$.",
+   "back": "$$Z_0=\\sqrt{\\frac{R'+j\\omega L'}{G'+j\\omega C'}}$$Lossless: $Z_0=\\sqrt{\\dfrac{L'}{C'}}$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-05",
+   "front": "Lossless line: $\\beta$ and $u_p$?",
+   "back": "$$\\beta=\\omega\\sqrt{L'C'},\\qquad u_p=\\frac{1}{\\sqrt{L'C'}}=\\frac{\\omega}{\\beta}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-06",
+   "front": "What does $\\alpha$ tell you, and how do you convert it to dB/m?",
+   "back": "The amplitude decays as $e^{-\\alpha z}$. In dB/m: $8.686\\,\\alpha$ with $\\alpha$ in Np/m.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-07",
+   "front": "Phase velocity in a non-magnetic dielectric with $\\varepsilon_r$?",
+   "back": "$$u_p=\\frac{c}{\\sqrt{\\varepsilon_r}}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-08",
+   "front": "General phasor voltage on a lossless line?",
+   "back": "$$V(z)=V_0^+e^{-j\\beta z}+V_0^-e^{j\\beta z}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-09",
+   "front": "General phasor current on a lossless line?",
+   "back": "$$I(z)=\\frac{V_0^+}{Z_0}e^{-j\\beta z}-\\frac{V_0^-}{Z_0}e^{j\\beta z}$$Note the minus sign on the reflected term.",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-10",
+   "front": "$\\Gamma_L$ in terms of $Z_L$ and $Z_0$?",
+   "back": "$$\\Gamma_L=\\frac{Z_L-Z_0}{Z_L+Z_0}=\\frac{z_L-1}{z_L+1}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-11",
+   "front": "$\\Gamma_L$ for a matched load, a short, and an open?",
+   "back": "Matched: $0$. Short: $-1$. Open: $+1$.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-12",
+   "front": "A purely reactive load gives what $|\\Gamma_L|$ and VSWR?",
+   "back": "$|\\Gamma_L|=1$ and $\\mathrm{VSWR}=\\infty$. All power reflects.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-13",
+   "front": "VSWR in terms of $|\\Gamma|$?",
+   "back": "$$S=\\frac{1+|\\Gamma|}{1-|\\Gamma|}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-14",
+   "front": "$|\\Gamma|$ in terms of VSWR?",
+   "back": "$$|\\Gamma|=\\frac{S-1}{S+1}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-15",
+   "front": "How far apart are adjacent voltage maxima on a standing wave?",
+   "back": "$\\lambda/2$. A maximum and the nearest minimum are $\\lambda/4$ apart.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-16",
+   "front": "Where is the first voltage maximum from the load?",
+   "back": "$$d_{\\mathrm{max}}=\\frac{\\theta_\\Gamma}{4\\pi}\\lambda$$Add $\\lambda/2$ if negative. $\\theta_\\Gamma$ is the phase of $\\Gamma_L$.",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-17",
+   "front": "Line impedance at a voltage maximum and at a voltage minimum?",
+   "back": "At $V_{\\mathrm{max}}$: $Z_0S$ (real). At $V_{\\mathrm{min}}$: $\\dfrac{Z_0}{S}$ (real).",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-18",
+   "front": "Transmission coefficient $\\tau$?",
+   "back": "$\\tau=1+\\Gamma_L$, so $V_L=\\tau V_0^+$.",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-19",
+   "front": "Input impedance of a lossless line of length $\\ell$?",
+   "back": "$$Z_{\\mathrm{in}}=Z_0\\,\\frac{Z_L+jZ_0\\tan\\beta\\ell}{Z_0+jZ_L\\tan\\beta\\ell}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-20",
+   "front": "$\\Gamma$ at distance $d$ from the load?",
+   "back": "$$\\Gamma(d)=\\Gamma_Le^{-j2\\beta d}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-21",
+   "front": "Input impedance of a shorted stub?",
+   "back": "$$Z_{\\mathrm{in}}=jZ_0\\tan\\beta\\ell$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-22",
+   "front": "Input impedance of an open stub?",
+   "back": "$$Z_{\\mathrm{in}}=-jZ_0\\cot\\beta\\ell$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-23",
+   "front": "What does a $\\lambda/2$ line do to a load?",
+   "back": "Repeats it: $Z_{\\mathrm{in}}=Z_L$.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-24",
+   "front": "What does a $\\lambda/4$ line do to a load?",
+   "back": "Inverts it:$$Z_{\\mathrm{in}}=\\frac{Z_0^2}{Z_L}$$A short looks open, and an open looks short.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-25",
+   "front": "A capacitor at the end of a $\\lambda/4$ line looks like…?",
+   "back": "An inductor.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-26",
+   "front": "Quarter-wave transformer impedance to match $R_L$ to $Z_0$?",
+   "back": "$$Z_1=\\sqrt{Z_0R_L}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-27",
+   "front": "Can a quarter-wave transformer match a complex load directly?",
+   "back": "No. First move to a voltage maximum or minimum, where the impedance is real, then insert the transformer.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-28",
+   "front": "Time-average power delivered to the load on a lossless line?",
+   "back": "$$P_{\\mathrm{av}}=\\frac{|V_0^+|^2}{2Z_0}\\left(1-|\\Gamma_L|^2\\right)$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-29",
+   "front": "If $Z_s=Z_0$, what is $|V_0^+|$?",
+   "back": "$\\dfrac{V_s}{2}$, whatever the load.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-30",
+   "front": "On a Smith chart, which way do you rotate moving toward the generator?",
+   "back": "Clockwise. One full turn is $\\lambda/2$.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-31",
+   "front": "Where are the short, the open, and the matched point on a Smith chart?",
+   "back": "Short: far left ($\\Gamma=-1$). Open: far right ($\\Gamma=+1$). Match: center ($\\Gamma=0$).",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-32",
+   "front": "How do you find $y$ from $z$ on the Smith chart?",
+   "back": "Reflect through the center: a $180^\\circ$ rotation, which is $\\lambda/4$ on the WTG scale.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-33",
+   "front": "What does a circle centered on the middle of the Smith chart represent?",
+   "back": "Constant $|\\Gamma|$, so constant VSWR. Moving along a lossless line keeps you on it.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-34",
+   "front": "Upper half of the Smith chart: inductive or capacitive?",
+   "back": "Upper half is inductive ($+jx$); lower half is capacitive ($-jx$).",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-35",
+   "front": "Shunt-stub matching: which circle must the line bring $y$ onto?",
+   "back": "The $g=1$ circle. The stub then cancels the susceptance $\\pm jb$.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-36",
+   "front": "Shorted stub admittance?",
+   "back": "$$y=-j\\cot\\beta\\ell$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-37",
+   "front": "Open stub admittance?",
+   "back": "$$y=+j\\tan\\beta\\ell$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-38",
+   "front": "Why are shunt stubs more common than series stubs?",
+   "back": "They attach in parallel without cutting the line, which is easy in microstrip and coax.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-39",
+   "front": "One-way transit time on a line?",
+   "back": "$$T=\\frac{\\ell}{u_p}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-40",
+   "front": "First wave launched when a step source switches on?",
+   "back": "$$V_1^+=V_s\\,\\frac{Z_0}{R_s+Z_0}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-41",
+   "front": "$\\Gamma_s$ for a source with internal resistance $R_s$?",
+   "back": "$$\\Gamma_s=\\frac{R_s-Z_0}{R_s+Z_0}$$",
+   "kind": "equation"
+  },
+  {
+   "id": "c3-42",
+   "front": "Steady-state voltage after all reflections die out?",
+   "back": "The DC voltage divider:$$V_\\infty=V_s\\,\\frac{R_L}{R_s+R_L}$$",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-43",
+   "front": "In a bounce diagram, when does the load voltage first change?",
+   "back": "At $t=T$, when the first wave arrives. It jumps to $V_1^+(1+\\Gamma_L)$.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-44",
+   "front": "When does the source-end voltage change after $t=0$?",
+   "back": "Only at $t=2T,\\ 4T,\\ 6T,\\dots$, when reflected waves return.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-45",
+   "front": "What does a VNA's $S_{11}$ measure?",
+   "back": "The reflection coefficient at port 1 versus frequency. $|S_{11}|$ in dB is the negative of the return loss.",
+   "kind": "concept"
+  },
+  {
+   "id": "c3-46",
+   "front": "Why calibrate a VNA with open, short, and load standards?",
+   "back": "To remove the effect of the cables and connectors so the measured $\\Gamma$ is that of the device alone.",
+   "kind": "concept"
+  }
+ ]
+}

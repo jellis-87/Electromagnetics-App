@@ -1,0 +1,224 @@
+{
+ "chapter": 3,
+ "title": "Transmission lines",
+ "format": "Text with inline TeX in $...$ and display TeX in $$...$$. Glossary symbol and units fields are TeX without delimiters.",
+ "terms": [
+  {
+   "term": "Transmission line",
+   "symbol": "",
+   "units": "",
+   "definition": "A pair of conductors that guides an electromagnetic wave from a source to a load. Treat a connection as a line, not a wire, when its length is a noticeable fraction of a wavelength (rule of thumb: $\\ell>\\lambda/10$).",
+   "widget": "waves"
+  },
+  {
+   "term": "Lumped-element model",
+   "symbol": "R',\\,L',\\,G',\\,C'",
+   "units": "",
+   "definition": "Splits the line into short sections of length $\\Delta z$, each with series resistance $R'\\Delta z$ and inductance $L'\\Delta z$ and shunt conductance $G'\\Delta z$ and capacitance $C'\\Delta z$. Letting $\\Delta z\\to0$ gives the telegrapher's equations.",
+   "widget": "params"
+  },
+  {
+   "term": "Telegrapher's equations",
+   "symbol": "",
+   "units": "",
+   "definition": "The pair of equations from KVL and KCL on one lumped section:$$-\\frac{\\partial v}{\\partial z}=R'i+L'\\frac{\\partial i}{\\partial t},\\qquad -\\frac{\\partial i}{\\partial z}=G'v+C'\\frac{\\partial v}{\\partial t}$$",
+   "widget": null
+  },
+  {
+   "term": "Phasor",
+   "symbol": "\\tilde V",
+   "units": "\\mathrm{V}",
+   "definition": "A complex number holding a sinusoid's amplitude and phase: $v(t)=\\mathrm{Re}\\{\\tilde V e^{j\\omega t}\\}$.",
+   "widget": null
+  },
+  {
+   "term": "Propagation constant",
+   "symbol": "\\gamma=\\alpha+j\\beta",
+   "units": "\\mathrm{m}^{-1}",
+   "definition": "Its real part sets attenuation and its imaginary part sets the phase change per meter.$$\\gamma=\\sqrt{(R'+j\\omega L')(G'+j\\omega C')}$$",
+   "widget": "params"
+  },
+  {
+   "term": "Attenuation constant",
+   "symbol": "\\alpha",
+   "units": "\\mathrm{Np/m}",
+   "definition": "How fast the amplitude decays: a wave falls as $e^{-\\alpha z}$. Multiply by $8.686$ to get dB/m. Zero on a lossless line.",
+   "widget": "params"
+  },
+  {
+   "term": "Phase constant",
+   "symbol": "\\beta",
+   "units": "\\mathrm{rad/m}",
+   "definition": "Phase change per meter of travel: $\\beta=\\dfrac{2\\pi}{\\lambda}=\\dfrac{\\omega}{u_p}$. On a lossless line $\\beta=\\omega\\sqrt{L'C'}$.",
+   "widget": "params"
+  },
+  {
+   "term": "Phase velocity",
+   "symbol": "u_p",
+   "units": "\\mathrm{m/s}",
+   "definition": "Speed of a point of constant phase: $u_p=\\dfrac{\\omega}{\\beta}=\\dfrac{1}{\\sqrt{L'C'}}$ on a lossless line, or $\\dfrac{c}{\\sqrt{\\varepsilon_r}}$ in a non-magnetic dielectric.",
+   "widget": "calc"
+  },
+  {
+   "term": "Velocity factor",
+   "symbol": "u_p/c",
+   "units": "",
+   "definition": "Phase velocity as a fraction of $c$. Solid-polyethylene coax is about $0.66$.",
+   "widget": "bounce"
+  },
+  {
+   "term": "Characteristic impedance",
+   "symbol": "Z_0",
+   "units": "\\Omega",
+   "definition": "Ratio of voltage to current for a single traveling wave. It is not a resistance you can measure with an ohmmeter.$$Z_0=\\sqrt{\\frac{R'+j\\omega L'}{G'+j\\omega C'}}\\;\\xrightarrow{\\text{lossless}}\\;\\sqrt{\\frac{L'}{C'}}$$",
+   "widget": "params"
+  },
+  {
+   "term": "Reflection coefficient",
+   "symbol": "\\Gamma",
+   "units": "",
+   "definition": "Ratio of reflected to incident voltage. $|\\Gamma|\\le1$ for passive loads.$$\\Gamma_L=\\frac{Z_L-Z_0}{Z_L+Z_0},\\qquad \\Gamma(d)=\\Gamma_Le^{-j2\\beta d}$$",
+   "widget": "waves"
+  },
+  {
+   "term": "Transmission coefficient",
+   "symbol": "\\tau",
+   "units": "",
+   "definition": "Ratio of load voltage to incident voltage: $\\tau=1+\\Gamma_L$.",
+   "widget": "calc"
+  },
+  {
+   "term": "Standing wave",
+   "symbol": "",
+   "units": "",
+   "definition": "The pattern formed when incident and reflected waves add. $|V(z)|$ no longer depends on time; its maxima and minima sit $\\lambda/2$ apart.",
+   "widget": "waves"
+  },
+  {
+   "term": "VSWR",
+   "symbol": "S",
+   "units": "",
+   "definition": "Voltage standing wave ratio. It ranges from $1$ (matched) to $\\infty$ (open, short, or pure reactance).$$S=\\frac{|V|_{\\mathrm{max}}}{|V|_{\\mathrm{min}}}=\\frac{1+|\\Gamma|}{1-|\\Gamma|}$$",
+   "widget": "waves"
+  },
+  {
+   "term": "Return loss",
+   "symbol": "RL",
+   "units": "\\mathrm{dB}",
+   "definition": "$RL=-20\\log_{10}|\\Gamma|$. Larger means better matched; a VNA shows it as $-|S_{11}|$ in dB.",
+   "widget": "calc"
+  },
+  {
+   "term": "Input impedance",
+   "symbol": "Z_{\\mathrm{in}}",
+   "units": "\\Omega",
+   "definition": "Impedance seen looking into a line of length $\\ell$:$$Z_{\\mathrm{in}}=Z_0\\,\\frac{Z_L+jZ_0\\tan\\beta\\ell}{Z_0+jZ_L\\tan\\beta\\ell}$$",
+   "widget": "calc"
+  },
+  {
+   "term": "Half-wave line",
+   "symbol": "\\lambda/2",
+   "units": "",
+   "definition": "A line $\\lambda/2$ long (or any multiple) repeats the load: $Z_{\\mathrm{in}}=Z_L$.",
+   "widget": "smith"
+  },
+  {
+   "term": "Quarter-wave transformer",
+   "symbol": "\\lambda/4",
+   "units": "",
+   "definition": "A $\\lambda/4$ section of impedance $Z_1$ turns $Z_L$ into $\\dfrac{Z_1^2}{Z_L}$. Choosing $Z_1=\\sqrt{Z_0R_L}$ matches a real load.",
+   "widget": "calc"
+  },
+  {
+   "term": "Shorted stub",
+   "symbol": "",
+   "units": "",
+   "definition": "A line ending in a short: $Z_{\\mathrm{in}}=jZ_0\\tan\\beta\\ell$. It can make any pure reactance.",
+   "widget": "smith"
+  },
+  {
+   "term": "Open stub",
+   "symbol": "",
+   "units": "",
+   "definition": "A line ending in an open: $Z_{\\mathrm{in}}=-jZ_0\\cot\\beta\\ell$. It can make any pure reactance.",
+   "widget": "smith"
+  },
+  {
+   "term": "Impedance matching",
+   "symbol": "",
+   "units": "",
+   "definition": "Adding a network between source and load so the line sees $Z_0$ and no power is reflected.",
+   "widget": "stub"
+  },
+  {
+   "term": "Smith chart",
+   "symbol": "",
+   "units": "",
+   "definition": "A plot of the $\\Gamma$ plane with circles of constant normalized resistance and reactance. Moving along a lossless line rotates a point around the center.",
+   "widget": "smith"
+  },
+  {
+   "term": "Normalized impedance",
+   "symbol": "z=Z/Z_0",
+   "units": "",
+   "definition": "Impedance divided by $Z_0$, used on the Smith chart:$$z=\\frac{1+\\Gamma}{1-\\Gamma}$$",
+   "widget": "smith"
+  },
+  {
+   "term": "Admittance",
+   "symbol": "Y=1/Z",
+   "units": "\\mathrm{S}",
+   "definition": "Reciprocal of impedance; $G$ is conductance and $B$ is susceptance. On the Smith chart, $y$ sits diametrically opposite $z$.",
+   "widget": "smith"
+  },
+  {
+   "term": "Wavelengths toward generator",
+   "symbol": "WTG",
+   "units": "\\lambda",
+   "definition": "The outer Smith chart scale. Moving from the load toward the source is clockwise; one full turn is $\\lambda/2$.",
+   "widget": "smith"
+  },
+  {
+   "term": "Single-stub tuner",
+   "symbol": "",
+   "units": "",
+   "definition": "A matching network with a shunt (or series) stub a distance $d$ from the load. $d$ brings the admittance onto $g=1$, and the stub cancels the leftover susceptance.",
+   "widget": "stub"
+  },
+  {
+   "term": "Transient",
+   "symbol": "",
+   "units": "",
+   "definition": "The time-domain response right after a source switches on, before the line settles to steady state.",
+   "widget": "bounce"
+  },
+  {
+   "term": "One-way delay",
+   "symbol": "T",
+   "units": "\\mathrm{s}",
+   "definition": "Time for a wave to travel the line once: $T=\\dfrac{\\ell}{u_p}$.",
+   "widget": "bounce"
+  },
+  {
+   "term": "Bounce (lattice) diagram",
+   "symbol": "",
+   "units": "",
+   "definition": "A space–time drawing of each wave bouncing between source and load. Each segment carries its voltage; the voltage at a point is the sum of the segments that have reached it.",
+   "widget": "bounce"
+  },
+  {
+   "term": "Source reflection coefficient",
+   "symbol": "\\Gamma_s",
+   "units": "",
+   "definition": "Applied to each wave that returns to the source:$$\\Gamma_s=\\frac{R_s-Z_0}{R_s+Z_0}$$",
+   "widget": "bounce"
+  },
+  {
+   "term": "Vector network analyzer",
+   "symbol": "VNA",
+   "units": "",
+   "definition": "An instrument that measures reflection ($S_{11}$) and transmission ($S_{21}$) versus frequency, shown as magnitude, phase, or on a Smith chart.",
+   "widget": null
+  }
+ ]
+}
