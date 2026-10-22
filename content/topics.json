@@ -5,43 +5,11 @@
    "id": "phasors",
    "title": "Fields and phasors",
    "blurb": "Scalar and vector fields, phasors and Euler's identity.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "vectors",
-   "title": "Vector calculus",
-   "blurb": "Gradient, divergence, curl and the coordinate systems.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "electrostatics",
-   "title": "Electrostatics",
-   "blurb": "Charges, fields, potential and capacitance.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "conductors",
-   "title": "Current and conductors",
-   "blurb": "Current density, conductivity and boundary conditions.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "magnetostatics",
-   "title": "Magnetostatics",
-   "blurb": "Biot–Savart, Ampère's law and inductance.",
-   "widgets": [],
-   "available": false
-  },
-  {
-   "id": "time-varying",
-   "title": "Time-varying fields",
-   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
-   "widgets": [],
-   "available": false
+   "widgets": [
+    "phasor",
+    "travel"
+   ],
+   "available": true
   },
   {
    "id": "tline",
@@ -92,6 +60,41 @@
    "available": true
   },
   {
+   "id": "vectors",
+   "title": "Vector calculus",
+   "blurb": "Gradient, divergence, curl and the coordinate systems.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "electrostatics",
+   "title": "Electrostatics",
+   "blurb": "Charges, fields, potential and capacitance.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "conductors",
+   "title": "Current and conductors",
+   "blurb": "Current density, conductivity and boundary conditions.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "magnetostatics",
+   "title": "Magnetostatics",
+   "blurb": "Biot–Savart, Ampère's law and inductance.",
+   "widgets": [],
+   "available": false
+  },
+  {
+   "id": "time-varying",
+   "title": "Time-varying fields",
+   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
+   "widgets": [],
+   "available": false
+  },
+  {
    "id": "plane-waves",
    "title": "Plane waves",
    "blurb": "Propagation in lossless and lossy media.",
@@ -137,6 +140,14 @@
   "params": {
    "title": "Line parameters",
    "topic": "tline"
+  },
+  "phasor": {
+   "title": "Phasor rotator",
+   "topic": "phasors"
+  },
+  "travel": {
+   "title": "Traveling wave",
+   "topic": "phasors"
   }
  }
 }

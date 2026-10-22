@@ -4,72 +4,15 @@
    "id": "phasors",
    "title": "Fields and phasors",
    "blurb": "Scalar and vector fields, phasors and Euler's identity.",
-   "widgets": [],
-   "available": false,
+   "widgets": [
+    "phasor",
+    "travel"
+   ],
+   "available": true,
    "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
-   }
-  },
-  {
-   "id": "vectors",
-   "title": "Vector calculus",
-   "blurb": "Gradient, divergence, curl and the coordinate systems.",
-   "widgets": [],
-   "available": false,
-   "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
-   }
-  },
-  {
-   "id": "electrostatics",
-   "title": "Electrostatics",
-   "blurb": "Charges, fields, potential and capacitance.",
-   "widgets": [],
-   "available": false,
-   "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
-   }
-  },
-  {
-   "id": "conductors",
-   "title": "Current and conductors",
-   "blurb": "Current density, conductivity and boundary conditions.",
-   "widgets": [],
-   "available": false,
-   "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
-   }
-  },
-  {
-   "id": "magnetostatics",
-   "title": "Magnetostatics",
-   "blurb": "Biot–Savart, Ampère's law and inductance.",
-   "widgets": [],
-   "available": false,
-   "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
-   }
-  },
-  {
-   "id": "time-varying",
-   "title": "Time-varying fields",
-   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
-   "widgets": [],
-   "available": false,
-   "counts": {
-    "cards": 0,
-    "problems": 0,
-    "terms": 0
+    "cards": 24,
+    "problems": 13,
+    "terms": 18
    }
   },
   {
@@ -146,6 +89,66 @@
    }
   },
   {
+   "id": "vectors",
+   "title": "Vector calculus",
+   "blurb": "Gradient, divergence, curl and the coordinate systems.",
+   "widgets": [],
+   "available": false,
+   "counts": {
+    "cards": 0,
+    "problems": 1,
+    "terms": 0
+   }
+  },
+  {
+   "id": "electrostatics",
+   "title": "Electrostatics",
+   "blurb": "Charges, fields, potential and capacitance.",
+   "widgets": [],
+   "available": false,
+   "counts": {
+    "cards": 0,
+    "problems": 0,
+    "terms": 0
+   }
+  },
+  {
+   "id": "conductors",
+   "title": "Current and conductors",
+   "blurb": "Current density, conductivity and boundary conditions.",
+   "widgets": [],
+   "available": false,
+   "counts": {
+    "cards": 0,
+    "problems": 0,
+    "terms": 0
+   }
+  },
+  {
+   "id": "magnetostatics",
+   "title": "Magnetostatics",
+   "blurb": "Biot–Savart, Ampère's law and inductance.",
+   "widgets": [],
+   "available": false,
+   "counts": {
+    "cards": 0,
+    "problems": 0,
+    "terms": 0
+   }
+  },
+  {
+   "id": "time-varying",
+   "title": "Time-varying fields",
+   "blurb": "Faraday's law, displacement current and Maxwell's equations.",
+   "widgets": [],
+   "available": false,
+   "counts": {
+    "cards": 0,
+    "problems": 0,
+    "terms": 0
+   }
+  },
+  {
    "id": "plane-waves",
    "title": "Plane waves",
    "blurb": "Propagation in lossless and lossy media.",
@@ -206,9 +209,233 @@
   "params": {
    "title": "Line parameters",
    "topic": "tline"
+  },
+  "phasor": {
+   "title": "Phasor rotator",
+   "topic": "phasors"
+  },
+  "travel": {
+   "title": "Traveling wave",
+   "topic": "phasors"
   }
  },
  "cards": [
+  {
+   "id": "card-phasors-01",
+   "front": "What is the difference between a scalar field and a vector field?",
+   "back": "A scalar field gives a number at each point (temperature, potential $V$). A vector field gives a magnitude and a direction at each point ($\\mathbf{E}$, $\\mathbf{H}$).",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-02",
+   "front": "What are the four field quantities, and their units?",
+   "back": "$\\mathbf{E}$ (V/m), $\\mathbf{D}$ (C/m²), $\\mathbf{H}$ (A/m), $\\mathbf{B}$ (T = Wb/m²).",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-03",
+   "front": "Force on a charge $q$ in an electric field?",
+   "back": "$$\\mathbf{F}=q\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-04",
+   "front": "How are $\\mathbf{D}$ and $\\mathbf{E}$ related in a simple medium?",
+   "back": "$$\\mathbf{D}=\\varepsilon\\mathbf{E}=\\varepsilon_r\\varepsilon_0\\mathbf{E}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-05",
+   "front": "How are $\\mathbf{B}$ and $\\mathbf{H}$ related in a simple medium?",
+   "back": "$$\\mathbf{B}=\\mu\\mathbf{H}=\\mu_r\\mu_0\\mathbf{H}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-06",
+   "front": "Values of $\\varepsilon_0$ and $\\mu_0$?",
+   "back": "$$\\varepsilon_0\\approx 8.854\\times10^{-12}\\ \\mathrm{F/m},\\qquad \\mu_0=4\\pi\\times10^{-7}\\ \\mathrm{H/m}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-07",
+   "front": "Speed of light from $\\mu_0$ and $\\varepsilon_0$?",
+   "back": "$$c=\\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}}\\approx 3\\times10^{8}\\ \\mathrm{m/s}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-08",
+   "front": "What does conductivity $\\sigma$ describe, and in what units?",
+   "back": "How easily charge flows through a material, in S/m. A perfect conductor has $\\sigma\\to\\infty$; a perfect insulator has $\\sigma=0$.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-09",
+   "front": "Relations among $f$, $\\omega$ and the period $T$?",
+   "back": "$$\\omega=2\\pi f,\\qquad T=\\frac{1}{f}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-10",
+   "front": "Relations among $\\lambda$, $\\beta$, $f$ and $u_p$?",
+   "back": "$$\\lambda=\\frac{u_p}{f},\\qquad \\beta=\\frac{2\\pi}{\\lambda},\\qquad u_p=\\frac{\\omega}{\\beta}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-11",
+   "front": "Which way does $\\cos(\\omega t-\\beta z)$ travel? And $\\cos(\\omega t+\\beta z)$?",
+   "back": "$\\omega t-\\beta z$: toward $+z$. $\\omega t+\\beta z$: toward $-z$. Follow a crest: $\\omega t\\mp\\beta z=$ const.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-12",
+   "front": "Phase velocity in a medium with $\\varepsilon_r$ and $\\mu_r$?",
+   "back": "$$u_p=\\frac{1}{\\sqrt{\\mu\\varepsilon}}=\\frac{c}{\\sqrt{\\mu_r\\varepsilon_r}}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-13",
+   "front": "Wavelength in a non-magnetic dielectric compared with free space?",
+   "back": "$$\\lambda=\\frac{\\lambda_0}{\\sqrt{\\varepsilon_r}}$$The wave slows down, so it gets shorter.",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-14",
+   "front": "Euler's identity?",
+   "back": "$$e^{j\\theta}=\\cos\\theta+j\\sin\\theta$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-15",
+   "front": "What is a phasor?",
+   "back": "A complex number that holds a sinusoid's amplitude and phase. The time function comes back with$$v(t)=\\mathrm{Re}\\left\\{\\tilde V e^{j\\omega t}\\right\\}$$",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-16",
+   "front": "Phasor of $A\\cos(\\omega t+\\phi)$?",
+   "back": "$$\\tilde V=Ae^{j\\phi}=A\\angle\\phi$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-17",
+   "front": "Phasor of $A\\sin(\\omega t+\\phi)$?",
+   "back": "Write it as a cosine first: $\\sin x=\\cos(x-90^\\circ)$.$$\\tilde V=A\\angle(\\phi-90^\\circ)=-jAe^{j\\phi}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-18",
+   "front": "What do $\\dfrac{d}{dt}$ and $\\displaystyle\\int dt$ become for phasors?",
+   "back": "$$\\frac{d}{dt}\\to j\\omega,\\qquad \\int dt\\to\\frac{1}{j\\omega}$$",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-19",
+   "front": "Why use phasors, and when do they work?",
+   "back": "They turn differential equations in time into algebra. They work for linear systems driven at a single frequency, in sinusoidal steady state.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-20",
+   "front": "Convert $a+jb$ to polar form.",
+   "back": "$$|z|=\\sqrt{a^2+b^2},\\qquad \\theta=\\operatorname{atan2}(b,a)$$Check the quadrant: $-3-j4$ is at $-126.9^\\circ$, not $53.1^\\circ$.",
+   "kind": "equation",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-21",
+   "front": "How do you multiply and divide complex numbers in polar form?",
+   "back": "Multiply: magnitudes multiply, angles add. Divide: magnitudes divide, angles subtract.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-22",
+   "front": "Can you add the phasors of a 1 kHz and a 2 kHz signal?",
+   "back": "No. A phasor assumes one frequency $\\omega$. Signals at different frequencies must be added in the time domain.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-23",
+   "front": "What is $j$ as a phasor, and what does multiplying by $j$ do?",
+   "back": "$j=e^{j90^\\circ}$. Multiplying by $j$ advances the phase by $90^\\circ$; multiplying by $-j$ delays it by $90^\\circ$.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "card-phasors-24",
+   "front": "Guided versus unguided waves?",
+   "back": "Guided waves follow a structure such as a transmission line or waveguide. Unguided waves spread through space from an antenna, like radio and light.",
+   "kind": "concept",
+   "topics": [
+    "phasors"
+   ]
+  },
   {
    "id": "card-tline-01",
    "front": "When must you treat a connection as a transmission line instead of a simple wire?",
@@ -625,6 +852,406 @@
   }
  ],
  "problems": [
+  {
+   "id": "phasors-01",
+   "difficulty": 1,
+   "title": "Phasor of a sine",
+   "prompt": "Find the phasor of $v(t)=12\\sin(\\omega t+30^\\circ)\\ \\mathrm{V}$ in polar and rectangular form.",
+   "hints": [
+    "Phasors are defined from cosines. Use $\\sin x=\\cos(x-90^\\circ)$."
+   ],
+   "steps": [
+    "$$v(t)=12\\cos(\\omega t+30^\\circ-90^\\circ)=12\\cos(\\omega t-60^\\circ)\\ \\mathrm{V}$$",
+    "$$\\tilde V=12\\angle -60.0^\\circ\\ \\mathrm{V}=12\\cos(-60^\\circ)+j12\\sin(-60^\\circ)=6.00 - j10.4\\ \\mathrm{V}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\tilde V",
+     "value": "12\\angle -60.0^\\circ\\ \\mathrm{V}=6.00 - j10.4\\ \\mathrm{V}"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Phasor of a sine"
+  },
+  {
+   "id": "phasors-02",
+   "difficulty": 1,
+   "title": "Back to the time domain",
+   "prompt": "A 60 Hz current has phasor $\\tilde I=3-j4\\ \\mathrm{A}$. Write $i(t)$.",
+   "hints": [
+    "Convert to polar form first.",
+    "$i(t)=\\mathrm{Re}\\{\\tilde Ie^{j\\omega t}\\}=|\\tilde I|\\cos(\\omega t+\\theta)$ with $\\omega=2\\pi(60)$."
+   ],
+   "steps": [
+    "$$|\\tilde I|=\\sqrt{3^2+4^2}=5.00\\ \\mathrm{A},\\qquad \\theta=\\tan^{-1}\\frac{-4}{3}=-53.1^\\circ$$",
+    "$$\\omega=2\\pi(60)=377\\ \\mathrm{rad/s}$$",
+    "$$i(t)=5\\cos(120\\pi t-53.1^\\circ)\\ \\mathrm{A}$$"
+   ],
+   "answers": [
+    {
+     "label": "i(t)",
+     "value": "5\\cos(120\\pi t-53.1^\\circ)\\ \\mathrm{A}"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Back to the time domain"
+  },
+  {
+   "id": "phasors-03",
+   "difficulty": 2,
+   "title": "Add two sinusoids with phasors",
+   "prompt": "Write $v(t)=5\\cos(\\omega t+30^\\circ)+8\\cos(\\omega t-45^\\circ)$ as a single cosine.",
+   "hints": [
+    "Both terms have the same $\\omega$, so add their phasors.",
+    "Add in rectangular form, then convert back to polar."
+   ],
+   "steps": [
+    "$$5\\angle 30^\\circ=4.33 + j2.50,\\qquad 8\\angle -45.0^\\circ=5.66 - j5.66$$",
+    "$$\\tilde V=9.99 - j3.16=10.5\\angle -17.5^\\circ$$",
+    "$$v(t)=10.5\\cos(\\omega t-17.5^\\circ)$$"
+   ],
+   "answers": [
+    {
+     "label": "v(t)",
+     "value": "10.5\\cos(\\omega t-17.5^\\circ)"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Add two sinusoids with phasors"
+  },
+  {
+   "id": "phasors-04",
+   "difficulty": 1,
+   "title": "Complex arithmetic in polar form",
+   "prompt": "Evaluate $\\dfrac{(3+j4)(2-j)}{1+j}$ in polar and rectangular form.",
+   "hints": [
+    "Convert each factor to polar. Magnitudes multiply and divide; angles add and subtract."
+   ],
+   "steps": [
+    "Each factor in polar form:$$3+j4=5.00\\angle 53.1^\\circ$$$$2-j=2.24\\angle -26.6^\\circ$$$$1+j=1.41\\angle 45.0^\\circ$$",
+    "$$\\text{magnitude}=\\frac{5\\cdot2.24}{1.41}=7.91$$",
+    "$$\\text{angle}=53.1^\\circ-26.6^\\circ-45^\\circ=-18.4^\\circ$$",
+    "$$7.91\\angle -18.4^\\circ=7.50 - j2.50$$"
+   ],
+   "answers": [
+    {
+     "label": "\\text{Result}",
+     "value": "7.91\\angle -18.4^\\circ=7.50 - j2.50"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Complex arithmetic in polar form"
+  },
+  {
+   "id": "phasors-05",
+   "difficulty": 2,
+   "title": "RL circuit with phasors",
+   "prompt": "A source $v(t)=10\\cos(1000t)\\ \\mathrm{V}$ drives a $3\\ \\Omega$ resistor in series with a $4\\ \\mathrm{mH}$ inductor. Find $i(t)$ by writing the circuit equation in phasor form.",
+   "hints": [
+    "KVL in time: $v=Ri+L\\dfrac{di}{dt}$.",
+    "Replace $\\dfrac{d}{dt}$ with $j\\omega$."
+   ],
+   "steps": [
+    "KVL in phasor form:$$\\tilde V=(R+j\\omega L)\\tilde I$$",
+    "$$R+j\\omega L=3+j(1000)(0.004)=3+j4\\ \\Omega=5\\angle 53.13^\\circ\\ \\Omega$$",
+    "$$\\tilde I=\\frac{10\\angle 0^\\circ}{5\\angle 53.13^\\circ}=2.00\\angle -53.1^\\circ\\ \\mathrm{A}$$",
+    "$$i(t)=2.00\\cos(1000t-53.1^\\circ)\\ \\mathrm{A}$$"
+   ],
+   "answers": [
+    {
+     "label": "i(t)",
+     "value": "2.00\\cos(1000t-53.1^\\circ)\\ \\mathrm{A}"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "RL circuit with phasors"
+  },
+  {
+   "id": "phasors-06",
+   "difficulty": 2,
+   "title": "Solve a differential equation with phasors",
+   "prompt": "Find the steady-state solution of$$\\frac{dv}{dt}+500\\,v=10\\cos(500t)$$",
+   "hints": [
+    "Let $v(t)=\\mathrm{Re}\\{\\tilde Ve^{j500t}\\}$, so $\\dfrac{dv}{dt}\\to j500\\,\\tilde V$."
+   ],
+   "steps": [
+    "$$j500\\,\\tilde V+500\\,\\tilde V=10$$",
+    "$$\\tilde V=\\frac{10}{500+j500}=\\frac{10}{707\\angle 45.0^\\circ}=0.0141\\angle -45.0^\\circ$$",
+    "$$v(t)=14.1\\ \\mathrm{mV}\\,\\cos(500t-45.0^\\circ)$$"
+   ],
+   "answers": [
+    {
+     "label": "v(t)",
+     "value": "14.1\\ \\mathrm{mV}\\,\\cos(500t-45.0^\\circ)"
+    }
+   ],
+   "widget": "phasor",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Solve a differential equation with phasors"
+  },
+  {
+   "id": "phasors-07",
+   "difficulty": 2,
+   "title": "Read a traveling wave",
+   "prompt": "In a non-magnetic material,$$E(z,t)=10\\cos\\left(2\\pi\\times10^{8}\\,t-2.5z\\right)\\ \\mathrm{V/m}$$Find $f$, $\\lambda$, $u_p$, the direction of travel, and $\\varepsilon_r$.",
+   "hints": [
+    "Match the form $A\\cos(\\omega t-\\beta z)$.",
+    "$u_p=\\omega/\\beta$ and $u_p=c/\\sqrt{\\varepsilon_r}$."
+   ],
+   "steps": [
+    "$$\\omega=2\\pi\\times10^8\\ \\mathrm{rad/s}\\ \\Rightarrow\\ f=100\\ \\mathrm{MHz}$$",
+    "$$\\lambda=\\frac{2\\pi}{\\beta}=\\frac{2\\pi}{2.5}=2.51\\ \\mathrm{m}$$",
+    "$$u_p=\\frac{\\omega}{\\beta}=2.51\\times10^{8}\\ \\mathrm{m/s}$$",
+    "The sign of $\\beta z$ is negative, so the wave travels toward $+z$.",
+    "$$\\varepsilon_r=\\left(\\frac{c}{u_p}\\right)^2=1.42$$"
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "100\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "2.51\\ \\mathrm{m}"
+    },
+    {
+     "label": "u_p",
+     "value": "2.51\\times10^{8}\\ \\mathrm{m/s}"
+    },
+    {
+     "label": "\\text{Direction}",
+     "value": "+z"
+    },
+    {
+     "label": "\\varepsilon_r",
+     "value": "1.42"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Read a traveling wave"
+  },
+  {
+   "id": "phasors-08",
+   "difficulty": 1,
+   "title": "Which way is it going?",
+   "prompt": "A wave is $y(z,t)=3\\cos(4\\pi\\times10^{6}\\,t+0.05z)$. Find its frequency, wavelength, speed and direction.",
+   "hints": [
+    "A plus sign between $\\omega t$ and $\\beta z$ means travel toward $-z$."
+   ],
+   "steps": [
+    "$$f=\\frac{\\omega}{2\\pi}=\\frac{4\\pi\\times10^6}{2\\pi}=2\\ \\mathrm{MHz}$$",
+    "$$\\lambda=\\frac{2\\pi}{0.05}=126\\ \\mathrm{m}$$",
+    "$$u_p=\\frac{\\omega}{\\beta}=2.51\\times10^{8}\\ \\mathrm{m/s}$$",
+    "Follow a crest: $\\omega t+0.05z=$ const, so $z$ decreases as $t$ grows. It travels toward $-z$."
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "2\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "126\\ \\mathrm{m}"
+    },
+    {
+     "label": "u_p",
+     "value": "2.51\\times10^{8}\\ \\mathrm{m/s}"
+    },
+    {
+     "label": "\\text{Direction}",
+     "value": "-z"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Which way is it going?"
+  },
+  {
+   "id": "phasors-09",
+   "difficulty": 1,
+   "title": "Wi-Fi wavelength in a dielectric",
+   "prompt": "Find the wavelength of a $2.4\\ \\mathrm{GHz}$ signal in free space and in a non-magnetic dielectric with $\\varepsilon_r=4$. How fast does it travel in the dielectric?",
+   "hints": [
+    "$\\lambda_0=c/f$ and $\\lambda=\\lambda_0/\\sqrt{\\varepsilon_r}$."
+   ],
+   "steps": [
+    "$$\\lambda_0=\\frac{3\\times10^8}{2.4\\times10^9}=125\\ \\mathrm{mm}$$",
+    "$$u_p=\\frac{c}{\\sqrt{4}}=1.50\\times10^{8}\\ \\mathrm{m/s}$$",
+    "$$\\lambda=\\frac{\\lambda_0}{2}=62.5\\ \\mathrm{mm}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\lambda_0",
+     "value": "125\\ \\mathrm{mm}"
+    },
+    {
+     "label": "\\lambda",
+     "value": "62.5\\ \\mathrm{mm}"
+    },
+    {
+     "label": "u_p",
+     "value": "1.50\\times10^{8}\\ \\mathrm{m/s}"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Wi-Fi wavelength in a dielectric"
+  },
+  {
+   "id": "phasors-10",
+   "difficulty": 1,
+   "title": "Flux density in a dielectric",
+   "prompt": "A uniform field $\\mathbf{E}=\\hat{\\mathbf{x}}\\,5\\ \\mathrm{kV/m}$ exists in a material with $\\varepsilon_r=2.5$. Find $\\mathbf{D}$.",
+   "hints": [
+    "$\\mathbf{D}=\\varepsilon_r\\varepsilon_0\\mathbf{E}$."
+   ],
+   "steps": [
+    "$$\\mathbf{D}=\\hat{\\mathbf{x}}\\,(2.5)(8.854\\times10^{-12})(5000)=\\hat{\\mathbf{x}}\\,111\\ \\mathrm{nC/m^2}$$"
+   ],
+   "answers": [
+    {
+     "label": "\\mathbf{D}",
+     "value": "\\hat{\\mathbf{x}}\\,111\\ \\mathrm{nC/m^2}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "Flux density in a dielectric"
+  },
+  {
+   "id": "phasors-11",
+   "difficulty": 1,
+   "title": "H from B in iron and in air",
+   "prompt": "A magnetic flux density of $50\\ \\mathrm{mT}$ exists in a soft-iron core with $\\mu_r=1000$. Find $H$ in the core, and the $H$ that would give the same $B$ in air.",
+   "hints": [
+    "$H=\\dfrac{B}{\\mu_r\\mu_0}$."
+   ],
+   "steps": [
+    "$$H_{\\text{iron}}=\\frac{0.05}{1000\\cdot4\\pi\\times10^{-7}}=39.8\\ \\mathrm{A/m}$$",
+    "$$H_{\\text{air}}=\\frac{0.05}{4\\pi\\times10^{-7}}=39.8\\ \\mathrm{kA/m}$$",
+    "The iron needs 1000 times less $H$ (so 1000 times less current) for the same $B$."
+   ],
+   "answers": [
+    {
+     "label": "H_{\\text{iron}}",
+     "value": "39.8\\ \\mathrm{A/m}"
+    },
+    {
+     "label": "H_{\\text{air}}",
+     "value": "39.8\\ \\mathrm{kA/m}"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "H from B in iron and in air"
+  },
+  {
+   "id": "phasors-12",
+   "difficulty": 1,
+   "title": "A vector field at a point",
+   "prompt": "Evaluate $\\mathbf{E}=\\hat{\\mathbf{x}}\\,2xy-\\hat{\\mathbf{y}}\\,z^2+\\hat{\\mathbf{z}}\\,3\\ \\mathrm{V/m}$ at $(1,2,-1)$. Give its magnitude and unit vector there.",
+   "hints": [
+    "Substitute the coordinates into each component.",
+    "$\\hat{\\mathbf{a}}=\\mathbf{E}/|\\mathbf{E}|$."
+   ],
+   "steps": [
+    "$$\\mathbf{E}(1,2,-1)=\\hat{\\mathbf{x}}\\,4-\\hat{\\mathbf{y}}\\,1+\\hat{\\mathbf{z}}\\,3\\ \\mathrm{V/m}$$",
+    "$$|\\mathbf{E}|=\\sqrt{16+1+9}=\\sqrt{26}=5.10\\ \\mathrm{V/m}$$",
+    "$$\\hat{\\mathbf{a}}=\\hat{\\mathbf{x}}\\,0.784-\\hat{\\mathbf{y}}\\,0.196+\\hat{\\mathbf{z}}\\,0.588$$"
+   ],
+   "answers": [
+    {
+     "label": "|\\mathbf{E}|",
+     "value": "5.10\\ \\mathrm{V/m}"
+    },
+    {
+     "label": "\\hat{\\mathbf{a}}",
+     "value": "\\hat{\\mathbf{x}}\\,0.784-\\hat{\\mathbf{y}}\\,0.196+\\hat{\\mathbf{z}}\\,0.588"
+    }
+   ],
+   "source": "original",
+   "widget": null,
+   "topics": [
+    "phasors",
+    "vectors"
+   ],
+   "titleText": "A vector field at a point"
+  },
+  {
+   "id": "phasors-13",
+   "difficulty": 2,
+   "title": "A phasor field in the time domain",
+   "prompt": "In free space, $\\tilde{\\mathbf{E}}(z)=\\hat{\\mathbf{x}}\\,(6-j8)\\,e^{-j2z}\\ \\mathrm{V/m}$. Find the frequency, the direction of travel, and $\\mathbf{E}(z,t)$.",
+   "hints": [
+    "In free space $\\beta=\\omega/c$.",
+    "Put $6-j8$ in polar form, then use $\\mathbf{E}(z,t)=\\mathrm{Re}\\{\\tilde{\\mathbf{E}}e^{j\\omega t}\\}$."
+   ],
+   "steps": [
+    "$$\\omega=\\beta c=6.00\\times10^{8}\\ \\mathrm{rad/s}$$$$f=\\frac{\\omega}{2\\pi}=95.5\\ \\mathrm{MHz}$$",
+    "$$6-j8=10.0\\angle -53.1^\\circ$$",
+    "$$\\mathbf{E}=\\hat{\\mathbf{x}}\\,10\\cos\\left(\\omega t-2z-53.1^\\circ\\right)\\ \\mathrm{V/m}$$",
+    "The phase is $\\omega t-2z$, so it travels toward $+z$."
+   ],
+   "answers": [
+    {
+     "label": "f",
+     "value": "95.5\\ \\mathrm{MHz}"
+    },
+    {
+     "label": "\\text{Direction}",
+     "value": "+z"
+    },
+    {
+     "label": "\\mathbf{E}(z,t)",
+     "value": "\\hat{\\mathbf{x}}\\,10\\cos(\\omega t-2z-53.1^\\circ)\\ \\mathrm{V/m}"
+    }
+   ],
+   "widget": "travel",
+   "source": "original",
+   "topics": [
+    "phasors"
+   ],
+   "titleText": "A phasor field in the time domain"
+  },
   {
    "id": "tline-01",
    "source": "course",
@@ -1810,6 +2437,176 @@
  ],
  "terms": [
   {
+   "term": "Scalar field",
+   "symbol": "",
+   "units": "",
+   "definition": "A quantity with only a magnitude at each point in space, such as temperature or electric potential $V(x,y,z)$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Vector field",
+   "symbol": "",
+   "units": "",
+   "definition": "A quantity with a magnitude and a direction at each point in space, such as $\\mathbf{E}(x,y,z)$. Drawn as arrows or field lines.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Electric field intensity",
+   "symbol": "\\mathbf{E}",
+   "units": "\\mathrm{V/m}",
+   "definition": "Force per unit charge on a small test charge: $\\mathbf{F}=q\\mathbf{E}$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Electric flux density",
+   "symbol": "\\mathbf{D}",
+   "units": "\\mathrm{C/m^2}",
+   "definition": "Also called electric displacement. In a simple medium $\\mathbf{D}=\\varepsilon\\mathbf{E}$. Its flux through a closed surface equals the enclosed free charge.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Magnetic flux density",
+   "symbol": "\\mathbf{B}",
+   "units": "\\mathrm{T}",
+   "definition": "Sets the force on a moving charge: $\\mathbf{F}=q\\mathbf{u}\\times\\mathbf{B}$. One tesla is one Wb/m².",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Magnetic field intensity",
+   "symbol": "\\mathbf{H}",
+   "units": "\\mathrm{A/m}",
+   "definition": "The magnetic field set up by currents. In a simple medium $\\mathbf{B}=\\mu\\mathbf{H}$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Permittivity",
+   "symbol": "\\varepsilon=\\varepsilon_r\\varepsilon_0",
+   "units": "\\mathrm{F/m}",
+   "definition": "How a material responds to an electric field. $\\varepsilon_0\\approx8.854\\times10^{-12}$ F/m; $\\varepsilon_r$ is the dielectric constant.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Permeability",
+   "symbol": "\\mu=\\mu_r\\mu_0",
+   "units": "\\mathrm{H/m}",
+   "definition": "How a material responds to a magnetic field. $\\mu_0=4\\pi\\times10^{-7}$ H/m. Most materials have $\\mu_r\\approx1$; iron and ferrites are much larger.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Conductivity",
+   "symbol": "\\sigma",
+   "units": "\\mathrm{S/m}",
+   "definition": "How easily current flows in a material: $\\mathbf{J}=\\sigma\\mathbf{E}$. Copper is about $5.8\\times10^7$ S/m.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Constitutive relations",
+   "symbol": "",
+   "units": "",
+   "definition": "The material equations that tie the fields together: $\\mathbf{D}=\\varepsilon\\mathbf{E}$, $\\mathbf{B}=\\mu\\mathbf{H}$, $\\mathbf{J}=\\sigma\\mathbf{E}$.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Angular frequency",
+   "symbol": "\\omega",
+   "units": "\\mathrm{rad/s}",
+   "definition": "$\\omega=2\\pi f$. The rate at which a sinusoid's phase advances in time.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Wavelength",
+   "symbol": "\\lambda",
+   "units": "\\mathrm{m}",
+   "definition": "Distance between crests of a wave at one instant: $\\lambda=\\dfrac{u_p}{f}=\\dfrac{2\\pi}{\\beta}$.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Traveling wave",
+   "symbol": "",
+   "units": "",
+   "definition": "A disturbance that moves without changing shape, like $A\\cos(\\omega t-\\beta z)$ moving toward $+z$ at $u_p=\\omega/\\beta$.",
+   "widget": "travel",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Euler's identity",
+   "symbol": "",
+   "units": "",
+   "definition": "$e^{j\\theta}=\\cos\\theta+j\\sin\\theta$. It links a rotating complex number to a sinusoid, which is the basis of phasors.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Polar form",
+   "symbol": "A\\angle\\theta",
+   "units": "",
+   "definition": "A complex number written as a magnitude and an angle: $A\\angle\\theta=Ae^{j\\theta}=A\\cos\\theta+jA\\sin\\theta$.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Sinusoidal steady state",
+   "symbol": "",
+   "units": "",
+   "definition": "The state of a linear system long after a sinusoidal source turns on, when every voltage and current is a sinusoid at the source frequency. Phasors describe it.",
+   "widget": "phasor",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "term": "Electromagnetic spectrum",
+   "symbol": "",
+   "units": "",
+   "definition": "The range of EM wave frequencies: radio, microwave (about 300 MHz to 300 GHz), infrared, visible light, ultraviolet, X-rays and gamma rays. All travel at $c$ in vacuum.",
+   "widget": null,
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
    "term": "Transmission line",
    "symbol": "",
    "units": "",
@@ -1844,8 +2641,9 @@
    "symbol": "\\tilde V",
    "units": "\\mathrm{V}",
    "definition": "A complex number holding a sinusoid's amplitude and phase: $v(t)=\\mathrm{Re}\\{\\tilde V e^{j\\omega t}\\}$.",
-   "widget": null,
+   "widget": "phasor",
    "topics": [
+    "phasors",
     "tline"
    ]
   },

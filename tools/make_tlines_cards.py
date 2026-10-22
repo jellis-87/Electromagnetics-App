@@ -6,7 +6,7 @@ G=[
 ("Transmission line","","","A pair of conductors that guides an electromagnetic wave from a source to a load. Treat a connection as a line, not a wire, when its length is a noticeable fraction of a wavelength (rule of thumb: $\\ell>\\lambda/10$).","waves"),
 ("Lumped-element model","R',\\,L',\\,G',\\,C'","","Splits the line into short sections of length $\\Delta z$, each with series resistance $R'\\Delta z$ and inductance $L'\\Delta z$ and shunt conductance $G'\\Delta z$ and capacitance $C'\\Delta z$. Letting $\\Delta z\\to0$ gives the telegrapher's equations.","params"),
 ("Telegrapher's equations","","","The pair of equations from KVL and KCL on one lumped section:"+D(r"-\frac{\partial v}{\partial z}=R'i+L'\frac{\partial i}{\partial t},\qquad -\frac{\partial i}{\partial z}=G'v+C'\frac{\partial v}{\partial t}"),None),
-("Phasor","\\tilde V","\\mathrm{V}","A complex number holding a sinusoid's amplitude and phase: $v(t)=\\mathrm{Re}\\{\\tilde V e^{j\\omega t}\\}$.",None),
+("Phasor","\\tilde V","\\mathrm{V}","A complex number holding a sinusoid's amplitude and phase: $v(t)=\\mathrm{Re}\\{\\tilde V e^{j\\omega t}\\}$.","phasor"),
 ("Propagation constant","\\gamma=\\alpha+j\\beta","\\mathrm{m}^{-1}","Its real part sets attenuation and its imaginary part sets the phase change per meter."+D(r"\gamma=\sqrt{(R'+j\omega L')(G'+j\omega C')}"),"params"),
 ("Attenuation constant","\\alpha","\\mathrm{Np/m}","How fast the amplitude decays: a wave falls as $e^{-\\alpha z}$. Multiply by $8.686$ to get dB/m. Zero on a lossless line.","params"),
 ("Phase constant","\\beta","\\mathrm{rad/m}","Phase change per meter of travel: $\\beta=\\dfrac{2\\pi}{\\lambda}=\\dfrac{\\omega}{u_p}$. On a lossless line $\\beta=\\omega\\sqrt{L'C'}$.","params"),
@@ -44,7 +44,7 @@ def tags(spec,n):
             for i in range(int(a),int(b or a)+1): out.setdefault(i,[]).append(t)
     assert sorted(out)==list(range(1,n+1)), sorted(set(range(1,n+1))-set(out))
     return out
-GT=tags({"tline":"1-10,16-17,19-20","reflection":"11-15,31","matching":"18,21,26","smith":"22-25","transients":"27-30"},len(G))
+GT=tags({"phasors":"4","tline":"1-10,16-17,19-20","reflection":"11-15,31","matching":"18,21,26","smith":"22-25","transients":"27-30"},len(G))
 glossary=[{"term":t,"symbol":s,"units":u,"definition":d,"widget":w,"topics":GT[i+1]} for i,(t,s,u,d,w) in enumerate(G)]
 C=[
 ("When must you treat a connection as a transmission line instead of a simple wire?","When its length is a significant fraction of a wavelength, roughly $\\ell>\\lambda/10$. Then voltage and current change along the line.","concept"),

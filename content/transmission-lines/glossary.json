@@ -37,8 +37,9 @@
    "symbol": "\\tilde V",
    "units": "\\mathrm{V}",
    "definition": "A complex number holding a sinusoid's amplitude and phase: $v(t)=\\mathrm{Re}\\{\\tilde V e^{j\\omega t}\\}$.",
-   "widget": null,
+   "widget": "phasor",
    "topics": [
+    "phasors",
     "tline"
    ]
   },

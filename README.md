@@ -18,15 +18,16 @@ Everything is labeled by topic, not by textbook chapter. Each card, problem and 
 
 | Topic | Widgets |
 | --- | --- |
+| Fields and phasors | Phasor rotator, Traveling wave |
 | Transmission lines | Line calculator, Line parameters |
 | Reflection and standing waves | Standing waves, Line calculator |
 | Smith chart | Smith chart (Z, Y, ZY) |
 | Impedance matching | Stub matching, Smith chart |
 | Transients | Bounce diagram |
 
-Fields and phasors, vector calculus, electrostatics, current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
+Vector calculus, electrostatics, current and conductors, magnetostatics, time-varying fields, plane waves, polarization and reflection at boundaries are listed in `topics.json` as coming later.
 
-Content so far: 46 flashcards, 31 glossary terms, 34 practice problems (16 from the course practice sets with worked keys, 18 new).
+Topics are listed in course order. Content so far: 70 flashcards, 48 glossary terms, 47 practice problems (16 from the course practice sets with worked keys, 31 new).
 
 ## The iPhone app
 
@@ -59,6 +60,7 @@ Each practice problem has `prompt`, `hints`, `steps`, `answers`, `topics`, an op
 pip install numpy
 python3 tools/make_tlines_practice.py
 python3 tools/make_tlines_cards.py
+python3 tools/make_phasors.py      # one make_<topic>.py per topic writes its cards, glossary and problems
 python3 tools/build_web.py      # rebuilds web/widgets.html and web/www/
 python3 tools/vendor_web.py     # only when updating MathJax or the fonts (needs npm)
 ```
