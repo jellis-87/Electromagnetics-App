@@ -1,0 +1,141 @@
+{
+ "unit": "vector-calculus",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-vectors-01",
+   "question": "What is $\\mathbf{A}\\cdot\\mathbf{B}$ for $\\mathbf{A}=(1,2,3)$ and $\\mathbf{B}=(4,-5,6)$?",
+   "choices": [
+    "$12$",
+    "$32$",
+    "$-12$",
+    "$(4,-10,18)$"
+   ],
+   "answer": 0,
+   "explain": "$4-10+18=12$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-02",
+   "question": "What does $\\nabla\\cdot\\mathbf{F}>0$ at a point mean?",
+   "choices": [
+    "The point is a source: net flux flows out",
+    "The field circulates around the point",
+    "The field is zero there",
+    "The field is uniform"
+   ],
+   "answer": 0,
+   "explain": "Divergence is outward flux per unit volume.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-03",
+   "question": "The curl of any gradient is",
+   "choices": [
+    "Zero",
+    "The Laplacian",
+    "The divergence",
+    "A unit vector"
+   ],
+   "answer": 0,
+   "explain": "$\\nabla\\times\\nabla V=0$ always, which is why static $\\mathbf{E}$ can be written as $-\\nabla V$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-04",
+   "question": "The divergence of any curl is",
+   "choices": [
+    "Zero",
+    "The gradient",
+    "The curl",
+    "One"
+   ],
+   "answer": 0,
+   "explain": "$\\nabla\\cdot(\\nabla\\times\\mathbf{A})=0$, which is why $\\mathbf{B}=\\nabla\\times\\mathbf{A}$ automatically has no divergence.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-05",
+   "question": "The divergence theorem relates",
+   "choices": [
+    "A volume integral of $\\nabla\\cdot\\mathbf{F}$ to the flux through the closed surface",
+    "A line integral to a surface integral of the curl",
+    "A gradient to a line integral",
+    "Two volume integrals"
+   ],
+   "answer": 0,
+   "explain": "$\\int_V\\nabla\\cdot\\mathbf{F}\\,dv=\\oint_S\\mathbf{F}\\cdot d\\mathbf{s}$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-06",
+   "question": "Stokes's theorem relates",
+   "choices": [
+    "The circulation around a loop to the flux of the curl through it",
+    "Flux to divergence",
+    "Gradient to potential",
+    "Two surface integrals"
+   ],
+   "answer": 0,
+   "explain": "$\\oint_C\\mathbf{F}\\cdot d\\mathbf{l}=\\int_S(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{s}$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-07",
+   "question": "The point $(x,y)=(3,4)$ has cylindrical coordinates",
+   "choices": [
+    "$r=5,\\ \\phi=53.1^\\circ$",
+    "$r=7,\\ \\phi=53.1^\\circ$",
+    "$r=5,\\ \\phi=36.9^\\circ$",
+    "$r=25,\\ \\phi=53.1^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$r=\\sqrt{x^2+y^2}$, $\\phi=\\tan^{-1}(y/x)$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-08",
+   "question": "Differential volume in spherical coordinates?",
+   "choices": [
+    "$R^2\\sin\\theta\\,dR\\,d\\theta\\,d\\phi$",
+    "$R\\,dR\\,d\\theta\\,d\\phi$",
+    "$dR\\,d\\theta\\,d\\phi$",
+    "$R^2\\,dR\\,d\\theta\\,d\\phi$"
+   ],
+   "answer": 0,
+   "explain": "The sides are $dR$, $R\\,d\\theta$ and $R\\sin\\theta\\,d\\phi$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-09",
+   "question": "Which unit vector changes direction from point to point?",
+   "choices": [
+    "$\\hat{\\mathbf{r}}$ (cylindrical)",
+    "$\\hat{\\mathbf{x}}$",
+    "$\\hat{\\mathbf{z}}$",
+    "$\\hat{\\mathbf{y}}$"
+   ],
+   "answer": 0,
+   "explain": "$\\hat{\\mathbf{r}}$ points away from the $z$ axis, so it depends on $\\phi$.",
+   "topics": [
+    "vectors"
+   ]
+  }
+ ]
+}

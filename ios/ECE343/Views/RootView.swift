@@ -9,6 +9,8 @@ struct RootView: View {
                 .tabItem { Label("Widgets", systemImage: "waveform.path.ecg") }
             NavigationStack { WebScreen(title: "Flashcards", route: "cards") }
                 .tabItem { Label("Flashcards", systemImage: "rectangle.on.rectangle.angled") }
+            NavigationStack { WebScreen(title: "Quiz", route: "quiz") }
+                .tabItem { Label("Quiz", systemImage: "checklist") }
             NavigationStack { PracticeListView(topic: nil) }
                 .tabItem { Label("Practice", systemImage: "list.bullet.clipboard") }
             NavigationStack { WebScreen(title: "Glossary", route: "glossary") }

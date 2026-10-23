@@ -1,0 +1,96 @@
+{
+ "unit": "current-and-conductors",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-conductors-01",
+   "question": "Resistance of $100\\ \\mathrm{m}$ of copper wire with a $1\\ \\mathrm{mm^2}$ cross-section ($\\sigma=5.8\\times10^7$)?",
+   "choices": [
+    "$1.72\\ \\mathrm{\\Omega}$",
+    "$17.2\\ \\mathrm{\\Omega}$",
+    "$172\\ \\mathrm{m\\Omega}$",
+    "$1.72\\ \\mathrm{k\\Omega}$"
+   ],
+   "answer": 0,
+   "explain": "$R=\\ell/(\\sigma A)=100/(5.8\\times10^7\\cdot10^{-6})$.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-02",
+   "question": "Point form of Ohm's law?",
+   "choices": [
+    "$\\mathbf{J}=\\sigma\\mathbf{E}$",
+    "$\\mathbf{E}=\\sigma\\mathbf{J}$",
+    "$V=IR$ only",
+    "$\\mathbf{J}=\\varepsilon\\mathbf{E}$"
+   ],
+   "answer": 0,
+   "explain": "It holds at every point in a conductor.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-03",
+   "question": "Joule's law gives the power dissipated per unit volume as",
+   "choices": [
+    "$\\mathbf{J}\\cdot\\mathbf{E}=\\sigma E^2$",
+    "$\\varepsilon E^2$",
+    "$\\mathbf{J}\\times\\mathbf{E}$",
+    "$\\sigma/E^2$"
+   ],
+   "answer": 0,
+   "explain": "Total power is $\\int\\sigma E^2\\,dv=I^2R$.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-04",
+   "question": "Drift velocity of electrons is related to $\\mathbf{E}$ by",
+   "choices": [
+    "$\\mathbf{u}_e=-\\mu_e\\mathbf{E}$",
+    "$\\mathbf{u}_e=\\mu_e\\mathbf{E}$",
+    "$\\mathbf{u}_e=\\sigma\\mathbf{E}$",
+    "$\\mathbf{u}_e=c$"
+   ],
+   "answer": 0,
+   "explain": "Electrons drift against the field; $\\mu_e$ is the mobility.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-05",
+   "question": "Charge continuity says",
+   "choices": [
+    "$\\nabla\\cdot\\mathbf{J}=-\\partial\\rho_v/\\partial t$",
+    "$\\nabla\\cdot\\mathbf{J}=0$ always",
+    "$\\nabla\\times\\mathbf{J}=\\rho_v$",
+    "$\\mathbf{J}=\\rho_v$"
+   ],
+   "answer": 0,
+   "explain": "Current leaving a volume must drain the charge inside it.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-06",
+   "question": "Where does excess charge on a conductor sit?",
+   "choices": [
+    "On its outer surface",
+    "Spread through its volume",
+    "At its centre",
+    "Nowhere: it leaves"
+   ],
+   "answer": 0,
+   "explain": "Charge inside would make a field inside, which a conductor cannot hold in equilibrium.",
+   "topics": [
+    "conductors"
+   ]
+  }
+ ]
+}

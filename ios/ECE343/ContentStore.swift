@@ -6,6 +6,7 @@ struct Topic: Codable, Identifiable, Hashable {
         let cards: Int
         let problems: Int
         let terms: Int
+        let quiz: Int
     }
 
     let id: String

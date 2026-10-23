@@ -1,0 +1,126 @@
+{
+ "unit": "plane-waves",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-plane-waves-01",
+   "question": "Intrinsic impedance of free space?",
+   "choices": [
+    "$377\\ \\mathrm{\\Omega}$",
+    "$50.0\\ \\mathrm{\\Omega}$",
+    "$188\\ \\mathrm{\\Omega}$",
+    "$753\\ \\mathrm{\\Omega}$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_0=\\sqrt{\\mu_0/\\varepsilon_0}\\approx120\\pi$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-02",
+   "question": "In a plane wave, $\\mathbf{E}$, $\\mathbf{H}$ and the direction of travel are",
+   "choices": [
+    "Mutually perpendicular",
+    "All parallel",
+    "$\\mathbf{E}\\parallel\\mathbf{H}$, both perpendicular to travel",
+    "$\\mathbf{E}$ along the direction of travel"
+   ],
+   "answer": 0,
+   "explain": "A uniform plane wave is TEM, with $\\mathbf{E}\\times\\mathbf{H}$ along $\\hat{\\mathbf{k}}$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-03",
+   "question": "For $\\mathbf{E}=\\hat{\\mathbf{x}}E_0\\cos(\\omega t-kz)$ in air, $\\mathbf{H}$ points along",
+   "choices": [
+    "$+\\hat{\\mathbf{y}}$",
+    "$-\\hat{\\mathbf{y}}$",
+    "$+\\hat{\\mathbf{x}}$",
+    "$+\\hat{\\mathbf{z}}$"
+   ],
+   "answer": 0,
+   "explain": "$\\tilde{\\mathbf{H}}=\\frac1\\eta\\hat{\\mathbf{z}}\\times\\hat{\\mathbf{x}}E_0=\\hat{\\mathbf{y}}E_0/\\eta$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-04",
+   "question": "Skin depth of copper at $1\\ \\mathrm{MHz}$?",
+   "choices": [
+    "$66.1\\ \\mathrm{\\mu m}$",
+    "$661\\ \\mathrm{\\mu m}$",
+    "$6.61\\ \\mathrm{\\mu m}$",
+    "$66.1\\ \\mathrm{mm}$"
+   ],
+   "answer": 0,
+   "explain": "$\\delta_s=1/\\sqrt{\\pi f\\mu\\sigma}$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-05",
+   "question": "In a good conductor, $\\alpha$ and $\\beta$ are",
+   "choices": [
+    "Equal",
+    "$\\alpha=0$",
+    "$\\beta=0$",
+    "$\\alpha=2\\beta$"
+   ],
+   "answer": 0,
+   "explain": "Both are $\\sqrt{\\pi f\\mu\\sigma}$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-06",
+   "question": "How many dB is a loss of $1\\ \\mathrm{Np}$?",
+   "choices": [
+    "$8.686\\ \\mathrm{dB}$",
+    "$1\\ \\mathrm{dB}$",
+    "$4.343\\ \\mathrm{dB}$",
+    "$20\\ \\mathrm{dB}$"
+   ],
+   "answer": 0,
+   "explain": "$20\\log_{10}e=8.686$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-07",
+   "question": "Average power density of a $10\\ \\mathrm{V/m}$ plane wave in air?",
+   "choices": [
+    "$133\\ \\mathrm{mW/m^2}$",
+    "$265\\ \\mathrm{mW/m^2}$",
+    "$13.3\\ \\mathrm{mW/m^2}$",
+    "$18.8\\ \\mathrm{kW/m^2}$"
+   ],
+   "answer": 0,
+   "explain": "$S_{\\mathrm{av}}=|E_0|^2/(2\\eta_0)$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-08",
+   "question": "Phase angle of $\\eta_c$ in a good conductor?",
+   "choices": [
+    "$45^\\circ$",
+    "$0^\\circ$",
+    "$90^\\circ$",
+    "$-45^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_c\\approx(1+j)\\alpha/\\sigma$: $\\mathbf{H}$ lags $\\mathbf{E}$ by $45^\\circ$.",
+   "topics": [
+    "plane-waves"
+   ]
+  }
+ ]
+}

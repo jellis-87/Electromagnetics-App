@@ -23,7 +23,7 @@ targets:
     info:
       path: ECE343/Info.plist
       properties:
-        CFBundleDisplayName: ECE 343
+        CFBundleDisplayName: Electromagnetics
         UILaunchScreen:
           UIColorName: PageBackground
         UISupportedInterfaceOrientations:
