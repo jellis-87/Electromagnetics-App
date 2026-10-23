@@ -1,0 +1,126 @@
+{
+ "unit": "magnetostatics",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-magnetostatics-01",
+   "question": "$B$ at $5\\ \\mathrm{cm}$ from a long wire carrying $10\\ \\mathrm{A}$?",
+   "choices": [
+    "$40.0\\ \\mathrm{\\mu T}$",
+    "$80.0\\ \\mathrm{\\mu T}$",
+    "$20.0\\ \\mathrm{\\mu T}$",
+    "$126\\ \\mathrm{\\mu T}$"
+   ],
+   "answer": 0,
+   "explain": "$B=\\mu_0I/(2\\pi r)$.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-02",
+   "question": "Which way does $\\mathbf{B}$ circle a current flowing along $+z$?",
+   "choices": [
+    "$+\\hat{\\boldsymbol{\\phi}}$ (counterclockwise seen from above)",
+    "$-\\hat{\\boldsymbol{\\phi}}$",
+    "Along $+\\hat{\\mathbf{z}}$",
+    "Radially outward"
+   ],
+   "answer": 0,
+   "explain": "Right-hand rule: thumb along the current, fingers along $\\mathbf{B}$.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-03",
+   "question": "The magnetic force on a moving charge is",
+   "choices": [
+    "$q\\mathbf{u}\\times\\mathbf{B}$",
+    "$q\\mathbf{B}$",
+    "$q\\mathbf{u}\\cdot\\mathbf{B}$",
+    "$q\\mathbf{E}\\times\\mathbf{B}$"
+   ],
+   "answer": 0,
+   "explain": "It is perpendicular to the velocity, so it does no work.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-04",
+   "question": "Why is $\\nabla\\cdot\\mathbf{B}=0$?",
+   "choices": [
+    "There are no magnetic charges",
+    "$\\mathbf{B}$ is always zero",
+    "Currents are always steady",
+    "$\\mu$ is constant"
+   ],
+   "answer": 0,
+   "explain": "Field lines of $\\mathbf{B}$ always close on themselves.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-05",
+   "question": "$B$ inside a long solenoid, $1000$ turns over $50\\ \\mathrm{cm}$, at $2\\ \\mathrm{A}$?",
+   "choices": [
+    "$5.03\\ \\mathrm{mT}$",
+    "$2.51\\ \\mathrm{mT}$",
+    "$10.1\\ \\mathrm{mT}$",
+    "$50.3\\ \\mathrm{mT}$"
+   ],
+   "answer": 0,
+   "explain": "$B=\\mu_0nI$ with $n=N/\\ell=2000$ turns per metre.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-06",
+   "question": "Force per unit length between two parallel wires with currents in the same direction is",
+   "choices": [
+    "Attractive",
+    "Repulsive",
+    "Zero",
+    "Along the wires"
+   ],
+   "answer": 0,
+   "explain": "Like currents attract; opposite currents repel.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-07",
+   "question": "At a boundary with no surface current, which components are continuous?",
+   "choices": [
+    "Normal $\\mathbf{B}$ and tangential $\\mathbf{H}$",
+    "Tangential $\\mathbf{B}$ and normal $\\mathbf{H}$",
+    "Only $\\mathbf{B}$",
+    "Nothing"
+   ],
+   "answer": 0,
+   "explain": "$B_{1n}=B_{2n}$ always; $\\mathbf{H}_t$ jumps only by a surface current.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-08",
+   "question": "Energy density stored in a magnetic field?",
+   "choices": [
+    "$\\tfrac12\\mu H^2$",
+    "$\\mu H^2$",
+    "$\\tfrac12\\varepsilon E^2$",
+    "$\\tfrac12LI$"
+   ],
+   "answer": 0,
+   "explain": "Integrated over space it gives $\\tfrac12LI^2$.",
+   "topics": [
+    "magnetostatics"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "unit": "time-varying-fields",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-time-varying-01",
+   "question": "Faraday's law in differential form?",
+   "choices": [
+    "$\\nabla\\times\\mathbf{E}=-\\partial\\mathbf{B}/\\partial t$",
+    "$\\nabla\\cdot\\mathbf{E}=-\\partial\\mathbf{B}/\\partial t$",
+    "$\\nabla\\times\\mathbf{H}=-\\partial\\mathbf{B}/\\partial t$",
+    "$\\nabla\\times\\mathbf{E}=0$"
+   ],
+   "answer": 0,
+   "explain": "A changing $\\mathbf{B}$ makes a curling $\\mathbf{E}$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-02",
+   "question": "A $0.5\\ \\mathrm{m}$ bar slides at $4\\ \\mathrm{m/s}$ across a $0.3\\ \\mathrm{T}$ field. The EMF?",
+   "choices": [
+    "$600\\ \\mathrm{mV}$",
+    "$1.20\\ \\mathrm{V}$",
+    "$2.00\\ \\mathrm{V}$",
+    "$300\\ \\mathrm{mV}$"
+   ],
+   "answer": 0,
+   "explain": "$V=uB\\ell$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-03",
+   "question": "Lenz's law says the induced current",
+   "choices": [
+    "Opposes the change in flux that caused it",
+    "Adds to the change in flux",
+    "Always flows clockwise",
+    "Is zero in a closed loop"
+   ],
+   "answer": 0,
+   "explain": "That is the minus sign in Faraday's law.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-04",
+   "question": "What did Maxwell add to Ampère's law?",
+   "choices": [
+    "Displacement current $\\partial\\mathbf{D}/\\partial t$",
+    "Conduction current $\\sigma\\mathbf{E}$",
+    "Magnetic charge",
+    "The Lorentz force"
+   ],
+   "answer": 0,
+   "explain": "It makes Ampère's law consistent with charge continuity and predicts waves.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-05",
+   "question": "A material with $\\sigma/(\\omega\\varepsilon)\\gg1$ is",
+   "choices": [
+    "A good conductor",
+    "A low-loss dielectric",
+    "A perfect insulator",
+    "Magnetic"
+   ],
+   "answer": 0,
+   "explain": "Conduction current dominates displacement current.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-06",
+   "question": "An ideal transformer with $N_1/N_2=10$ and $V_1=120\\ \\mathrm{V}$ gives $V_2=$",
+   "choices": [
+    "$12\\ \\mathrm{V}$",
+    "$1200\\ \\mathrm{V}$",
+    "$120\\ \\mathrm{V}$",
+    "$1.2\\ \\mathrm{V}$"
+   ],
+   "answer": 0,
+   "explain": "$V_1/V_2=N_1/N_2$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-07",
+   "question": "Peak EMF of an $N$-turn loop of area $A$ spinning at $\\omega$ in a field $B$?",
+   "choices": [
+    "$NBA\\omega$",
+    "$NBA$",
+    "$BA\\omega$",
+    "$NBA/\\omega$"
+   ],
+   "answer": 0,
+   "explain": "$\\Phi=BA\\cos\\omega t$, so $V=NBA\\omega\\sin\\omega t$.",
+   "topics": [
+    "time-varying"
+   ]
+  }
+ ]
+}

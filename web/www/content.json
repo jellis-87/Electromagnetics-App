@@ -12,7 +12,8 @@
    "counts": {
     "cards": 24,
     "problems": 13,
-    "terms": 18
+    "terms": 18,
+    "quiz": 8
    }
   },
   {
@@ -27,7 +28,8 @@
    "counts": {
     "cards": 17,
     "problems": 18,
-    "terms": 14
+    "terms": 14,
+    "quiz": 7
    }
   },
   {
@@ -42,7 +44,8 @@
    "counts": {
     "cards": 12,
     "problems": 7,
-    "terms": 6
+    "terms": 6,
+    "quiz": 6
    }
   },
   {
@@ -56,7 +59,8 @@
    "counts": {
     "cards": 5,
     "problems": 13,
-    "terms": 4
+    "terms": 4,
+    "quiz": 5
    }
   },
   {
@@ -71,7 +75,8 @@
    "counts": {
     "cards": 6,
     "problems": 9,
-    "terms": 3
+    "terms": 3,
+    "quiz": 4
    }
   },
   {
@@ -85,7 +90,8 @@
    "counts": {
     "cards": 6,
     "problems": 3,
-    "terms": 4
+    "terms": 4,
+    "quiz": 4
    }
   },
   {
@@ -100,7 +106,8 @@
    "counts": {
     "cards": 25,
     "problems": 15,
-    "terms": 20
+    "terms": 20,
+    "quiz": 9
    }
   },
   {
@@ -117,7 +124,8 @@
    "counts": {
     "cards": 28,
     "problems": 16,
-    "terms": 21
+    "terms": 21,
+    "quiz": 10
    }
   },
   {
@@ -131,7 +139,8 @@
    "counts": {
     "cards": 14,
     "problems": 9,
-    "terms": 11
+    "terms": 11,
+    "quiz": 6
    }
   },
   {
@@ -147,7 +156,8 @@
    "counts": {
     "cards": 24,
     "problems": 14,
-    "terms": 16
+    "terms": 16,
+    "quiz": 8
    }
   },
   {
@@ -162,7 +172,8 @@
    "counts": {
     "cards": 17,
     "problems": 11,
-    "terms": 12
+    "terms": 12,
+    "quiz": 7
    }
   },
   {
@@ -178,7 +189,8 @@
    "counts": {
     "cards": 22,
     "problems": 13,
-    "terms": 14
+    "terms": 14,
+    "quiz": 8
    }
   },
   {
@@ -192,7 +204,8 @@
    "counts": {
     "cards": 15,
     "problems": 8,
-    "terms": 11
+    "terms": 11,
+    "quiz": 7
    }
   },
   {
@@ -207,7 +220,8 @@
    "counts": {
     "cards": 20,
     "problems": 11,
-    "terms": 14
+    "terms": 14,
+    "quiz": 9
    }
   }
  ],
@@ -8715,6 +8729,1478 @@
    "units": "",
    "definition": "A field with zero curl, so it is the gradient of a scalar and its line integrals do not depend on the path. Static $\\mathbf{E}$ is conservative.",
    "widget": "divcurl",
+   "topics": [
+    "vectors"
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "quiz-conductors-01",
+   "question": "Resistance of $100\\ \\mathrm{m}$ of copper wire with a $1\\ \\mathrm{mm^2}$ cross-section ($\\sigma=5.8\\times10^7$)?",
+   "choices": [
+    "$1.72\\ \\mathrm{\\Omega}$",
+    "$17.2\\ \\mathrm{\\Omega}$",
+    "$172\\ \\mathrm{m\\Omega}$",
+    "$1.72\\ \\mathrm{k\\Omega}$"
+   ],
+   "answer": 0,
+   "explain": "$R=\\ell/(\\sigma A)=100/(5.8\\times10^7\\cdot10^{-6})$.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-02",
+   "question": "Point form of Ohm's law?",
+   "choices": [
+    "$\\mathbf{J}=\\sigma\\mathbf{E}$",
+    "$\\mathbf{E}=\\sigma\\mathbf{J}$",
+    "$V=IR$ only",
+    "$\\mathbf{J}=\\varepsilon\\mathbf{E}$"
+   ],
+   "answer": 0,
+   "explain": "It holds at every point in a conductor.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-03",
+   "question": "Joule's law gives the power dissipated per unit volume as",
+   "choices": [
+    "$\\mathbf{J}\\cdot\\mathbf{E}=\\sigma E^2$",
+    "$\\varepsilon E^2$",
+    "$\\mathbf{J}\\times\\mathbf{E}$",
+    "$\\sigma/E^2$"
+   ],
+   "answer": 0,
+   "explain": "Total power is $\\int\\sigma E^2\\,dv=I^2R$.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-04",
+   "question": "Drift velocity of electrons is related to $\\mathbf{E}$ by",
+   "choices": [
+    "$\\mathbf{u}_e=-\\mu_e\\mathbf{E}$",
+    "$\\mathbf{u}_e=\\mu_e\\mathbf{E}$",
+    "$\\mathbf{u}_e=\\sigma\\mathbf{E}$",
+    "$\\mathbf{u}_e=c$"
+   ],
+   "answer": 0,
+   "explain": "Electrons drift against the field; $\\mu_e$ is the mobility.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-05",
+   "question": "Charge continuity says",
+   "choices": [
+    "$\\nabla\\cdot\\mathbf{J}=-\\partial\\rho_v/\\partial t$",
+    "$\\nabla\\cdot\\mathbf{J}=0$ always",
+    "$\\nabla\\times\\mathbf{J}=\\rho_v$",
+    "$\\mathbf{J}=\\rho_v$"
+   ],
+   "answer": 0,
+   "explain": "Current leaving a volume must drain the charge inside it.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-conductors-06",
+   "question": "Where does excess charge on a conductor sit?",
+   "choices": [
+    "On its outer surface",
+    "Spread through its volume",
+    "At its centre",
+    "Nowhere: it leaves"
+   ],
+   "answer": 0,
+   "explain": "Charge inside would make a field inside, which a conductor cannot hold in equilibrium.",
+   "topics": [
+    "conductors"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-01",
+   "question": "Field $10\\ \\mathrm{cm}$ from a $1\\ \\mathrm{nC}$ point charge in air?",
+   "choices": [
+    "$899\\ \\mathrm{V/m}$",
+    "$89.9\\ \\mathrm{V/m}$",
+    "$8.99\\ \\mathrm{kV/m}$",
+    "$449\\ \\mathrm{V/m}$"
+   ],
+   "answer": 0,
+   "explain": "$E=Q/(4\\pi\\varepsilon_0R^2)=(8.99\\times10^9)(10^{-9})/0.01$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-02",
+   "question": "Gauss's law says the electric flux out of a closed surface equals",
+   "choices": [
+    "The free charge enclosed",
+    "Zero, always",
+    "The charge on the surface only",
+    "The potential on the surface"
+   ],
+   "answer": 0,
+   "explain": "$\\oint\\mathbf{D}\\cdot d\\mathbf{s}=Q_{\\mathrm{enc}}$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-03",
+   "question": "How does the field of an infinite line charge fall off with distance $r$?",
+   "choices": [
+    "$1/r$",
+    "$1/r^2$",
+    "$1/r^3$",
+    "It is constant"
+   ],
+   "answer": 0,
+   "explain": "A cylinder of radius $r$ gives $E\\cdot2\\pi r\\ell=\\rho_\\ell\\ell/\\varepsilon_0$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-04",
+   "question": "The field of an infinite sheet of charge",
+   "choices": [
+    "Does not depend on distance",
+    "Falls as $1/r$",
+    "Falls as $1/r^2$",
+    "Is zero"
+   ],
+   "answer": 0,
+   "explain": "$E=\\rho_s/(2\\varepsilon_0)$ on each side.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-05",
+   "question": "Inside a conductor in electrostatic equilibrium, $\\mathbf{E}$ is",
+   "choices": [
+    "Zero",
+    "Equal to the surface field",
+    "Normal to the surface",
+    "Infinite"
+   ],
+   "answer": 0,
+   "explain": "Any field would move the free charges until it vanished.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-06",
+   "question": "At a charge-free dielectric boundary, which field components are continuous?",
+   "choices": [
+    "Tangential $\\mathbf{E}$ and normal $\\mathbf{D}$",
+    "Normal $\\mathbf{E}$ and tangential $\\mathbf{D}$",
+    "All of $\\mathbf{E}$",
+    "Nothing"
+   ],
+   "answer": 0,
+   "explain": "$E_{1t}=E_{2t}$ and $D_{1n}-D_{2n}=\\rho_s=0$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-07",
+   "question": "Capacitance of parallel plates, $A=100\\ \\mathrm{cm^2}$, $d=1\\ \\mathrm{mm}$, $\\varepsilon_r=4$?",
+   "choices": [
+    "$354\\ \\mathrm{pF}$",
+    "$88.5\\ \\mathrm{pF}$",
+    "$3.54\\ \\mathrm{nF}$",
+    "$35.4\\ \\mathrm{pF}$"
+   ],
+   "answer": 0,
+   "explain": "$C=\\varepsilon A/d=4(8.854\\times10^{-12})(10^{-2})/10^{-3}$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-08",
+   "question": "Energy stored in a capacitor $C$ at voltage $V$?",
+   "choices": [
+    "$\\tfrac12CV^2$",
+    "$CV^2$",
+    "$\\tfrac12CV$",
+    "$CV$"
+   ],
+   "answer": 0,
+   "explain": "Also $\\tfrac12\\int\\varepsilon E^2\\,dv$ over the field.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-09",
+   "question": "The relation between $\\mathbf{E}$ and the potential $V$ is",
+   "choices": [
+    "$\\mathbf{E}=-\\nabla V$",
+    "$\\mathbf{E}=\\nabla V$",
+    "$\\mathbf{E}=\\nabla\\times V$",
+    "$V=-\\nabla\\cdot\\mathbf{E}$"
+   ],
+   "answer": 0,
+   "explain": "$\\mathbf{E}$ points downhill in potential.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-10",
+   "question": "Poisson's equation?",
+   "choices": [
+    "$\\nabla^2V=-\\rho_v/\\varepsilon$",
+    "$\\nabla^2V=0$ everywhere",
+    "$\\nabla V=\\rho_v$",
+    "$\\nabla\\times V=\\rho_v$"
+   ],
+   "answer": 0,
+   "explain": "It reduces to Laplace's equation where $\\rho_v=0$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-phasors-01",
+   "question": "What is the phasor of $v(t)=10\\cos(\\omega t-30^\\circ)$?",
+   "choices": [
+    "$10\\angle-30^\\circ$",
+    "$10\\angle30^\\circ$",
+    "$10\\angle60^\\circ$",
+    "$-10j$"
+   ],
+   "answer": 0,
+   "explain": "A phasor keeps the amplitude and the phase of the cosine: $10e^{-j30^\\circ}$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-02",
+   "question": "What is the phasor of $5\\sin\\omega t$, using the cosine reference?",
+   "choices": [
+    "$-5j$",
+    "$5$",
+    "$5j$",
+    "$-5$"
+   ],
+   "answer": 0,
+   "explain": "$\\sin\\omega t=\\cos(\\omega t-90^\\circ)$, so the phasor is $5e^{-j90^\\circ}=-5j$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-03",
+   "question": "What is $3+j4$ in polar form?",
+   "choices": [
+    "$5.00\\angle 53.1^\\circ$",
+    "$5\\angle36.9^\\circ$",
+    "$7\\angle53.1^\\circ$",
+    "$5\\angle-53.1^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$|z|=\\sqrt{3^2+4^2}=5$ and $\\angle z=\\tan^{-1}(4/3)=53.1^\\circ$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-04",
+   "question": "In the phasor domain, taking $d/dt$ of a signal does what?",
+   "choices": [
+    "Multiplies its phasor by $j\\omega$",
+    "Divides its phasor by $j\\omega$",
+    "Multiplies its phasor by $\\omega$",
+    "Leaves the phasor unchanged"
+   ],
+   "answer": 0,
+   "explain": "$\\frac{d}{dt}\\mathrm{Re}\\{\\tilde Ve^{j\\omega t}\\}=\\mathrm{Re}\\{j\\omega\\tilde Ve^{j\\omega t}\\}$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-05",
+   "question": "Which way does $\\cos(\\omega t+\\beta z)$ travel?",
+   "choices": [
+    "Toward $-z$",
+    "Toward $+z$",
+    "It does not travel",
+    "Toward $+t$"
+   ],
+   "answer": 0,
+   "explain": "The phase stays constant when $\\omega t+\\beta z$ is constant, so $z$ must fall as $t$ grows.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-06",
+   "question": "What is the free-space wavelength at $100\\ \\mathrm{MHz}$?",
+   "choices": [
+    "$3.00\\ \\mathrm{m}$",
+    "$300\\ \\mathrm{mm}$",
+    "$30.0\\ \\mathrm{m}$",
+    "$1.50\\ \\mathrm{m}$"
+   ],
+   "answer": 0,
+   "explain": "$\\lambda=c/f=3\\times10^8/10^8\\approx3\\ \\mathrm{m}$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-07",
+   "question": "A wave in a medium with $\\varepsilon_r=4$, $\\mu_r=1$ has phase velocity",
+   "choices": [
+    "$150\\ \\mathrm{Mm/s}$",
+    "$74.9\\ \\mathrm{Mm/s}$",
+    "$300\\ \\mathrm{Mm/s}$",
+    "$600\\ \\mathrm{Mm/s}$"
+   ],
+   "answer": 0,
+   "explain": "$u_p=c/\\sqrt{\\mu_r\\varepsilon_r}=c/2$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-08",
+   "question": "What does Euler's identity say?",
+   "choices": [
+    "$e^{j\\theta}=\\cos\\theta+j\\sin\\theta$",
+    "$e^{j\\theta}=\\cos\\theta-j\\sin\\theta$",
+    "$e^{j\\theta}=\\sin\\theta+j\\cos\\theta$",
+    "$e^{j\\theta}=1+j\\theta$"
+   ],
+   "answer": 0,
+   "explain": "It is the link between phasors and sinusoids.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-01",
+   "question": "$B$ at $5\\ \\mathrm{cm}$ from a long wire carrying $10\\ \\mathrm{A}$?",
+   "choices": [
+    "$40.0\\ \\mathrm{\\mu T}$",
+    "$80.0\\ \\mathrm{\\mu T}$",
+    "$20.0\\ \\mathrm{\\mu T}$",
+    "$126\\ \\mathrm{\\mu T}$"
+   ],
+   "answer": 0,
+   "explain": "$B=\\mu_0I/(2\\pi r)$.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-02",
+   "question": "Which way does $\\mathbf{B}$ circle a current flowing along $+z$?",
+   "choices": [
+    "$+\\hat{\\boldsymbol{\\phi}}$ (counterclockwise seen from above)",
+    "$-\\hat{\\boldsymbol{\\phi}}$",
+    "Along $+\\hat{\\mathbf{z}}$",
+    "Radially outward"
+   ],
+   "answer": 0,
+   "explain": "Right-hand rule: thumb along the current, fingers along $\\mathbf{B}$.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-03",
+   "question": "The magnetic force on a moving charge is",
+   "choices": [
+    "$q\\mathbf{u}\\times\\mathbf{B}$",
+    "$q\\mathbf{B}$",
+    "$q\\mathbf{u}\\cdot\\mathbf{B}$",
+    "$q\\mathbf{E}\\times\\mathbf{B}$"
+   ],
+   "answer": 0,
+   "explain": "It is perpendicular to the velocity, so it does no work.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-04",
+   "question": "Why is $\\nabla\\cdot\\mathbf{B}=0$?",
+   "choices": [
+    "There are no magnetic charges",
+    "$\\mathbf{B}$ is always zero",
+    "Currents are always steady",
+    "$\\mu$ is constant"
+   ],
+   "answer": 0,
+   "explain": "Field lines of $\\mathbf{B}$ always close on themselves.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-05",
+   "question": "$B$ inside a long solenoid, $1000$ turns over $50\\ \\mathrm{cm}$, at $2\\ \\mathrm{A}$?",
+   "choices": [
+    "$5.03\\ \\mathrm{mT}$",
+    "$2.51\\ \\mathrm{mT}$",
+    "$10.1\\ \\mathrm{mT}$",
+    "$50.3\\ \\mathrm{mT}$"
+   ],
+   "answer": 0,
+   "explain": "$B=\\mu_0nI$ with $n=N/\\ell=2000$ turns per metre.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-06",
+   "question": "Force per unit length between two parallel wires with currents in the same direction is",
+   "choices": [
+    "Attractive",
+    "Repulsive",
+    "Zero",
+    "Along the wires"
+   ],
+   "answer": 0,
+   "explain": "Like currents attract; opposite currents repel.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-07",
+   "question": "At a boundary with no surface current, which components are continuous?",
+   "choices": [
+    "Normal $\\mathbf{B}$ and tangential $\\mathbf{H}$",
+    "Tangential $\\mathbf{B}$ and normal $\\mathbf{H}$",
+    "Only $\\mathbf{B}$",
+    "Nothing"
+   ],
+   "answer": 0,
+   "explain": "$B_{1n}=B_{2n}$ always; $\\mathbf{H}_t$ jumps only by a surface current.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-magnetostatics-08",
+   "question": "Energy density stored in a magnetic field?",
+   "choices": [
+    "$\\tfrac12\\mu H^2$",
+    "$\\mu H^2$",
+    "$\\tfrac12\\varepsilon E^2$",
+    "$\\tfrac12LI$"
+   ],
+   "answer": 0,
+   "explain": "Integrated over space it gives $\\tfrac12LI^2$.",
+   "topics": [
+    "magnetostatics"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-01",
+   "question": "Intrinsic impedance of free space?",
+   "choices": [
+    "$377\\ \\mathrm{\\Omega}$",
+    "$50.0\\ \\mathrm{\\Omega}$",
+    "$188\\ \\mathrm{\\Omega}$",
+    "$753\\ \\mathrm{\\Omega}$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_0=\\sqrt{\\mu_0/\\varepsilon_0}\\approx120\\pi$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-02",
+   "question": "In a plane wave, $\\mathbf{E}$, $\\mathbf{H}$ and the direction of travel are",
+   "choices": [
+    "Mutually perpendicular",
+    "All parallel",
+    "$\\mathbf{E}\\parallel\\mathbf{H}$, both perpendicular to travel",
+    "$\\mathbf{E}$ along the direction of travel"
+   ],
+   "answer": 0,
+   "explain": "A uniform plane wave is TEM, with $\\mathbf{E}\\times\\mathbf{H}$ along $\\hat{\\mathbf{k}}$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-03",
+   "question": "For $\\mathbf{E}=\\hat{\\mathbf{x}}E_0\\cos(\\omega t-kz)$ in air, $\\mathbf{H}$ points along",
+   "choices": [
+    "$+\\hat{\\mathbf{y}}$",
+    "$-\\hat{\\mathbf{y}}$",
+    "$+\\hat{\\mathbf{x}}$",
+    "$+\\hat{\\mathbf{z}}$"
+   ],
+   "answer": 0,
+   "explain": "$\\tilde{\\mathbf{H}}=\\frac1\\eta\\hat{\\mathbf{z}}\\times\\hat{\\mathbf{x}}E_0=\\hat{\\mathbf{y}}E_0/\\eta$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-04",
+   "question": "Skin depth of copper at $1\\ \\mathrm{MHz}$?",
+   "choices": [
+    "$66.1\\ \\mathrm{\\mu m}$",
+    "$661\\ \\mathrm{\\mu m}$",
+    "$6.61\\ \\mathrm{\\mu m}$",
+    "$66.1\\ \\mathrm{mm}$"
+   ],
+   "answer": 0,
+   "explain": "$\\delta_s=1/\\sqrt{\\pi f\\mu\\sigma}$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-05",
+   "question": "In a good conductor, $\\alpha$ and $\\beta$ are",
+   "choices": [
+    "Equal",
+    "$\\alpha=0$",
+    "$\\beta=0$",
+    "$\\alpha=2\\beta$"
+   ],
+   "answer": 0,
+   "explain": "Both are $\\sqrt{\\pi f\\mu\\sigma}$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-06",
+   "question": "How many dB is a loss of $1\\ \\mathrm{Np}$?",
+   "choices": [
+    "$8.686\\ \\mathrm{dB}$",
+    "$1\\ \\mathrm{dB}$",
+    "$4.343\\ \\mathrm{dB}$",
+    "$20\\ \\mathrm{dB}$"
+   ],
+   "answer": 0,
+   "explain": "$20\\log_{10}e=8.686$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-07",
+   "question": "Average power density of a $10\\ \\mathrm{V/m}$ plane wave in air?",
+   "choices": [
+    "$133\\ \\mathrm{mW/m^2}$",
+    "$265\\ \\mathrm{mW/m^2}$",
+    "$13.3\\ \\mathrm{mW/m^2}$",
+    "$18.8\\ \\mathrm{kW/m^2}$"
+   ],
+   "answer": 0,
+   "explain": "$S_{\\mathrm{av}}=|E_0|^2/(2\\eta_0)$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-plane-waves-08",
+   "question": "Phase angle of $\\eta_c$ in a good conductor?",
+   "choices": [
+    "$45^\\circ$",
+    "$0^\\circ$",
+    "$90^\\circ$",
+    "$-45^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_c\\approx(1+j)\\alpha/\\sigma$: $\\mathbf{H}$ lags $\\mathbf{E}$ by $45^\\circ$.",
+   "topics": [
+    "plane-waves"
+   ]
+  },
+  {
+   "id": "quiz-polarization-01",
+   "question": "$\\tilde{\\mathbf{E}}=(\\hat{\\mathbf{x}}+j\\hat{\\mathbf{y}})e^{-jkz}$ is",
+   "choices": [
+    "Left-hand circular",
+    "Right-hand circular",
+    "Linear",
+    "Elliptical with axial ratio 2"
+   ],
+   "answer": 0,
+   "explain": "$a_x=a_y$ and $\\delta=+90^\\circ$ for a wave toward $+z$.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-02",
+   "question": "$\\mathbf{E}=\\hat{\\mathbf{x}}\\cos(\\omega t-kz)-\\hat{\\mathbf{y}}\\,2\\cos(\\omega t-kz)$ is",
+   "choices": [
+    "Linear",
+    "Left-hand elliptical",
+    "Right-hand circular",
+    "Right-hand elliptical"
+   ],
+   "answer": 0,
+   "explain": "$\\delta=180^\\circ$: the two components stay in step (or exactly opposite), so $\\mathbf{E}$ stays on one line.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-03",
+   "question": "Axial ratio of a circularly polarized wave?",
+   "choices": [
+    "$1$",
+    "$0$",
+    "$\\infty$",
+    "$\\sqrt2$"
+   ],
+   "answer": 0,
+   "explain": "Major and minor axes are equal.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-04",
+   "question": "Axial ratio of a linearly polarized wave?",
+   "choices": [
+    "$\\infty$",
+    "$1$",
+    "$0$",
+    "$2$"
+   ],
+   "answer": 0,
+   "explain": "The minor axis is zero.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-05",
+   "question": "Adding equal LHC and RHC waves gives",
+   "choices": [
+    "A linearly polarized wave",
+    "A circular wave of twice the amplitude",
+    "An elliptical wave",
+    "Nothing: they cancel"
+   ],
+   "answer": 0,
+   "explain": "$(\\hat{\\mathbf{x}}+j\\hat{\\mathbf{y}})+(\\hat{\\mathbf{x}}-j\\hat{\\mathbf{y}})=2\\hat{\\mathbf{x}}$.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-06",
+   "question": "For a wave toward $+z$, the sign of the ellipticity angle $\\chi$ tells you",
+   "choices": [
+    "The handedness",
+    "The amplitude",
+    "The frequency",
+    "The direction of travel"
+   ],
+   "answer": 0,
+   "explain": "$\\chi>0$ is left-handed, $\\chi<0$ right-handed.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-07",
+   "question": "With $a_x=a_y$ and $\\delta=-60^\\circ$, the wave is",
+   "choices": [
+    "Right-hand elliptical",
+    "Right-hand circular",
+    "Left-hand elliptical",
+    "Linear"
+   ],
+   "answer": 0,
+   "explain": "Circular needs $\\delta=\\pm90^\\circ$; negative $\\delta$ is right-handed.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-01",
+   "question": "$\\Gamma$ for air onto glass ($\\varepsilon_r=4$) at normal incidence?",
+   "choices": [
+    "$-1/3$",
+    "$1/3$",
+    "$-1/2$",
+    "$2/3$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_2=\\eta_0/2$, so $\\Gamma=(1/2-1)/(1/2+1)$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-02",
+   "question": "At normal incidence on a perfect conductor, $\\Gamma=$",
+   "choices": [
+    "$-1$",
+    "$0$",
+    "$+1$",
+    "$j$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_2=0$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-03",
+   "question": "Snell's law?",
+   "choices": [
+    "$n_1\\sin\\theta_i=n_2\\sin\\theta_t$",
+    "$n_1\\cos\\theta_i=n_2\\cos\\theta_t$",
+    "$n_1\\theta_i=n_2\\theta_t$",
+    "$\\sin\\theta_i=\\sin\\theta_t$"
+   ],
+   "answer": 0,
+   "explain": "The tangential phase must match along the boundary.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-04",
+   "question": "Critical angle going from glass ($n=1.5$) into air?",
+   "choices": [
+    "$41.8^\\circ$",
+    "$33.7^\\circ$",
+    "$56.3^\\circ$",
+    "$90^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$\\theta_c=\\sin^{-1}(n_2/n_1)$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-05",
+   "question": "Brewster angle from air into glass ($n=1.5$)?",
+   "choices": [
+    "$56.3^\\circ$",
+    "$41.8^\\circ$",
+    "$33.7^\\circ$",
+    "$45^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$\\theta_B=\\tan^{-1}(n_2/n_1)$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-06",
+   "question": "At the Brewster angle, which polarization reflects?",
+   "choices": [
+    "Only perpendicular (TE)",
+    "Only parallel (TM)",
+    "Both equally",
+    "Neither"
+   ],
+   "answer": 0,
+   "explain": "$\\Gamma_\\parallel=0$ at $\\theta_B$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-07",
+   "question": "A critical angle exists only when",
+   "choices": [
+    "The wave goes into a less dense medium ($n_2<n_1$)",
+    "$n_2>n_1$",
+    "The media are magnetic",
+    "The wave is circularly polarized"
+   ],
+   "answer": 0,
+   "explain": "$\\sin\\theta_c=n_2/n_1$ must be less than 1.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-08",
+   "question": "A quarter-wave antireflection coating between air and glass ($n=1.5$) needs index",
+   "choices": [
+    "$\\sqrt{1.5}\\approx1.22$",
+    "$1.5$",
+    "$1.25$",
+    "$2.25$"
+   ],
+   "answer": 0,
+   "explain": "$n_2=\\sqrt{n_1n_3}$, like a quarter-wave transformer.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-09",
+   "question": "Optical fibres guide light by",
+   "choices": [
+    "Total internal reflection at the core–cladding boundary",
+    "Reflection off a metal coating",
+    "The Brewster effect",
+    "Absorption in the cladding"
+   ],
+   "answer": 0,
+   "explain": "The core has a slightly higher index than the cladding.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-01",
+   "question": "Faraday's law in differential form?",
+   "choices": [
+    "$\\nabla\\times\\mathbf{E}=-\\partial\\mathbf{B}/\\partial t$",
+    "$\\nabla\\cdot\\mathbf{E}=-\\partial\\mathbf{B}/\\partial t$",
+    "$\\nabla\\times\\mathbf{H}=-\\partial\\mathbf{B}/\\partial t$",
+    "$\\nabla\\times\\mathbf{E}=0$"
+   ],
+   "answer": 0,
+   "explain": "A changing $\\mathbf{B}$ makes a curling $\\mathbf{E}$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-02",
+   "question": "A $0.5\\ \\mathrm{m}$ bar slides at $4\\ \\mathrm{m/s}$ across a $0.3\\ \\mathrm{T}$ field. The EMF?",
+   "choices": [
+    "$600\\ \\mathrm{mV}$",
+    "$1.20\\ \\mathrm{V}$",
+    "$2.00\\ \\mathrm{V}$",
+    "$300\\ \\mathrm{mV}$"
+   ],
+   "answer": 0,
+   "explain": "$V=uB\\ell$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-03",
+   "question": "Lenz's law says the induced current",
+   "choices": [
+    "Opposes the change in flux that caused it",
+    "Adds to the change in flux",
+    "Always flows clockwise",
+    "Is zero in a closed loop"
+   ],
+   "answer": 0,
+   "explain": "That is the minus sign in Faraday's law.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-04",
+   "question": "What did Maxwell add to Ampère's law?",
+   "choices": [
+    "Displacement current $\\partial\\mathbf{D}/\\partial t$",
+    "Conduction current $\\sigma\\mathbf{E}$",
+    "Magnetic charge",
+    "The Lorentz force"
+   ],
+   "answer": 0,
+   "explain": "It makes Ampère's law consistent with charge continuity and predicts waves.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-05",
+   "question": "A material with $\\sigma/(\\omega\\varepsilon)\\gg1$ is",
+   "choices": [
+    "A good conductor",
+    "A low-loss dielectric",
+    "A perfect insulator",
+    "Magnetic"
+   ],
+   "answer": 0,
+   "explain": "Conduction current dominates displacement current.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-06",
+   "question": "An ideal transformer with $N_1/N_2=10$ and $V_1=120\\ \\mathrm{V}$ gives $V_2=$",
+   "choices": [
+    "$12\\ \\mathrm{V}$",
+    "$1200\\ \\mathrm{V}$",
+    "$120\\ \\mathrm{V}$",
+    "$1.2\\ \\mathrm{V}$"
+   ],
+   "answer": 0,
+   "explain": "$V_1/V_2=N_1/N_2$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-time-varying-07",
+   "question": "Peak EMF of an $N$-turn loop of area $A$ spinning at $\\omega$ in a field $B$?",
+   "choices": [
+    "$NBA\\omega$",
+    "$NBA$",
+    "$BA\\omega$",
+    "$NBA/\\omega$"
+   ],
+   "answer": 0,
+   "explain": "$\\Phi=BA\\cos\\omega t$, so $V=NBA\\omega\\sin\\omega t$.",
+   "topics": [
+    "time-varying"
+   ]
+  },
+  {
+   "id": "quiz-tline-01",
+   "question": "When does a circuit need transmission-line analysis?",
+   "choices": [
+    "When its length is a sizeable fraction of a wavelength (say more than $\\lambda/100$)",
+    "Only when the frequency is above 1 GHz",
+    "Only when the wires are coaxial",
+    "Whenever the current is AC"
+   ],
+   "answer": 0,
+   "explain": "Below that, the phase change along the wire is negligible and lumped circuit theory works.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-tline-02",
+   "question": "Characteristic impedance of a lossless line?",
+   "choices": [
+    "$Z_0=\\sqrt{L'/C'}$",
+    "$Z_0=\\sqrt{C'/L'}$",
+    "$Z_0=L'C'$",
+    "$Z_0=1/\\sqrt{L'C'}$"
+   ],
+   "answer": 0,
+   "explain": "Lossless means $R'=G'=0$ in $Z_0=\\sqrt{(R'+j\\omega L')/(G'+j\\omega C')}$.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-tline-03",
+   "question": "Phase velocity on a lossless line?",
+   "choices": [
+    "$u_p=1/\\sqrt{L'C'}$",
+    "$u_p=\\sqrt{L'C'}$",
+    "$u_p=\\sqrt{L'/C'}$",
+    "$u_p=L'/C'$"
+   ],
+   "answer": 0,
+   "explain": "$\\beta=\\omega\\sqrt{L'C'}$ and $u_p=\\omega/\\beta$.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-tline-04",
+   "question": "Input impedance of a $50\\ \\Omega$ line of any length ending in $50\\ \\Omega$?",
+   "choices": [
+    "$50\\ \\Omega$",
+    "$0$",
+    "$100\\ \\Omega$",
+    "It depends on the length"
+   ],
+   "answer": 0,
+   "explain": "A matched line has no reflection, so $Z_{in}=Z_0$ at every point.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-tline-05",
+   "question": "Input impedance of a quarter-wave line ending in $Z_L$?",
+   "choices": [
+    "$Z_0^2/Z_L$",
+    "$Z_L$",
+    "$Z_0$",
+    "$Z_L^2/Z_0$"
+   ],
+   "answer": 0,
+   "explain": "$\\tan\\beta\\ell\\to\\infty$ at $\\ell=\\lambda/4$, which leaves $Z_{in}=Z_0^2/Z_L$.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-tline-06",
+   "question": "Input impedance of a half-wave lossless line ending in $Z_L$?",
+   "choices": [
+    "$Z_L$",
+    "$Z_0^2/Z_L$",
+    "$Z_0$",
+    "$-Z_L$"
+   ],
+   "answer": 0,
+   "explain": "$\\tan\\beta\\ell=0$ at $\\ell=\\lambda/2$, so the line repeats its load.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-tline-07",
+   "question": "A short-circuited lossless stub shorter than $\\lambda/4$ looks like",
+   "choices": [
+    "An inductor",
+    "A capacitor",
+    "An open circuit",
+    "A resistor"
+   ],
+   "answer": 0,
+   "explain": "$Z_{in}=jZ_0\\tan\\beta\\ell$ is positive imaginary for $0<\\beta\\ell<\\pi/2$.",
+   "topics": [
+    "tline"
+   ]
+  },
+  {
+   "id": "quiz-reflection-01",
+   "question": "Reflection coefficient for a $100\\ \\Omega$ load on a $50\\ \\Omega$ line?",
+   "choices": [
+    "$0.333$",
+    "$-0.333$",
+    "$0.500$",
+    "$2.00$"
+   ],
+   "answer": 0,
+   "explain": "$\\Gamma=(Z_L-Z_0)/(Z_L+Z_0)=50/150$.",
+   "topics": [
+    "reflection"
+   ]
+  },
+  {
+   "id": "quiz-reflection-02",
+   "question": "VSWR when $|\\Gamma|=1/3$?",
+   "choices": [
+    "$2.00$",
+    "$1.50$",
+    "$3.00$",
+    "$1.33$"
+   ],
+   "answer": 0,
+   "explain": "$S=(1+|\\Gamma|)/(1-|\\Gamma|)=(4/3)/(2/3)=2$.",
+   "topics": [
+    "reflection"
+   ]
+  },
+  {
+   "id": "quiz-reflection-03",
+   "question": "$\\Gamma$ for a short circuit?",
+   "choices": [
+    "$-1$",
+    "$+1$",
+    "$0$",
+    "$j$"
+   ],
+   "answer": 0,
+   "explain": "$Z_L=0$ gives $\\Gamma=(0-Z_0)/(0+Z_0)=-1$.",
+   "topics": [
+    "reflection"
+   ]
+  },
+  {
+   "id": "quiz-reflection-04",
+   "question": "How far apart are adjacent voltage maxima on a standing wave?",
+   "choices": [
+    "$\\lambda/2$",
+    "$\\lambda/4$",
+    "$\\lambda$",
+    "$\\lambda/8$"
+   ],
+   "answer": 0,
+   "explain": "The pattern $|V(z)|$ repeats every half wavelength. A maximum and the next minimum are $\\lambda/4$ apart.",
+   "topics": [
+    "reflection"
+   ]
+  },
+  {
+   "id": "quiz-reflection-05",
+   "question": "What fraction of incident power reaches a load with $|\\Gamma|=0.5$?",
+   "choices": [
+    "$0.750$",
+    "$0.500$",
+    "$0.250$",
+    "$0.875$"
+   ],
+   "answer": 0,
+   "explain": "$P_L/P^i=1-|\\Gamma|^2=0.75$.",
+   "topics": [
+    "reflection"
+   ]
+  },
+  {
+   "id": "quiz-reflection-06",
+   "question": "On a line with a purely resistive load $R_L>Z_0$, where is the first voltage maximum?",
+   "choices": [
+    "At the load",
+    "$\\lambda/4$ from the load",
+    "$\\lambda/2$ from the load",
+    "There is no maximum"
+   ],
+   "answer": 0,
+   "explain": "$\\Gamma$ is real and positive, so $\\theta_r=0$ and $d_{\\max}=0$.",
+   "topics": [
+    "reflection"
+   ]
+  },
+  {
+   "id": "quiz-smith-01",
+   "question": "Where is a matched load on the Smith chart?",
+   "choices": [
+    "At the centre",
+    "On the far right",
+    "On the far left",
+    "On the outer circle"
+   ],
+   "answer": 0,
+   "explain": "$z_L=1$ gives $\\Gamma=0$, the centre of the chart.",
+   "topics": [
+    "smith"
+   ]
+  },
+  {
+   "id": "quiz-smith-02",
+   "question": "Moving from the load toward the generator rotates you on the Smith chart",
+   "choices": [
+    "Clockwise",
+    "Counterclockwise",
+    "Straight toward the centre",
+    "Along a constant-reactance arc"
+   ],
+   "answer": 0,
+   "explain": "$\\Gamma(d)=\\Gamma e^{-j2\\beta d}$: the angle decreases, which is clockwise.",
+   "topics": [
+    "smith"
+   ]
+  },
+  {
+   "id": "quiz-smith-03",
+   "question": "How much line length is one full trip around the Smith chart?",
+   "choices": [
+    "$\\lambda/2$",
+    "$\\lambda$",
+    "$\\lambda/4$",
+    "$2\\lambda$"
+   ],
+   "answer": 0,
+   "explain": "$2\\beta d=2\\pi$ when $d=\\lambda/2$.",
+   "topics": [
+    "smith"
+   ]
+  },
+  {
+   "id": "quiz-smith-04",
+   "question": "How do you turn an impedance into an admittance on the Smith chart?",
+   "choices": [
+    "Go to the point diametrically opposite",
+    "Reflect it about the horizontal axis",
+    "Move to the centre",
+    "Rotate it by $90^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "Opposite points are a quarter wave apart, and a quarter-wave line inverts normalized impedance.",
+   "topics": [
+    "smith"
+   ]
+  },
+  {
+   "id": "quiz-smith-05",
+   "question": "The outer circle of the Smith chart holds loads that are",
+   "choices": [
+    "Purely reactive",
+    "Purely resistive",
+    "Matched",
+    "Open circuits only"
+   ],
+   "answer": 0,
+   "explain": "$|\\Gamma|=1$ there: no power is absorbed.",
+   "topics": [
+    "smith"
+   ]
+  },
+  {
+   "id": "quiz-matching-01",
+   "question": "A quarter-wave transformer matches a $200\\ \\Omega$ load to a $50\\ \\Omega$ line. Its impedance?",
+   "choices": [
+    "$100\\ \\mathrm{\\Omega}$",
+    "$125\\ \\mathrm{\\Omega}$",
+    "$150\\ \\mathrm{\\Omega}$",
+    "$250\\ \\mathrm{\\Omega}$"
+   ],
+   "answer": 0,
+   "explain": "$Z_{0,\\lambda/4}=\\sqrt{Z_0Z_L}=\\sqrt{50\\cdot200}$.",
+   "topics": [
+    "matching"
+   ]
+  },
+  {
+   "id": "quiz-matching-02",
+   "question": "A single shunt stub matches by",
+   "choices": [
+    "Cancelling the susceptance at a point where $y=1+jb$",
+    "Adding resistance in series",
+    "Changing $Z_0$ of the main line",
+    "Absorbing the reflected power"
+   ],
+   "answer": 0,
+   "explain": "Move along the line until $\\mathrm{Re}\\{y\\}=1$, then add a stub with susceptance $-b$.",
+   "topics": [
+    "matching"
+   ]
+  },
+  {
+   "id": "quiz-matching-03",
+   "question": "A quarter-wave transformer on its own can directly match",
+   "choices": [
+    "A purely resistive load",
+    "Any complex load",
+    "Only a short circuit",
+    "Only loads below $Z_0$"
+   ],
+   "answer": 0,
+   "explain": "$\\sqrt{Z_0Z_L}$ must be real. A complex load first needs a length of line to make it real.",
+   "topics": [
+    "matching"
+   ]
+  },
+  {
+   "id": "quiz-matching-04",
+   "question": "Why are shunt stubs often preferred to series stubs?",
+   "choices": [
+    "They are easier to build: just tee a stub onto the line",
+    "They never need a short circuit",
+    "They work at every frequency",
+    "They have no loss"
+   ],
+   "answer": 0,
+   "explain": "A series stub needs the main line to be cut, which is awkward in coax or microstrip.",
+   "topics": [
+    "matching"
+   ]
+  },
+  {
+   "id": "quiz-transients-01",
+   "question": "A step travels down a line. Its first value at the input is",
+   "choices": [
+    "$V_s\\,Z_0/(R_s+Z_0)$",
+    "$V_s$",
+    "$V_s\\,R_L/(R_s+R_L)$",
+    "$0$"
+   ],
+   "answer": 0,
+   "explain": "Before any reflection returns, the line looks like a resistor $Z_0$.",
+   "topics": [
+    "transients"
+   ]
+  },
+  {
+   "id": "quiz-transients-02",
+   "question": "Final steady-state voltage on a lossless line after a step?",
+   "choices": [
+    "$V_s\\,R_L/(R_s+R_L)$",
+    "$V_s\\,Z_0/(R_s+Z_0)$",
+    "$V_s$",
+    "$0$"
+   ],
+   "answer": 0,
+   "explain": "At DC the line is just a wire: a voltage divider of $R_s$ and $R_L$.",
+   "topics": [
+    "transients"
+   ]
+  },
+  {
+   "id": "quiz-transients-03",
+   "question": "What does a bounce diagram plot?",
+   "choices": [
+    "Each wave's voltage against position and time, zig-zagging between the ends",
+    "The Smith chart over time",
+    "Current against frequency",
+    "The reflection coefficient against length"
+   ],
+   "answer": 0,
+   "explain": "Each leg adds a reflected wave, and summing them gives $V(z,t)$.",
+   "topics": [
+    "transients"
+   ]
+  },
+  {
+   "id": "quiz-transients-04",
+   "question": "With $R_s=R_L=Z_0$, how many reflections occur?",
+   "choices": [
+    "None",
+    "One at the load",
+    "One at each end",
+    "Infinitely many"
+   ],
+   "answer": 0,
+   "explain": "Both ends are matched, so $\\Gamma_L=\\Gamma_g=0$.",
+   "topics": [
+    "transients"
+   ]
+  },
+  {
+   "id": "quiz-vectors-01",
+   "question": "What is $\\mathbf{A}\\cdot\\mathbf{B}$ for $\\mathbf{A}=(1,2,3)$ and $\\mathbf{B}=(4,-5,6)$?",
+   "choices": [
+    "$12$",
+    "$32$",
+    "$-12$",
+    "$(4,-10,18)$"
+   ],
+   "answer": 0,
+   "explain": "$4-10+18=12$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-02",
+   "question": "What does $\\nabla\\cdot\\mathbf{F}>0$ at a point mean?",
+   "choices": [
+    "The point is a source: net flux flows out",
+    "The field circulates around the point",
+    "The field is zero there",
+    "The field is uniform"
+   ],
+   "answer": 0,
+   "explain": "Divergence is outward flux per unit volume.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-03",
+   "question": "The curl of any gradient is",
+   "choices": [
+    "Zero",
+    "The Laplacian",
+    "The divergence",
+    "A unit vector"
+   ],
+   "answer": 0,
+   "explain": "$\\nabla\\times\\nabla V=0$ always, which is why static $\\mathbf{E}$ can be written as $-\\nabla V$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-04",
+   "question": "The divergence of any curl is",
+   "choices": [
+    "Zero",
+    "The gradient",
+    "The curl",
+    "One"
+   ],
+   "answer": 0,
+   "explain": "$\\nabla\\cdot(\\nabla\\times\\mathbf{A})=0$, which is why $\\mathbf{B}=\\nabla\\times\\mathbf{A}$ automatically has no divergence.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-05",
+   "question": "The divergence theorem relates",
+   "choices": [
+    "A volume integral of $\\nabla\\cdot\\mathbf{F}$ to the flux through the closed surface",
+    "A line integral to a surface integral of the curl",
+    "A gradient to a line integral",
+    "Two volume integrals"
+   ],
+   "answer": 0,
+   "explain": "$\\int_V\\nabla\\cdot\\mathbf{F}\\,dv=\\oint_S\\mathbf{F}\\cdot d\\mathbf{s}$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-06",
+   "question": "Stokes's theorem relates",
+   "choices": [
+    "The circulation around a loop to the flux of the curl through it",
+    "Flux to divergence",
+    "Gradient to potential",
+    "Two surface integrals"
+   ],
+   "answer": 0,
+   "explain": "$\\oint_C\\mathbf{F}\\cdot d\\mathbf{l}=\\int_S(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{s}$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-07",
+   "question": "The point $(x,y)=(3,4)$ has cylindrical coordinates",
+   "choices": [
+    "$r=5,\\ \\phi=53.1^\\circ$",
+    "$r=7,\\ \\phi=53.1^\\circ$",
+    "$r=5,\\ \\phi=36.9^\\circ$",
+    "$r=25,\\ \\phi=53.1^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$r=\\sqrt{x^2+y^2}$, $\\phi=\\tan^{-1}(y/x)$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-08",
+   "question": "Differential volume in spherical coordinates?",
+   "choices": [
+    "$R^2\\sin\\theta\\,dR\\,d\\theta\\,d\\phi$",
+    "$R\\,dR\\,d\\theta\\,d\\phi$",
+    "$dR\\,d\\theta\\,d\\phi$",
+    "$R^2\\,dR\\,d\\theta\\,d\\phi$"
+   ],
+   "answer": 0,
+   "explain": "The sides are $dR$, $R\\,d\\theta$ and $R\\sin\\theta\\,d\\phi$.",
+   "topics": [
+    "vectors"
+   ]
+  },
+  {
+   "id": "quiz-vectors-09",
+   "question": "Which unit vector changes direction from point to point?",
+   "choices": [
+    "$\\hat{\\mathbf{r}}$ (cylindrical)",
+    "$\\hat{\\mathbf{x}}$",
+    "$\\hat{\\mathbf{z}}$",
+    "$\\hat{\\mathbf{y}}$"
+   ],
+   "answer": 0,
+   "explain": "$\\hat{\\mathbf{r}}$ points away from the $z$ axis, so it depends on $\\phi$.",
    "topics": [
     "vectors"
    ]

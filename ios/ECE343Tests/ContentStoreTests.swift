@@ -7,6 +7,7 @@ final class ContentStoreTests: XCTestCase {
     func testBundleLoads() {
         XCTAssertFalse(store.availableTopics.isEmpty)
         XCTAssertFalse(store.problems.isEmpty)
+        XCTAssertTrue(store.availableTopics.allSatisfy { $0.counts.quiz > 0 })
         XCTAssertTrue(FileManager.default.fileExists(atPath: store.webRoot.appendingPathComponent("index.html").path))
         XCTAssertTrue(FileManager.default.fileExists(atPath: store.webRoot.appendingPathComponent("vendor/mathjax/tex-svg-full.js").path))
     }

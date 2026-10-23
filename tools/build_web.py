@@ -8,15 +8,15 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 C = os.path.join(ROOT, "content")
 
 topics = json.load(open(os.path.join(C, "topics.json")))
-data = {"topics": topics["topics"], "widgets": topics["widgets"], "cards": [], "problems": [], "terms": []}
+data = {"topics": topics["topics"], "widgets": topics["widgets"], "cards": [], "problems": [], "terms": [], "quiz": []}
 for unit in sorted(glob.glob(os.path.join(C, "*", ""))):
-    for name, key in (("flashcards", "cards"), ("practice", "problems"), ("glossary", "terms")):
+    for name, key in (("flashcards", "cards"), ("practice", "problems"), ("glossary", "terms"), ("quiz", "questions")):
         f = os.path.join(unit, name + ".json")
         if os.path.exists(f):
-            data[key] += json.load(open(f))[key]
+            data["quiz" if key == "questions" else key] += json.load(open(f))[key]
 
 known = {t["id"] for t in data["topics"]}
-for key in ("cards", "problems", "terms"):
+for key in ("cards", "problems", "terms", "quiz"):
     for x in data[key]:
         assert x["topics"] and set(x["topics"]) <= known, (key, x.get("id"), x["topics"])
 
@@ -31,7 +31,7 @@ def plain(t):
 for p in data["problems"]:
     p["titleText"] = plain(p["title"])
 for t in data["topics"]:
-    t["counts"] = {k: sum(t["id"] in x["topics"] for x in data[k]) for k in ("cards", "problems", "terms")}
+    t["counts"] = {k: sum(t["id"] in x["topics"] for x in data[k]) for k in ("cards", "problems", "terms", "quiz")}
 
 blob = json.dumps(data, ensure_ascii=False)
 page = os.path.join(ROOT, "web", "widgets.html")
@@ -52,4 +52,4 @@ app = re.sub(r'<meta name="claude:[^>]*>\n?', "", app)
 i = app.index("</style>") + len("</style>")
 open(os.path.join(www, "index.html"), "w").write(head + app[:i] + "\n</head>\n<body>\n" + app[i:] + "\n</body>\n</html>\n")
 json.dump(data, open(os.path.join(www, "content.json"), "w"), ensure_ascii=False, indent=1)
-print("built", {k: len(data[k]) for k in ("cards", "problems", "terms")})
+print("built", {k: len(data[k]) for k in ("cards", "problems", "terms", "quiz")})

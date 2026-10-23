@@ -16,7 +16,7 @@ struct TopicsView: View {
                 }
             }
         }
-        .navigationTitle("ECE 343")
+        .navigationTitle("Electromagnetics")
         .navigationDestination(for: Topic.self) { TopicDetailView(topic: $0) }
     }
 }
@@ -59,6 +59,11 @@ struct TopicDetailView: View {
                     WebScreen(title: "Flashcards", route: "cards&topic=\(topic.id)")
                 } label: {
                     LabeledContent("Flashcards", value: "\(topic.counts.cards)")
+                }
+                NavigationLink {
+                    WebScreen(title: "Quiz", route: "quiz&topic=\(topic.id)")
+                } label: {
+                    LabeledContent("Quiz questions", value: "\(topic.counts.quiz)")
                 }
                 NavigationLink {
                     PracticeListView(topic: topic)

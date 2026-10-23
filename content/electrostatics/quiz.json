@@ -1,0 +1,156 @@
+{
+ "unit": "electrostatics",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-electrostatics-01",
+   "question": "Field $10\\ \\mathrm{cm}$ from a $1\\ \\mathrm{nC}$ point charge in air?",
+   "choices": [
+    "$899\\ \\mathrm{V/m}$",
+    "$89.9\\ \\mathrm{V/m}$",
+    "$8.99\\ \\mathrm{kV/m}$",
+    "$449\\ \\mathrm{V/m}$"
+   ],
+   "answer": 0,
+   "explain": "$E=Q/(4\\pi\\varepsilon_0R^2)=(8.99\\times10^9)(10^{-9})/0.01$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-02",
+   "question": "Gauss's law says the electric flux out of a closed surface equals",
+   "choices": [
+    "The free charge enclosed",
+    "Zero, always",
+    "The charge on the surface only",
+    "The potential on the surface"
+   ],
+   "answer": 0,
+   "explain": "$\\oint\\mathbf{D}\\cdot d\\mathbf{s}=Q_{\\mathrm{enc}}$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-03",
+   "question": "How does the field of an infinite line charge fall off with distance $r$?",
+   "choices": [
+    "$1/r$",
+    "$1/r^2$",
+    "$1/r^3$",
+    "It is constant"
+   ],
+   "answer": 0,
+   "explain": "A cylinder of radius $r$ gives $E\\cdot2\\pi r\\ell=\\rho_\\ell\\ell/\\varepsilon_0$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-04",
+   "question": "The field of an infinite sheet of charge",
+   "choices": [
+    "Does not depend on distance",
+    "Falls as $1/r$",
+    "Falls as $1/r^2$",
+    "Is zero"
+   ],
+   "answer": 0,
+   "explain": "$E=\\rho_s/(2\\varepsilon_0)$ on each side.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-05",
+   "question": "Inside a conductor in electrostatic equilibrium, $\\mathbf{E}$ is",
+   "choices": [
+    "Zero",
+    "Equal to the surface field",
+    "Normal to the surface",
+    "Infinite"
+   ],
+   "answer": 0,
+   "explain": "Any field would move the free charges until it vanished.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-06",
+   "question": "At a charge-free dielectric boundary, which field components are continuous?",
+   "choices": [
+    "Tangential $\\mathbf{E}$ and normal $\\mathbf{D}$",
+    "Normal $\\mathbf{E}$ and tangential $\\mathbf{D}$",
+    "All of $\\mathbf{E}$",
+    "Nothing"
+   ],
+   "answer": 0,
+   "explain": "$E_{1t}=E_{2t}$ and $D_{1n}-D_{2n}=\\rho_s=0$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-07",
+   "question": "Capacitance of parallel plates, $A=100\\ \\mathrm{cm^2}$, $d=1\\ \\mathrm{mm}$, $\\varepsilon_r=4$?",
+   "choices": [
+    "$354\\ \\mathrm{pF}$",
+    "$88.5\\ \\mathrm{pF}$",
+    "$3.54\\ \\mathrm{nF}$",
+    "$35.4\\ \\mathrm{pF}$"
+   ],
+   "answer": 0,
+   "explain": "$C=\\varepsilon A/d=4(8.854\\times10^{-12})(10^{-2})/10^{-3}$.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-08",
+   "question": "Energy stored in a capacitor $C$ at voltage $V$?",
+   "choices": [
+    "$\\tfrac12CV^2$",
+    "$CV^2$",
+    "$\\tfrac12CV$",
+    "$CV$"
+   ],
+   "answer": 0,
+   "explain": "Also $\\tfrac12\\int\\varepsilon E^2\\,dv$ over the field.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-09",
+   "question": "The relation between $\\mathbf{E}$ and the potential $V$ is",
+   "choices": [
+    "$\\mathbf{E}=-\\nabla V$",
+    "$\\mathbf{E}=\\nabla V$",
+    "$\\mathbf{E}=\\nabla\\times V$",
+    "$V=-\\nabla\\cdot\\mathbf{E}$"
+   ],
+   "answer": 0,
+   "explain": "$\\mathbf{E}$ points downhill in potential.",
+   "topics": [
+    "electrostatics"
+   ]
+  },
+  {
+   "id": "quiz-electrostatics-10",
+   "question": "Poisson's equation?",
+   "choices": [
+    "$\\nabla^2V=-\\rho_v/\\varepsilon$",
+    "$\\nabla^2V=0$ everywhere",
+    "$\\nabla V=\\rho_v$",
+    "$\\nabla\\times V=\\rho_v$"
+   ],
+   "answer": 0,
+   "explain": "It reduces to Laplace's equation where $\\rho_v=0$.",
+   "topics": [
+    "electrostatics"
+   ]
+  }
+ ]
+}

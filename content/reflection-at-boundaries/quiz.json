@@ -1,0 +1,141 @@
+{
+ "unit": "reflection-at-boundaries",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-boundaries-01",
+   "question": "$\\Gamma$ for air onto glass ($\\varepsilon_r=4$) at normal incidence?",
+   "choices": [
+    "$-1/3$",
+    "$1/3$",
+    "$-1/2$",
+    "$2/3$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_2=\\eta_0/2$, so $\\Gamma=(1/2-1)/(1/2+1)$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-02",
+   "question": "At normal incidence on a perfect conductor, $\\Gamma=$",
+   "choices": [
+    "$-1$",
+    "$0$",
+    "$+1$",
+    "$j$"
+   ],
+   "answer": 0,
+   "explain": "$\\eta_2=0$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-03",
+   "question": "Snell's law?",
+   "choices": [
+    "$n_1\\sin\\theta_i=n_2\\sin\\theta_t$",
+    "$n_1\\cos\\theta_i=n_2\\cos\\theta_t$",
+    "$n_1\\theta_i=n_2\\theta_t$",
+    "$\\sin\\theta_i=\\sin\\theta_t$"
+   ],
+   "answer": 0,
+   "explain": "The tangential phase must match along the boundary.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-04",
+   "question": "Critical angle going from glass ($n=1.5$) into air?",
+   "choices": [
+    "$41.8^\\circ$",
+    "$33.7^\\circ$",
+    "$56.3^\\circ$",
+    "$90^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$\\theta_c=\\sin^{-1}(n_2/n_1)$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-05",
+   "question": "Brewster angle from air into glass ($n=1.5$)?",
+   "choices": [
+    "$56.3^\\circ$",
+    "$41.8^\\circ$",
+    "$33.7^\\circ$",
+    "$45^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$\\theta_B=\\tan^{-1}(n_2/n_1)$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-06",
+   "question": "At the Brewster angle, which polarization reflects?",
+   "choices": [
+    "Only perpendicular (TE)",
+    "Only parallel (TM)",
+    "Both equally",
+    "Neither"
+   ],
+   "answer": 0,
+   "explain": "$\\Gamma_\\parallel=0$ at $\\theta_B$.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-07",
+   "question": "A critical angle exists only when",
+   "choices": [
+    "The wave goes into a less dense medium ($n_2<n_1$)",
+    "$n_2>n_1$",
+    "The media are magnetic",
+    "The wave is circularly polarized"
+   ],
+   "answer": 0,
+   "explain": "$\\sin\\theta_c=n_2/n_1$ must be less than 1.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-08",
+   "question": "A quarter-wave antireflection coating between air and glass ($n=1.5$) needs index",
+   "choices": [
+    "$\\sqrt{1.5}\\approx1.22$",
+    "$1.5$",
+    "$1.25$",
+    "$2.25$"
+   ],
+   "answer": 0,
+   "explain": "$n_2=\\sqrt{n_1n_3}$, like a quarter-wave transformer.",
+   "topics": [
+    "boundaries"
+   ]
+  },
+  {
+   "id": "quiz-boundaries-09",
+   "question": "Optical fibres guide light by",
+   "choices": [
+    "Total internal reflection at the core–cladding boundary",
+    "Reflection off a metal coating",
+    "The Brewster effect",
+    "Absorption in the cladding"
+   ],
+   "answer": 0,
+   "explain": "The core has a slightly higher index than the cladding.",
+   "topics": [
+    "boundaries"
+   ]
+  }
+ ]
+}

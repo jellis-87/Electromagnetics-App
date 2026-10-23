@@ -1,0 +1,126 @@
+{
+ "unit": "fields-and-phasors",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-phasors-01",
+   "question": "What is the phasor of $v(t)=10\\cos(\\omega t-30^\\circ)$?",
+   "choices": [
+    "$10\\angle-30^\\circ$",
+    "$10\\angle30^\\circ$",
+    "$10\\angle60^\\circ$",
+    "$-10j$"
+   ],
+   "answer": 0,
+   "explain": "A phasor keeps the amplitude and the phase of the cosine: $10e^{-j30^\\circ}$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-02",
+   "question": "What is the phasor of $5\\sin\\omega t$, using the cosine reference?",
+   "choices": [
+    "$-5j$",
+    "$5$",
+    "$5j$",
+    "$-5$"
+   ],
+   "answer": 0,
+   "explain": "$\\sin\\omega t=\\cos(\\omega t-90^\\circ)$, so the phasor is $5e^{-j90^\\circ}=-5j$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-03",
+   "question": "What is $3+j4$ in polar form?",
+   "choices": [
+    "$5.00\\angle 53.1^\\circ$",
+    "$5\\angle36.9^\\circ$",
+    "$7\\angle53.1^\\circ$",
+    "$5\\angle-53.1^\\circ$"
+   ],
+   "answer": 0,
+   "explain": "$|z|=\\sqrt{3^2+4^2}=5$ and $\\angle z=\\tan^{-1}(4/3)=53.1^\\circ$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-04",
+   "question": "In the phasor domain, taking $d/dt$ of a signal does what?",
+   "choices": [
+    "Multiplies its phasor by $j\\omega$",
+    "Divides its phasor by $j\\omega$",
+    "Multiplies its phasor by $\\omega$",
+    "Leaves the phasor unchanged"
+   ],
+   "answer": 0,
+   "explain": "$\\frac{d}{dt}\\mathrm{Re}\\{\\tilde Ve^{j\\omega t}\\}=\\mathrm{Re}\\{j\\omega\\tilde Ve^{j\\omega t}\\}$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-05",
+   "question": "Which way does $\\cos(\\omega t+\\beta z)$ travel?",
+   "choices": [
+    "Toward $-z$",
+    "Toward $+z$",
+    "It does not travel",
+    "Toward $+t$"
+   ],
+   "answer": 0,
+   "explain": "The phase stays constant when $\\omega t+\\beta z$ is constant, so $z$ must fall as $t$ grows.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-06",
+   "question": "What is the free-space wavelength at $100\\ \\mathrm{MHz}$?",
+   "choices": [
+    "$3.00\\ \\mathrm{m}$",
+    "$300\\ \\mathrm{mm}$",
+    "$30.0\\ \\mathrm{m}$",
+    "$1.50\\ \\mathrm{m}$"
+   ],
+   "answer": 0,
+   "explain": "$\\lambda=c/f=3\\times10^8/10^8\\approx3\\ \\mathrm{m}$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-07",
+   "question": "A wave in a medium with $\\varepsilon_r=4$, $\\mu_r=1$ has phase velocity",
+   "choices": [
+    "$150\\ \\mathrm{Mm/s}$",
+    "$74.9\\ \\mathrm{Mm/s}$",
+    "$300\\ \\mathrm{Mm/s}$",
+    "$600\\ \\mathrm{Mm/s}$"
+   ],
+   "answer": 0,
+   "explain": "$u_p=c/\\sqrt{\\mu_r\\varepsilon_r}=c/2$.",
+   "topics": [
+    "phasors"
+   ]
+  },
+  {
+   "id": "quiz-phasors-08",
+   "question": "What does Euler's identity say?",
+   "choices": [
+    "$e^{j\\theta}=\\cos\\theta+j\\sin\\theta$",
+    "$e^{j\\theta}=\\cos\\theta-j\\sin\\theta$",
+    "$e^{j\\theta}=\\sin\\theta+j\\cos\\theta$",
+    "$e^{j\\theta}=1+j\\theta$"
+   ],
+   "answer": 0,
+   "explain": "It is the link between phasors and sinusoids.",
+   "topics": [
+    "phasors"
+   ]
+  }
+ ]
+}

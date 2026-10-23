@@ -1,0 +1,111 @@
+{
+ "unit": "polarization",
+ "format": "Text with inline TeX in $...$. The correct choice is at index answer; the app shuffles the choices.",
+ "questions": [
+  {
+   "id": "quiz-polarization-01",
+   "question": "$\\tilde{\\mathbf{E}}=(\\hat{\\mathbf{x}}+j\\hat{\\mathbf{y}})e^{-jkz}$ is",
+   "choices": [
+    "Left-hand circular",
+    "Right-hand circular",
+    "Linear",
+    "Elliptical with axial ratio 2"
+   ],
+   "answer": 0,
+   "explain": "$a_x=a_y$ and $\\delta=+90^\\circ$ for a wave toward $+z$.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-02",
+   "question": "$\\mathbf{E}=\\hat{\\mathbf{x}}\\cos(\\omega t-kz)-\\hat{\\mathbf{y}}\\,2\\cos(\\omega t-kz)$ is",
+   "choices": [
+    "Linear",
+    "Left-hand elliptical",
+    "Right-hand circular",
+    "Right-hand elliptical"
+   ],
+   "answer": 0,
+   "explain": "$\\delta=180^\\circ$: the two components stay in step (or exactly opposite), so $\\mathbf{E}$ stays on one line.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-03",
+   "question": "Axial ratio of a circularly polarized wave?",
+   "choices": [
+    "$1$",
+    "$0$",
+    "$\\infty$",
+    "$\\sqrt2$"
+   ],
+   "answer": 0,
+   "explain": "Major and minor axes are equal.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-04",
+   "question": "Axial ratio of a linearly polarized wave?",
+   "choices": [
+    "$\\infty$",
+    "$1$",
+    "$0$",
+    "$2$"
+   ],
+   "answer": 0,
+   "explain": "The minor axis is zero.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-05",
+   "question": "Adding equal LHC and RHC waves gives",
+   "choices": [
+    "A linearly polarized wave",
+    "A circular wave of twice the amplitude",
+    "An elliptical wave",
+    "Nothing: they cancel"
+   ],
+   "answer": 0,
+   "explain": "$(\\hat{\\mathbf{x}}+j\\hat{\\mathbf{y}})+(\\hat{\\mathbf{x}}-j\\hat{\\mathbf{y}})=2\\hat{\\mathbf{x}}$.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-06",
+   "question": "For a wave toward $+z$, the sign of the ellipticity angle $\\chi$ tells you",
+   "choices": [
+    "The handedness",
+    "The amplitude",
+    "The frequency",
+    "The direction of travel"
+   ],
+   "answer": 0,
+   "explain": "$\\chi>0$ is left-handed, $\\chi<0$ right-handed.",
+   "topics": [
+    "polarization"
+   ]
+  },
+  {
+   "id": "quiz-polarization-07",
+   "question": "With $a_x=a_y$ and $\\delta=-60^\\circ$, the wave is",
+   "choices": [
+    "Right-hand elliptical",
+    "Right-hand circular",
+    "Left-hand elliptical",
+    "Linear"
+   ],
+   "answer": 0,
+   "explain": "Circular needs $\\delta=\\pm90^\\circ$; negative $\\delta$ is right-handed.",
+   "topics": [
+    "polarization"
+   ]
+  }
+ ]
+}
