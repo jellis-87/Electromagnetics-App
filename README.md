@@ -39,7 +39,7 @@ Topics are listed in course order. Content so far: 235 flashcards, 98 quiz quest
 
 ## The iPhone app
 
-Native SwiftUI screens handle navigation: Topics, Widgets, Flashcards, Quiz, Practice and Glossary tabs (iOS puts the sixth under More). Widgets, problem pages, flashcards and the glossary render in a `WKWebView` that loads the bundled `web/www/index.html` with a route in the URL fragment, for example `#smith&embed=1`, `#practice&id=matching-02&embed=1` `#cards&topic=transients&embed=1` or `#quiz&topic=polarization&embed=1`. Embed mode hides the page's own header and tabs. When a page wants to open a widget it posts `{widget: id}` to the `app` message handler and the app pushes that widget.
+Native SwiftUI screens handle navigation: Topics, Widgets, Study (flashcards, quiz and practice problems) and Glossary tabs. Widgets, problem pages, flashcards and the glossary render in a `WKWebView` that loads the bundled `web/www/index.html` with a route in the URL fragment, for example `#smith&embed=1`, `#practice&id=matching-02&embed=1` `#cards&topic=transients&embed=1` or `#quiz&topic=polarization&embed=1`. Embed mode hides the page's own header and tabs. When a page wants to open a widget it posts `{widget: id}` to the `app` message handler and the app pushes that widget.
 
 Building needs a Mac with Xcode 16 or later:
 

@@ -7,12 +7,8 @@ struct RootView: View {
                 .tabItem { Label("Topics", systemImage: "square.grid.2x2") }
             NavigationStack { WidgetsView() }
                 .tabItem { Label("Widgets", systemImage: "waveform.path.ecg") }
-            NavigationStack { WebScreen(title: "Flashcards", route: "cards") }
-                .tabItem { Label("Flashcards", systemImage: "rectangle.on.rectangle.angled") }
-            NavigationStack { WebScreen(title: "Quiz", route: "quiz") }
-                .tabItem { Label("Quiz", systemImage: "checklist") }
-            NavigationStack { PracticeListView(topic: nil) }
-                .tabItem { Label("Practice", systemImage: "list.bullet.clipboard") }
+            NavigationStack { StudyView() }
+                .tabItem { Label("Study", systemImage: "graduationcap") }
             NavigationStack { WebScreen(title: "Glossary", route: "glossary") }
                 .tabItem { Label("Glossary", systemImage: "character.book.closed") }
         }
